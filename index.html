@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="title">Felipe Borecki - GISA-registrierter Dolmetscher & Übersetzer</title>
     <meta data-lang="desc" name="description" content="GISA #32188035. Gerichtsdolmetscher mit über 900 Einsätzen in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. Europa (Österreich, Spanien, Portugal) ↔ Lateinamerika (Paraguay, Brasilien). KI/CAT-Experte. Graz | Sofort verfügbar.">
+    <meta name="keywords" content="Dolmetscher, Übersetzer, GISA, Graz, Österreich, Spanisch, Portugiesisch, Deutsch, Englisch, Gerichtsdolmetschen, Justiz">
+    <meta name="author" content="Felipe Borecki">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Felipe Borecki - Gerichtsdolmetscher & Übersetzer">
+    <meta property="og:description" content="Über 900 Einsätze in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. GISA-registriert. Europa ↔ Lateinamerika.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://felipeborecki.com/">
+    <meta property="og:locale" content="de_AT">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💼</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=[GA_MEASUREMENT_ID]"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '[GA_MEASUREMENT_ID]');
+    </script>
     <style>
       *{margin:0;padding:0;box-sizing:border-box}
       body{font-family:'Roboto',sans-serif;line-height:1.6;color:#333;background:#f8f9fa}
@@ -108,10 +127,33 @@
 
     <section id="contact" class="section">
       <h2 data-lang="contact">Kontakt</h2>
-      <p><span data-lang="email">E-Mail:</span> <a href="mailto:felipeborecki@gmx.at">felipeborecki@gmx.at</a></p>
-      <p><span data-lang="phone">Mobil:</span> <a href="tel:+436781247285">+43 678 1247285</a></p>
-      <p><span data-lang="linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank">Profil</a></p>
-      <p><strong data-lang="available">Graz | Sofort verfügbar</strong></p>
+      
+      <form id="contact-form" class="form-container" action="https://formspree.io/f/[FORMSPREE_ID]" method="POST" style="max-width:600px;margin:0 auto;background:white;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="name" data-lang="form-name" style="display:block;margin-bottom:0.5rem;font-weight:500;">Name</label>
+          <input type="text" id="name" name="name" required style="width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit;">
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="email" data-lang="form-email" style="display:block;margin-bottom:0.5rem;font-weight:500;">E-Mail</label>
+          <input type="email" id="email" name="email" required style="width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit;">
+        </div>
+
+        <div class="form-group" style="margin-bottom:1.5rem;">
+          <label for="message" data-lang="form-message" style="display:block;margin-bottom:0.5rem;font-weight:500;">Nachricht</label>
+          <textarea id="message" name="message" rows="5" required style="width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit;resize:vertical;"></textarea>
+        </div>
+
+        <button type="submit" class="cta" style="width:100%;margin-top:1rem;" data-lang="form-submit">Absenden</button>
+        <p id="form-status" style="text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none;"></p>
+      </form>
+
+      <div style="margin-top:3rem;text-align:center;">
+        <p><span data-lang="email">E-Mail:</span> <a href="mailto:felipeborecki@gmx.at">felipeborecki@gmx.at</a></p>
+        <p><span data-lang="phone">Mobil:</span> <a href="tel:+436781247285">+43 678 1247285</a></p>
+        <p><span data-lang="linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank">Profil</a></p>
+        <p><strong data-lang="available">Graz | Sofort verfügbar</strong></p>
+      </div>
     </section>
 
     <footer>
@@ -254,6 +296,31 @@
       const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
       if (btn) btn.classList.add('active');
       setLang({target: btn}, savedLang);
+
+      // Form translations
+      const formTranslations = {
+        de: { 'form-name': 'Name', 'form-email': 'E-Mail', 'form-message': 'Nachricht', 'form-submit': 'Absenden' },
+        es: { 'form-name': 'Nombre', 'form-email': 'Correo electrónico', 'form-message': 'Mensaje', 'form-submit': 'Enviar' },
+        pt: { 'form-name': 'Nome', 'form-email': 'E-mail', 'form-message': 'Mensagem', 'form-submit': 'Enviar' },
+        en: { 'form-name': 'Name', 'form-email': 'Email', 'form-message': 'Message', 'form-submit': 'Send' }
+      };
+
+      // Add form translations to main translations
+      Object.keys(translations).forEach(lang => {
+        if (formTranslations[lang]) {
+          Object.assign(translations[lang], formTranslations[lang]);
+        }
+      });
+
+      // Formspree form handler
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+          const formStatus = document.getElementById('form-status');
+          formStatus.textContent = translations[savedLang]['form-submit'] + '...';
+          formStatus.style.display = 'block';
+        });
+      }
     </script>
   </body>
 </html>
