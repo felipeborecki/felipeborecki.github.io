@@ -18,14 +18,6 @@
     <meta property="og:locale:alternate" content="en_US">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💼</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=[GA_MEASUREMENT_ID]"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '[GA_MEASUREMENT_ID]');
-    </script>
     <style>
       *{margin:0;padding:0;box-sizing:border-box}
       body{font-family:'Roboto',sans-serif;line-height:1.6;color:#333;background:#f8f9fa}
@@ -64,6 +56,12 @@
       }
       a{color:#0e1528;font-weight:500}
       a:hover{color:#142135;text-decoration:none}
+      .form-container{max-width:600px;margin:0 auto;background:white;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+      .form-group{margin-bottom:1.5rem}
+      .form-group label{display:block;margin-bottom:0.5rem;font-weight:500}
+      .form-group input,.form-group textarea{width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit}
+      .form-group textarea{resize:vertical}
+      #form-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
     </style>
   </head>
   <body>
@@ -83,9 +81,7 @@
       <div class="hero-header"></div>
       <div class="hero-content">
         <h2 data-lang="hero-title">Dolmetscher & Übersetzer</h2>
-
         <br><br><br>
-
         <p data-lang="hero-desc">Über 900 Einsätze in Justiz, Strafverfahren, Medizin und psychosozialen Bereichen. Europäische Gerichtserfahrung (Spanien, Portugal, Österreich). KI/CAT-Experte. Remote-Projektleitung Itacom Group (Paraguay).</p>
         <a href="#contact" class="cta" data-lang="cta">Sofort verfügbar</a>
       </div>
@@ -128,24 +124,24 @@
     <section id="contact" class="section">
       <h2 data-lang="contact">Kontakt</h2>
       
-      <form id="contact-form" class="form-container" style="max-width:600px;margin:0 auto;background:white;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);">
-        <div class="form-group" style="margin-bottom:1.5rem;">
-          <label for="name" data-lang="form-name" style="display:block;margin-bottom:0.5rem;font-weight:500;">Name</label>
-          <input type="text" id="name" name="name" required style="width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit;">
+      <form id="contact-form" class="form-container">
+        <div class="form-group">
+          <label for="name" data-lang="form-name">Name</label>
+          <input type="text" id="name" name="name" required>
         </div>
 
-        <div class="form-group" style="margin-bottom:1.5rem;">
-          <label for="email" data-lang="form-email" style="display:block;margin-bottom:0.5rem;font-weight:500;">E-Mail</label>
-          <input type="email" id="email" name="email" required style="width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit;">
+        <div class="form-group">
+          <label for="email" data-lang="form-email">E-Mail</label>
+          <input type="email" id="email" name="email" required>
         </div>
 
-        <div class="form-group" style="margin-bottom:1.5rem;">
-          <label for="message" data-lang="form-message" style="display:block;margin-bottom:0.5rem;font-weight:500;">Nachricht</label>
-          <textarea id="message" name="message" rows="5" required style="width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit;resize:vertical;"></textarea>
+        <div class="form-group">
+          <label for="message" data-lang="form-message">Nachricht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </div>
 
         <button type="submit" class="cta" style="width:100%;margin-top:1rem;" data-lang="form-submit">Absenden</button>
-        <p id="form-status" style="text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none;"></p>
+        <p id="form-status"></p>
       </form>
 
       <div style="margin-top:3rem;text-align:center;">
@@ -188,7 +184,13 @@
           email: 'E-Mail:',
           phone: 'Mobil:',
           linkedin: 'LinkedIn:',
-          available: 'Graz | Sofort verfügbar'
+          available: 'Graz | Sofort verfügbar',
+          'form-name': 'Name',
+          'form-email': 'E-Mail',
+          'form-message': 'Nachricht',
+          'form-submit': 'Absenden',
+          'form-success': '✓ Nachricht erfolgreich versendet!',
+          'form-error': '✗ Fehler beim Versenden. Bitte versuchen Sie es später erneut.'
         },
         es: {
           title: 'Felipe Borecki - Intérprete y Traductor judicial (GISA registrado)',
@@ -216,7 +218,13 @@
           email: 'E-mail:',
           phone: 'Móvil:',
           linkedin: 'LinkedIn:',
-          available: 'Graz | Disponible de inmediato'
+          available: 'Graz | Disponible de inmediato',
+          'form-name': 'Nombre',
+          'form-email': 'Correo electrónico',
+          'form-message': 'Mensaje',
+          'form-submit': 'Enviar',
+          'form-success': '✓ ¡Mensaje enviado con éxito!',
+          'form-error': '✗ Error al enviar. Por favor, intente más tarde.'
         },
         pt: {
           title: 'Felipe Borecki - Intérprete e Tradutor judicial (GISA registrado)',
@@ -244,7 +252,13 @@
           email: 'E-mail:',
           phone: 'Telemóvel:',
           linkedin: 'LinkedIn:',
-          available: 'Graz | Disponível de imediato'
+          available: 'Graz | Disponível de imediato',
+          'form-name': 'Nome',
+          'form-email': 'E-mail',
+          'form-message': 'Mensagem',
+          'form-submit': 'Enviar',
+          'form-success': '✓ Mensagem enviada com sucesso!',
+          'form-error': '✗ Erro ao enviar. Tente novamente mais tarde.'
         },
         en: {
           title: 'Felipe Borecki - GISA-Registered Court Interpreter & Translator',
@@ -272,15 +286,33 @@
           email: 'Email:',
           phone: 'Mobile:',
           linkedin: 'LinkedIn:',
-          available: 'Graz | Immediately available'
+          available: 'Graz | Immediately available',
+          'form-name': 'Name',
+          'form-email': 'Email',
+          'form-message': 'Message',
+          'form-submit': 'Send',
+          'form-success': '✓ Message sent successfully!',
+          'form-error': '✗ Error sending. Please try again later.'
         }
       };
 
+      // Get language from URL query parameter or localStorage
+      function getLangFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('lang') || localStorage.getItem('lang') || 'de';
+      }
+
+      // Set language and update URL
       function setLang(evt, lang) {
         document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
         if (evt && evt.target) evt.target.classList.add('active');
+        
+        // Update URL without reloading
+        window.history.replaceState({}, '', `?lang=${lang}`);
+        
         document.documentElement.lang = lang;
         localStorage.setItem('lang', lang);
+        
         const t = translations[lang];
         document.title = t.title;
         document.querySelector('[data-lang="desc"]').setAttribute('content', t.desc);
@@ -292,27 +324,15 @@
         });
       }
 
-      const savedLang = localStorage.getItem('lang') || 'de';
-      const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
-      if (btn) btn.classList.add('active');
-      setLang({target: btn}, savedLang);
-
-      // Form translations
-      const formTranslations = {
-        de: { 'form-name': 'Name', 'form-email': 'E-Mail', 'form-message': 'Nachricht', 'form-submit': 'Absenden', 'form-success': '✓ Nachricht erfolgreich versendet!', 'form-error': '✗ Fehler beim Versenden. Bitte versuchen Sie es später erneut.' },
-        es: { 'form-name': 'Nombre', 'form-email': 'Correo electrónico', 'form-message': 'Mensaje', 'form-submit': 'Enviar', 'form-success': '✓ ¡Mensaje enviado con éxito!', 'form-error': '✗ Error al enviar. Por favor, intente más tarde.' },
-        pt: { 'form-name': 'Nome', 'form-email': 'E-mail', 'form-message': 'Mensagem', 'form-submit': 'Enviar', 'form-success': '✓ Mensagem enviada com sucesso!', 'form-error': '✗ Erro ao enviar. Tente novamente mais tarde.' },
-        en: { 'form-name': 'Name', 'form-email': 'Email', 'form-message': 'Message', 'form-submit': 'Send', 'form-success': '✓ Message sent successfully!', 'form-error': '✗ Error sending. Please try again later.' }
-      };
-
-      // Add form translations to main translations
-      Object.keys(translations).forEach(lang => {
-        if (formTranslations[lang]) {
-          Object.assign(translations[lang], formTranslations[lang]);
-        }
+      // Initialize language on page load
+      window.addEventListener('DOMContentLoaded', function() {
+        const savedLang = getLangFromURL();
+        const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
+        if (btn) btn.classList.add('active');
+        setLang({target: btn}, savedLang);
       });
 
-      // Formspree form handler with fetch API
+      // Form handler with Formspree
       const contactForm = document.getElementById('contact-form');
       if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
@@ -320,39 +340,39 @@
           
           const formStatus = document.getElementById('form-status');
           const btn = contactForm.querySelector('button[type="submit"]');
-          const btnText = btn.textContent;
+          const currentLang = getLangFromURL();
           
           const name = document.getElementById('name').value;
           const email = document.getElementById('email').value;
           const message = document.getElementById('message').value;
           
           // Show loading status
-          formStatus.textContent = translations[savedLang]['form-submit'] + '...';
+          formStatus.textContent = translations[currentLang]['form-submit'] + '...';
           formStatus.style.display = 'block';
           formStatus.style.color = '#0e1528';
           btn.disabled = true;
           btn.style.opacity = '0.6';
           
           try {
-            const response = await fetch('https://formspree.io/f/mpwowqkq', {
+            const response = await fetch('https://formspree.io/f/mbdokzdj', {
               method: 'POST',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({name, email, message})
             });
             
             if (response.ok) {
-              formStatus.textContent = translations[savedLang]['form-success'] || '✓ Mensagem enviada com sucesso!';
+              formStatus.textContent = translations[currentLang]['form-success'];
               formStatus.style.color = '#22c55e';
               contactForm.reset();
               setTimeout(() => {
                 formStatus.style.display = 'none';
               }, 5000);
             } else {
-              formStatus.textContent = translations[savedLang]['form-error'] || '✗ Erro ao enviar. Tente novamente.';
+              formStatus.textContent = translations[currentLang]['form-error'];
               formStatus.style.color = '#ef4444';
             }
           } catch (error) {
-            formStatus.textContent = translations[savedLang]['form-error'] || '✗ Erro ao enviar. Tente novamente.';
+            formStatus.textContent = translations[currentLang]['form-error'];
             formStatus.style.color = '#ef4444';
           } finally {
             btn.disabled = false;
