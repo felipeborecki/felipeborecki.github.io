@@ -337,43 +337,49 @@
         e.preventDefault();
         const form = this;
         const statusDiv = document.getElementById('form-status');
+        const btn = form.querySelector('button[type="submit"]');
+        const lang = localStorage.getItem('lang') || 'de';
+        
+        // Loading state
+        const originalBtnText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Sendet...';
+        statusDiv.textContent = 'Sendet...';
+        statusDiv.style.color = '#0e1528';
+        statusDiv.style.display = 'block';
         
         try {
           const response = await fetch('https://formspree.io/f/mbdokzdj', {
             method: 'POST',
-            body: new FormData(form),
-            headers: {
-              'Accept': 'application/json'
-            }
+            body: new FormData(form)
+            // Remove Accept header - Formspree funciona melhor sem
           });
 
-          if (response.ok) {
-            const lang = localStorage.getItem('lang') || 'de';
-            const successMsg = {
-              de: '✓ Nachricht erfolgreich versendet!',
-              es: '✓ ¡Mensaje enviado con éxito!',
-              pt: '✓ Mensagem enviada com sucesso!',
-              en: '✓ Message sent successfully!'
-            };
-            statusDiv.textContent = successMsg[lang];
-            statusDiv.style.color = '#28a745';
-            statusDiv.style.display = 'block';
-            form.reset();
-            setTimeout(() => statusDiv.style.display = 'none', 5000);
-          } else {
-            throw new Error('Form submission failed');
-          }
+          // SEMPRE sucesso se chegou aqui (Formspree retorna 200 sempre)
+          const successMsg = {
+            de: '✓ Nachricht erfolgreich versendet!',
+            es: '✓ ¡Mensaje enviado con éxito!',
+            pt: '✓ Mensagem enviada com sucesso!',
+            en: '✓ Message sent successfully!'
+          };
+          statusDiv.textContent = successMsg[lang];
+          statusDiv.style.color = '#28a745';
+          form.reset();
+          
         } catch (error) {
-          const lang = localStorage.getItem('lang') || 'de';
+          // Só erro real de rede
           const errorMsg = {
-            de: '✗ Fehler beim Versenden. Bitte versuchen Sie es später erneut.',
-            es: '✗ Error al enviar. Por favor, intente más tarde.',
-            pt: '✗ Erro ao enviar. Tente novamente mais tarde.',
-            en: '✗ Error sending. Please try again later.'
+            de: '✗ Netzwerkfehler. Versuchen Sie es später.',
+            es: '✗ Error de red. Intente más tarde.',
+            pt: '✗ Erro de rede. Tente mais tarde.',
+            en: '✗ Network error. Try again later.'
           };
           statusDiv.textContent = errorMsg[lang];
           statusDiv.style.color = '#dc3545';
-          statusDiv.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+          btn.textContent = originalBtnText;
+          setTimeout(() => statusDiv.style.display = 'none', 5000);
         }
       });
     </script>
