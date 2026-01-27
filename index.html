@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E8FPVG53SY');
+</script
+  >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="title">Felipe Borecki - Dolmetscher & Übersetzer</title>
@@ -34,90 +44,36 @@
       .hero p{font-size:1.2rem;margin-bottom:2rem}
       .cta{background:white;color:#0e1528;padding:1rem 2rem;border-radius:5px;font-weight:bold;display:inline-block;transition:background 0.3s;text-decoration:none}
       .cta:hover{background:#f0f2f8}
-      .section{padding:80px 2rem;max-width:1200px;margin:0 auto}
-      .section h2{text-align:center;font-size:2.5rem;margin-bottom:2rem;color:#0e1528}
-      .section ul{display:grid;gap:1rem;max-width:800px;margin:0 auto;list-style:none}
-      .section li{background:white;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);text-align:center;transition:transform 0.3s}
-      .section li:hover{transform:translateY(-5px)}
-      .profil-container{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:2rem}
-      .profilfoto{width:250px;height:300px;border-radius:8px;object-fit:cover;box-shadow:0 8px 30px rgba(0,0,0,0.3);border:5px solid white}
-      .profilfoto-placeholder{width:250px;height:300px;background:#f0f0f0;border-radius:8px;display:none;border:5px solid white;box-shadow:0 8px 30px rgba(0,0,0,0.3);background-image:linear-gradient(45deg,#ccc 25%,transparent 25%),linear-gradient(-45deg,#ccc 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ccc 75%),linear-gradient(-45deg,transparent 75%,#ccc 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0px}
-      .profil-text{flex:1;min-width:300px}
-      footer{background:#0e1528;color:white;text-align:center;padding:2rem}
-      [data-lang]{transition:opacity 0.3s ease}
-      @media (max-width:768px){
-        .header-content{flex-direction:column;gap:0.5rem}
-        h1{font-size:1.5rem}
-        .hero{padding:180px 1rem 60px}
-        .hero h2{font-size:2rem}
-        .hero-header{height:250px}
-        .profil-container{flex-direction:column;text-align:center}
-        .profilfoto,.profilfoto-placeholder{width:200px;height:250px}
-      }
-      a{color:#0e1528;font-weight:500}
-      a:hover{color:#142135;text-decoration:none}
-      .form-container{max-width:600px;margin:0 auto;background:white;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-      .form-group{margin-bottom:1.5rem}
-      .form-group label{display:block;margin-bottom:0.5rem;font-weight:500}
-      .form-group input,.form-group textarea{width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit}
-      .form-group textarea{resize:vertical}
-      #form-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="header-content">
-        <h1 data-lang="name">Felipe Borecki</h1>
-        <div class="flags">
-          <button class="active" onclick="setLang(event,'de')" title="Deutsch" style="background-image:url('https://flagcdn.com/w20/de.png');"></button>
-          <button onclick="setLang(event,'es')" title="Español" style="background-image:url('https://flagcdn.com/w20/es.png');"></button>
-          <button onclick="setLang(event,'pt')" title="Português (BR)" style="background-image:url('https://flagcdn.com/w20/br.png');"></button>
-          <button onclick="setLang(event,'en')" title="English" style="background-image:url('https://flagcdn.com/w20/gb.png');"></button>
-        </div>
-      </div>
-    </header>
-
-    <section id="home" class="hero">
-      <div class="hero-header"></div>
-      <div class="hero-content">
-        <h2 data-lang="hero-title">Dolmetscher & Übersetzer</h2>
-        <br><br><br>
-        <p data-lang="hero-desc">Über 900 Einsätze in Justiz, Strafverfahren, Medizin und psychosozialen Bereichen. Europäische Gerichtserfahrung (Spanien, Portugal, Österreich). KI/CAT-Experte. Remote-Projektleitung Itacom Group (Paraguay).</p>
-        <a href="#contact" class="cta" data-lang="cta">Sofort verfügbar</a>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="profil-container">
-        <img src="/images/foto-perfil.jpg" alt="Felipe Borecki Profilfoto" class="profilfoto" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-        <div class="profilfoto-placeholder">Foto lädt...</div>
-        <div class="profil-text">
-          <h2 data-lang="qual">Qualifikation</h2>
-          <p data-lang="qual-desc">GISA-registriert (#32188035) für Gerichte und Behörden. Über 8 Jahre Erfahrung in sensiblen Verfahren. Spezialist für KI-optimierte CAT-Tools-Workflows, simultanes/konsekutives/Telefon-Dolmetschen (OPI) und Übersetzungsmanagement.</p>
-          <p data-lang="expertise">Europa (Österreich vor Ort, Spanien/Portugal remote) ↔ Lateinamerika (Paraguay/Brasilien). Arbeitssprachen: Portugiesisch & Spanisch (muttersprachlich), Deutsch & Englisch (C1).</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <h2 data-lang="services">Leistungen</h2>
-      <ul>
-        <li data-lang="serv1">Gerichtsdolmetschen in Europa (Österreich, Spanien, Portugal)</li>
-        <li data-lang="serv2">Strafrecht, Medizin und psychosoziale Verfahren</li>
-        <li data-lang="serv3">Fachübersetzungen LATAM–EU (Schwerpunkt Paraguay/Brasilien)</li>
-        <li data-lang="serv4">KI-gestützte Fachübersetzungen mit Qualitätskontrolle und Post-Editing</li>
-        <li data-lang="serv5">Remote- und Telefon-Dolmetschen (OPI) über sichere Plattformen</li>
-      </ul>
-    </section>
-
-    <section id="experience" class="section">
-      <h2 data-lang="experience">Erfolge</h2>
-      <ul>
-        <li data-lang="succ1">Über 900 Einsätze für Gerichte, Polizei, Kliniken und Sozialdienste</li>
-        <li data-lang="succ2">Remote-Projektleitung bei der Itacom Group (Paraguay)</li>
-        <li data-lang="succ3">Europäische Gerichtserfahrung (Spanien, Portugal, Österreich)</li>
-        <li data-lang="succ4">Kooperationen zwischen DACH-Region und Lateinamerika</li>
-        <li data-lang="succ5">Effiziente AI/CAT-Workflows und Prozessautomatisierung</li>
+      .section{padding:80px 2rem<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8FPVG53SY');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="title">Felipe Borecki - Dolmetscher & Übersetzer</title>
+  <meta data-lang="desc" name="description" content="GISA #32188035. Gerichtsdolmetscher mit über 900 Einsätzen in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. Europa (Österreich, Spanien, Portugal) ↔ Lateinamerika (Paraguay, Brasilien). KI/CAT-Experte. Graz | Sofort verfügbar.">
+  <meta name="keywords" content="Dolmetscher, Übersetzer, GISA, Graz, Österreich, Spanisch, Portugiesisch, Deutsch, Englisch, Gerichtsdolmetschen, Justiz">
+  <meta name="author" content="Felipe Borecki">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Felipe Borecki - Gerichtsdolmetscher & Übersetzer">
+  <meta property="og:description" content="Über 900 Einsätze in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. GISA-registriert. Europa ↔ Lateinamerika.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felipeborecki.com/">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💼</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ... seu CSS ... */
+  </style>
+</head>T-Workflows und Prozessautomatisierung</li>
       </ul>
     </section>
 
