@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,13 +11,13 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-lang="title">Felipe Borecki - Dolmetscher & Übersetzer</title>
-  <meta data-lang="desc" name="description" content="GISA #32188035. Gerichtsdolmetscher mit über 900 Einsätzen in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. Europa (Österreich, Spanien, Portugal) ↔ Lateinamerika (Paraguay, Brasilien). KI/CAT-Experte. Graz | Sofort verfügbar.">
+  <title>Felipe Borecki - Dolmetscher & Übersetzer</title>
+  <meta name="description" content="GISA #32188035. Gerichtsdolmetscher mit über 900 Einsätzen in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. Europa (Österreich, Spanien, Portugal) ↔ Lateinamerika (Paraguay, Brasilien). Graz | Sofort verfügbar.">
   <meta name="keywords" content="Dolmetscher, Übersetzer, GISA, Graz, Österreich, Spanisch, Portugiesisch, Deutsch, Englisch, Gerichtsdolmetschen, Justiz">
   <meta name="author" content="Felipe Borecki">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Felipe Borecki - Gerichtsdolmetscher & Übersetzer">
-  <meta property="og:description" content="Über 900 Einsätze in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. GISA-registriert. Europa ↔ Lateinamerika.">
+  <meta property="og:description" content="Über 900 Einsätze in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. GISA-registriert und im DSR des BMI gelistet. Europa ↔ Lateinamerika.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://felipeborecki.com/">
   <meta property="og:locale" content="de_AT">
@@ -26,71 +25,75 @@
   <meta property="og:locale:alternate" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💼</text></svg>">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{font-family:'Roboto',sans-serif;line-height:1.6;color:#333;background:#f8f9fa}
-    header{background:#0e1528;color:white;padding:2rem;position:fixed;width:100%;top:0;z-index:1000}
+    header{background:#0e1528;color:#fff;padding:1.25rem 2rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.12)}
     .header-content{display:flex;justify-content:center;align-items:center;gap:1rem;max-width:1200px;margin:0 auto;padding:0 2rem}
-    .flags{display:flex;gap:0.25rem}
-    .flags button{width:32px;height:24px;border:none;background:rgba(255,255,255,0.2);border-radius:2px;cursor:pointer;transition:background 0.3s;background-size:cover;background-position:center}
-    .flags button:hover,.flags button.active{background:white;background-size:cover;background-position:center}
+    .flags{display:flex;gap:.35rem}
+    .flags button{width:32px;height:24px;border:none;background:rgba(255,255,255,.2);border-radius:3px;cursor:pointer;transition:all .25s ease;background-size:cover;background-position:center}
+    .flags button:hover,.flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:1px}
     h1{font-size:2rem;margin:0}
 
-    .hero{background:linear-gradient(to right,#0e1528,#142135);color:white;text-align:center;padding:200px 2rem 80px;margin-top:80px;position:relative;overflow:hidden}
-    .hero-header{position:absolute;top:0;left:0;right:0;height:400px;background:url('/images/header.jpg') center/cover;background-size:cover;background-position:center;z-index:1;opacity:0.8}
-    .hero-content{position:relative;z-index:2;max-width:600px;margin:0 auto;padding-top:50px}
+    .hero{background:linear-gradient(to right,#0e1528,#142135);color:#fff;text-align:center;padding:200px 2rem 80px;margin-top:72px;position:relative;overflow:hidden}
+    .hero-header{position:absolute;top:0;left:0;right:0;height:400px;background:url('/images/header.jpg') center/cover no-repeat;z-index:1;opacity:.78}
+    .hero-content{position:relative;z-index:2;max-width:760px;margin:0 auto;padding-top:32px}
     .hero h2{font-size:3rem;margin-bottom:1rem}
-    .hero p{font-size:1.2rem;margin-bottom:2rem}
-    .cta{background:white;color:#0e1528;padding:1rem 2rem;border-radius:5px;font-weight:bold;display:inline-block;transition:background 0.3s;text-decoration:none;border:0;cursor:pointer}
-    .cta:hover{background:#f0f2f8}
+    .hero p{font-size:1.15rem;margin:0 auto 2rem;max-width:62ch}
+    .cta{background:#fff;color:#0e1528;padding:1rem 2rem;border-radius:5px;font-weight:700;display:inline-block;transition:background .25s ease,transform .25s ease;text-decoration:none;border:0;cursor:pointer}
+    .cta:hover{background:#f0f2f8;transform:translateY(-1px)}
 
     .section{padding:80px 2rem;max-width:1200px;margin:0 auto}
-    .section h2{text-align:center;font-size:2.5rem;margin-bottom:2rem;color:#0e1528}
-    .section ul{display:grid;gap:1rem;max-width:800px;margin:0 auto;list-style:none}
-    .section li{background:white;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);text-align:center;transition:transform 0.3s}
-    .section li:hover{transform:translateY(-5px)}
+    .section h2{text-align:center;font-size:2.4rem;margin-bottom:2rem;color:#0e1528}
+    .section ul{display:grid;gap:1rem;max-width:860px;margin:0 auto;list-style:none}
+    .section li{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-align:center;transition:transform .25s ease}
+    .section li:hover{transform:translateY(-4px)}
 
     .profil-container{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:2rem}
-    .profilfoto{width:250px;height:300px;border-radius:8px;object-fit:cover;box-shadow:0 8px 30px rgba(0,0,0,0.3);border:5px solid white}
-    .profilfoto-placeholder{width:250px;height:300px;background:#f0f0f0;border-radius:8px;display:none;border:5px solid white;box-shadow:0 8px 30px rgba(0,0,0,0.3);background-image:linear-gradient(45deg,#ccc 25%,transparent 25%),linear-gradient(-45deg,#ccc 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ccc 75%),linear-gradient(-45deg,transparent 75%,#ccc 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0px}
-    .profil-text{flex:1;min-width:300px}
+    .profilfoto{width:250px;height:300px;border-radius:8px;object-fit:cover;box-shadow:0 8px 30px rgba(0,0,0,.25);border:5px solid #fff}
+    .profilfoto-placeholder{width:250px;height:300px;background:#f0f0f0;border-radius:8px;display:none;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25);background-image:linear-gradient(45deg,#ccc 25%,transparent 25%),linear-gradient(-45deg,#ccc 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ccc 75%),linear-gradient(-45deg,transparent 75%,#ccc 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0}
+    .profil-text{flex:1;min-width:300px;max-width:760px}
+    .profil-text p{margin-bottom:1rem}
 
-    footer{background:#0e1528;color:white;text-align:center;padding:2rem}
-    [data-lang]{transition:opacity 0.3s ease}
+    footer{background:#0e1528;color:#fff;text-align:center;padding:2rem}
+    [data-lang]{transition:opacity .25s ease}
+    a{color:#0e1528;font-weight:500}
+    a:hover{color:#142135;text-decoration:none}
+
+    .form-container{max-width:600px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+    .form-group{margin-bottom:1.5rem;text-align:left}
+    .form-group label{display:block;margin-bottom:.5rem;font-weight:500}
+    .form-group input,.form-group textarea{width:100%;padding:.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit}
+    .form-group input:focus,.form-group textarea:focus{outline:none;border-color:#0e1528;box-shadow:0 0 0 3px rgba(14,21,40,.12)}
+    .form-group textarea{resize:vertical}
+    #form-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
 
     @media (max-width:768px){
-      .header-content{flex-direction:column;gap:0.5rem}
+      .header-content{flex-direction:column;gap:.6rem}
       h1{font-size:1.5rem}
       .hero{padding:180px 1rem 60px}
       .hero h2{font-size:2rem}
       .hero-header{height:250px}
       .profil-container{flex-direction:column;text-align:center}
       .profilfoto,.profilfoto-placeholder{width:200px;height:250px}
+      .section h2{font-size:2rem}
     }
-
-    a{color:#0e1528;font-weight:500}
-    a:hover{color:#142135;text-decoration:none}
-
-    .form-container{max-width:600px;margin:0 auto;background:white;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-    .form-group{margin-bottom:1.5rem}
-    .form-group label{display:block;margin-bottom:0.5rem;font-weight:500}
-    .form-group input,.form-group textarea{width:100%;padding:0.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit}
-    .form-group textarea{resize:vertical}
-    #form-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
   </style>
 </head>
-
 <body>
   <header>
     <div class="header-content">
       <h1 data-lang="name">Felipe Borecki</h1>
       <div class="flags">
-        <button class="active" onclick="setLang(event,'de')" title="Deutsch" style="background-image:url('https://flagcdn.com/w20/de.png');"></button>
-        <button onclick="setLang(event,'es')" title="Español" style="background-image:url('https://flagcdn.com/w20/es.png');"></button>
-        <button onclick="setLang(event,'pt')" title="Português (BR)" style="background-image:url('https://flagcdn.com/w20/br.png');"></button>
-        <button onclick="setLang(event,'en')" title="English" style="background-image:url('https://flagcdn.com/w20/gb.png');"></button>
+        <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch" style="background-image:url('https://flagcdn.com/w20/de.png');"></button>
+        <button type="button" onclick="setLang(event,'es')" title="Español" style="background-image:url('https://flagcdn.com/w20/es.png');"></button>
+        <button type="button" onclick="setLang(event,'pt')" title="Português (BR)" style="background-image:url('https://flagcdn.com/w20/br.png');"></button>
+        <button type="button" onclick="setLang(event,'en')" title="English" style="background-image:url('https://flagcdn.com/w20/gb.png');"></button>
       </div>
     </div>
   </header>
@@ -99,8 +102,7 @@
     <div class="hero-header"></div>
     <div class="hero-content">
       <h2 data-lang="hero-title">Dolmetscher & Übersetzer</h2>
-      <br><br><br>
-      <p data-lang="hero-desc">Über 900 Einsätze in Justiz, Strafverfahren, Medizin und psychosozialen Bereichen. Europäische Gerichtserfahrung (Spanien, Portugal, Österreich). KI/CAT-Experte. Remote-Projektleitung Itacom Group (Paraguay).</p>
+      <p data-lang="hero-desc">Über 900 Einsätze in Justiz, Strafverfahren, Medizin und psychosozialen Bereichen. Europäische Gerichtserfahrung (Spanien, Portugal, Österreich). Verlässliche, präzise und professionelle Sprachmittlung. Remote-Projektleitung Itacom Group (Paraguay).</p>
       <a href="#contact" class="cta" data-lang="cta">Sofort verfügbar</a>
     </div>
   </section>
@@ -111,7 +113,7 @@
       <div class="profilfoto-placeholder">Foto lädt...</div>
       <div class="profil-text">
         <h2 data-lang="qual">Qualifikation</h2>
-        <p data-lang="qual-desc">GISA-registriert (#32188035) für Gerichte und Behörden. Über 8 Jahre Erfahrung in sensiblen Verfahren. Spezialist für KI-optimierte CAT-Tools-Workflows, simultanes/konsekutives/Telefon-Dolmetschen (OPI) und Übersetzungsmanagement.</p>
+        <p data-lang="qual-desc">GISA-registriert (#32188035) für Gerichte und Behörden in Österreich sowie im DSR des BMI gelistet. Über 8 Jahre Erfahrung in sensiblen Verfahren mit Schwerpunkt auf juristischen, medizinischen, behördlichen und psychosozialen Einsätzen.</p>
         <p data-lang="expertise">Europa (Österreich vor Ort, Spanien/Portugal remote) ↔ Lateinamerika (Paraguay/Brasilien). Arbeitssprachen: Portugiesisch & Spanisch (muttersprachlich), Deutsch & Englisch (C1).</p>
       </div>
     </div>
@@ -123,8 +125,8 @@
       <li data-lang="serv1">Gerichtsdolmetschen in Europa (Österreich, Spanien, Portugal)</li>
       <li data-lang="serv2">Strafrecht, Medizin und psychosoziale Verfahren</li>
       <li data-lang="serv3">Fachübersetzungen LATAM–EU (Schwerpunkt Paraguay/Brasilien)</li>
-      <li data-lang="serv4">KI-gestützte Fachübersetzungen mit Qualitätskontrolle und Post-Editing</li>
-      <li data-lang="serv5">Remote- und Telefon-Dolmetschen (OPI) über sichere Plattformen</li>
+      <li data-lang="serv4">Präzise Fachübersetzungen mit sorgfältiger Qualitätskontrolle</li>
+      <li data-lang="serv5">Remote- und Telefondolmetschen (OPI) über sichere Plattformen</li>
     </ul>
   </section>
 
@@ -135,14 +137,14 @@
       <li data-lang="succ2">Remote-Projektleitung bei der Itacom Group (Paraguay)</li>
       <li data-lang="succ3">Europäische Gerichtserfahrung (Spanien, Portugal, Österreich)</li>
       <li data-lang="succ4">Kooperationen zwischen DACH-Region und Lateinamerika</li>
-      <li data-lang="succ5">Effiziente AI/CAT-Workflows und Prozessautomatisierung</li>
+      <li data-lang="succ5">Zuverlässige Zusammenarbeit in sensiblen und mehrsprachigen Kontexten</li>
     </ul>
   </section>
 
   <section id="contact" class="section">
     <h2 data-lang="contact">Kontakt</h2>
 
-    <form id="contact-form" class="form-container">
+    <form id="contact-form" class="form-container" action="https://formspree.io/f/mbdokzdj" method="POST">
       <div class="form-group">
         <label for="name" data-lang="form-name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -165,7 +167,7 @@
     <div style="margin-top:3rem;text-align:center;">
       <p><span data-lang="email">E-Mail:</span> <a href="mailto:felipeborecki@gmx.at">felipeborecki@gmx.at</a></p>
       <p><span data-lang="phone">Mobil:</span> <a href="tel:+436781247285">+43 678 1247285</a></p>
-      <p><span data-lang="linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener">Profil</a></p>
+      <p><span data-lang="linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer">Profil</a></p>
       <p><strong data-lang="available">Graz | Sofort verfügbar</strong></p>
     </div>
   </section>
@@ -175,29 +177,33 @@
   </footer>
 
   <script>
+    let currentLang = 'de';
+
     const translations = {
       de: {
         title: 'Felipe Borecki - Dolmetscher & Übersetzer',
-        desc: 'GISA #32188035. Gerichtsdolmetscher mit über 900 Einsätzen in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. Europa (Österreich, Spanien, Portugal) ↔ Lateinamerika (Paraguay, Brasilien). KI/CAT-Experte. Graz | Sofort verfügbar.',
+        desc: 'GISA #32188035. Gerichtsdolmetscher mit über 900 Einsätzen in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. Europa (Österreich, Spanien, Portugal) ↔ Lateinamerika (Paraguay, Brasilien). Graz | Sofort verfügbar.',
+        ogtitle: 'Felipe Borecki - Gerichtsdolmetscher & Übersetzer',
+        ogdesc: 'Über 900 Einsätze in Justiz, Strafrecht, Medizin und psychosozialen Bereichen. GISA-registriert und im DSR des BMI gelistet. Europa ↔ Lateinamerika.',
         name: 'Felipe Borecki',
         'hero-title': 'Dolmetscher & Übersetzer',
-        'hero-desc': 'Über 900 Einsätze in Justiz, Strafverfahren, Medizin und psychosozialen Bereichen. Europäische Gerichtserfahrung (Spanien, Portugal, Österreich). KI/CAT-Experte. Remote-Projektleitung Itacom Group (Paraguay).',
+        'hero-desc': 'Über 900 Einsätze in Justiz, Strafverfahren, Medizin und psychosozialen Bereichen. Europäische Gerichtserfahrung (Spanien, Portugal, Österreich). Verlässliche, präzise und professionelle Sprachmittlung. Remote-Projektleitung Itacom Group (Paraguay).',
         cta: 'Sofort verfügbar',
         qual: 'Qualifikation',
-        'qual-desc': 'GISA-registriert (#32188035) für Gerichte und Behörden. Über 8 Jahre Erfahrung in sensiblen Verfahren. Spezialist für KI-optimierte CAT-Tools-Workflows, simultanes/konsekutives/Telefon-Dolmetschen (OPI) und Übersetzungsmanagement.',
+        'qual-desc': 'GISA-registriert (#32188035) für Gerichte und Behörden in Österreich sowie im DSR des BMI gelistet. Über 8 Jahre Erfahrung in sensiblen Verfahren mit Schwerpunkt auf juristischen, medizinischen, behördlichen und psychosozialen Einsätzen.',
         expertise: 'Europa (Österreich vor Ort, Spanien/Portugal remote) ↔ Lateinamerika (Paraguay/Brasilien). Arbeitssprachen: Portugiesisch & Spanisch (muttersprachlich), Deutsch & Englisch (C1).',
         services: 'Leistungen',
         serv1: 'Gerichtsdolmetschen in Europa (Österreich, Spanien, Portugal)',
         serv2: 'Strafrecht, Medizin und psychosoziale Verfahren',
         serv3: 'Fachübersetzungen LATAM–EU (Schwerpunkt Paraguay/Brasilien)',
-        serv4: 'KI-gestützte Fachübersetzungen mit Qualitätskontrolle und Post-Editing',
-        serv5: 'Remote- und Telefon-Dolmetschen (OPI) über sichere Plattformen',
+        serv4: 'Präzise Fachübersetzungen mit sorgfältiger Qualitätskontrolle',
+        serv5: 'Remote- und Telefondolmetschen (OPI) über sichere Plattformen',
         experience: 'Erfolge',
         succ1: 'Über 900 Einsätze für Gerichte, Polizei, Kliniken und Sozialdienste',
         succ2: 'Remote-Projektleitung bei der Itacom Group (Paraguay)',
         succ3: 'Europäische Gerichtserfahrung (Spanien, Portugal, Österreich)',
         succ4: 'Kooperationen zwischen DACH-Region und Lateinamerika',
-        succ5: 'Effiziente AI/CAT-Workflows und Prozessautomatisierung',
+        succ5: 'Zuverlässige Zusammenarbeit in sensiblen und mehrsprachigen Kontexten',
         contact: 'Kontakt',
         email: 'E-Mail:',
         phone: 'Mobil:',
@@ -208,30 +214,33 @@
         'form-message': 'Nachricht',
         'form-submit': 'Absenden',
         'form-success': '✓ Nachricht erfolgreich versendet!',
-        'form-error': '✗ Fehler beim Versenden. Bitte versuchen Sie es später erneut.'
+        'form-error': '✗ Fehler beim Versenden. Bitte versuchen Sie es später erneut.',
+        'form-sending': 'Sendet...'
       },
       es: {
         title: 'Felipe Borecki - Intérprete y Traductor',
-        desc: 'GISA #32188035. Más de 900 servicios en ámbitos judiciales, penales, médicos y psicosociales. Experiencia en tribunales de Europa (Austria, España, Portugal) ↔ Latinoamérica (Paraguay, Brasil). Experto en IA/CAT. Graz | Disponible de inmediato.',
+        desc: 'GISA #32188035. Más de 900 servicios en ámbitos judiciales, penales, médicos y psicosociales. Experiencia en tribunales de Europa (Austria, España, Portugal) ↔ Latinoamérica (Paraguay, Brasil). Graz | Disponible de inmediato.',
+        ogtitle: 'Felipe Borecki - Intérprete y Traductor Judicial',
+        ogdesc: 'Más de 900 servicios en ámbitos judiciales, penales, médicos y psicosociales. Registrado en GISA e incluido en el DSR del BMI. Europa ↔ Latinoamérica.',
         name: 'Felipe Borecki',
         'hero-title': 'Intérprete y Traductor',
-        'hero-desc': 'Más de 900 servicios en juzgados, procesos penales, hospitales y servicios psicosociales. Experiencia en tribunales de Europa (España, Portugal, Austria). Experto en IA/CAT. Dirección remota Itacom Group (Paraguay).',
+        'hero-desc': 'Más de 900 servicios en juzgados, procesos penales, hospitales y servicios psicosociales. Experiencia en tribunales de Europa (España, Portugal, Austria). Servicio lingüístico preciso, confidencial y profesional. Dirección remota Itacom Group (Paraguay).',
         cta: 'Disponible de inmediato',
         qual: 'Calificaciones',
-        'qual-desc': 'GISA-registrado (#32188035) para tribunales y autoridades austriacas. Más de 8 años en contextos sensibles. Especialista en flujos de trabajo con IA y CAT, interpretación simultánea/consecutiva/telefónica (OPI) y gestión de traducción.',
+        'qual-desc': 'Registrado en GISA (#32188035) para tribunales y autoridades austriacas, e incluido en el DSR del BMI. Más de 8 años de experiencia en contextos sensibles, con especialización en entornos judiciales, sanitarios, administrativos y psicosociales.',
         expertise: 'Europa (Austria presencial, España/Portugal remoto) ↔ Latinoamérica (Paraguay/Brasil). Idiomas de trabajo: portugués y español (nativos), alemán e inglés (C1).',
         services: 'Servicios',
         serv1: 'Interpretación judicial en Europa (Austria, España, Portugal)',
         serv2: 'Procedimientos penales, médicos y psicosociales',
         serv3: 'Traducciones especializadas LATAM–UE (foco Paraguay/Brasil)',
-        serv4: 'Traducciones especializadas con apoyo de IA y revisión humana (post-edición)',
-        serv5: 'Interpretación remota y OPI en plataformas seguras',
+        serv4: 'Traducciones especializadas precisas con control de calidad cuidadoso',
+        serv5: 'Interpretación remota y telefónica (OPI) mediante plataformas seguras',
         experience: 'Logros',
         succ1: 'Más de 900 servicios para tribunales, policía, clínicas y servicios sociales',
         succ2: 'Dirección remota de proyectos en Itacom Group (Paraguay)',
         succ3: 'Experiencia en tribunales europeos (España, Portugal, Austria)',
         succ4: 'Cooperaciones DACH–Latinoamérica en justicia y negocio',
-        succ5: 'Flujos de trabajo eficientes con IA/CAT y automatización de procesos',
+        succ5: 'Colaboración fiable en contextos sensibles y multilingües',
         contact: 'Contacto',
         email: 'E-mail:',
         phone: 'Móvil:',
@@ -242,30 +251,33 @@
         'form-message': 'Mensaje',
         'form-submit': 'Enviar',
         'form-success': '✓ ¡Mensaje enviado con éxito!',
-        'form-error': '✗ Error al enviar. Por favor, intente más tarde.'
+        'form-error': '✗ Error al enviar. Por favor, inténtelo más tarde.',
+        'form-sending': 'Enviando...'
       },
       pt: {
         title: 'Felipe Borecki - Intérprete e Tradutor',
-        desc: 'GISA #32188035. Mais de 900 serviços em contextos judiciais, penais, médicos e psicossociais. Experiência em tribunais na Europa (Áustria, Espanha, Portugal) ↔ América Latina (Paraguai, Brasil). Especialista em IA/CAT. Graz | Disponível de imediato.',
+        desc: 'GISA #32188035. Mais de 900 serviços em contextos judiciais, penais, médicos e psicossociais. Experiência em tribunais na Europa (Áustria, Espanha, Portugal) ↔ América Latina (Paraguai, Brasil). Graz | Disponível de imediato.',
+        ogtitle: 'Felipe Borecki - Intérprete e Tradutor Judicial',
+        ogdesc: 'Mais de 900 serviços em contextos judiciais, penais, médicos e psicossociais. Registrado na GISA e incluído no DSR do BMI. Europa ↔ América Latina.',
         name: 'Felipe Borecki',
         'hero-title': 'Intérprete e Tradutor',
-        'hero-desc': 'Mais de 900 serviços em tribunais, processos penais, hospitais e serviços psicossociais. Experiência em tribunais europeus (Espanha, Portugal, Áustria). Especialista em IA/CAT. Direção remota Itacom Group (Paraguai).',
+        'hero-desc': 'Mais de 900 serviços em tribunais, processos penais, hospitais e serviços psicossociais. Experiência em tribunais europeus (Espanha, Portugal, Áustria). Serviço linguístico preciso, confidencial e profissional. Direção remota Itacom Group (Paraguai).',
         cta: 'Disponível de imediato',
         qual: 'Qualificações',
-        'qual-desc': 'GISA-registrado (#32188035) para tribunais e autoridades austríacas. Mais de 8 anos em contextos sensíveis. Especialista em fluxos IA/CAT, interpretação simultânea/consecutiva/telefónica (OPI) e gestão de tradução.',
+        'qual-desc': 'Registrado na GISA (#32188035) para tribunais e autoridades austríacas, e incluído no DSR do BMI. Mais de 8 anos de experiência em contextos sensíveis, com especialização em ambientes judiciais, de saúde, administrativos e psicossociais.',
         expertise: 'Europa (Áustria presencial, Espanha/Portugal remoto) ↔ América Latina (Paraguai/Brasil). Línguas de trabalho: português e espanhol (nativos), alemão e inglês (C1).',
         services: 'Serviços',
         serv1: 'Interpretação judicial na Europa (Áustria, Espanha, Portugal)',
         serv2: 'Processos penais, médicos e psicossociais',
         serv3: 'Traduções especializadas LATAM–UE (foco Paraguai/Brasil)',
-        serv4: 'Traduções especializadas com IA e revisão humana (post-editing)',
-        serv5: 'Interpretação remota e OPI em plataformas seguras',
+        serv4: 'Traduções especializadas precisas com controlo de qualidade rigoroso',
+        serv5: 'Interpretação remota e telefónica (OPI) através de plataformas seguras',
         experience: 'Conquistas',
         succ1: 'Mais de 900 serviços para tribunais, polícia, clínicas e serviços sociais',
         succ2: 'Direção remota de projetos na Itacom Group (Paraguai)',
         succ3: 'Experiência em tribunais europeus (Espanha, Portugal, Áustria)',
         succ4: 'Cooperações DACH–América Latina em justiça e negócios',
-        succ5: 'Fluxos eficientes com IA/CAT e automação de processos',
+        succ5: 'Colaboração fiável em contextos sensíveis e multilingues',
         contact: 'Contato',
         email: 'E-mail:',
         phone: 'Telemóvel:',
@@ -276,30 +288,33 @@
         'form-message': 'Mensagem',
         'form-submit': 'Enviar',
         'form-success': '✓ Mensagem enviada com sucesso!',
-        'form-error': '✗ Erro ao enviar. Tente novamente mais tarde.'
+        'form-error': '✗ Erro ao enviar. Tente novamente mais tarde.',
+        'form-sending': 'Enviando...'
       },
       en: {
         title: 'Felipe Borecki - Interpreter & Translator',
-        desc: 'GISA #32188035. 900+ assignments in court, criminal, medical and psychosocial services. Court experience in Europe (Austria, Spain, Portugal) ↔ Latin America (Paraguay, Brazil). AI/CAT specialist. Graz | Immediately available.',
+        desc: 'GISA #32188035. 900+ assignments in court, criminal, medical and psychosocial services. Court experience in Europe (Austria, Spain, Portugal) ↔ Latin America (Paraguay, Brazil). Graz | Immediately available.',
+        ogtitle: 'Felipe Borecki - Court Interpreter & Translator',
+        ogdesc: '900+ assignments in judicial, criminal, medical and psychosocial settings. GISA-registered and listed in the BMI DSR. Europe ↔ Latin America.',
         name: 'Felipe Borecki',
         'hero-title': 'Interpreter & Translator',
-        'hero-desc': '900+ assignments for courts, prosecution offices, hospitals and psychosocial services. Court experience across Europe (Spain, Portugal, Austria). AI/CAT specialist. Remote project management at Itacom Group (Paraguay).',
+        'hero-desc': '900+ assignments for courts, criminal proceedings, hospitals and psychosocial services. Court experience across Europe (Spain, Portugal, Austria). Precise, confidential and professional language support. Remote project management at Itacom Group (Paraguay).',
         cta: 'Immediately available',
         qual: 'Qualifications',
-        'qual-desc': 'GISA-registered (#32188035) for courts and public authorities in Austria. 8+ years of experience in highly sensitive proceedings. Specialist in AI-driven CAT-tools workflows, simultaneous, consecutive and over-the-phone interpreting (OPI), and translation management.',
+        'qual-desc': 'GISA-registered (#32188035) for courts and public authorities in Austria and listed in the BMI DSR. 8+ years of experience in sensitive contexts, with a focus on judicial, healthcare, administrative and psychosocial settings.',
         expertise: 'Europe (Austria on-site, Spain/Portugal remote) ↔ Latin America (Paraguay/Brazil). Working languages: Portuguese & Spanish (native), German & English (C1).',
         services: 'Services',
         serv1: 'Court interpreting in Europe (Austria, Spain, Portugal)',
         serv2: 'Criminal, medical and psychosocial proceedings',
         serv3: 'Specialised LATAM–EU translations (focus on Paraguay/Brazil)',
-        serv4: 'AI-optimised specialist translations with human review and post-editing',
-        serv5: 'Remote and OPI interpreting via secure platforms',
+        serv4: 'Precise specialist translations with careful quality control',
+        serv5: 'Remote and over-the-phone interpreting (OPI) via secure platforms',
         experience: 'Achievements',
         succ1: '900+ assignments for courts, police, clinics and social services',
         succ2: 'Remote project management at Itacom Group (Paraguay)',
         succ3: 'Court experience in Europe (Spain, Portugal, Austria)',
         succ4: 'DACH–Latin America cooperation in justice and business',
-        succ5: 'Efficient AI/CAT workflows and process automation',
+        succ5: 'Reliable collaboration in sensitive and multilingual contexts',
         contact: 'Contact',
         email: 'Email:',
         phone: 'Mobile:',
@@ -310,39 +325,55 @@
         'form-message': 'Message',
         'form-submit': 'Send',
         'form-success': '✓ Message sent successfully!',
-        'form-error': '✗ Error sending. Please try again later.'
+        'form-error': '✗ Error sending message. Please try again later.',
+        'form-sending': 'Sending...'
       }
     };
 
-    function setLang(evt, lang) {
+    function safeGetStoredLang() {
       try {
-        document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
-        if (evt && evt.target) evt.target.classList.add('active');
-
-        // mantém seu comportamento de salvar idioma
-        document.documentElement.lang = lang;
-        localStorage.setItem('lang', lang);
-
-        const t = translations[lang] || translations.de;
-        document.title = t.title;
-
-        const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) metaDesc.setAttribute('content', t.desc);
-
-        document.querySelectorAll('[data-lang]').forEach(el => {
-          const key = el.dataset.lang;
-          if (t[key] !== undefined) el.textContent = t[key];
-        });
+        return localStorage.getItem('lang') || 'de';
       } catch (e) {
-        // não derruba o site inteiro se algo faltar
+        return currentLang || 'de';
       }
     }
 
+    function safeSetStoredLang(lang) {
+      try {
+        localStorage.setItem('lang', lang);
+      } catch (e) {}
+    }
+
+    function updateMeta(t) {
+      document.title = t.title;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (metaDesc) metaDesc.setAttribute('content', t.desc);
+      if (ogTitle) ogTitle.setAttribute('content', t.ogtitle || t.title);
+      if (ogDesc) ogDesc.setAttribute('content', t.ogdesc || t.desc);
+    }
+
+    function setLang(evt, lang) {
+      const t = translations[lang] || translations.de;
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      safeSetStoredLang(lang);
+      updateMeta(t);
+
+      document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
+      if (evt && evt.target) evt.target.classList.add('active');
+
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
-      const savedLang = localStorage.getItem('lang') || 'de';
+      const savedLang = safeGetStoredLang();
       const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
-      if (btn) btn.classList.add('active');
-      setLang({target: btn}, savedLang);
+      setLang({ target: btn }, savedLang);
 
       const form = document.getElementById('contact-form');
       if (!form) return;
@@ -352,41 +383,59 @@
 
         const statusDiv = document.getElementById('form-status');
         const btnSubmit = form.querySelector('button[type="submit"]');
-        const lang = localStorage.getItem('lang') || 'de';
-
+        const lang = safeGetStoredLang();
+        const t = translations[lang] || translations.de;
         const originalBtnText = btnSubmit ? btnSubmit.textContent : '';
-        if (btnSubmit) btnSubmit.disabled = true;
 
-        const sendingMsg = { de:'Sendet...', es:'Enviando...', pt:'Enviando...', en:'Sending...' };
-        if (btnSubmit) btnSubmit.textContent = sendingMsg[lang] || sendingMsg.de;
+        if (btnSubmit) {
+          btnSubmit.disabled = true;
+          btnSubmit.textContent = t['form-sending'];
+        }
 
         if (statusDiv) {
-          statusDiv.textContent = sendingMsg[lang] || sendingMsg.de;
+          statusDiv.textContent = t['form-sending'];
           statusDiv.style.color = '#0e1528';
           statusDiv.style.display = 'block';
         }
 
         try {
-          await fetch('https://formspree.io/f/mbdokzdj', { method: 'POST', body: new FormData(form) });
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
 
-          const ok = translations[lang]?.['form-success'] || translations.de['form-success'];
+          if (!response.ok) {
+            let errorMessage = t['form-error'];
+            try {
+              const data = await response.json();
+              if (data && Array.isArray(data.errors) && data.errors.length) {
+                errorMessage = data.errors.map(err => err.message).join(', ');
+              }
+            } catch (jsonError) {}
+            throw new Error(errorMessage);
+          }
+
           if (statusDiv) {
-            statusDiv.textContent = ok;
+            statusDiv.textContent = t['form-success'];
             statusDiv.style.color = '#28a745';
           }
           form.reset();
         } catch (error) {
-          const err = translations[lang]?.['form-error'] || translations.de['form-error'];
           if (statusDiv) {
-            statusDiv.textContent = err;
+            statusDiv.textContent = error.message || t['form-error'];
             statusDiv.style.color = '#dc3545';
           }
+          console.error('Form submit error:', error);
         } finally {
-          if (btnSubmit) btnSubmit.disabled = false;
-          if (btnSubmit) btnSubmit.textContent = originalBtnText;
-
+          if (btnSubmit) {
+            btnSubmit.disabled = false;
+            btnSubmit.textContent = originalBtnText;
+          }
           if (statusDiv) {
-            setTimeout(() => { statusDiv.style.display = 'none'; }, 5000);
+            setTimeout(() => {
+              statusDiv.style.display = 'none';
+            }, 5000);
           }
         }
       });
