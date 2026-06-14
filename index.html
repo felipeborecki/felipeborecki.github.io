@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,6 +17,8 @@
   <meta name="keywords" content="Dolmetscher, Übersetzer, GISA, Graz, Österreich, Spanisch, Portugiesisch, Deutsch, Gerichtsdolmetschen, Behörden, Medizin, Remote-Dolmetschen">
   <meta name="author" content="Felipe Borecki">
   <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Felipe Borecki - Dolmetscher & Übersetzer">
   <meta property="og:description" content="Über 900 Einsätze für Gerichte, Behörden, medizinische und psychosoziale Kontexte. GISA-registriert und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet.">
   <meta property="og:type" content="website">
@@ -25,6 +28,7 @@
   <meta property="og:locale:alternate" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
 
+  <!-- hreflang (direcionamento de idioma para SEO) -->
   <link rel="alternate" hreflang="de" href="https://felipeborecki.com/#de">
   <link rel="alternate" hreflang="es" href="https://felipeborecki.com/#es">
   <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/#pt">
@@ -48,7 +52,7 @@
     h1{font-size:2rem;margin:0}
 
     .hero{background:linear-gradient(to right,#0e1528,#142135);color:#fff;text-align:center;padding:200px 2rem 80px;margin-top:72px;position:relative;overflow:hidden}
-    .hero-header{position:absolute;top:0;left:0;right:0;height:400px;background:url('/images/header.jpg') center/cover no-repeat;z-index:1;opacity:.78}
+    .hero-header{position:absolute;top:0;left:0;right:0;height:400px;background:url('/images/header.jpg') center/cover no-repeat;background-color:#0e1528;z-index:1;opacity:.78}
     .hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto;padding-top:150px}
     .hero h2{font-size:3rem;margin-bottom:1rem}
     .hero p{font-size:1.15rem;margin:0 auto 1.2rem;max-width:66ch}
@@ -89,7 +93,14 @@
     .form-group textarea{resize:vertical}
     #form-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
 
+    .whatsapp-link{display:inline-flex;align-items:center;gap:6px;margin-left:12px;background:#25D366;color:white;padding:6px 12px;border-radius:50px;text-decoration:none;font-size:0.85rem;font-weight:500;transition:background .2s ease,transform .2s ease}
+    .whatsapp-link:hover{background:#1da851;color:white;transform:translateY(-1px)}
+    .contact-info-block{text-align:center;margin-top:3rem}
+    .contact-info-block p{margin:0.5rem 0}
+
     footer{background:#0e1528;color:#fff;text-align:center;padding:2rem}
+    footer a{color:#fff;text-decoration:underline}
+    footer a:hover{color:#ddd}
     [data-lang]{transition:opacity .25s ease}
     a{color:#0e1528;font-weight:500}
     a:hover{color:#142135;text-decoration:none}
@@ -108,6 +119,8 @@
       .profil-container{flex-direction:column;text-align:center}
       .profilfoto,.profilfoto-placeholder{width:200px;height:250px}
       .section h2{font-size:2rem}
+      .whatsapp-link{margin-left:0;margin-top:8px;display:inline-flex}
+      .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.5rem}
     }
   </style>
 </head>
@@ -116,10 +129,10 @@
     <div class="header-content">
       <h1 data-lang="name">Felipe Borecki</h1>
       <div class="flags">
-        <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch" style="background-image:url('https://flagcdn.com/w20/de.png');"></button>
-        <button type="button" onclick="setLang(event,'es')" title="Español" style="background-image:url('https://flagcdn.com/w20/es.png');"></button>
-        <button type="button" onclick="setLang(event,'pt')" title="Português (BR)" style="background-image:url('https://flagcdn.com/w20/br.png');"></button>
-        <button type="button" onclick="setLang(event,'en')" title="English" style="background-image:url('https://flagcdn.com/w20/gb.png');"></button>
+        <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch" aria-label="Switch to German" style="background-image:url('https://flagcdn.com/w20/de.png');"></button>
+        <button type="button" onclick="setLang(event,'es')" title="Español" aria-label="Switch to Spanish" style="background-image:url('https://flagcdn.com/w20/es.png');"></button>
+        <button type="button" onclick="setLang(event,'pt')" title="Português (BR)" aria-label="Switch to Portuguese" style="background-image:url('https://flagcdn.com/w20/br.png');"></button>
+        <button type="button" onclick="setLang(event,'en')" title="English" aria-label="Switch to English" style="background-image:url('https://flagcdn.com/w20/gb.png');"></button>
       </div>
     </div>
   </header>
@@ -240,16 +253,26 @@
       <p id="form-status"></p>
     </form>
 
-    <div style="margin-top:3rem;text-align:center;">
+    <div class="contact-info-block">
       <p><span data-lang="email">E-Mail:</span> <a href="mailto:felipeborecki@gmx.at">felipeborecki@gmx.at</a></p>
-      <p><span data-lang="phone">Mobil:</span> <a href="tel:+436781247285">+43 678 1247285</a></p>
+      <p>
+        <span data-lang="phone">Mobil:</span> 
+        <a href="tel:+436781247285">+43 678 1247285</a>
+        <a href="https://wa.me/436781247285" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="vertical-align:middle">
+            <path d="M12.032 2.017c-5.523 0-10 4.477-10 10 0 1.821.486 3.604 1.41 5.165l-1.5 5.5 5.656-1.479c1.497.856 3.206 1.314 4.937 1.314 5.522 0 10-4.477 10-10s-4.478-10-10-10zm0 18c-1.631 0-3.238-.444-4.648-1.285l-.334-.198-3.357.878.898-3.276-.218-.347c-.901-1.426-1.377-3.067-1.377-4.772 0-4.688 3.814-8.5 8.5-8.5s8.5 3.812 8.5 8.5-3.814 8.5-8.5 8.5z"/>
+            <path d="M16.688 14.254c-.248-.124-1.465-.723-1.692-.805-.227-.082-.392-.124-.557.124-.165.248-.637.805-.781.97-.144.165-.289.186-.537.062s-1.048-.386-1.996-1.231c-.738-.657-1.236-1.468-1.38-1.716-.144-.248-.015-.382.109-.505.111-.111.248-.289.372-.433.124-.144.165-.248.248-.413.083-.165.041-.31-.021-.434s-.557-1.341-.763-1.836c-.201-.483-.406-.418-.557-.426-.144-.008-.31-.01-.476-.01-.165 0-.434.062-.66.31-.227.248-.866.846-.866 2.064s.887 2.394 1.011 2.56c.124.165 1.746 2.666 4.23 3.739.591.255 1.052.408 1.412.522.593.189 1.134.162 1.562.098.477-.071 1.465-.598 1.671-1.176.206-.578.206-1.073.144-1.176-.062-.103-.227-.165-.475-.289z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </p>
       <p><span data-lang="linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer">Profil</a></p>
-      <p><strong data-lang="available">Graz | Sofort verfügbar</strong></p>
+      <p><strong data-lang="available">Graz, Österreich | Sofort verfügbar</strong></p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten. | <a href="/agb" style="color:#fff;text-decoration:underline">AGB / Datenschutz</a></p>
+    <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten. | <a href="/agb">AGB / Datenschutz</a></p>
   </footer>
 
   <script>
@@ -306,7 +329,7 @@
         email: 'E-Mail:',
         phone: 'Mobil:',
         linkedin: 'LinkedIn:',
-        available: 'Graz | Sofort verfügbar',
+        available: 'Graz, Österreich | Sofort verfügbar',
         'form-name': 'Name',
         'form-email': 'E-Mail',
         'form-message': 'Nachricht',
@@ -365,7 +388,7 @@
         email: 'E-mail:',
         phone: 'Móvil:',
         linkedin: 'LinkedIn:',
-        available: 'Graz | Disponible',
+        available: 'Graz, Austria | Disponible de inmediato',
         'form-name': 'Nombre',
         'form-email': 'Correo electrónico',
         'form-message': 'Mensaje',
@@ -424,7 +447,7 @@
         email: 'E-mail:',
         phone: 'Telemóvel:',
         linkedin: 'LinkedIn:',
-        available: 'Graz | Disponível',
+        available: 'Graz, Áustria | Disponível de imediato',
         'form-name': 'Nome',
         'form-email': 'E-mail',
         'form-message': 'Mensagem',
@@ -437,11 +460,11 @@
         title: 'Felipe Borecki - Interpreter & Translator',
         desc: 'GISA #32188035. Professional interpreter and translator for courts, public authorities, healthcare and sensitive institutional contexts in Austria. 900+ assignments. Graz | On-site, remote and over the phone.',
         ogtitle: 'Felipe Borecki - Interpreter & Translator',
-        ogdesc: '900+ assignments for courts, authorities and medical and psychosocial contexts. GISA-registered and listed in the Austrian Ministry of the Interior’s register of interpreters and experts.',
+        ogdesc: '900+ assignments for courts, authorities and medical and psychosocial contexts. GISA-registered and listed in the Austrian Ministry of the Interior\'s register of interpreters and experts.',
         name: 'Felipe Borecki',
         'hero-title': 'Interpreter and translator for courts, public authorities and sensitive professional contexts',
         'hero-desc': 'Precise language support for legal, medical, administrative and psychosocial settings in Austria, on-site, remote and over the phone.',
-        'hero-subline': 'GISA-registered and listed in the Austrian Ministry of the Interior’s register of interpreters and experts. Backed by 900+ assignments for courts, police, clinics, social services and institutional clients. Working languages: ES | PT | DE.',
+        'hero-subline': 'GISA-registered and listed in the Austrian Ministry of the Interior\'s register of interpreters and experts. Backed by 900+ assignments for courts, police, clinics, social services and institutional clients. Working languages: ES | PT | DE.',
         cta: 'Get in touch',
         'cta-secondary': 'View services',
         'cred-title': 'Profile at a glance',
@@ -483,7 +506,7 @@
         email: 'Email:',
         phone: 'Mobile:',
         linkedin: 'LinkedIn:',
-        available: 'Graz | Available',
+        available: 'Graz, Austria | Immediately available',
         'form-name': 'Name',
         'form-email': 'Email',
         'form-message': 'Message',
