@@ -35,10 +35,33 @@
   <link rel="alternate" hreflang="en" href="https://felipeborecki.com/#en">
   <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/#de">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+  <!-- Favicon con monograma FB -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://formspree.io">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org microdatos -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Felipe Borecki",
+      "description": "Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Graz",
+        "addressCountry": "AT"
+      },
+      "telephone": "+43-678-1247285",
+      "email": "info@felipeborecki.com",
+      "url": "https://felipeborecki.com",
+      "priceRange": "$$",
+      "areaServed": "AT",
+      "availableLanguage": ["DE", "ES", "PT", "EN"]
+    }
+  </script>
 
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -47,8 +70,9 @@
     header{background:#0e1528;color:#fff;padding:1.25rem 2rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.12)}
     .header-content{display:flex;justify-content:center;align-items:center;gap:1rem;max-width:1200px;margin:0 auto;padding:0 2rem}
     .flags{display:flex;gap:.35rem}
-    .flags button{width:32px;height:24px;border:none;background:rgba(255,255,255,.2);border-radius:3px;cursor:pointer;transition:all .25s ease;background-size:cover;background-position:center}
-    .flags button:hover,.flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:1px}
+    .flags button{width:38px;height:38px;border:none;background:rgba(255,255,255,.15);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.4rem;line-height:1;display:flex;align-items:center;justify-content:center}
+    .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
     h1{font-size:2rem;margin:0}
 
     .hero{background:linear-gradient(to right,#0e1528,#142135);color:#fff;text-align:center;padding:200px 2rem 80px;margin-top:72px;position:relative;overflow:hidden}
@@ -59,7 +83,7 @@
     .hero-subline{font-size:1rem;opacity:.96;max-width:72ch;margin:0 auto 2rem}
     .cta-wrap{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
     .cta{background:#fff;color:#0e1528;padding:1rem 2rem;border-radius:5px;font-weight:700;display:inline-block;transition:background .25s ease,transform .25s ease;text-decoration:none;border:0;cursor:pointer}
-    .cta:hover{background:#f0f2f8;transform:translateY(-1px)}
+    .cta:hover{background:#f0f2f8;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
     .cta-secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6)}
     .cta-secondary:hover{background:rgba(255,255,255,.08)}
 
@@ -71,7 +95,8 @@
     .section li:hover{transform:translateY(-4px)}
 
     .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;max-width:1000px;margin:0 auto}
-    .card{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+    .card{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .25s ease}
+    .card:hover{transform:translateY(-4px)}
     .card h3{color:#0e1528;margin-bottom:.75rem;font-size:1.15rem}
     .card p{margin:0}
 
@@ -81,7 +106,7 @@
 
     .profil-container{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
     .profilfoto{width:250px;height:300px;border-radius:8px;object-fit:cover;box-shadow:0 8px 30px rgba(0,0,0,.25);border:5px solid #fff}
-    .profilfoto-placeholder{width:250px;height:300px;background:#f0f0f0;border-radius:8px;display:none;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25);background-image:linear-gradient(45deg,#ccc 25%,transparent 25%),linear-gradient(-45deg,#ccc 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ccc 75%),linear-gradient(-45deg,transparent 75%,#ccc 75%);background-size:20px 20px;background-position:0 0,0 10px,10px -10px,-10px 0}
+    .profilfoto-placeholder{width:250px;height:300px;border-radius:8px;display:none;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25);background:#f0f0f0;display:flex;align-items:center;justify-content:center;color:#999;font-size:0.9rem}
     .profil-text{flex:1;min-width:300px;max-width:760px}
     .profil-text p{margin-bottom:1rem}
 
@@ -94,9 +119,12 @@
     #form-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
 
     .whatsapp-link{display:inline-flex;align-items:center;gap:6px;margin-left:12px;background:#25D366;color:white;padding:6px 12px;border-radius:50px;text-decoration:none;font-size:0.85rem;font-weight:500;transition:background .2s ease,transform .2s ease}
-    .whatsapp-link:hover{background:#1da851;color:white;transform:translateY(-1px)}
+    .whatsapp-link:hover{background:#1da851;color:white;transform:translateY(-2px)}
     .contact-info-block{text-align:center;margin-top:3rem}
     .contact-info-block p{margin:0.5rem 0}
+
+    #back-to-top{position:fixed;bottom:2rem;right:2rem;background:#0e1528;color:#fff;border:none;border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);display:none;transition:all .25s ease;z-index:999}
+    #back-to-top:hover{background:#142135;transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.3)}
 
     footer{background:#0e1528;color:#fff;text-align:center;padding:2rem}
     footer a{color:#fff;text-decoration:underline}
@@ -121,6 +149,7 @@
       .section h2{font-size:2rem}
       .whatsapp-link{margin-left:0;margin-top:8px;display:inline-flex}
       .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.5rem}
+      #back-to-top{width:44px;height:44px;font-size:1.2rem;bottom:1rem;right:1rem}
     }
   </style>
 </head>
@@ -129,10 +158,10 @@
     <div class="header-content">
       <h1 data-lang="name">Felipe Borecki</h1>
       <div class="flags">
-        <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch" aria-label="Switch to German" style="background-image:url('https://flagcdn.com/w20/de.png');"></button>
-        <button type="button" onclick="setLang(event,'es')" title="Español" aria-label="Switch to Spanish" style="background-image:url('https://flagcdn.com/w20/es.png');"></button>
-        <button type="button" onclick="setLang(event,'pt')" title="Português (BR)" aria-label="Switch to Portuguese" style="background-image:url('https://flagcdn.com/w20/br.png');"></button>
-        <button type="button" onclick="setLang(event,'en')" title="English" aria-label="Switch to English" style="background-image:url('https://flagcdn.com/w20/gb.png');"></button>
+        <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch" aria-label="Switch to German">🇩🇪</button>
+        <button type="button" onclick="setLang(event,'es')" title="Español" aria-label="Switch to Spanish">🇪🇸</button>
+        <button type="button" onclick="setLang(event,'pt')" title="Português (BR)" aria-label="Switch to Portuguese">🇧🇷</button>
+        <button type="button" onclick="setLang(event,'en')" title="English" aria-label="Switch to English">🇬🇧</button>
       </div>
     </div>
   </header>
@@ -174,8 +203,8 @@
 
   <section id="about" class="section">
     <div class="profil-container">
-      <img src="/images/foto-perfil.jpg" alt="Felipe Borecki Profilfoto" class="profilfoto" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" loading="lazy">
-      <div class="profilfoto-placeholder">Foto lädt...</div>
+      <img src="/images/foto-perfil.jpg" alt="Felipe Borecki Profilfoto" class="profilfoto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" loading="lazy">
+      <div class="profilfoto-placeholder">📸 Foto</div>
       <div class="profil-text">
         <h2 data-lang="qual">Profil</h2>
         <p data-lang="qual-desc">Ich arbeite als professioneller Dolmetscher und Übersetzer für Spanisch, Portugiesisch und Deutsch mit Schwerpunkt auf Gerichten, Behörden, Gesundheitseinrichtungen und weiteren sensiblen institutionellen Bereichen in Österreich.</p>
@@ -254,7 +283,7 @@
     </form>
 
     <div class="contact-info-block">
-      <p><span data-lang="email">E-Mail:</span> <a href="mailto:felipeborecki@gmx.at">felipeborecki@gmx.at</a></p>
+      <p><span data-lang="email">E-Mail:</span> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
       <p>
         <span data-lang="phone">Mobil:</span> 
         <a href="tel:+436781247285">+43 678 1247285</a>
@@ -274,6 +303,9 @@
   <footer>
     <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten. | <a href="/agb">AGB / Datenschutz</a></p>
   </footer>
+
+  <!-- Botón Volver Arriba -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba">↑</button>
 
   <script>
     let currentLang = 'de';
@@ -544,87 +576,161 @@
       safeSetStoredLang(lang);
       updateMeta(t);
 
+      // Actualizar el fragmento de la URL
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, '', '#' + lang);
+      }
+
+      // Actualizar hreflang alternativos (para que los bots vean la relación)
+      document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => {
+        const hreflang = link.getAttribute('hreflang');
+        if (hreflang && hreflang !== 'x-default') {
+          link.setAttribute('href', 'https://felipeborecki.com/#' + hreflang);
+        }
+      });
+
+      // Actualizar og:url
       const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.setAttribute('content', `https://felipeborecki.com/#${lang}`);
+      if (ogUrl) ogUrl.setAttribute('content', 'https://felipeborecki.com/#' + lang);
 
       document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
-      if (evt && evt.target) evt.target.classList.add('active');
+      if (evt && evt.target) {
+        evt.target.classList.add('active');
+      } else {
+        const btn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
+        if (btn) btn.classList.add('active');
+      }
 
       document.querySelectorAll('[data-lang]').forEach(el => {
         const key = el.dataset.lang;
         if (t[key] !== undefined) el.textContent = t[key];
       });
+
+      // Registrar cambio de idioma en Analytics
+      if (typeof gtag === 'function') {
+        gtag('event', 'language_switch', {
+          'event_category': 'engagement',
+          'event_label': lang
+        });
+      }
     }
 
-    window.addEventListener('DOMContentLoaded', () => {
-      const savedLang = safeGetStoredLang();
-      const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
-      setLang({ target: btn }, savedLang);
+    // Mostrar/ocultar botón volver arriba
+    window.addEventListener('scroll', function() {
+      const btn = document.getElementById('back-to-top');
+      if (window.scrollY > 300) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
+    });
 
-      const form = document.getElementById('contact-form');
-      if (!form) return;
-
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-
-        const statusDiv = document.getElementById('form-status');
-        const btnSubmit = form.querySelector('button[type="submit"]');
-        const lang = safeGetStoredLang();
-        const t = translations[lang] || translations.de;
-        const originalBtnText = btnSubmit ? btnSubmit.textContent : '';
-
-        if (btnSubmit) {
-          btnSubmit.disabled = true;
-          btnSubmit.textContent = t['form-sending'];
-        }
-
-        if (statusDiv) {
-          statusDiv.textContent = t['form-sending'];
-          statusDiv.style.color = '#0e1528';
-          statusDiv.style.display = 'block';
-        }
-
-        try {
-          const response = await fetch(form.action, {
-            method: form.method,
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-          });
-
-          if (!response.ok) {
-            let errorMessage = t['form-error'];
-            try {
-              const data = await response.json();
-              if (data && Array.isArray(data.errors) && data.errors.length) {
-                errorMessage = data.errors.map(err => err.message).join(', ');
-              }
-            } catch (jsonError) {}
-            throw new Error(errorMessage);
+    // Registrar clics en CTA para Analytics
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.cta, .whatsapp-link').forEach(el => {
+        el.addEventListener('click', function(e) {
+          const label = this.textContent.trim().substring(0, 50);
+          if (typeof gtag === 'function') {
+            gtag('event', 'click', {
+              'event_category': 'CTA',
+              'event_label': label,
+              'event_value': 1
+            });
           }
-
-          if (statusDiv) {
-            statusDiv.textContent = t['form-success'];
-            statusDiv.style.color = '#28a745';
-          }
-          form.reset();
-        } catch (error) {
-          if (statusDiv) {
-            statusDiv.textContent = error.message || t['form-error'];
-            statusDiv.style.color = '#dc3545';
-          }
-          console.error('Form submit error:', error);
-        } finally {
-          if (btnSubmit) {
-            btnSubmit.disabled = false;
-            btnSubmit.textContent = originalBtnText;
-          }
-          if (statusDiv) {
-            setTimeout(() => {
-              statusDiv.style.display = 'none';
-            }, 5000);
-          }
-        }
+        });
       });
+
+      // Configurar idioma inicial
+      const savedLang = safeGetStoredLang();
+      // Detectar idioma desde la URL fragment
+      const hash = window.location.hash.replace('#', '');
+      const detectedLang = hash && translations[hash] ? hash : savedLang;
+      
+      const btn = document.querySelector(`.flags button[onclick*="'${detectedLang}'"]`) || document.querySelector('.flags button');
+      if (btn) {
+        setLang({ target: btn }, detectedLang);
+      }
+
+      // Configurar formulario
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          const statusDiv = document.getElementById('form-status');
+          const btnSubmit = form.querySelector('button[type="submit"]');
+          const lang = safeGetStoredLang();
+          const t = translations[lang] || translations.de;
+          const originalBtnText = btnSubmit ? btnSubmit.textContent : '';
+
+          if (btnSubmit) {
+            btnSubmit.disabled = true;
+            btnSubmit.textContent = t['form-sending'];
+          }
+
+          if (statusDiv) {
+            statusDiv.textContent = t['form-sending'];
+            statusDiv.style.color = '#0e1528';
+            statusDiv.style.display = 'block';
+          }
+
+          try {
+            const response = await fetch(form.action, {
+              method: form.method,
+              body: new FormData(form),
+              headers: { 'Accept': 'application/json' }
+            });
+
+            if (!response.ok) {
+              let errorMessage = t['form-error'];
+              try {
+                const data = await response.json();
+                if (data && Array.isArray(data.errors) && data.errors.length) {
+                  errorMessage = data.errors.map(err => err.message).join(', ');
+                }
+              } catch (jsonError) {}
+              throw new Error(errorMessage);
+            }
+
+            if (statusDiv) {
+              statusDiv.textContent = t['form-success'];
+              statusDiv.style.color = '#28a745';
+            }
+            form.reset();
+
+            // Registrar envío exitoso en Analytics
+            if (typeof gtag === 'function') {
+              gtag('event', 'form_submit', {
+                'event_category': 'contact',
+                'event_label': 'success'
+              });
+            }
+          } catch (error) {
+            if (statusDiv) {
+              statusDiv.textContent = error.message || t['form-error'];
+              statusDiv.style.color = '#dc3545';
+            }
+            console.error('Form submit error:', error);
+            
+            if (typeof gtag === 'function') {
+              gtag('event', 'form_submit', {
+                'event_category': 'contact',
+                'event_label': 'error'
+              });
+            }
+          } finally {
+            if (btnSubmit) {
+              btnSubmit.disabled = false;
+              btnSubmit.textContent = originalBtnText;
+            }
+            if (statusDiv) {
+              setTimeout(() => {
+                statusDiv.style.display = 'none';
+              }, 5000);
+            }
+          }
+        });
+      }
     });
   </script>
 </body>
