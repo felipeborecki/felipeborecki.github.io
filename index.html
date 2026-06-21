@@ -28,12 +28,12 @@
   <meta property="og:locale:alternate" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
 
-  <!-- hreflang -->
-  <link rel="alternate" hreflang="de" href="https://felipeborecki.com/#de">
-  <link rel="alternate" hreflang="es" href="https://felipeborecki.com/#es">
-  <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/#pt">
-  <link rel="alternate" hreflang="en" href="https://felipeborecki.com/#en">
-  <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/#de">
+  <!-- hreflang con URLs limpias (sin #) -->
+  <link rel="alternate" hreflang="de" href="https://felipeborecki.com/de">
+  <link rel="alternate" hreflang="es" href="https://felipeborecki.com/es">
+  <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/pt">
+  <link rel="alternate" hreflang="en" href="https://felipeborecki.com/en">
+  <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/de">
 
   <!-- Favicon con monograma FB -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
@@ -76,8 +76,8 @@
     h1{font-size:2rem;margin:0}
 
     .hero{background:#0e1528;color:#fff;text-align:center;padding-top:72px;margin-top:0;position:relative;overflow:hidden}
-    .hero-image{width:100%;height:300px;background:url('/images/header.jpg') center/contain no-repeat;background-color:#0e1528;display:block}
-    .hero-content{max-width:900px;margin:0 auto;padding:40px 2rem 70px}
+    .hero-image{width:100%;height:450px;background:url('/images/header.jpg') center/contain no-repeat;background-color:#0e1528;display:block}
+    .hero-content{max-width:900px;margin:0 auto;padding:50px 2rem 70px}
     .hero h2{font-size:2.8rem;margin-bottom:1rem}
     .hero p{font-size:1.1rem;margin:0 auto 1.2rem;max-width:66ch}
     .hero-subline{font-size:0.95rem;opacity:.96;max-width:72ch;margin:0 auto 2rem}
@@ -140,7 +140,7 @@
     @media (max-width:768px){
       .header-content{flex-direction:column;gap:.6rem}
       h1{font-size:1.5rem}
-      .hero-image{height:180px}
+      .hero-image{height:250px}
       .hero-content{padding:30px 1rem 50px}
       .hero h2{font-size:1.8rem}
       .profil-container{flex-direction:column;text-align:center}
@@ -576,19 +576,21 @@
       safeSetStoredLang(lang);
       updateMeta(t);
 
+      // Usar URLs limpias /de, /es, /pt, /en
       if (window.history && window.history.replaceState) {
-        window.history.replaceState(null, '', '#' + lang);
+        window.history.replaceState(null, '', '/' + lang);
       }
 
+      // Actualizar hreflang alternativos
       document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => {
         const hreflang = link.getAttribute('hreflang');
         if (hreflang && hreflang !== 'x-default') {
-          link.setAttribute('href', 'https://felipeborecki.com/#' + hreflang);
+          link.setAttribute('href', 'https://felipeborecki.com/' + hreflang);
         }
       });
 
       const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.setAttribute('content', 'https://felipeborecki.com/#' + lang);
+      if (ogUrl) ogUrl.setAttribute('content', 'https://felipeborecki.com/' + lang);
 
       document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
       if (evt && evt.target) {
@@ -634,9 +636,10 @@
         });
       });
 
+      // Detectar idioma desde la URL (/de, /es, /pt, /en)
+      const pathLang = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
       const savedLang = safeGetStoredLang();
-      const hash = window.location.hash.replace('#', '');
-      const detectedLang = hash && translations[hash] ? hash : savedLang;
+      const detectedLang = translations[pathLang] ? pathLang : savedLang;
       
       const btn = document.querySelector(`.flags button[onclick*="'${detectedLang}'"]`) || document.querySelector('.flags button');
       if (btn) {
