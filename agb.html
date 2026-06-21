@@ -5,123 +5,547 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGB - Felipe Borecki - Dolmetscher & Übersetzer</title>
     <meta name="description" content="Allgemeine Geschäftsbedingungen für Dolmetsch- und Übersetzungsdienstleistungen von Felipe Borecki, GISA-registrierter Dolmetscher und Übersetzer.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💼</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon profesional -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23001f3f'/><text x='50' y='68' font-size='44' font-weight='700' font-family='Arial' fill='white' text-anchor='middle'>FB</text></svg>">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <style>
       *{margin:0;padding:0;box-sizing:border-box}
-      body{font-family:'Roboto',sans-serif;line-height:1.8;color:#333;background:#f8f9fa}
-      header{background:#001f3f;color:white;padding:1.5rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-      .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 2rem}
-      h1{font-size:1.8rem;margin:0}
-      .back-link{color:white;text-decoration:none;padding:0.5rem 1rem;background:rgba(255,255,255,0.2);border-radius:5px;transition:background 0.3s}
-      .back-link:hover{background:rgba(255,255,255,0.3)}
-      .container{max-width:900px;margin:120px auto 40px;padding:0 2rem}
-      .agb-content{background:white;padding:3rem;border-radius:8px;box-shadow:0 2px 20px rgba(0,0,0,0.1)}
-      .agb-content h2{color:#001f3f;font-size:2rem;margin-bottom:1.5rem;border-bottom:3px solid #001f3f;padding-bottom:0.5rem}
-      .agb-content h3{color:#003d73;font-size:1.3rem;margin-top:2rem;margin-bottom:1rem}
-      .agb-content p{margin-bottom:1rem;text-align:justify}
-      .agb-content ul{margin-left:2rem;margin-bottom:1rem}
-      .agb-content li{margin-bottom:0.5rem}
-      .contact-box{background:#f0f8ff;padding:1.5rem;border-radius:8px;margin-top:2rem;border-left:4px solid #001f3f}
-      .contact-box p{margin-bottom:0.5rem}
-      footer{background:#001f3f;color:white;text-align:center;padding:2rem;margin-top:3rem}
+      body{font-family:'Roboto',sans-serif;line-height:1.8;color:#2c3e50;background:#f5f6fa}
+      
+      /* Header mejorado */
+      header{background:#001f3f;color:white;padding:1.5rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 15px rgba(0,0,0,0.15)}
+      .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 2rem;flex-wrap:wrap;gap:1rem}
+      
+      .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+      h1{font-family:'Playfair Display',serif;font-size:1.6rem;margin:0;font-weight:700;letter-spacing:0.5px}
+      .header-right{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+      
+      /* Selector de idioma */
+      .lang-selector{display:flex;gap:0.3rem;background:rgba(255,255,255,0.15);padding:0.3rem;border-radius:6px}
+      .lang-btn{background:transparent;border:2px solid transparent;color:rgba(255,255,255,0.6);padding:0.3rem 0.8rem;border-radius:4px;cursor:pointer;font-weight:500;font-size:0.85rem;transition:all 0.3s;text-decoration:none;font-family:'Roboto',sans-serif}
+      .lang-btn:hover{color:white;background:rgba(255,255,255,0.1)}
+      .lang-btn.active{background:white;color:#001f3f;border-color:white}
+      
+      .back-link{color:white;text-decoration:none;padding:0.5rem 1.2rem;background:rgba(255,255,255,0.15);border-radius:6px;transition:all 0.3s;font-size:0.95rem;border:1px solid rgba(255,255,255,0.1)}
+      .back-link:hover{background:rgba(255,255,255,0.25);transform:translateY(-1px)}
+      
+      .container{max-width:1000px;margin:130px auto 40px;padding:0 2rem}
+      .agb-content{background:white;padding:3.5rem;border-radius:12px;box-shadow:0 4px 30px rgba(0,0,0,0.08);border-top:4px solid #001f3f}
+      
+      /* Tipografía mejorada */
+      .agb-content h2{color:#001f3f;font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:0.5rem;font-weight:700}
+      .agb-content .subtitle{color:#5a6c7d;font-size:1.1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid #e8edf2}
+      
+      .agb-content h3{color:#003d73;font-size:1.2rem;margin-top:2.2rem;margin-bottom:0.8rem;font-weight:700;display:flex;align-items:center;gap:0.5rem}
+      .agb-content h3 .section-number{background:#001f3f;color:white;font-size:0.8rem;padding:0.2rem 0.7rem;border-radius:20px;font-weight:400}
+      
+      .agb-content p{margin-bottom:0.9rem;text-align:justify;color:#2c3e50}
+      .agb-content p strong{color:#001f3f}
+      .agb-content ul{margin-left:2rem;margin-bottom:1rem;list-style-type:square}
+      .agb-content ul li{margin-bottom:0.5rem;color:#2c3e50}
+      .agb-content ul li::marker{color:#001f3f}
+      
+      /* Box de información */
+      .info-box{background:#f0f7fe;padding:1.8rem;border-radius:10px;margin:2rem 0;border-left:5px solid #001f3f}
+      .info-box h4{color:#001f3f;margin-bottom:0.5rem;font-size:1.1rem}
+      .info-box p{margin-bottom:0.3rem}
+      
+      .contact-box{background:#f8f9fa;padding:2rem;border-radius:10px;margin-top:2.5rem;border:1px solid #e8edf2}
+      .contact-box h3{color:#001f3f;margin-top:0;font-family:'Playfair Display',serif;font-size:1.4rem}
+      .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.5rem}
+      .contact-item{display:flex;align-items:center;gap:0.5rem;padding:0.3rem 0}
+      .contact-item strong{min-width:80px;color:#001f3f}
+      .contact-item a{color:#003d73;text-decoration:none;border-bottom:1px dotted transparent;transition:border-color 0.3s}
+      .contact-item a:hover{border-bottom-color:#003d73}
+      
+      /* Badges */
+      .badge{display:inline-block;background:#e8edf2;color:#001f3f;font-size:0.75rem;padding:0.2rem 0.8rem;border-radius:20px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-right:0.5rem}
+      
+      footer{background:#001f3f;color:white;text-align:center;padding:2.5rem;margin-top:3rem}
+      footer a{color:#88b4d8;text-decoration:none}
+      footer a:hover{text-decoration:underline}
+      
+      /* Ocultar/mostrar idiomas */
+      .lang-content{display:none}
+      .lang-content.active{display:block}
+      
       @media (max-width:768px){
-        .header-content{flex-direction:column;gap:1rem}
-        h1{font-size:1.5rem}
-        .container{margin-top:140px;padding:0 1rem}
+        .header-content{flex-direction:column;align-items:stretch;padding:0 1rem}
+        .header-left{flex-direction:column;align-items:stretch;gap:0.8rem}
+        .header-right{flex-direction:column;gap:0.8rem}
+        .lang-selector{justify-content:center}
+        .back-link{text-align:center}
+        h1{font-size:1.3rem;text-align:center}
+        .container{margin-top:180px;padding:0 1rem}
         .agb-content{padding:2rem 1.5rem}
-        .agb-content h2{font-size:1.6rem}
+        .agb-content h2{font-size:1.7rem}
+        .contact-grid{grid-template-columns:1fr}
+        .container{margin-top:220px}
+      }
+      
+      @media (max-width:480px){
+        .container{margin-top:240px}
+        .agb-content{padding:1.5rem 1rem}
+        .lang-btn{font-size:0.75rem;padding:0.2rem 0.5rem}
+      }
+      
+      /* Impresión */
+      @media print{
+        header{position:static;box-shadow:none}
+        .container{margin-top:20px}
+        .back-link{display:none}
+        .lang-selector{display:none}
+        .agb-content{box-shadow:none;border:1px solid #ddd}
+        footer{page-break-after:avoid}
       }
     </style>
   </head>
   <body>
     <header>
       <div class="header-content">
-        <h1>Felipe Borecki - AGB</h1>
-        <a href="/" class="back-link">← Zurück zur Startseite</a>
+        <div class="header-left">
+          <h1>Felipe Borecki</h1>
+          <div style="font-size:0.9rem;opacity:0.8;">Dolmetscher &amp; Übersetzer</div>
+        </div>
+        <div class="header-right">
+          <div class="lang-selector">
+            <a href="#" class="lang-btn active" data-lang="de">DE</a>
+            <a href="#" class="lang-btn" data-lang="en">EN</a>
+            <a href="#" class="lang-btn" data-lang="es">ES</a>
+            <a href="#" class="lang-btn" data-lang="pt">PT</a>
+          </div>
+          <a href="/" class="back-link">← Zurück zur Startseite</a>
+        </div>
       </div>
     </header>
 
     <div class="container">
       <div class="agb-content">
-        <h2>Allgemeine Geschäftsbedingungen (AGB)</h2>
-        <p><strong>Felipe Borecki - Dolmetsch- und Übersetzungsdienstleistungen</strong><br>
-        GISA-Nr. 32188035<br>
-        Stand: Januar 2026</p>
+        
+        <!-- ==================== ALEMÁN ==================== -->
+        <div id="lang-de" class="lang-content active">
+          <h2>Allgemeine Geschäftsbedingungen</h2>
+          <p class="subtitle"><strong>Felipe Borecki</strong> · Dolmetsch- und Übersetzungsdienstleistungen · GISA-Nr. 32188035 · Stand: Januar 2026</p>
 
-        <h3>§ 1 Geltungsbereich</h3>
-        <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Dolmetsch- und Übersetzungsdienstleistungen, die von Felipe Borecki erbracht werden. Sie sind Bestandteil aller Verträge zwischen dem Auftragnehmer (Felipe Borecki) und dem Auftraggeber.</p>
+          <div class="info-box">
+            <h4>📋 Wichtige Hinweise</h4>
+            <p>Diese AGB gelten für alle Dolmetsch- und Übersetzungsdienstleistungen von Felipe Borecki. Mit der Beauftragung erkennen Sie diese Bedingungen an.</p>
+            <p style="margin-top:0.5rem;font-size:0.95rem;"><span class="badge">ISO 17100</span> Qualitätsstandards für Übersetzungsdienstleistungen</p>
+          </div>
 
-        <h3>§ 2 Leistungsumfang</h3>
-        <p><strong>(1) Dolmetschleistungen:</strong> Simultan-, Konsekutiv-, Verhandlungs- und Telefondolmetschen (OPI) in den Sprachkombinationen Portugiesisch/Spanisch ↔ Deutsch/Englisch.</p>
-        <p><strong>(2) Übersetzungsleistungen:</strong> Fachübersetzungen für medizinische, juristische und technische Dokumente in den genannten Sprachkombinationen.</p>
-        <p><strong>(3)</strong> Der konkrete Leistungsumfang, Termin, Ort und Vergütung ergeben sich aus der jeweiligen schriftlichen Auftragsbestätigung (E-Mail ausreichend).</p>
+          <h3><span class="section-number">§ 1</span> Geltungsbereich</h3>
+          <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Dolmetsch- und Übersetzungsdienstleistungen, die von <strong>Felipe Borecki</strong> (nachfolgend „Auftragnehmer“) erbracht werden. Sie sind Bestandteil aller Verträge zwischen dem Auftragnehmer und dem Auftraggeber. Abweichende Bedingungen des Auftraggebers werden nicht anerkannt, es sei denn, der Auftragnehmer stimmt ihnen ausdrücklich schriftlich zu.</p>
 
-        <h3>§ 3 Auftragserteilung und Bestätigung</h3>
-        <p><strong>(1)</strong> Aufträge bedürfen der schriftlichen Bestätigung durch den Auftragnehmer. Eine Bestätigung per E-Mail gilt als ausreichend.</p>
-        <p><strong>(2)</strong> Bei Dolmetscheinsätzen ist eine Vorlaufzeit von mindestens <strong>48 Stunden</strong> erforderlich, um eine optimale Vorbereitung zu gewährleisten.</p>
-        <p><strong>(3)</strong> Kurzfristige Einsätze mit einer Vorlaufzeit von weniger als 24 Stunden unterliegen einem <strong>Expresszuschlag von 30%</strong> auf das vereinbarte Honorar.</p>
+          <h3><span class="section-number">§ 2</span> Leistungsumfang</h3>
+          <p><strong>(1) Dolmetschleistungen:</strong> Simultan-, Konsekutiv-, Verhandlungs- und Telefondolmetschen (OPI) in den Sprachkombinationen Portugiesisch/Spanisch ↔ Deutsch/Englisch.</p>
+          <p><strong>(2) Übersetzungsleistungen:</strong> Fachübersetzungen für medizinische, juristische und technische Dokumente in den genannten Sprachkombinationen. Die Übersetzungen erfolgen nach den Qualitätsstandards der <strong>ISO 17100</strong>.</p>
+          <p><strong>(3)</strong> Der konkrete Leistungsumfang, Termin, Ort und Vergütung ergeben sich aus der jeweiligen schriftlichen Auftragsbestätigung (E-Mail ausreichend).</p>
+          <p><strong>(4)</strong> Zusätzliche Leistungen (z. B. Layout-Anpassungen, DTP, Beglaubigungen) werden gesondert vereinbart und abgerechnet.</p>
 
-        <h3>§ 4 Honorar und Zahlungsbedingungen</h3>
-        <p><strong>(1)</strong> Die Honorare richten sich nach der aktuellen Preisliste des Auftragnehmers bzw. nach individueller Vereinbarung.</p>
-        <p><strong>(2)</strong> Dolmetscheinsätze werden nach Zeitaufwand berechnet. Die <strong>Mindestverrechnungseinheit beträgt 2 Stunden</strong>. An- und Abreisezeit sowie Vorbereitungszeit können nach Vereinbarung zusätzlich berechnet werden.</p>
-        <p><strong>(3)</strong> Übersetzungen werden nach Normzeilen (55 Zeichen inkl. Leerzeichen) oder nach Wortpreis berechnet. Die Berechnung erfolgt auf Grundlage des Zieltextes.</p>
-        <p><strong>(4)</strong> Reisekosten, Übernachtungskosten und sonstige Auslagen werden separat nach tatsächlichem Aufwand verrechnet.</p>
-        <p><strong>(5)</strong> Rechnungen sind innerhalb von <strong>14 Tagen nach Rechnungsstellung ohne Abzug</strong> zu bezahlen.</p>
-        <p><strong>(6)</strong> Bei Zahlungsverzug werden Verzugszinsen in Höhe von <strong>9,2 Prozentpunkten über dem Basiszinssatz</strong> verrechnet.</p>
+          <h3><span class="section-number">§ 3</span> Auftragserteilung und Bestätigung</h3>
+          <p><strong>(1)</strong> Aufträge bedürfen der schriftlichen Bestätigung durch den Auftragnehmer. Eine Bestätigung per E-Mail gilt als ausreichend.</p>
+          <p><strong>(2)</strong> Bei Dolmetscheinsätzen ist eine Vorlaufzeit von mindestens <strong>48 Stunden</strong> erforderlich, um eine optimale Vorbereitung zu gewährleisten.</p>
+          <p><strong>(3)</strong> Kurzfristige Einsätze mit einer Vorlaufzeit von weniger als 24 Stunden unterliegen einem <strong>Expresszuschlag von 30%</strong> auf das vereinbarte Honorar.</p>
+          <p><strong>(4)</strong> Der Auftragnehmer ist berechtigt, die Annahme eines Auftrags ohne Angabe von Gründen abzulehnen.</p>
 
-        <h3>§ 5 Stornierung und Rücktritt</h3>
-        <p><strong>(1)</strong> Stornierungen bis <strong>48 Stunden vor Einsatzbeginn</strong>: kostenfrei.</p>
-        <p><strong>(2)</strong> Stornierungen zwischen <strong>24 und 48 Stunden vor Einsatzbeginn</strong>: 50% des vereinbarten Honorars.</p>
-        <p><strong>(3)</strong> Stornierungen unter <strong>24 Stunden</strong> vor Einsatzbeginn oder Nichterscheinen des Auftraggebers: 100% des vereinbarten Honorars.</p>
-        <p><strong>(4)</strong> Der Auftragnehmer ist berechtigt, bei Krankheit oder anderen unvorhersehbaren Ereignissen vom Vertrag zurückzutreten. In diesem Fall wird der Auftragnehmer sich bemühen, einen gleichwertigen Ersatz zu stellen.</p>
+          <h3><span class="section-number">§ 4</span> Honorar und Zahlungsbedingungen</h3>
+          <p><strong>(1)</strong> Die Honorare richten sich nach der aktuellen Preisliste des Auftragnehmers bzw. nach individueller Vereinbarung. Die Preisliste kann auf Anfrage eingesehen werden.</p>
+          <p><strong>(2)</strong> Dolmetscheinsätze werden nach Zeitaufwand berechnet. Die <strong>Mindestverrechnungseinheit beträgt 2 Stunden</strong>. An- und Abreisezeit sowie Vorbereitungszeit können nach Vereinbarung zusätzlich berechnet werden.</p>
+          <p><strong>(3)</strong> Übersetzungen werden nach Normzeilen (55 Zeichen inkl. Leerzeichen) oder nach Wortpreis berechnet. Die Berechnung erfolgt auf Grundlage des Zieltextes. Bei umfangreichen Projekten ist eine Anzahlung von bis zu 50% des Auftragswerts möglich.</p>
+          <p><strong>(4)</strong> Reisekosten, Übernachtungskosten und sonstige Auslagen werden separat nach tatsächlichem Aufwand verrechnet.</p>
+          <p><strong>(5)</strong> Rechnungen sind innerhalb von <strong>14 Tagen nach Rechnungsstellung ohne Abzug</strong> zu bezahlen. Bei Überschreitung des Zahlungsziels behält sich der Auftragnehmer vor, Mahngebühren in Höhe von 5,00 € pro Mahnung zu erheben.</p>
+          <p><strong>(6)</strong> Bei Zahlungsverzug werden Verzugszinsen in Höhe von <strong>9,2 Prozentpunkten über dem Basiszinssatz</strong> verrechnet.</p>
 
-        <h3>§ 6 Mitwirkungspflichten des Auftraggebers</h3>
-        <p><strong>(1)</strong> Der Auftraggeber verpflichtet sich, dem Auftragnehmer alle für die Durchführung des Auftrags erforderlichen Unterlagen und Informationen rechtzeitig zur Verfügung zu stellen.</p>
-        <p><strong>(2)</strong> Bei Dolmetscheinsätzen sind dem Auftragnehmer nach Möglichkeit relevante Dokumente, Tagesordnungen oder Hintergrundinformationen vorab zu übermitteln.</p>
-        <p><strong>(3)</strong> Der Auftraggeber stellt sicher, dass bei Remote-Dolmetscheinsätzen eine stabile Internetverbindung und geeignete technische Ausstattung vorhanden sind.</p>
+          <h3><span class="section-number">§ 5</span> Stornierung und Rücktritt</h3>
+          <p><strong>(1)</strong> Stornierungen bis <strong>48 Stunden vor Einsatzbeginn</strong>: kostenfrei.</p>
+          <p><strong>(2)</strong> Stornierungen zwischen <strong>24 und 48 Stunden vor Einsatzbeginn</strong>: 50% des vereinbarten Honorars.</p>
+          <p><strong>(3)</strong> Stornierungen unter <strong>24 Stunden</strong> vor Einsatzbeginn oder Nichterscheinen des Auftraggebers: 100% des vereinbarten Honorars.</p>
+          <p><strong>(4)</strong> Der Auftragnehmer ist berechtigt, bei Krankheit oder anderen unvorhersehbaren Ereignissen vom Vertrag zurückzutreten. In diesem Fall wird der Auftragnehmer sich bemühen, einen gleichwertigen Ersatz zu stellen. Gelingt dies nicht, hat der Auftraggeber keinen Anspruch auf Schadenersatz.</p>
 
-        <h3>§ 7 Vertraulichkeit und Datenschutz</h3>
-        <p><strong>(1)</strong> Der Auftragnehmer verpflichtet sich zur strengen Verschwiegenheit über alle im Rahmen der Tätigkeit bekannt gewordenen Informationen gemäß <strong>§ 10 GISA-Gesetz</strong>.</p>
-        <p><strong>(2)</strong> Diese Verschwiegenheitspflicht besteht auch nach Beendigung des Auftragsverhältnisses fort.</p>
-        <p><strong>(3)</strong> Die Verarbeitung personenbezogener Daten erfolgt unter Einhaltung der geltenden datenschutzrechtlichen Bestimmungen (DSGVO).</p>
+          <h3><span class="section-number">§ 6</span> Mitwirkungspflichten des Auftraggebers</h3>
+          <p><strong>(1)</strong> Der Auftraggeber verpflichtet sich, dem Auftragnehmer alle für die Durchführung des Auftrags erforderlichen Unterlagen und Informationen rechtzeitig zur Verfügung zu stellen.</p>
+          <p><strong>(2)</strong> Bei Dolmetscheinsätzen sind dem Auftragnehmer nach Möglichkeit relevante Dokumente, Tagesordnungen oder Hintergrundinformationen vorab zu übermitteln.</p>
+          <p><strong>(3)</strong> Der Auftraggeber stellt sicher, dass bei Remote-Dolmetscheinsätzen eine stabile Internetverbindung und geeignete technische Ausstattung vorhanden sind.</p>
+          <p><strong>(4)</strong> Der Auftraggeber haftet für Schäden, die durch verspätete oder unvollständige Übermittlung von Unterlagen entstehen.</p>
 
-        <h3>§ 8 Haftung</h3>
-        <p><strong>(1)</strong> Der Auftragnehmer haftet für Vorsatz und grobe Fahrlässigkeit nach den gesetzlichen Bestimmungen.</p>
-        <p><strong>(2)</strong> Bei leicht fahrlässigen Pflichtverletzungen haftet der Auftragnehmer nur für typische, vorhersehbare Schäden.</p>
-        <p><strong>(3)</strong> Die Haftung ist im Falle leichter Fahrlässigkeit auf die Höhe des jeweiligen Auftragswerts begrenzt.</p>
-        <p><strong>(4)</strong> Bei Übersetzungen: Reklamationen müssen innerhalb von <strong>7 Tagen nach Lieferung</strong> schriftlich erfolgen. Der Auftragnehmer hat das Recht zur Nachbesserung.</p>
+          <h3><span class="section-number">§ 7</span> Vertraulichkeit und Datenschutz</h3>
+          <p><strong>(1)</strong> Der Auftragnehmer verpflichtet sich zur strengen Verschwiegenheit über alle im Rahmen der Tätigkeit bekannt gewordenen Informationen gemäß <strong>§ 10 GISA-Gesetz</strong> und den berufsrechtlichen Bestimmungen.</p>
+          <p><strong>(2)</strong> Diese Verschwiegenheitspflicht besteht auch nach Beendigung des Auftragsverhältnisses fort.</p>
+          <p><strong>(3)</strong> Die Verarbeitung personenbezogener Daten erfolgt unter Einhaltung der geltenden datenschutzrechtlichen Bestimmungen (DSGVO). Nähere Informationen finden Sie in der <a href="/datenschutz" style="color:#003d73;">Datenschutzerklärung</a>.</p>
+          <p><strong>(4)</strong> Der Auftragnehmer ist berechtigt, zur Erfüllung des Auftrags Subunternehmer einzusetzen, sofern diese zur Verschwiegenheit verpflichtet sind.</p>
 
-        <h3>§ 9 Urheberrecht und Nutzungsrechte</h3>
-        <p><strong>(1)</strong> Übersetzungen bleiben bis zur vollständigen Bezahlung des vereinbarten Honorars Eigentum des Auftragnehmers.</p>
-        <p><strong>(2)</strong> Mit vollständiger Bezahlung gehen die Nutzungsrechte an der Übersetzung auf den Auftraggeber über.</p>
-        <p><strong>(3)</strong> Die Weitergabe von Übersetzungen an Dritte zur kommerziellen Nutzung bedarf der vorherigen schriftlichen Zustimmung des Auftragnehmers.</p>
+          <h3><span class="section-number">§ 8</span> Haftung</h3>
+          <p><strong>(1)</strong> Der Auftragnehmer haftet für Vorsatz und grobe Fahrlässigkeit nach den gesetzlichen Bestimmungen.</p>
+          <p><strong>(2)</strong> Bei leicht fahrlässigen Pflichtverletzungen haftet der Auftragnehmer nur für typische, vorhersehbare Schäden, die im Rahmen der vertraglichen Leistung entstehen können.</p>
+          <p><strong>(3)</strong> Die Haftung ist im Falle leichter Fahrlässigkeit auf die Höhe des jeweiligen Auftragswerts begrenzt, maximal jedoch auf <strong>5.000,00 €</strong> pro Schadensfall.</p>
+          <p><strong>(4)</strong> Bei Übersetzungen: Reklamationen müssen innerhalb von <strong>7 Tagen nach Lieferung</strong> schriftlich erfolgen. Der Auftragnehmer hat das Recht zur Nachbesserung innerhalb einer angemessenen Frist.</p>
+          <p><strong>(5)</strong> Der Auftragnehmer haftet nicht für Schäden, die aus der Verwendung der Übersetzung in einem anderen als dem vereinbarten Zusammenhang entstehen.</p>
 
-        <h3>§ 10 Erfüllungsort und Gerichtsstand</h3>
-        <p><strong>(1)</strong> Erfüllungsort für alle Leistungen ist <strong>Graz, Österreich</strong>.</p>
-        <p><strong>(2)</strong> Gerichtsstand für alle Streitigkeiten aus diesem Vertragsverhältnis ist <strong>Graz, Österreich</strong>, sofern der Auftraggeber Unternehmer, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen ist.</p>
+          <h3><span class="section-number">§ 9</span> Urheberrecht und Nutzungsrechte</h3>
+          <p><strong>(1)</strong> Übersetzungen bleiben bis zur vollständigen Bezahlung des vereinbarten Honorars Eigentum des Auftragnehmers.</p>
+          <p><strong>(2)</strong> Mit vollständiger Bezahlung gehen die Nutzungsrechte an der Übersetzung auf den Auftraggeber über. Der Auftraggeber erhält das einfache Nutzungsrecht zur bestimmungsgemäßen Verwendung.</p>
+          <p><strong>(3)</strong> Die Weitergabe von Übersetzungen an Dritte zur kommerziellen Nutzung bedarf der vorherigen schriftlichen Zustimmung des Auftragnehmers.</p>
+          <p><strong>(4)</strong> Der Auftragnehmer behält das Recht, die Übersetzung als Referenz für seine Dienstleistungen zu nutzen, sofern keine Vertraulichkeitsvereinbarung entgegensteht.</p>
 
-        <h3>§ 11 Salvatorische Klausel</h3>
-        <p>Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder werden, so bleibt die Wirksamkeit der übrigen Bestimmungen hiervon unberührt. An die Stelle der unwirksamen oder undurchführbaren Bestimmung tritt eine wirksame Regelung, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.</p>
+          <h3><span class="section-number">§ 10</span> Erfüllungsort und Gerichtsstand</h3>
+          <p><strong>(1)</strong> Erfüllungsort für alle Leistungen ist <strong>Graz, Österreich</strong>.</p>
+          <p><strong>(2)</strong> Gerichtsstand für alle Streitigkeiten aus diesem Vertragsverhältnis ist <strong>Graz, Österreich</strong>, sofern der Auftraggeber Unternehmer, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen ist.</p>
+          <p><strong>(3)</strong> Für Rechtsstreitigkeiten mit Verbrauchern gilt der gesetzliche Gerichtsstand.</p>
 
-        <h3>§ 12 Änderungen der AGB</h3>
-        <p>Der Auftragnehmer behält sich das Recht vor, diese AGB zu ändern. Änderungen werden dem Auftraggeber mindestens 4 Wochen vor Inkrafttreten in Textform mitgeteilt. Widerspricht der Auftraggeber nicht innerhalb von 2 Wochen nach Zugang der Mitteilung, gelten die geänderten AGB als angenommen.</p>
+          <h3><span class="section-number">§ 11</span> Salvatorische Klausel</h3>
+          <p>Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder werden, so bleibt die Wirksamkeit der übrigen Bestimmungen hiervon unberührt. An die Stelle der unwirksamen oder undurchführbaren Bestimmung tritt eine wirksame Regelung, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.</p>
 
-        <div class="contact-box">
-          <h3 style="margin-top:0">Kontakt</h3>
-          <p><strong>Felipe Borecki</strong><br>
-          Dolmetscher & Übersetzer<br>
-          GISA-Nr. 32188035</p>
-          <p><strong>E-Mail:</strong> <a href="mailto:felipeborecki@gmx.at">felipeborecki@gmx.at</a><br>
-          <strong>Mobil:</strong> <a href="tel:+436781247285">+43 678 1247285</a><br>
-          <strong>Web:</strong> <a href="https://felipeborecki.com">felipeborecki.com</a></p>
-          <p><strong>Standort:</strong> Graz, Österreich</p>
+          <h3><span class="section-number">§ 12</span> Änderungen der AGB</h3>
+          <p>Der Auftragnehmer behält sich das Recht vor, diese AGB zu ändern. Änderungen werden dem Auftraggeber mindestens <strong>4 Wochen vor Inkrafttreten</strong> in Textform mitgeteilt. Widerspricht der Auftraggeber nicht innerhalb von <strong>2 Wochen</strong> nach Zugang der Mitteilung, gelten die geänderten AGB als angenommen.</p>
+
+          <div class="contact-box">
+            <h3>Kontakt</h3>
+            <div class="contact-grid">
+              <div>
+                <div class="contact-item"><strong>Name:</strong> Felipe Borecki</div>
+                <div class="contact-item"><strong>GISA-Nr.:</strong> 32188035</div>
+                <div class="contact-item"><strong>Standort:</strong> Graz, Österreich</div>
+              </div>
+              <div>
+                <div class="contact-item"><strong>E-Mail:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+                <div class="contact-item"><strong>Mobil:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+                <div class="contact-item"><strong>Web:</strong> <a href="https://felipeborecki.com">felipeborecki.com</a></div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- ==================== INGLÉS ==================== -->
+        <div id="lang-en" class="lang-content">
+          <h2>Terms and Conditions</h2>
+          <p class="subtitle"><strong>Felipe Borecki</strong> · Interpreting &amp; Translation Services · GISA No. 32188035 · Version: January 2026</p>
+
+          <div class="info-box">
+            <h4>📋 Important Information</h4>
+            <p>These Terms and Conditions apply to all interpreting and translation services provided by Felipe Borecki. By placing an order, you accept these terms.</p>
+            <p style="margin-top:0.5rem;font-size:0.95rem;"><span class="badge">ISO 17100</span> Quality standards for translation services</p>
+          </div>
+
+          <h3><span class="section-number">§ 1</span> Scope</h3>
+          <p>These General Terms and Conditions (GTC) apply to all interpreting and translation services provided by <strong>Felipe Borecki</strong> (hereinafter "Service Provider"). They are an integral part of all contracts between the Service Provider and the Client. Any conflicting terms of the Client shall not apply unless expressly agreed to in writing by the Service Provider.</p>
+
+          <h3><span class="section-number">§ 2</span> Scope of Services</h3>
+          <p><strong>(1) Interpreting Services:</strong> Simultaneous, consecutive, negotiation, and telephone interpreting (OPI) in the language combinations Portuguese/Spanish ↔ German/English.</p>
+          <p><strong>(2) Translation Services:</strong> Specialized translations for medical, legal, and technical documents in the aforementioned language combinations. Translations comply with <strong>ISO 17100</strong> quality standards.</p>
+          <p><strong>(3)</strong> The specific scope of services, date, location, and fee shall be determined in the respective written order confirmation (email is sufficient).</p>
+          <p><strong>(4)</strong> Additional services (e.g., layout adjustments, DTP, certifications) shall be separately agreed upon and invoiced.</p>
+
+          <h3><span class="section-number">§ 3</span> Order Placement and Confirmation</h3>
+          <p><strong>(1)</strong> Orders require written confirmation by the Service Provider. Confirmation by email is sufficient.</p>
+          <p><strong>(2)</strong> For interpreting assignments, a lead time of at least <strong>48 hours</strong> is required to ensure optimal preparation.</p>
+          <p><strong>(3)</strong> Short-notice assignments with a lead time of less than 24 hours are subject to a <strong>30% express surcharge</strong> on the agreed fee.</p>
+          <p><strong>(4)</strong> The Service Provider reserves the right to decline any order without stating reasons.</p>
+
+          <h3><span class="section-number">§ 4</span> Fees and Payment Terms</h3>
+          <p><strong>(1)</strong> Fees are based on the Service Provider's current price list or individual agreement. The price list is available upon request.</p>
+          <p><strong>(2)</strong> Interpreting assignments are billed based on time. The <strong>minimum billing unit is 2 hours</strong>. Travel time, preparation time, and waiting time may be charged additionally as agreed.</p>
+          <p><strong>(3)</strong> Translations are billed per standard line (55 characters including spaces) or per word. Calculation is based on the target text. For large projects, an advance payment of up to 50% of the order value may be required.</p>
+          <p><strong>(4)</strong> Travel expenses, accommodation costs, and other out-of-pocket expenses are invoiced separately based on actual costs.</p>
+          <p><strong>(5)</strong> Invoices are payable within <strong>14 days of invoicing without deduction</strong>. Late payment may incur reminder fees of €5.00 per reminder.</p>
+          <p><strong>(6)</strong> In case of payment default, default interest of <strong>9.2 percentage points above the base interest rate</strong> shall be charged.</p>
+
+          <h3><span class="section-number">§ 5</span> Cancellation and Withdrawal</h3>
+          <p><strong>(1)</strong> Cancellations up to <strong>48 hours before the assignment</strong>: free of charge.</p>
+          <p><strong>(2)</strong> Cancellations between <strong>24 and 48 hours before the assignment</strong>: 50% of the agreed fee.</p>
+          <p><strong>(3)</strong> Cancellations less than <strong>24 hours</strong> before the assignment or client no-show: 100% of the agreed fee.</p>
+          <p><strong>(4)</strong> The Service Provider is entitled to withdraw from the contract in case of illness or other unforeseeable events. In such cases, the Service Provider will make reasonable efforts to provide a qualified substitute. If no substitute is available, the Client shall have no claim for damages.</p>
+
+          <h3><span class="section-number">§ 6</span> Client's Duty to Cooperate</h3>
+          <p><strong>(1)</strong> The Client undertakes to provide the Service Provider with all documents and information required for the execution of the order in a timely manner.</p>
+          <p><strong>(2)</strong> For interpreting assignments, relevant documents, agendas, or background information should be provided to the Service Provider in advance where possible.</p>
+          <p><strong>(3)</strong> The Client ensures that for remote interpreting assignments, a stable internet connection and suitable technical equipment are available.</p>
+          <p><strong>(4)</strong> The Client is liable for damages arising from late or incomplete submission of documents.</p>
+
+          <h3><span class="section-number">§ 7</span> Confidentiality and Data Protection</h3>
+          <p><strong>(1)</strong> The Service Provider undertakes to maintain strict confidentiality regarding all information obtained during the course of the assignment in accordance with <strong>Section 10 of the GISA Act</strong> and professional regulations.</p>
+          <p><strong>(2)</strong> This confidentiality obligation continues after the termination of the contractual relationship.</p>
+          <p><strong>(3)</strong> The processing of personal data is carried out in compliance with applicable data protection regulations (GDPR). For more information, please see the <a href="/datenschutz" style="color:#003d73;">Privacy Policy</a>.</p>
+          <p><strong>(4)</strong> The Service Provider is entitled to engage subcontractors to fulfill the order, provided they are bound to confidentiality.</p>
+
+          <h3><span class="section-number">§ 8</span> Liability</h3>
+          <p><strong>(1)</strong> The Service Provider is liable for intent and gross negligence in accordance with statutory provisions.</p>
+          <p><strong>(2)</strong> In case of slight negligence, the Service Provider is only liable for typical, foreseeable damages that may arise within the scope of the contractual service.</p>
+          <p><strong>(3)</strong> In case of slight negligence, liability is limited to the amount of the respective order value, but not exceeding <strong>€5,000.00</strong> per damage event.</p>
+          <p><strong>(4)</strong> For translations: Complaints must be submitted in writing within <strong>7 days of delivery</strong>. The Service Provider has the right to remedy the defect within a reasonable period.</p>
+          <p><strong>(5)</strong> The Service Provider is not liable for damages arising from the use of the translation in a context other than the agreed one.</p>
+
+          <h3><span class="section-number">§ 9</span> Copyright and Usage Rights</h3>
+          <p><strong>(1)</strong> Translations remain the property of the Service Provider until full payment of the agreed fee.</p>
+          <p><strong>(2)</strong> Upon full payment, the usage rights to the translation are transferred to the Client. The Client receives a simple right of use for the intended purpose.</p>
+          <p><strong>(3)</strong> The transfer of translations to third parties for commercial use requires the prior written consent of the Service Provider.</p>
+          <p><strong>(4)</strong> The Service Provider retains the right to use the translation as a reference for their services, provided no confidentiality agreement prevents this.</p>
+
+          <h3><span class="section-number">§ 10</span> Place of Performance and Jurisdiction</h3>
+          <p><strong>(1)</strong> The place of performance for all services is <strong>Graz, Austria</strong>.</p>
+          <p><strong>(2)</strong> The place of jurisdiction for all disputes arising from this contractual relationship is <strong>Graz, Austria</strong>, provided the Client is a business entity, legal entity under public law, or public-law special fund.</p>
+          <p><strong>(3)</strong> For legal disputes with consumers, the statutory place of jurisdiction applies.</p>
+
+          <h3><span class="section-number">§ 11</span> Severability Clause</h3>
+          <p>Should individual provisions of these GTC be or become invalid or unenforceable, the validity of the remaining provisions shall remain unaffected. The invalid or unenforceable provision shall be replaced by a valid regulation that comes closest to the economic purpose of the invalid provision.</p>
+
+          <h3><span class="section-number">§ 12</span> Amendments to the GTC</h3>
+          <p>The Service Provider reserves the right to amend these GTC. Amendments will be communicated to the Client in text form at least <strong>4 weeks before their effective date</strong>. If the Client does not object within <strong>2 weeks</strong> of receipt of the notification, the amended GTC shall be deemed accepted.</p>
+
+          <div class="contact-box">
+            <h3>Contact</h3>
+            <div class="contact-grid">
+              <div>
+                <div class="contact-item"><strong>Name:</strong> Felipe Borecki</div>
+                <div class="contact-item"><strong>GISA No.:</strong> 32188035</div>
+                <div class="contact-item"><strong>Location:</strong> Graz, Austria</div>
+              </div>
+              <div>
+                <div class="contact-item"><strong>Email:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+                <div class="contact-item"><strong>Mobile:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+                <div class="contact-item"><strong>Web:</strong> <a href="https://felipeborecki.com">felipeborecki.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== ESPAÑOL ==================== -->
+        <div id="lang-es" class="lang-content">
+          <h2>Condiciones Generales</h2>
+          <p class="subtitle"><strong>Felipe Borecki</strong> · Servicios de Interpretación y Traducción · Nº GISA: 32188035 · Versión: Enero 2026</p>
+
+          <div class="info-box">
+            <h4>📋 Información Importante</h4>
+            <p>Estas Condiciones Generales se aplican a todos los servicios de interpretación y traducción prestados por Felipe Borecki. Al realizar un pedido, acepta estas condiciones.</p>
+            <p style="margin-top:0.5rem;font-size:0.95rem;"><span class="badge">ISO 17100</span> Estándares de calidad para servicios de traducción</p>
+          </div>
+
+          <h3><span class="section-number">§ 1</span> Ámbito de aplicación</h3>
+          <p>Estas Condiciones Generales (CG) se aplican a todos los servicios de interpretación y traducción prestados por <strong>Felipe Borecki</strong> (en adelante, el "Prestador"). Forman parte integrante de todos los contratos entre el Prestador y el Cliente. No se reconocen condiciones contrarias del Cliente a menos que el Prestador las acepte expresamente por escrito.</p>
+
+          <h3><span class="section-number">§ 2</span> Alcance de los servicios</h3>
+          <p><strong>(1) Servicios de interpretación:</strong> Interpretación simultánea, consecutiva, de negociación y telefónica (OPI) en las combinaciones lingüísticas Portugués/Español ↔ Alemán/Inglés.</p>
+          <p><strong>(2) Servicios de traducción:</strong> Traducciones especializadas para documentos médicos, jurídicos y técnicos en las combinaciones lingüísticas mencionadas. Las traducciones se realizan conforme a los estándares de calidad <strong>ISO 17100</strong>.</p>
+          <p><strong>(3)</strong> El alcance concreto de los servicios, fecha, lugar y remuneración se determinan en la correspondiente confirmación escrita del pedido (el correo electrónico es suficiente).</p>
+          <p><strong>(4)</strong> Los servicios adicionales (p. ej., ajustes de maquetación, DTP, legalizaciones) se acuerdan y facturan por separado.</p>
+
+          <h3><span class="section-number">§ 3</span> Realización y confirmación del pedido</h3>
+          <p><strong>(1)</strong> Los pedidos requieren la confirmación escrita por parte del Prestador. La confirmación por correo electrónico se considera suficiente.</p>
+          <p><strong>(2)</strong> Para los servicios de interpretación se requiere un plazo de antelación mínimo de <strong>48 horas</strong> para garantizar una preparación óptima.</p>
+          <p><strong>(3)</strong> Los servicios con un plazo de antelación inferior a 24 horas están sujetos a un <strong>recargo exprés del 30%</strong> sobre los honorarios acordados.</p>
+          <p><strong>(4)</strong> El Prestador se reserva el derecho a rechazar cualquier pedido sin indicación de motivos.</p>
+
+          <h3><span class="section-number">§ 4</span> Honorarios y condiciones de pago</h3>
+          <p><strong>(1)</strong> Los honorarios se basan en la tarifa vigente del Prestador o en un acuerdo individual. La tarifa está disponible bajo solicitud.</p>
+          <p><strong>(2)</strong> Los servicios de interpretación se facturan según el tiempo empleado. La <strong>unidad mínima de facturación es de 2 horas</strong>. El tiempo de viaje, preparación y espera pueden facturarse adicionalmente según lo acordado.</p>
+          <p><strong>(3)</strong> Las traducciones se facturan por líneas estándar (55 caracteres con espacios) o por palabra. El cálculo se basa en el texto meta. Para proyectos grandes, puede requerirse un anticipo de hasta el 50% del valor del pedido.</p>
+          <p><strong>(4)</strong> Los gastos de viaje, alojamiento y otros gastos se facturan por separado según los costes reales.</p>
+          <p><strong>(5)</strong> Las facturas son pagaderas en un plazo de <strong>14 días desde la fecha de facturación sin deducción</strong>. Los pagos atrasados pueden generar cargos por recordatorio de 5,00 € por recordatorio.</p>
+          <p><strong>(6)</strong> En caso de mora, se aplicarán intereses de demora del <strong>9,2% por encima del tipo de interés base</strong>.</p>
+
+          <h3><span class="section-number">§ 5</span> Cancelación y rescisión</h3>
+          <p><strong>(1)</strong> Cancelaciones hasta <strong>48 horas antes del servicio</strong>: sin coste.</p>
+          <p><strong>(2)</strong> Cancelaciones entre <strong>24 y 48 horas antes del servicio</strong>: 50% de los honorarios acordados.</p>
+          <p><strong>(3)</strong> Cancelaciones con menos de <strong>24 horas</strong> de antelación o no comparecencia del Cliente: 100% de los honorarios acordados.</p>
+          <p><strong>(4)</strong> El Prestador está facultado para rescindir el contrato en caso de enfermedad u otros eventos imprevisibles. En tales casos, el Prestador hará esfuerzos razonables para proporcionar un sustituto cualificado. Si no hay sustituto disponible, el Cliente no tendrá derecho a reclamar daños y perjuicios.</p>
+
+          <h3><span class="section-number">§ 6</span> Obligaciones de colaboración del Cliente</h3>
+          <p><strong>(1)</strong> El Cliente se compromete a proporcionar al Prestador toda la documentación e información necesaria para la ejecución del pedido de manera oportuna.</p>
+          <p><strong>(2)</strong> Para los servicios de interpretación, deberán proporcionarse al Prestador, si es posible, los documentos, órdenes del día o información de antecedentes pertinentes con antelación.</p>
+          <p><strong>(3)</strong> El Cliente garantiza que, para los servicios de interpretación a distancia, se disponga de una conexión a Internet estable y del equipo técnico adecuado.</p>
+          <p><strong>(4)</strong> El Cliente es responsable de los daños derivados de la entrega tardía o incompleta de los documentos.</p>
+
+          <h3><span class="section-number">§ 7</span> Confidencialidad y protección de datos</h3>
+          <p><strong>(1)</strong> El Prestador se compromete a mantener la más estricta confidencialidad sobre toda la información obtenida en el ejercicio de su actividad de acuerdo con el <strong>Artículo 10 de la Ley GISA</strong> y las normas profesionales.</p>
+          <p><strong>(2)</strong> Esta obligación de confidencialidad continúa vigente tras la finalización de la relación contractual.</p>
+          <p><strong>(3)</strong> El tratamiento de datos personales se realiza de conformidad con la normativa aplicable en materia de protección de datos (RGPD). Para más información, consulte la <a href="/datenschutz" style="color:#003d73;">Política de Privacidad</a>.</p>
+          <p><strong>(4)</strong> El Prestador está autorizado a contratar subcontratistas para la ejecución del pedido, siempre que éstos estén sujetos a confidencialidad.</p>
+
+          <h3><span class="section-number">§ 8</span> Responsabilidad</h3>
+          <p><strong>(1)</strong> El Prestador responde por dolo y culpa grave de conformidad con las disposiciones legales.</p>
+          <p><strong>(2)</strong> En caso de culpa leve, el Prestador solo responde por los daños típicos y previsibles que puedan producirse en el marco de la prestación contractual.</p>
+          <p><strong>(3)</strong> En caso de culpa leve, la responsabilidad se limita al importe del pedido correspondiente, sin exceder los <strong>5.000,00 €</strong> por evento dañoso.</p>
+          <p><strong>(4)</strong> Para traducciones: Las reclamaciones deben presentarse por escrito en un plazo de <strong>7 días a partir de la entrega</strong>. El Prestador tiene derecho a subsanar el defecto en un plazo razonable.</p>
+          <p><strong>(5)</strong> El Prestador no se hace responsable de los daños derivados del uso de la traducción en un contexto distinto al acordado.</p>
+
+          <h3><span class="section-number">§ 9</span> Derechos de autor y derechos de uso</h3>
+          <p><strong>(1)</strong> Las traducciones siguen siendo propiedad del Prestador hasta el pago completo de los honorarios acordados.</p>
+          <p><strong>(2)</strong> Con el pago completo, los derechos de uso de la traducción se transfieren al Cliente. El Cliente recibe un derecho de uso simple para el fin previsto.</p>
+          <p><strong>(3)</strong> La transferencia de traducciones a terceros para uso comercial requiere el consentimiento previo por escrito del Prestador.</p>
+          <p><strong>(4)</strong> El Prestador conserva el derecho a utilizar la traducción como referencia para sus servicios, siempre que no exista un acuerdo de confidencialidad en contrario.</p>
+
+          <h3><span class="section-number">§ 10</span> Lugar de cumplimiento y jurisdicción</h3>
+          <p><strong>(1)</strong> El lugar de cumplimiento para todos los servicios es <strong>Graz, Austria</strong>.</p>
+          <p><strong>(2)</strong> El lugar de jurisdicción para todas las disputas derivadas de esta relación contractual es <strong>Graz, Austria</strong>, siempre que el Cliente sea una entidad empresarial, una persona jurídica de derecho público o un fondo especial de derecho público.</p>
+          <p><strong>(3)</strong> Para las disputas legales con consumidores, se aplica el lugar de jurisdicción legal.</p>
+
+          <h3><span class="section-number">§ 11</span> Cláusula de salvaguarda</h3>
+          <p>Si alguna disposición de estas CG resulta inválida o inaplicable, la validez del resto de las disposiciones no se verá afectada. La disposición inválida o inaplicable será sustituida por una regulación válida que se aproxime lo más posible al propósito económico de la disposición inválida.</p>
+
+          <h3><span class="section-number">§ 12</span> Modificaciones de las CG</h3>
+          <p>El Prestador se reserva el derecho a modificar estas CG. Las modificaciones se comunicarán al Cliente por escrito con al menos <strong>4 semanas de antelación</strong> a su entrada en vigor. Si el Cliente no se opone en el plazo de <strong>2 semanas</strong> a partir de la recepción de la notificación, las CG modificadas se considerarán aceptadas.</p>
+
+          <div class="contact-box">
+            <h3>Contacto</h3>
+            <div class="contact-grid">
+              <div>
+                <div class="contact-item"><strong>Nombre:</strong> Felipe Borecki</div>
+                <div class="contact-item"><strong>Nº GISA:</strong> 32188035</div>
+                <div class="contact-item"><strong>Ubicación:</strong> Graz, Austria</div>
+              </div>
+              <div>
+                <div class="contact-item"><strong>Correo:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+                <div class="contact-item"><strong>Móvil:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+                <div class="contact-item"><strong>Web:</strong> <a href="https://felipeborecki.com">felipeborecki.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== PORTUGUÉS ==================== -->
+        <div id="lang-pt" class="lang-content">
+          <h2>Condições Gerais</h2>
+          <p class="subtitle"><strong>Felipe Borecki</strong> · Serviços de Interpretação e Tradução · N.º GISA: 32188035 · Versão: Janeiro 2026</p>
+
+          <div class="info-box">
+            <h4>📋 Informações Importantes</h4>
+            <p>Estas Condições Gerais aplicam-se a todos os serviços de interpretação e tradução prestados por Felipe Borecki. Ao efetuar uma encomenda, aceita estas condições.</p>
+            <p style="margin-top:0.5rem;font-size:0.95rem;"><span class="badge">ISO 17100</span> Padrões de qualidade para serviços de tradução</p>
+          </div>
+
+          <h3><span class="section-number">§ 1</span> Âmbito de aplicação</h3>
+          <p>Estas Condições Gerais (CG) aplicam-se a todos os serviços de interpretação e tradução prestados por <strong>Felipe Borecki</strong> (doravante "Prestador"). Fazem parte integrante de todos os contratos entre o Prestador e o Cliente. Não são reconhecidas condições contraditórias do Cliente, salvo se o Prestador as aceitar expressamente por escrito.</p>
+
+          <h3><span class="section-number">§ 2</span> Âmbito dos serviços</h3>
+          <p><strong>(1) Serviços de interpretação:</strong> Interpretação simultânea, consecutiva, de negociação e telefónica (OPI) nas combinações linguísticas Português/Espanhol ↔ Alemão/Inglês.</p>
+          <p><strong>(2) Serviços de tradução:</strong> Traduções especializadas para documentos médicos, jurídicos e técnicos nas combinações linguísticas mencionadas. As traduções são realizadas de acordo com os padrões de qualidade <strong>ISO 17100</strong>.</p>
+          <p><strong>(3)</strong> O âmbito específico dos serviços, data, local e remuneração são determinados na respetiva confirmação escrita da encomenda (o e-mail é suficiente).</p>
+          <p><strong>(4)</strong> Os serviços adicionais (por exemplo, ajustes de layout, DTP, legalizações) são acordados e faturados separadamente.</p>
+
+          <h3><span class="section-number">§ 3</span> Realização e confirmação da encomenda</h3>
+          <p><strong>(1)</strong> As encomendas requerem a confirmação escrita por parte do Prestador. A confirmação por e-mail é considerada suficiente.</p>
+          <p><strong>(2)</strong> Para os serviços de interpretação, é necessário um prazo de antecedência mínimo de <strong>48 horas</strong> para garantir uma preparação ótima.</p>
+          <p><strong>(3)</strong> Os serviços com um prazo de antecedência inferior a 24 horas estão sujeitos a um <strong>acréscimo expresso de 30%</strong> sobre os honorários acordados.</p>
+          <p><strong>(4)</strong> O Prestador reserva-se o direito de recusar qualquer encomenda sem indicação de motivos.</p>
+
+          <h3><span class="section-number">§ 4</span> Honorários e condições de pagamento</h3>
+          <p><strong>(1)</strong> Os honorários baseiam-se na tabela de preços vigente do Prestador ou em acordo individual. A tabela de preços está disponível mediante solicitação.</p>
+          <p><strong>(2)</strong> Os serviços de interpretação são faturados com base no tempo despendido. A <strong>unidade mínima de faturação é de 2 horas</strong>. O tempo de viagem, preparação e espera podem ser faturados adicionalmente conforme acordado.</p>
+          <p><strong>(3)</strong> As traduções são faturadas por linha padrão (55 caracteres com espaços) ou por palavra. O cálculo baseia-se no texto de destino. Para projetos grandes, pode ser exigido um adiantamento de até 50% do valor da encomenda.</p>
+          <p><strong>(4)</strong> As despesas de viagem, alojamento e outras despesas são faturadas separadamente com base nos custos reais.</p>
+          <p><strong>(5)</strong> As faturas são pagáveis num prazo de <strong>14 dias a partir da data de faturação sem dedução</strong>. Pagamentos em atraso podem gerar custos de lembrete de 5,00 € por lembrete.</p>
+          <p><strong>(6)</strong> Em caso de mora, serão aplicados juros de mora de <strong>9,2% acima da taxa de juro base</strong>.</p>
+
+          <h3><span class="section-number">§ 5</span> Cancelamento e rescisão</h3>
+          <p><strong>(1)</strong> Cancelamentos até <strong>48 horas antes do serviço</strong>: sem custos.</p>
+          <p><strong>(2)</strong> Cancelamentos entre <strong>24 e 48 horas antes do serviço</strong>: 50% dos honorários acordados.</p>
+          <p><strong>(3)</strong> Cancelamentos com menos de <strong>24 horas</strong> de antecedência ou não comparecimento do Cliente: 100% dos honorários acordados.</p>
+          <p><strong>(4)</strong> O Prestador está autorizado a rescindir o contrato em caso de doença ou outros eventos imprevisíveis. Nesses casos, o Prestador fará esforços razoáveis para fornecer um substituto qualificado. Se não houver substituto disponível, o Cliente não terá direito a reclamar danos.</p>
+
+          <h3><span class="section-number">§ 6</span> Obrigações de colaboração do Cliente</h3>
+          <p><strong>(1)</strong> O Cliente compromete-se a fornecer ao Prestador toda a documentação e informações necessárias para a execução da encomenda de forma atempada.</p>
+          <p><strong>(2)</strong> Para os serviços de interpretação, devem ser fornecidos ao Prestador, se possível, os documentos, ordens de trabalhos ou informações de contexto relevantes com antecedência.</p>
+          <p><strong>(3)</strong> O Cliente garante que, para os serviços de interpretação à distância, está disponível uma ligação à Internet estável e o equipamento técnico adequado.</p>
+          <p><strong>(4)</strong> O Cliente é responsável pelos danos decorrentes da entrega tardia ou incompleta dos documentos.</p>
+
+          <h3><span class="section-number">§ 7</span> Confidencialidade e proteção de dados</h3>
+          <p><strong>(1)</strong> O Prestador compromete-se a manter a mais estrita confidencialidade sobre todas as informações obtidas no exercício da sua atividade, de acordo com o <strong>Artigo 10.º da Lei GISA</strong> e as normas profissionais.</p>
+          <p><strong>(2)</strong> Esta obrigação de confidencialidade continua após o termo da relação contratual.</p>
+          <p><strong>(3)</strong> O tratamento de dados pessoais é realizado em conformidade com a legislação aplicável em matéria de proteção de dados (RGPD). Para mais informações, consulte a <a href="/datenschutz" style="color:#003d73;">Política de Privacidade</a>.</p>
+          <p><strong>(4)</strong> O Prestador está autorizado a contratar subcontratantes para a execução da encomenda, desde que estes estejam sujeitos a confidencialidade.</p>
+
+          <h3><span class="section-number">§ 8</span> Responsabilidade</h3>
+          <p><strong>(1)</strong> O Prestador responde por dolo e culpa grave de acordo com as disposições legais.</p>
+          <p><strong>(2)</strong> Em caso de culpa leve, o Prestador só responde pelos danos típicos e previsíveis que possam ocorrer no âmbito da prestação contratual.</p>
+          <p><strong>(3)</strong> Em caso de culpa leve, a responsabilidade limita-se ao montante da encomenda respetiva, não excedendo os <strong>5.000,00 €</strong> por evento danoso.</p>
+          <p><strong>(4)</strong> Para traduções: As reclamações devem ser apresentadas por escrito no prazo de <strong>7 dias a partir da entrega</strong>. O Prestador tem direito a retificar o defeito num prazo razoável.</p>
+          <p><strong>(5)</strong> O Prestador não se responsabiliza por danos decorrentes da utilização da tradução num contexto diferente do acordado.</p>
+
+          <h3><span class="section-number">§ 9</span> Direitos de autor e direitos de utilização</h3>
+          <p><strong>(1)</strong> As traduções permanecem propriedade do Prestador até ao pagamento integral dos honorários acordados.</p>
+          <p><strong>(2)</strong> Com o pagamento integral, os direitos de utilização da tradução são transferidos para o Cliente. O Cliente recebe um direito de utilização simples para o fim previsto.</p>
+          <p><strong>(3)</strong> A transferência de traduções a terceiros para utilização comercial requer o consentimento prévio por escrito do Prestador.</p>
+          <p><strong>(4)</strong> O Prestador mantém o direito de utilizar a tradução como referência para os seus serviços, desde que não exista um acordo de confidencialidade em contrário.</p>
+
+          <h3><span class="section-number">§ 10</span> Local de cumprimento e jurisdição</h3>
+          <p><strong>(1)</strong> O local de cumprimento para todos os serviços é <strong>Graz, Áustria</strong>.</p>
+          <p><strong>(2)</strong> O local de jurisdição para todas as disputas decorrentes desta relação contratual é <strong>Graz, Áustria</strong>, desde que o Cliente seja uma entidade empresarial, uma pessoa jurídica de direito público ou um fundo especial de direito público.</p>
+          <p><strong>(3)</strong> Para disputas legais com consumidores, aplica-se o local de jurisdição legal.</p>
+
+          <h3><span class="section-number">§ 11</span> Cláusula de salvaguarda</h3>
+          <p>Se alguma disposição destas CG for inválida ou inaplicável, a validade das restantes disposições não será afetada. A disposição inválida ou inaplicável será substituída por uma regulamentação válida que se aproxime o mais possível do propósito económico da disposição inválida.</p>
+
+          <h3><span class="section-number">§ 12</span> Modificações das CG</h3>
+          <p>O Prestador reserva-se o direito de modificar estas CG. As modificações serão comunicadas ao Cliente por escrito com pelo menos <strong>4 semanas de antecedência</strong> relativamente à sua entrada em vigor. Se o Cliente não se opuser no prazo de <strong>2 semanas</strong> a contar da receção da notificação, as CG modificadas serão consideradas aceites.</p>
+
+          <div class="contact-box">
+            <h3>Contacto</h3>
+            <div class="contact-grid">
+              <div>
+                <div class="contact-item"><strong>Nome:</strong> Felipe Borecki</div>
+                <div class="contact-item"><strong>N.º GISA:</strong> 32188035</div>
+                <div class="contact-item"><strong>Localização:</strong> Graz, Áustria</div>
+              </div>
+              <div>
+                <div class="contact-item"><strong>E-mail:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+                <div class="contact-item"><strong>Telemóvel:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+                <div class="contact-item"><strong>Web:</strong> <a href="https://felipeborecki.com">felipeborecki.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <footer>
       <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script>
+      // Selector de idioma - funciona sin JavaScript (progressive enhancement)
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Obtener idioma seleccionado
+          const lang = this.dataset.lang;
+          
+          // Actualizar botones activos
+          document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Mostrar contenido correspondiente
+          document.querySelectorAll('.lang-content').forEach(content => {
+            content.classList.remove('active');
+          });
+          document.getElementById('lang-' + lang).classList.add('active');
+          
+          // Actualizar título de la página
+          const titles = {
+            'de': 'AGB - Felipe Borecki - Dolmetscher & Übersetzer',
+            'en': 'Terms - Felipe Borecki - Interpreter & Translator',
+            'es': 'Condiciones - Felipe Borecki - Intérprete y Traductor',
+            'pt': 'Condições - Felipe Borecki - Intérprete e Tradutor'
+          };
+          document.title = titles[lang] || titles['de'];
+          
+          // Cambiar lang del html
+          document.documentElement.lang = lang;
+          
+          // Guardar preferencia en localStorage
+          localStorage.setItem('agb-lang', lang);
+        });
+      });
+      
+      // Restaurar idioma guardado
+      document.addEventListener('DOMContentLoaded', function() {
+        const savedLang = localStorage.getItem('agb-lang');
+        if (savedLang && document.querySelector('.lang-btn[data-lang="' + savedLang + '"]')) {
+          document.querySelector('.lang-btn[data-lang="' + savedLang + '"]').click();
+        }
+      });
+    </script>
   </body>
 </html>
