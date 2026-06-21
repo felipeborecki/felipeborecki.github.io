@@ -64,7 +64,6 @@
   </script>
 
   <style>
-    /* --- TU DISEÑO ORIGINAL (SIN CAMBIOS) --- */
     *{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{font-family:'Roboto',sans-serif;line-height:1.6;color:#333;background:#f8f9fa}
@@ -75,7 +74,7 @@
     .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
     .header-left h1{font-size:1.6rem;margin:0;white-space:nowrap}
     .header-nav{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
-    .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
+    .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.85rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
     .header-nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#fff;transition:width .3s ease}
     .header-nav a:hover{color:#fff}
     .header-nav a:hover::after{width:100%}
@@ -99,6 +98,8 @@
     .cta:hover{background:#f0f2f8;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
     .cta-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
     .cta-secondary:hover{background:rgba(255,255,255,.1);border-color:#fff}
+    .cta-book{background:#25D366;color:#fff;border:none}
+    .cta-book:hover{background:#1da851;color:#fff}
 
     /* SECCIONES CON LÍNEA DIVISORIA */
     .section{padding:70px 2rem;max-width:1200px;margin:0 auto}
@@ -138,10 +139,12 @@
     .contact-info-block{text-align:center;margin-top:3rem}
     .contact-info-block p{margin:0.5rem 0}
 
-    /* BOTÓN VOLVER ARRIBA (CON TRANSICIÓN SUAVE) */
-    #back-to-top{position:fixed;bottom:2rem;right:2rem;background:#0e1528;color:#fff;border:none;border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);opacity:0;transform:scale(0.8);transition:opacity .3s ease,transform .3s ease;z-index:999;pointer-events:none}
-    #back-to-top.visible{opacity:1;transform:scale(1);pointer-events:auto}
-    #back-to-top:hover{background:#1a2a4a;transform:scale(1.05);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+    .booking-cta-block{text-align:center;margin:2rem auto 0;padding:1.5rem;background:#f0f4f8;border-radius:8px;max-width:700px}
+    .booking-cta-block .cta{font-size:1.1rem;padding:0.9rem 2.5rem}
+
+    /* BOTÓN VOLVER ARRIBA */
+    #back-to-top{position:fixed;bottom:2rem;right:2rem;background:#0e1528;color:#fff;border:none;border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);display:none;transition:all .25s ease;z-index:999}
+    #back-to-top:hover{background:#1a2a4a;transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
 
     footer{background:#0e1528;color:#fff;text-align:center;padding:2rem}
     footer a{color:#fff;text-decoration:underline}
@@ -150,11 +153,6 @@
     a{color:#0e1528;font-weight:500}
     a:hover{color:#142135;text-decoration:none}
 
-    /* --- NUEVO: Animación Fade-in --- */
-    .fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
-    .fade-in.visible{opacity:1;transform:translateY(0)}
-
-    /* TABLET */
     @media (max-width:1024px){
       .header-content{padding:0 0.5rem;gap:0.3rem}
       .header-left{gap:1rem}
@@ -169,16 +167,15 @@
       .grid-2,.credential-list{grid-template-columns:1fr}
     }
 
-    /* MÓVIL - HEADER REDISEÑADO */
     @media (max-width:768px){
       header{padding:0.5rem 0.8rem}
       .header-content{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0.3rem;padding:0 0.3rem}
       .header-left{width:100%;justify-content:center;flex-wrap:wrap;gap:0.4rem}
       .header-left h1{font-size:1.1rem;white-space:nowrap}
-      .header-nav{gap:0.5rem;justify-content:center;width:100%}
-      .header-nav a{font-size:0.7rem;padding-bottom:1px;white-space:nowrap}
+      .header-nav{gap:0.4rem;justify-content:center;width:100%}
+      .header-nav a{font-size:0.65rem;padding-bottom:1px;white-space:nowrap}
       .header-right{width:100%;justify-content:center;gap:0.3rem}
-      .flags button{width:28px;height:28px;font-size:0.9rem}
+      .flags button{width:26px;height:26px;font-size:0.85rem}
       
       .hero-banner{height:180px}
       .hero-content{padding:25px 1.2rem 40px}
@@ -199,16 +196,16 @@
       .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3rem;font-size:0.9rem}
       
       #back-to-top{width:40px;height:40px;font-size:1.1rem;bottom:1rem;right:1rem}
-      
       .form-container{padding:1.5rem}
+      .booking-cta-block{padding:1rem;margin:1rem auto 0}
+      .booking-cta-block .cta{font-size:0.95rem;padding:0.7rem 1.8rem}
     }
 
-    /* MÓVIL MUY PEQUEÑO */
     @media (max-width:400px){
       .header-left h1{font-size:0.95rem}
-      .header-nav a{font-size:0.6rem}
-      .header-nav{gap:0.3rem}
-      .flags button{width:24px;height:24px;font-size:0.75rem}
+      .header-nav a{font-size:0.55rem}
+      .header-nav{gap:0.25rem}
+      .flags button{width:22px;height:22px;font-size:0.7rem}
       .hero h2{font-size:1.3rem}
     }
   </style>
@@ -221,6 +218,7 @@
         <nav class="header-nav">
           <a href="#services" data-lang="nav-services">Leistungen</a>
           <a href="#about" data-lang="nav-about">Profil</a>
+          <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
           <a href="#contact" data-lang="nav-contact">Kontakt</a>
           <a href="/agb" data-lang="nav-agb">AGB</a>
         </nav>
@@ -245,6 +243,7 @@
       <div class="cta-wrap">
         <a href="#contact" class="cta" data-lang="cta">Kontakt aufnehmen</a>
         <a href="#services" class="cta cta-secondary" data-lang="cta-secondary">Leistungen ansehen</a>
+        <a href="/appointment.html" class="cta cta-book" data-lang="cta-book">📅 Termin buchen</a>
       </div>
     </div>
   </section>
@@ -252,19 +251,19 @@
   <section id="credentials" class="section">
     <h2 data-lang="cred-title">Kurzprofil</h2>
     <div class="credential-list">
-      <div class="credential fade-in">
+      <div class="credential">
         <strong data-lang="cred1-title">900+</strong>
         <span data-lang="cred1-text">Einsätze in sensiblen institutionellen Kontexten</span>
       </div>
-      <div class="credential fade-in">
+      <div class="credential">
         <strong data-lang="cred2-title">GISA</strong>
         <span data-lang="cred2-text">Registrierung Nr. 32188035</span>
       </div>
-      <div class="credential fade-in">
+      <div class="credential">
         <strong data-lang="cred3-title">Bundesministerium für Inneres</strong>
         <span data-lang="cred3-text">Im österreichischen Dolmetscher- und Sachverständigenregister gelistet</span>
       </div>
-      <div class="credential fade-in">
+      <div class="credential">
         <strong data-lang="cred4-title">ES | PT | DE</strong>
         <span data-lang="cred4-text">Vor Ort, remote und telefonisch</span>
       </div>
@@ -287,19 +286,19 @@
     <h2 data-lang="services">Leistungen</h2>
     <p class="section-intro" data-lang="services-intro">Spezialisierte Sprachdienstleistungen für Institutionen, Kanzleien, Agenturen, Unternehmen und Privatpersonen.</p>
     <div class="grid-2">
-      <div class="card fade-in">
+      <div class="card">
         <h3 data-lang="serv1-title">Dolmetschen</h3>
         <p data-lang="serv1-text">Konsekutiv-, Simultan-, Begleit-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.</p>
       </div>
-      <div class="card fade-in">
+      <div class="card">
         <h3 data-lang="serv2-title">Fachübersetzungen</h3>
         <p data-lang="serv2-text">Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt, sprachlicher Präzision und professioneller Qualitätskontrolle.</p>
       </div>
-      <div class="card fade-in">
+      <div class="card">
         <h3 data-lang="serv3-title">Remote-Unterstützung</h3>
         <p data-lang="serv3-text">Professionelle Einsätze über sichere Plattformen für Videodolmetschen, Telefongespräche, internationale Abstimmungen und grenzüberschreitende Kommunikation.</p>
       </div>
-      <div class="card fade-in">
+      <div class="card">
         <h3 data-lang="serv4-title">Internationale Begleitung</h3>
         <p data-lang="serv4-text">Sprachliche Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.</p>
       </div>
@@ -309,22 +308,22 @@
   <section id="fields" class="section">
     <h2 data-lang="fields-title">Einsatzbereiche</h2>
     <ul>
-      <li class="fade-in" data-lang="field1">Gerichte, Strafverfahren und behördliche Anhörungen</li>
-      <li class="fade-in" data-lang="field2">Krankenhäuser, medizinische Konsultationen und psychosoziale Dienste</li>
-      <li class="fade-in" data-lang="field3">Administrative Verfahren, Dokumentation und institutionelle Kommunikation</li>
-      <li class="fade-in" data-lang="field4">Internationale Besuche, Delegationen und technische Gespräche</li>
-      <li class="fade-in" data-lang="field5">Zusammenarbeit zwischen Österreich, dem DACH-Raum und Lateinamerika</li>
+      <li data-lang="field1">Gerichte, Strafverfahren und behördliche Anhörungen</li>
+      <li data-lang="field2">Krankenhäuser, medizinische Konsultationen und psychosoziale Dienste</li>
+      <li data-lang="field3">Administrative Verfahren, Dokumentation und institutionelle Kommunikation</li>
+      <li data-lang="field4">Internationale Besuche, Delegationen und technische Gespräche</li>
+      <li data-lang="field5">Zusammenarbeit zwischen Österreich, dem DACH-Raum und Lateinamerika</li>
     </ul>
   </section>
 
   <section id="value" class="section">
     <h2 data-lang="value-title">Warum mit mir arbeiten</h2>
     <ul>
-      <li class="fade-in" data-lang="value1">Zuverlässige Zusammenarbeit in sensiblen, vertraulichen und mehrsprachigen Situationen</li>
-      <li class="fade-in" data-lang="value2">Kombination aus institutioneller Erfahrung, interkultureller Kompetenz und Fachsprache</li>
-      <li class="fade-in" data-lang="value3">Professionelle Arbeitsweise vor Ort, remote und telefonisch</li>
-      <li class="fade-in" data-lang="value4">Sprachliche Brückenfunktion zwischen Europa und Lateinamerika in rechtlichen, institutionellen und wirtschaftlichen Kontexten</li>
-      <li class="fade-in" data-lang="value5">Klare Kommunikation, sorgfältige Vorbereitung und serviceorientierte Zusammenarbeit</li>
+      <li data-lang="value1">Zuverlässige Zusammenarbeit in sensiblen, vertraulichen und mehrsprachigen Situationen</li>
+      <li data-lang="value2">Kombination aus institutioneller Erfahrung, interkultureller Kompetenz und Fachsprache</li>
+      <li data-lang="value3">Professionelle Arbeitsweise vor Ort, remote und telefonisch</li>
+      <li data-lang="value4">Sprachliche Brückenfunktion zwischen Europa und Lateinamerika in rechtlichen, institutionellen und wirtschaftlichen Kontexten</li>
+      <li data-lang="value5">Klare Kommunikation, sorgfältige Vorbereitung und serviceorientierte Zusammenarbeit</li>
     </ul>
   </section>
 
@@ -351,6 +350,11 @@
       <button type="submit" class="cta" style="width:100%;margin-top:1rem;" data-lang="form-submit">Absenden</button>
       <p id="form-status"></p>
     </form>
+
+    <div class="booking-cta-block">
+      <p style="margin-bottom:0.8rem;font-weight:500;" data-lang="booking-cta-text">📅 Oder buchen Sie direkt einen Termin:</p>
+      <a href="/appointment.html" class="cta cta-book" data-lang="booking-cta-btn">Termin buchen</a>
+    </div>
 
     <div class="contact-info-block">
       <p><span data-lang="email">E-Mail:</span> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
@@ -382,13 +386,10 @@
 
     const translations = {
       de: {
-        title: 'Felipe Borecki - Dolmetscher & Übersetzer',
-        desc: 'GISA #32188035. Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden, Gesundheitseinrichtungen und sensible institutionelle Kontexte in Österreich. Über 900 Einsätze. Graz | vor Ort, remote und telefonisch.',
-        ogtitle: 'Felipe Borecki - Dolmetscher & Übersetzer',
-        ogdesc: 'Über 900 Einsätze für Gerichte, Behörden, medizinische und psychosoziale Kontexte. GISA-registriert und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet.',
         name: 'Felipe Borecki',
         'nav-services': 'Leistungen',
         'nav-about': 'Profil',
+        'nav-book': 'Termin buchen',
         'nav-contact': 'Kontakt',
         'nav-agb': 'AGB',
         'hero-title': 'Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte',
@@ -396,6 +397,7 @@
         'hero-subline': 'GISA-registriert und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet. Über 900 Einsätze für Gerichte, Polizei, Kliniken, Sozialdienste und institutionelle Auftraggeber. Arbeitssprachen: ES | PT | DE.',
         cta: 'Kontakt aufnehmen',
         'cta-secondary': 'Leistungen ansehen',
+        'cta-book': '📅 Termin buchen',
         'cred-title': 'Kurzprofil',
         'cred1-title': '900+',
         'cred1-text': 'Einsätze in sensiblen institutionellen Kontexten',
@@ -432,6 +434,8 @@
         value5: 'Klare Kommunikation, sorgfältige Vorbereitung und serviceorientierte Zusammenarbeit',
         contact: 'Kontakt',
         'contact-intro': 'Für Anfragen zu Dolmetsch- und Übersetzungsleistungen, Verfügbarkeit oder Zusammenarbeit können Sie mich direkt kontaktieren.',
+        'booking-cta-text': '📅 Oder buchen Sie direkt einen Termin:',
+        'booking-cta-btn': 'Termin buchen',
         email: 'E-Mail:',
         phone: 'Mobil:',
         linkedin: 'LinkedIn:',
@@ -445,13 +449,10 @@
         'form-sending': 'Sendet...'
       },
       es: {
-        title: 'Felipe Borecki - Intérprete y Traductor',
-        desc: 'GISA #32188035. Intérprete y traductor profesional para tribunales, autoridades, sector sanitario y contextos institucionales sensibles en Austria. Más de 900 servicios. Graz | Presencial, remoto y telefónico.',
-        ogtitle: 'Felipe Borecki - Intérprete y Traductor',
-        ogdesc: 'Más de 900 servicios para tribunales, autoridades y contextos médicos y psicosociales. Registrado en GISA e incluido en el registro de intérpretes y peritos del Ministerio del Interior de Austria.',
         name: 'Felipe Borecki',
         'nav-services': 'Servicios',
         'nav-about': 'Perfil',
+        'nav-book': 'Reservar cita',
         'nav-contact': 'Contacto',
         'nav-agb': 'Términos',
         'hero-title': 'Intérprete y traductor para tribunales, autoridades y contextos sensibles',
@@ -459,6 +460,7 @@
         'hero-subline': 'Registrado en GISA e incluido en el registro de intérpretes y peritos del Ministerio del Interior de Austria. Más de 900 servicios para tribunales, policía, clínicas, servicios sociales e instituciones. Idiomas de trabajo: ES | PT | DE.',
         cta: 'Contactar',
         'cta-secondary': 'Ver servicios',
+        'cta-book': '📅 Reservar cita',
         'cred-title': 'Perfil breve',
         'cred1-title': '900+',
         'cred1-text': 'Servicios en contextos institucionales sensibles',
@@ -495,6 +497,8 @@
         value5: 'Comunicación clara, preparación cuidadosa y orientación al servicio',
         contact: 'Contacto',
         'contact-intro': 'Para consultas sobre interpretación, traducción, disponibilidad o colaboración profesional, puede escribirme directamente.',
+        'booking-cta-text': '📅 O reserve una cita directamente:',
+        'booking-cta-btn': 'Reservar cita',
         email: 'E-mail:',
         phone: 'Móvil:',
         linkedin: 'LinkedIn:',
@@ -508,13 +512,10 @@
         'form-sending': 'Enviando...'
       },
       pt: {
-        title: 'Felipe Borecki - Intérprete e Tradutor',
-        desc: 'GISA #32188035. Intérprete e tradutor profissional para tribunais, autoridades, saúde e contextos institucionais sensíveis na Áustria. Mais de 900 serviços. Graz | Presencial, remoto e telefónico.',
-        ogtitle: 'Felipe Borecki - Intérprete e Tradutor',
-        ogdesc: 'Mais de 900 serviços para tribunais, autoridades e contextos médicos e psicossociais. Registrado na GISA e incluído no registo de intérpretes e peritos do Ministério do Interior da Áustria.',
         name: 'Felipe Borecki',
         'nav-services': 'Serviços',
         'nav-about': 'Perfil',
+        'nav-book': 'Agendar reunião',
         'nav-contact': 'Contato',
         'nav-agb': 'Termos',
         'hero-title': 'Intérprete e tradutor para tribunais, autoridades e contextos sensíveis',
@@ -522,6 +523,7 @@
         'hero-subline': 'Registrado na GISA e incluído no registo de intérpretes e peritos do Ministério do Interior da Áustria. Mais de 900 serviços para tribunais, polícia, clínicas, serviços sociais e instituições. Línguas de trabalho: ES | PT | DE.',
         cta: 'Entrar em contacto',
         'cta-secondary': 'Ver serviços',
+        'cta-book': '📅 Agendar reunião',
         'cred-title': 'Perfil breve',
         'cred1-title': '900+',
         'cred1-text': 'Serviços em contextos institucionais sensíveis',
@@ -558,6 +560,8 @@
         value5: 'Comunicação clara, preparação cuidadosa e orientação para o serviço',
         contact: 'Contato',
         'contact-intro': 'Para pedidos de interpretação, tradução, disponibilidade ou colaboração profissional, pode entrar em contacto diretamente.',
+        'booking-cta-text': '📅 Ou agende uma reunião diretamente:',
+        'booking-cta-btn': 'Agendar reunião',
         email: 'E-mail:',
         phone: 'Telemóvel:',
         linkedin: 'LinkedIn:',
@@ -571,13 +575,10 @@
         'form-sending': 'Enviando...'
       },
       en: {
-        title: 'Felipe Borecki - Interpreter & Translator',
-        desc: 'GISA #32188035. Professional interpreter and translator for courts, public authorities, healthcare and sensitive institutional contexts in Austria. 900+ assignments. Graz | On-site, remote and over the phone.',
-        ogtitle: 'Felipe Borecki - Interpreter & Translator',
-        ogdesc: '900+ assignments for courts, authorities and medical and psychosocial contexts. GISA-registered and listed in the Austrian Ministry of the Interior\'s register of interpreters and experts.',
         name: 'Felipe Borecki',
         'nav-services': 'Services',
         'nav-about': 'Profile',
+        'nav-book': 'Book appointment',
         'nav-contact': 'Contact',
         'nav-agb': 'Terms',
         'hero-title': 'Interpreter and translator for courts, public authorities and sensitive professional contexts',
@@ -585,6 +586,7 @@
         'hero-subline': 'GISA-registered and listed in the Austrian Ministry of the Interior\'s register of interpreters and experts. Backed by 900+ assignments for courts, police, clinics, social services and institutional clients. Working languages: ES | PT | DE.',
         cta: 'Get in touch',
         'cta-secondary': 'View services',
+        'cta-book': '📅 Book appointment',
         'cred-title': 'Profile at a glance',
         'cred1-title': '900+',
         'cred1-text': 'Assignments in sensitive institutional settings',
@@ -621,6 +623,8 @@
         value5: 'Clear communication, careful preparation and service-oriented collaboration',
         contact: 'Contact',
         'contact-intro': 'For interpreting and translation requests, availability or professional cooperation, you are welcome to contact me directly.',
+        'booking-cta-text': '📅 Or book an appointment directly:',
+        'booking-cta-btn': 'Book appointment',
         email: 'Email:',
         phone: 'Mobile:',
         linkedin: 'LinkedIn:',
@@ -702,10 +706,9 @@
       }
     }
 
-    // --- Navegación Activa ---
     function updateActiveNav() {
       const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.header-nav a');
+      const navLinks = document.querySelectorAll('.header-nav a:not([href*="appointment"])');
       let current = '';
       
       sections.forEach(section => {
@@ -723,27 +726,14 @@
       });
     }
 
-    // --- Animaciones Fade-in al hacer scroll ---
-    function handleFadeIn() {
-      const fadeElements = document.querySelectorAll('.fade-in');
-      fadeElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight - 80;
-        if (isVisible) {
-          el.classList.add('visible');
-        }
-      });
-    }
-
     window.addEventListener('scroll', function() {
       const btn = document.getElementById('back-to-top');
       if (window.scrollY > 300) {
-        btn.classList.add('visible');
+        btn.style.display = 'block';
       } else {
-        btn.classList.remove('visible');
+        btn.style.display = 'none';
       }
       updateActiveNav();
-      handleFadeIn();
     });
 
     document.addEventListener('DOMContentLoaded', function() {
@@ -769,10 +759,7 @@
         setLang({ target: btn }, detectedLang);
       }
 
-      setTimeout(() => {
-        updateActiveNav();
-        handleFadeIn();
-      }, 150);
+      setTimeout(updateActiveNav, 100);
 
       const form = document.getElementById('contact-form');
       if (form) {
