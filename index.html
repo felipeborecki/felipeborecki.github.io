@@ -28,7 +28,7 @@
   <meta property="og:locale:alternate" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
 
-  <!-- hreflang con # (funciona sin configuración del servidor) -->
+  <!-- hreflang -->
   <link rel="alternate" hreflang="de" href="https://felipeborecki.com/#de">
   <link rel="alternate" hreflang="es" href="https://felipeborecki.com/#es">
   <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/#pt">
@@ -75,9 +75,9 @@
     .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
     h1{font-size:2rem;margin:0}
 
-    /* HERO CON IMAGEN ARRIBA Y TEXTO DEBAJO */
+    /* HERO - Imagen completa sin recortes */
     .hero{margin-top:72px;background:#0e1528}
-    .hero-banner{width:100%;height:400px;background:url('/images/header.jpg') center/cover no-repeat;display:block}
+    .hero-banner{width:100%;height:400px;background:url('/images/header.jpg') center/contain no-repeat;background-color:#0e1528;display:block}
     .hero-content{max-width:1000px;margin:0 auto;padding:50px 2rem 70px;text-align:center;color:#fff}
     .hero h2{font-size:3rem;margin-bottom:1.5rem;line-height:1.2}
     .hero p{font-size:1.15rem;margin:0 auto 1.5rem;max-width:70ch;line-height:1.7}
@@ -581,12 +581,10 @@
       safeSetStoredLang(lang);
       updateMeta(t);
 
-      // Usar # para evitar errores 404
       if (window.history && window.history.replaceState) {
         window.history.replaceState(null, '', '#' + lang);
       }
 
-      // Actualizar hreflang alternativos
       document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => {
         const hreflang = link.getAttribute('hreflang');
         if (hreflang && hreflang !== 'x-default') {
@@ -641,7 +639,6 @@
         });
       });
 
-      // Detectar idioma desde el hash (#de, #es, #pt, #en)
       const hash = window.location.hash.replace('#', '');
       const savedLang = safeGetStoredLang();
       const detectedLang = translations[hash] ? hash : savedLang;
