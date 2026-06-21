@@ -98,8 +98,10 @@
     .cta:hover{background:#f0f2f8;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
     .cta-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
     .cta-secondary:hover{background:rgba(255,255,255,.1);border-color:#fff}
-    .cta-book{background:#25D366;color:#fff;border:none}
-    .cta-book:hover{background:#1da851;color:#fff}
+    .cta-outline{background:transparent;color:#fff;border:2px solid #fff}
+    .cta-outline:hover{background:rgba(255,255,255,.1);border-color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .cta-dark{background:#0e1528;color:#fff;border:2px solid #0e1528}
+    .cta-dark:hover{background:#1a2a4a;border-color:#1a2a4a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
 
     /* SECCIONES CON LÍNEA DIVISORIA */
     .section{padding:70px 2rem;max-width:1200px;margin:0 auto}
@@ -140,7 +142,7 @@
     .contact-info-block p{margin:0.5rem 0}
 
     .booking-cta-block{text-align:center;margin:2rem auto 0;padding:1.5rem;background:#f0f4f8;border-radius:8px;max-width:700px}
-    .booking-cta-block .cta{font-size:1.1rem;padding:0.9rem 2.5rem}
+    .booking-cta-block p{margin-bottom:0.8rem;font-weight:500;color:#0e1528}
 
     /* BOTÓN VOLVER ARRIBA */
     #back-to-top{position:fixed;bottom:2rem;right:2rem;background:#0e1528;color:#fff;border:none;border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);display:none;transition:all .25s ease;z-index:999}
@@ -243,7 +245,7 @@
       <div class="cta-wrap">
         <a href="#contact" class="cta" data-lang="cta">Kontakt aufnehmen</a>
         <a href="#services" class="cta cta-secondary" data-lang="cta-secondary">Leistungen ansehen</a>
-        <a href="/appointment.html" class="cta cta-book" data-lang="cta-book">📅 Termin buchen</a>
+        <a href="/appointment.html" class="cta cta-outline" data-lang="cta-book">📅 Termin buchen</a>
       </div>
     </div>
   </section>
@@ -352,8 +354,8 @@
     </form>
 
     <div class="booking-cta-block">
-      <p style="margin-bottom:0.8rem;font-weight:500;" data-lang="booking-cta-text">📅 Oder buchen Sie direkt einen Termin:</p>
-      <a href="/appointment.html" class="cta cta-book" data-lang="booking-cta-btn">Termin buchen</a>
+      <p data-lang="booking-cta-text">📅 Oder buchen Sie direkt einen Termin:</p>
+      <a href="/appointment.html" class="cta cta-dark" data-lang="booking-cta-btn">Termin buchen</a>
     </div>
 
     <div class="contact-info-block">
@@ -386,6 +388,10 @@
 
     const translations = {
       de: {
+        title: 'Felipe Borecki - Dolmetscher & Übersetzer',
+        desc: 'GISA #32188035. Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden, Gesundheitseinrichtungen und sensible institutionelle Kontexte in Österreich. Über 900 Einsätze. Graz | vor Ort, remote und telefonisch.',
+        ogtitle: 'Felipe Borecki - Dolmetscher & Übersetzer',
+        ogdesc: 'Über 900 Einsätze für Gerichte, Behörden, medizinische und psychosoziale Kontexte. GISA-registriert und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet.',
         name: 'Felipe Borecki',
         'nav-services': 'Leistungen',
         'nav-about': 'Profil',
@@ -449,6 +455,10 @@
         'form-sending': 'Sendet...'
       },
       es: {
+        title: 'Felipe Borecki - Intérprete y Traductor',
+        desc: 'GISA #32188035. Intérprete y traductor profesional para tribunales, autoridades, sector sanitario y contextos institucionales sensibles en Austria. Más de 900 servicios. Graz | Presencial, remoto y telefónico.',
+        ogtitle: 'Felipe Borecki - Intérprete y Traductor',
+        ogdesc: 'Más de 900 servicios para tribunales, autoridades y contextos médicos y psicosociales. Registrado en GISA e incluido en el registro de intérpretes y peritos del Ministerio del Interior de Austria.',
         name: 'Felipe Borecki',
         'nav-services': 'Servicios',
         'nav-about': 'Perfil',
@@ -512,6 +522,10 @@
         'form-sending': 'Enviando...'
       },
       pt: {
+        title: 'Felipe Borecki - Intérprete e Tradutor',
+        desc: 'GISA #32188035. Intérprete e tradutor profissional para tribunais, autoridades, saúde e contextos institucionais sensíveis na Áustria. Mais de 900 serviços. Graz | Presencial, remoto e telefónico.',
+        ogtitle: 'Felipe Borecki - Intérprete e Tradutor',
+        ogdesc: 'Mais de 900 serviços para tribunais, autoridades e contextos médicos e psicossociais. Registrado na GISA e incluído no registo de intérpretes e peritos do Ministério do Interior da Áustria.',
         name: 'Felipe Borecki',
         'nav-services': 'Serviços',
         'nav-about': 'Perfil',
@@ -575,6 +589,10 @@
         'form-sending': 'Enviando...'
       },
       en: {
+        title: 'Felipe Borecki - Interpreter & Translator',
+        desc: 'GISA #32188035. Professional interpreter and translator for courts, public authorities, healthcare and sensitive institutional contexts in Austria. 900+ assignments. Graz | On-site, remote and over the phone.',
+        ogtitle: 'Felipe Borecki - Interpreter & Translator',
+        ogdesc: '900+ assignments for courts, authorities and medical and psychosocial contexts. GISA-registered and listed in the Austrian Ministry of the Interior\'s register of interpreters and experts.',
         name: 'Felipe Borecki',
         'nav-services': 'Services',
         'nav-about': 'Profile',
