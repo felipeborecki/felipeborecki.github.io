@@ -28,7 +28,7 @@
   <meta property="og:locale:alternate" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
 
-  <!-- hreflang con URLs limpias (sin #) -->
+  <!-- hreflang con URLs limpias -->
   <link rel="alternate" hreflang="de" href="https://felipeborecki.com/de">
   <link rel="alternate" hreflang="es" href="https://felipeborecki.com/es">
   <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/pt">
@@ -75,17 +75,19 @@
     .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
     h1{font-size:2rem;margin:0}
 
-    .hero{background:#0e1528;color:#fff;text-align:center;padding-top:72px;margin-top:0;position:relative;overflow:hidden}
-    .hero-image{width:100%;height:450px;background:url('/images/header.jpg') center/contain no-repeat;background-color:#0e1528;display:block}
-    .hero-content{max-width:900px;margin:0 auto;padding:50px 2rem 70px}
-    .hero h2{font-size:2.8rem;margin-bottom:1rem}
-    .hero p{font-size:1.1rem;margin:0 auto 1.2rem;max-width:66ch}
-    .hero-subline{font-size:0.95rem;opacity:.96;max-width:72ch;margin:0 auto 2rem}
+    /* HERO REDISEÑADO */
+    .hero{position:relative;margin-top:72px;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0e1528;overflow:hidden}
+    .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url('/images/header.jpg') center/cover no-repeat;opacity:.4;z-index:1}
+    .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgba(14,21,40,.85) 0%,rgba(20,33,53,.75) 100%);z-index:2}
+    .hero-content{position:relative;z-index:3;max-width:900px;padding:2rem;text-align:center;color:#fff}
+    .hero h2{font-size:3.2rem;margin-bottom:1.5rem;line-height:1.2}
+    .hero p{font-size:1.2rem;margin:0 auto 1.5rem;max-width:70ch;line-height:1.7}
+    .hero-subline{font-size:1rem;opacity:.9;max-width:72ch;margin:0 auto 2.5rem;line-height:1.6}
     .cta-wrap{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
-    .cta{background:#fff;color:#0e1528;padding:1rem 2rem;border-radius:5px;font-weight:700;display:inline-block;transition:background .25s ease,transform .25s ease;text-decoration:none;border:0;cursor:pointer}
+    .cta{background:#fff;color:#0e1528;padding:1rem 2.5rem;border-radius:5px;font-weight:700;display:inline-block;transition:background .25s ease,transform .25s ease;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
     .cta:hover{background:#f0f2f8;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
-    .cta-secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6)}
-    .cta-secondary:hover{background:rgba(255,255,255,.08)}
+    .cta-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+    .cta-secondary:hover{background:rgba(255,255,255,.1);border-color:#fff}
 
     .section{padding:70px 2rem;max-width:1200px;margin:0 auto}
     .section h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#0e1528}
@@ -140,9 +142,13 @@
     @media (max-width:768px){
       .header-content{flex-direction:column;gap:.6rem}
       h1{font-size:1.5rem}
-      .hero-image{height:250px}
-      .hero-content{padding:30px 1rem 50px}
-      .hero h2{font-size:1.8rem}
+      
+      .hero{min-height:90vh;margin-top:72px}
+      .hero h2{font-size:2rem}
+      .hero p{font-size:1rem}
+      .hero-subline{font-size:0.9rem}
+      .hero-content{padding:1.5rem}
+      
       .profil-container{flex-direction:column;text-align:center}
       .profilfoto,.profilfoto-placeholder{width:200px;height:250px}
       .section h2{font-size:1.8rem}
@@ -167,7 +173,8 @@
   </header>
 
   <section id="home" class="hero">
-    <div class="hero-image" role="img" aria-label="Felipe Borecki - Dolmetscher und Übersetzer"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h2 data-lang="hero-title">Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte</h2>
       <p data-lang="hero-desc">Professionelle Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich – präzise, vertraulich und verlässlich, vor Ort, remote und telefonisch.</p>
@@ -576,12 +583,10 @@
       safeSetStoredLang(lang);
       updateMeta(t);
 
-      // Usar URLs limpias /de, /es, /pt, /en
       if (window.history && window.history.replaceState) {
         window.history.replaceState(null, '', '/' + lang);
       }
 
-      // Actualizar hreflang alternativos
       document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(link => {
         const hreflang = link.getAttribute('hreflang');
         if (hreflang && hreflang !== 'x-default') {
@@ -636,7 +641,6 @@
         });
       });
 
-      // Detectar idioma desde la URL (/de, /es, /pt, /en)
       const pathLang = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
       const savedLang = safeGetStoredLang();
       const detectedLang = translations[pathLang] ? pathLang : savedLang;
