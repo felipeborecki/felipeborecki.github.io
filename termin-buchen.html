@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Borecki - Termin buchen</title>
+  <meta name="description" content="Buchen Sie einen 30-minütigen Termin für ein Zoom-Meeting mit Felipe Borecki. Wählen Sie ein Datum und eine Uhrzeit.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Felipe Borecki - Termin buchen">
+  <meta property="og:description" content="Buchen Sie einen 30-minütigen Termin für ein Zoom-Meeting mit Felipe Borecki.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felipeborecki.com/termin-buchen">
+  <meta property="og:locale" content="de_AT">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Roboto',sans-serif;line-height:1.6;color:#333;background:#f8f9fa}
+
+    /* HEADER */
+    header{background:#0e1528;color:#fff;padding:0.8rem 1.5rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.12);border-bottom:1px solid rgba(255,255,255,0.08)}
+    .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;padding:0 1rem;width:100%;flex-wrap:wrap;gap:0.5rem}
+    .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+    .header-left h1{font-size:1.6rem;margin:0;white-space:nowrap}
+    .header-left h1 a{color:#fff;text-decoration:none}
+    .header-nav{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+    .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
+    .header-nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#fff;transition:width .3s ease}
+    .header-nav a:hover{color:#fff}
+    .header-nav a:hover::after{width:100%}
+    .header-nav a.active{color:#fff}
+    .header-nav a.active::after{width:100%}
+    .header-right{display:flex;align-items:center;gap:0.8rem}
+    .flags{display:flex;gap:.3rem}
+    .flags button{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
+    .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
+    .back-link{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.85rem;display:flex;align-items:center;gap:4px;transition:color .25s ease}
+    .back-link:hover{color:#fff}
+
+    /* HERO MINI */
+    .hero-mini{background:linear-gradient(135deg,#0e1528,#1a2a4a);color:#fff;padding:120px 2rem 60px;text-align:center;margin-top:72px}
+    .hero-mini h1{font-size:2.8rem;margin-bottom:0.5rem}
+    .hero-mini p{font-size:1.2rem;max-width:700px;margin:0 auto;opacity:.9}
+
+    /* SECCIÓN PRINCIPAL */
+    .section{padding:50px 2rem 80px;max-width:1200px;margin:0 auto}
+    .booking-wrapper{max-width:700px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.1);padding:2.5rem;text-align:center}
+    .booking-wrapper h2{color:#0e1528;font-size:1.8rem;margin-bottom:0.5rem}
+    .booking-wrapper .subtitle{color:#666;margin-bottom:1.5rem;font-size:1rem}
+    .booking-wrapper iframe{max-width:100%;border:none;border-radius:8px;background:#fff}
+    .booking-info{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #eee;display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;font-size:0.9rem;color:#555}
+    .booking-info span{display:flex;align-items:center;gap:6px}
+    .booking-info .icon{font-size:1.2rem}
+
+    /* FOOTER */
+    footer{background:#0e1528;color:#fff;text-align:center;padding:2rem}
+    footer a{color:#fff;text-decoration:underline}
+    footer a:hover{color:#ddd}
+
+    /* RESPONSIVE */
+    @media (max-width:768px){
+      header{padding:0.5rem 0.8rem}
+      .header-content{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0.3rem;padding:0 0.3rem}
+      .header-left{width:100%;justify-content:center;flex-wrap:wrap;gap:0.4rem}
+      .header-left h1{font-size:1.1rem}
+      .header-nav{gap:0.5rem;justify-content:center;width:100%}
+      .header-nav a{font-size:0.7rem;padding-bottom:1px}
+      .header-right{width:100%;justify-content:center;gap:0.3rem}
+      .flags button{width:28px;height:28px;font-size:0.9rem}
+      .back-link{font-size:0.7rem}
+      
+      .hero-mini{padding:100px 1.5rem 40px}
+      .hero-mini h1{font-size:2rem}
+      .hero-mini p{font-size:1rem}
+      
+      .section{padding:30px 1.2rem 60px}
+      .booking-wrapper{padding:1.5rem}
+      .booking-wrapper h2{font-size:1.4rem}
+      .booking-wrapper iframe{height:450px !important}
+      .booking-info{flex-direction:column;gap:0.8rem;align-items:center}
+    }
+
+    @media (max-width:400px){
+      .hero-mini h1{font-size:1.6rem}
+      .booking-wrapper{padding:1rem}
+      .booking-wrapper iframe{height:400px !important}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="header-left">
+      <h1><a href="/#de" data-lang="name">Felipe Borecki</a></h1>
+      <nav class="header-nav">
+        <a href="/#services" data-lang="nav-services">Leistungen</a>
+        <a href="/#about" data-lang="nav-about">Profil</a>
+        <a href="/termin-buchen" class="active" data-lang="nav-book">Termin buchen</a>
+        <a href="/#contact" data-lang="nav-contact">Kontakt</a>
+        <a href="/agb" data-lang="nav-agb">AGB</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="/" class="back-link" data-lang="back-home">← Zurück</a>
+      <div class="flags">
+        <button class="active" type="button" onclick="setLang('de')" title="Deutsch">🇩🇪</button>
+        <button type="button" onclick="setLang('es')" title="Español">🇪🇸</button>
+        <button type="button" onclick="setLang('pt')" title="Português">🇧🇷</button>
+        <button type="button" onclick="setLang('en')" title="English">🇬🇧</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero-mini">
+  <h1 data-lang="page-title">📅 Termin buchen</h1>
+  <p data-lang="page-desc">Vereinbaren Sie ein 30-minütiges Zoom-Meeting mit mir. Wählen Sie einfach ein Datum und eine Uhrzeit.</p>
+</section>
+
+<section class="section">
+  <div class="booking-wrapper">
+    <h2 data-lang="form-title">Wählen Sie Ihren Termin</h2>
+    <p class="subtitle" data-lang="form-subtitle">Alle Felder sind erforderlich. Sie erhalten eine Bestätigung per E-Mail.</p>
+    
+    <iframe 
+      src="https://calendar.zoho.eu/eventreqForm/zz08011230b9e2d616c045e5b4f294cd5fa24d3706e7026723eff3f04489af41322699b4573acd69eb413ccd3ee637b1c006f86c4e?theme=1&l=en&tz=Europe/Vienna"
+      title="Programar cita para Appointments"
+      frameborder="0"
+      scrolling="no"
+      marginwidth="0"
+      border="0px"
+      marginheight="0"
+      height="450px"
+      width="100%"
+      allowtransparency="true"
+      align="center"
+      style="max-width:432px;"
+    ></iframe>
+
+    <div class="booking-info">
+      <span><span class="icon">⏱️</span> <span data-lang="info-duration">30 Minuten Dauer</span></span>
+      <span><span class="icon">📹</span> <span data-lang="info-zoom">Zoom-Meeting</span></span>
+      <span><span class="icon">✉️</span> <span data-lang="info-confirm">Bestätigung per E-Mail</span></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten. | <a href="/agb">AGB / Datenschutz</a></p>
+</footer>
+
+<script>
+  const translations = {
+    de: {
+      name: 'Felipe Borecki',
+      'nav-services': 'Leistungen',
+      'nav-about': 'Profil',
+      'nav-book': 'Termin buchen',
+      'nav-contact': 'Kontakt',
+      'nav-agb': 'AGB',
+      'back-home': '← Zurück',
+      'page-title': '📅 Termin buchen',
+      'page-desc': 'Vereinbaren Sie ein 30-minütiges Zoom-Meeting mit mir. Wählen Sie einfach ein Datum und eine Uhrzeit.',
+      'form-title': 'Wählen Sie Ihren Termin',
+      'form-subtitle': 'Alle Felder sind erforderlich. Sie erhalten eine Bestätigung per E-Mail.',
+      'info-duration': '30 Minuten Dauer',
+      'info-zoom': 'Zoom-Meeting',
+      'info-confirm': 'Bestätigung per E-Mail'
+    },
+    es: {
+      name: 'Felipe Borecki',
+      'nav-services': 'Servicios',
+      'nav-about': 'Perfil',
+      'nav-book': 'Reservar cita',
+      'nav-contact': 'Contacto',
+      'nav-agb': 'Términos',
+      'back-home': '← Volver',
+      'page-title': '📅 Reservar cita',
+      'page-desc': 'Concierte una reunión de 30 minutos por Zoom conmigo. Simplemente elija una fecha y hora.',
+      'form-title': 'Seleccione su cita',
+      'form-subtitle': 'Todos los campos son obligatorios. Recibirá una confirmación por correo electrónico.',
+      'info-duration': 'Duración 30 minutos',
+      'info-zoom': 'Reunión por Zoom',
+      'info-confirm': 'Confirmación por email'
+    },
+    pt: {
+      name: 'Felipe Borecki',
+      'nav-services': 'Serviços',
+      'nav-about': 'Perfil',
+      'nav-book': 'Agendar reunião',
+      'nav-contact': 'Contato',
+      'nav-agb': 'Termos',
+      'back-home': '← Voltar',
+      'page-title': '📅 Agendar reunião',
+      'page-desc': 'Marque uma reunião de 30 minutos via Zoom comigo. Escolha uma data e horário.',
+      'form-title': 'Selecione sua reunião',
+      'form-subtitle': 'Todos os campos são obrigatórios. Você receberá uma confirmação por e-mail.',
+      'info-duration': 'Duração 30 minutos',
+      'info-zoom': 'Reunião via Zoom',
+      'info-confirm': 'Confirmação por e-mail'
+    },
+    en: {
+      name: 'Felipe Borecki',
+      'nav-services': 'Services',
+      'nav-about': 'Profile',
+      'nav-book': 'Book appointment',
+      'nav-contact': 'Contact',
+      'nav-agb': 'Terms',
+      'back-home': '← Back',
+      'page-title': '📅 Book appointment',
+      'page-desc': 'Schedule a 30-minute Zoom meeting with me. Simply choose a date and time.',
+      'form-title': 'Select your appointment',
+      'form-subtitle': 'All fields are required. You will receive a confirmation via email.',
+      'info-duration': '30 minutes duration',
+      'info-zoom': 'Zoom meeting',
+      'info-confirm': 'Confirmation via email'
+    }
+  };
+
+  let currentLang = 'de';
+
+  function safeGetStoredLang() {
+    try { return localStorage.getItem('lang') || 'de'; }
+    catch (e) { return 'de'; }
+  }
+
+  function safeSetStoredLang(lang) {
+    try { localStorage.setItem('lang', lang); }
+    catch (e) {}
+  }
+
+  function setLang(lang) {
+    const t = translations[lang] || translations.de;
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    safeSetStoredLang(lang);
+
+    // Actualizar URL
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, '', '/termin-buchen#' + lang);
+    }
+
+    // Actualizar botones de banderas
+    document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
+    const activeBtn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
+    if (activeBtn) activeBtn.classList.add('active');
+
+    // Actualizar todos los elementos con data-lang
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      const key = el.dataset.lang;
+      if (t[key] !== undefined) el.textContent = t[key];
+    });
+  }
+
+  // Detectar idioma al cargar
+  document.addEventListener('DOMContentLoaded', function() {
+    const hash = window.location.hash.replace('#', '');
+    const savedLang = safeGetStoredLang();
+    const detectedLang = translations[hash] ? hash : savedLang;
+    setLang(detectedLang);
+  });
+</script>
+
+</body>
+</html>
