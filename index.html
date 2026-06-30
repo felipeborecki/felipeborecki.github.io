@@ -96,6 +96,7 @@
     .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
     .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
 
+    /* HERO CON IMAGEN CUADRADA Y CROSSFADE */
     .hero{margin-top:72px;background:#0e1528;padding:60px 2rem 80px;text-align:center;color:#fff;position:relative}
     .hero-banner{position:absolute;top:0;left:0;width:100%;height:100%;background:url('/images/header2.jpg') center/cover no-repeat;opacity:.15;z-index:0}
     .hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto}
@@ -104,9 +105,9 @@
     .hero p{font-size:1.1rem;margin:0 auto 1.5rem;max-width:70ch;line-height:1.7}
     .hero-subline{font-size:1rem;opacity:.85;max-width:72ch;margin:0 auto 2.5rem;line-height:1.6}
     
-    /* Crossfade photo container */
-    .hero-photo-container{position:relative;width:280px;height:280px;margin:0 auto 2rem;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,0.3);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
-    .hero-photo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:crossfade 10s infinite}
+    /* Crossfade photo container - CUADRADO */
+    .hero-photo-container{position:relative;width:280px;height:280px;margin:0 auto 2rem;border-radius:0;overflow:hidden;border:3px solid rgba(255,255,255,0.3);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+    .hero-photo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;border-radius:0;animation:crossfade 10s infinite}
     .hero-photo-1{animation-delay:0s}
     .hero-photo-2{animation-delay:5s}
 
@@ -306,7 +307,7 @@
   <section id="home" class="hero">
     <div class="hero-banner"></div>
     <div class="hero-content">
-      <!-- Crossfade photo container -->
+      <!-- Crossfade photo container - AHORA EN EL HERO (CUADRADO) -->
       <div class="hero-photo-container">
         <img src="/images/foto-perfil.jpg" alt="Felipe Borecki" class="hero-photo hero-photo-1">
         <img src="/images/perfilborecki.png" alt="Felipe Borecki" class="hero-photo hero-photo-2">
@@ -439,7 +440,7 @@
 
     <div class="faq-item">
       <h3 data-lang="faq-q3">Welche Plattformen nutzen Sie für Videodolmetschen?</h3>
-      <p data-lang="faq-a3">Ich arbeite mit allen gängigen Plattformen: Zoom, Microsoft Teams, Jitsi Meet und Skype. Auf Wunsch kann ich auch dedizierte Dolmetscherplattformen nutzen.</p>
+      <p data-lang="faq-a3">Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten zuverlässige Verbindungsqualität.</p>
     </div>
 
     <div class="faq-item">
@@ -574,7 +575,7 @@
         'faq-q2': 'Wie weit im Voraus sollte ich buchen?',
         'faq-a2': 'Für geplante Termine empfehle ich eine Buchung 2 bis 4 Wochen im Voraus. Bei kurzfristigen Anfragen in Graz kann ich je nach Verfügbarkeit auch innerhalb einer Stunde vor Ort sein. Für Einsätze außerhalb von Graz benötige ich in der Regel 24 bis 48 Stunden Vorlaufzeit.',
         'faq-q3': 'Welche Plattformen nutzen Sie für Videodolmetschen?',
-        'faq-a3': 'Ich arbeite mit allen gängigen Plattformen: Zoom, Microsoft Teams, Jitsi Meet und Skype. Auf Wunsch kann ich auch dedizierte Dolmetscherplattformen nutzen.',
+        'faq-a3': 'Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten zuverlässige Verbindungsqualität.',
         'faq-q4': 'Übersetzen Sie auch beglaubigte Dokumente?',
         'faq-a4': 'Ja, ich beglaubige Übersetzungen aus dem Spanischen, Portugiesischen und Englischen ins Deutsche sowie umgekehrt. Die Beglaubigung ist für offizielle Zwecke wie Gerichtsverfahren oder Behördengänge gültig.',
         contact: 'Kontakt',
@@ -656,7 +657,7 @@
         'faq-q2': '¿Con cuánta anticipación debo reservar?',
         'faq-a2': 'Para citas programadas recomiendo reservar con 2 a 4 semanas de antelación. Para solicitudes urgentes en Graz, dependiendo de la disponibilidad, puedo estar presente en menos de una hora. Para servicios fuera de Graz, necesito generalmente entre 24 y 48 horas de antelación.',
         'faq-q3': '¿Qué plataformas usas para videointerpretación?',
-        'faq-a3': 'Trabajo con todas las plataformas habituales: Zoom, Microsoft Teams, Jitsi Meet y Skype. Si lo prefiere, también puedo utilizar plataformas especializadas de interpretación.',
+        'faq-a3': 'Trabajo con las plataformas más utilizadas: Zoom, Microsoft Teams y Google Meet. Son las más habituales en contextos institucionales y ofrecen una calidad de conexión fiable.',
         'faq-q4': '¿Traduces también documentos certificados?',
         'faq-a4': 'Sí, certifico traducciones del español, portugués e inglés al alemán y viceversa. La certificación es válida para fines oficiales como procedimientos judiciales o trámites ante autoridades.',
         contact: 'Contacto',
@@ -738,7 +739,7 @@
         'faq-q2': 'Com quanta antecedência devo reservar?',
         'faq-a2': 'Para marcações agendadas recomendo reservar com 2 a 4 semanas de antecedência. Para pedidos urgentes em Graz, dependendo da disponibilidade, posso estar presente em menos de uma hora. Para serviços fora de Graz, necessito geralmente de 24 a 48 horas de antecedência.',
         'faq-q3': 'Que plataformas você usa para videointerpretação?',
-        'faq-a3': 'Trabalho com todas as plataformas habituais: Zoom, Microsoft Teams, Jitsi Meet e Skype. Se preferir, também posso utilizar plataformas especializadas de interpretação.',
+        'faq-a3': 'Trabalho com as plataformas mais utilizadas: Zoom, Microsoft Teams e Google Meet. São as mais habituais em contextos institucionais e oferecem uma qualidade de conexão fiável.',
         'faq-q4': 'Você também traduz documentos certificados?',
         'faq-a4': 'Sim, certifico traduções do espanhol, português e inglês para o alemão e vice-versa. A certificação é válida para fins oficiais como processos judiciais ou trâmites junto a autoridades.',
         contact: 'Contato',
@@ -820,7 +821,7 @@
         'faq-q2': 'How far in advance should I book?',
         'faq-a2': 'For scheduled appointments I recommend booking 2 to 4 weeks in advance. For urgent requests in Graz, depending on availability, I can be on site within an hour. For assignments outside Graz, I typically require 24 to 48 hours notice.',
         'faq-q3': 'Which platforms do you use for video interpreting?',
-        'faq-a3': 'I work with all common platforms: Zoom, Microsoft Teams, Jitsi Meet, and Skype. If preferred, I can also use dedicated interpreting platforms.',
+        'faq-a3': 'I work with the most commonly used platforms: Zoom, Microsoft Teams, and Google Meet. These are the most widespread in institutional contexts and offer reliable connection quality.',
         'faq-q4': 'Do you also translate certified documents?',
         'faq-a4': 'Yes, I certify translations from Spanish, Portuguese, and English into German and vice versa. The certification is valid for official purposes such as court proceedings or administrative procedures.',
         contact: 'Contact',
