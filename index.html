@@ -65,6 +65,7 @@
   </script>
 
   <style>
+    /* ===== ESTILOS COMPLETOS ===== */
     *{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{font-family:'Roboto',sans-serif;line-height:1.7;color:#333;background:#f8f9fa;font-size:16px}
@@ -122,9 +123,20 @@
     .card h3{color:#0e1528;margin-bottom:.75rem;font-size:1.2rem}
     .card p{margin:0;font-size:0.95rem;line-height:1.6}
 
-    .testimonial{border-left:4px solid #0e1528;text-align:left}
-    .testimonial-text{font-style:italic;font-size:0.95rem;line-height:1.7;margin-bottom:0.75rem}
-    .testimonial-author{font-weight:700;color:#0e1528;font-size:0.9rem}
+    /* TESTIMONIALS - SCROLL HORIZONTAL */
+    .testimonials-wrapper{overflow-x:auto;overflow-y:hidden;padding:0 0 1rem 0;scroll-behavior:smooth;cursor:grab;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+    .testimonials-wrapper::-webkit-scrollbar{height:8px}
+    .testimonials-wrapper::-webkit-scrollbar-track{background:#e8e8e8;border-radius:4px}
+    .testimonials-wrapper::-webkit-scrollbar-thumb{background:#0e1528;border-radius:4px}
+    .testimonials-wrapper::-webkit-scrollbar-thumb:hover{background:#1a2a4a}
+    .testimonials-track{display:flex;gap:1.25rem;padding:0.5rem 0.25rem;width:max-content}
+    .testimonial-card{min-width:320px;max-width:380px;flex-shrink:0;background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);border-left:4px solid #0e1528;scroll-snap-align:start;transition:transform .25s ease;display:flex;flex-direction:column}
+    .testimonial-card:hover{transform:translateY(-4px)}
+    .testimonial-text{font-style:italic;font-size:0.92rem;line-height:1.7;margin-bottom:0.75rem;flex:1}
+    .testimonial-author{font-weight:700;color:#0e1528;font-size:0.85rem;margin-top:auto}
+    .testimonial-scroll-hint{text-align:center;color:#999;font-size:0.8rem;margin-top:0.5rem;display:flex;align-items:center;justify-content:center;gap:0.5rem}
+    .testimonial-scroll-hint span{animation:scrollPulse 2s ease-in-out infinite}
+    @keyframes scrollPulse{0%,100%{opacity:0.4}50%{opacity:1}}
 
     .credential-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;max-width:1000px;margin:0 auto}
     .credential{background:#fff;padding:1.25rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-align:center}
@@ -219,6 +231,7 @@
       .hero-content{padding:40px 2rem 60px}
       .hero h2{font-size:2.8rem}
       .profil-photo-container{width:200px;height:240px}
+      .testimonial-card{min-width:280px;max-width:320px}
     }
 
     @media (max-width:900px){
@@ -261,8 +274,11 @@
       .faq-item h3{font-size:1rem}
       .faq-item p{font-size:0.9rem}
       #faq{padding:0 1.2rem 40px}
-      .testimonial-text{font-size:0.9rem}
-      .testimonial-author{font-size:0.85rem}
+      
+      .testimonial-card{min-width:260px;max-width:280px;padding:1.2rem}
+      .testimonial-text{font-size:0.85rem}
+      .testimonial-author{font-size:0.8rem}
+      .testimonials-wrapper::-webkit-scrollbar{height:6px}
       
       .institution-grid{grid-template-columns:repeat(2,1fr)}
       .institution-examples-list{grid-template-columns:1fr}
@@ -280,6 +296,7 @@
 
     @media (max-width:480px){
       .institution-grid{grid-template-columns:1fr}
+      .testimonial-card{min-width:220px;max-width:250px}
     }
 
     @media (max-width:400px){
@@ -461,43 +478,49 @@
     </ul>
   </section>
 
-  <!-- TESTIMONIALS CON 7 TESTIMONIOS -->
+  <!-- TESTIMONIALS - SCROLL HORIZONTAL -->
   <section id="testimonials" class="section">
     <h2 data-lang="testimonials-title">Lo que dicen los clientes</h2>
     <p class="section-intro" data-lang="testimonials-intro">Impresiones de clientes y socios de cooperación.</p>
-    <div class="grid-2">
-      <div class="card testimonial">
-        <p class="testimonial-text" data-lang="testimonial1-text">"En un procedimiento de guarda compartida en la Familiengerichtshilfe Graz con una cliente cubana, Felipe interpretó con precisión tanto los términos legales como las nuances emocionales que la madre necesitaba transmitir. Demostró sensibilidad y profesionalismo, asegurando que todos los aspectos culturales y familiares fueran considerados."</p>
-        <p class="testimonial-author" data-lang="testimonial1-author">— Abogada de Familia, Graz</p>
+    
+    <div class="testimonials-wrapper" id="testimonials-scroll">
+      <div class="testimonials-track">
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-lang="testimonial1-text">"En un procedimiento de guarda compartida en la Familiengerichtshilfe Graz con una cliente cubana, Felipe interpretó con precisión tanto los términos legales como las nuances emocionales que la madre necesitaba transmitir. Demostró sensibilidad y profesionalismo, asegurando que todos los aspectos culturales y familiares fueran considerados."</p>
+          <p class="testimonial-author" data-lang="testimonial1-author">— Abogada de Familia, Graz</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-lang="testimonial2-text">"En un divorcio contencioso en el Bezirksgericht Leibnitz con un casal dominicano, Felipe interpretó todo el proceso — documentos, testimonios y preguntas entre las partes y el juez — con claridad y eficiencia. Su actuación fue esencial para que la audiencia transcurriera de forma fluida y productiva."</p>
+          <p class="testimonial-author" data-lang="testimonial2-author">— Abogado, Leibnitz</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-lang="testimonial3-text">"En una evaluación psiquiátrica en el KAGes (LKH Graz II) con un paciente venezolano con ansiedad severa, Felipe actuó con absoluta discreción, traduciendo síntomas y preguntas médicas con exactitud y sensibilidad. La consulta fluyó como si no hubiera barrera lingüística."</p>
+          <p class="testimonial-author" data-lang="testimonial3-author">— Psiquiatra, Graz</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-lang="testimonial4-text">"En una evaluación de guarda en el Jugendamt Graz con una madre angolana, Felipe interpretó todas las preguntas con paciencia y precisión, asegurando que el informe final reflejara la realidad de la familia, sin distorsiones culturales o lingüísticas."</p>
+          <p class="testimonial-author" data-lang="testimonial4-author">— Asistente Social, Jugendamt Graz</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-lang="testimonial5-text">"En un atendimento en el Frauenhaus Graz con una cliente argentina víctima de violencia doméstica, Felipe condujo la interpretación con empatía y rigor profesional, permitiendo que la cliente expresara su relato completo y que el equipo tomara decisiones con base en informaciones fidedignas."</p>
+          <p class="testimonial-author" data-lang="testimonial5-author">— Asistente Social, Frauenhaus Graz</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-lang="testimonial6-text">"En un interrogatorio en la Justizanstalt Graz-Karlau con un detenido portugués, Felipe tradujo cada pregunta y respuesta con agilidad y exactitud, manteniendo la dinámica del procedimiento sin atrasos o malentendidos. El cliente pudo expresarse plenamente en portugués y la defensa se condujo sin interferencias."</p>
+          <p class="testimonial-author" data-lang="testimonial6-author">— Abogado de Defensa, Graz</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-lang="testimonial7-text">"En un procedimiento administrativo en la BH Bruck-Mürzzuschlag con una solicitante de asilo cubana, Felipe tradujo documentos y la entrevista con el oficial con extrema precisión. Su trabajo garantizó que la cliente comprendiera cada etapa del proceso y pudiera responder con claridad."</p>
+          <p class="testimonial-author" data-lang="testimonial7-author">— Consultor Jurídico, Bruck an der Mur</p>
+        </div>
       </div>
-      <div class="card testimonial">
-        <p class="testimonial-text" data-lang="testimonial2-text">"En un divorcio contencioso en el Bezirksgericht Leibnitz con un casal dominicano, Felipe interpretó todo el proceso — documentos, testimonios y preguntas entre las partes y el juez — con claridad y eficiencia. Su actuación fue esencial para que la audiencia transcurriera de forma fluida y productiva."</p>
-        <p class="testimonial-author" data-lang="testimonial2-author">— Abogado, Leibnitz</p>
-      </div>
-      <div class="card testimonial">
-        <p class="testimonial-text" data-lang="testimonial3-text">"En una evaluación psiquiátrica en el KAGes (LKH Graz II) con un paciente venezolano con ansiedad severa, Felipe actuó con absoluta discreción, traduciendo síntomas y preguntas médicas con exactitud y sensibilidad. La consulta fluyó como si no hubiera barrera lingüística."</p>
-        <p class="testimonial-author" data-lang="testimonial3-author">— Psiquiatra, Graz</p>
-      </div>
-      <div class="card testimonial">
-        <p class="testimonial-text" data-lang="testimonial4-text">"En una evaluación de guarda en el Jugendamt Graz con una madre angolana, Felipe interpretó todas las preguntas con paciencia y precisión, asegurando que el informe final reflejara la realidad de la familia, sin distorsiones culturales o lingüísticas."</p>
-        <p class="testimonial-author" data-lang="testimonial4-author">— Asistente Social, Jugendamt Graz</p>
-      </div>
-      <div class="card testimonial">
-        <p class="testimonial-text" data-lang="testimonial5-text">"En un atendimento en el Frauenhaus Graz con una cliente argentina víctima de violencia doméstica, Felipe condujo la interpretación con empatía y rigor profesional, permitiendo que la cliente expresara su relato completo y que el equipo tomara decisiones con base en informaciones fidedignas."</p>
-        <p class="testimonial-author" data-lang="testimonial5-author">— Asistente Social, Frauenhaus Graz</p>
-      </div>
-      <div class="card testimonial">
-        <p class="testimonial-text" data-lang="testimonial6-text">"En un interrogatorio en la Justizanstalt Graz-Karlau con un detenido portugués, Felipe tradujo cada pregunta y respuesta con agilidad y exactitud, manteniendo la dinámica del procedimiento sin atrasos o malentendidos. El cliente pudo expresarse plenamente en portugués y la defensa se condujo sin interferencias."</p>
-        <p class="testimonial-author" data-lang="testimonial6-author">— Abogado de Defensa, Graz</p>
-      </div>
-      <div class="card testimonial">
-        <p class="testimonial-text" data-lang="testimonial7-text">"En un procedimiento administrativo en la BH Bruck-Mürzzuschlag con una solicitante de asilo cubana, Felipe tradujo documentos y la entrevista con el oficial con extrema precisión. Su trabajo garantizó que la cliente comprendiera cada etapa del proceso y pudiera responder con claridad."</p>
-        <p class="testimonial-author" data-lang="testimonial7-author">— Consultor Jurídico, Bruck an der Mur</p>
-      </div>
+    </div>
+    <div class="testimonial-scroll-hint">
+      <span data-lang="testimonial-hint">⟵ Desliza para ver más testimonios ⟶</span>
     </div>
   </section>
 
-  <!-- INSTITUTIONS ACTUALIZADA -->
+  <!-- INSTITUTIONS -->
   <section id="institutions" class="section">
     <h2 data-lang="institutions-title">Instituciones y socios de cooperación</h2>
     <p class="section-intro" data-lang="institutions-intro">Colaboración regular con tribunales, autoridades, instituciones de salud y servicios sociales en toda Austria.</p>
@@ -709,6 +732,7 @@
         'testimonial6-author': '— Verteidigungsanwalt, Graz',
         'testimonial7-text': '"Bei einem Verwaltungsverfahren in der BH Bruck-Mürzzuschlag mit einer kubanischen Asylbewerberin übersetzte Felipe Dokumente und das Interview mit dem Beamten mit extremer Präzision. Seine Arbeit stellte sicher, dass die Klientin jeden Schritt des Verfahrens verstand und klar antworten konnte."',
         'testimonial7-author': '— Rechtsberater, Bruck an der Mur',
+        'testimonial-hint': '⟵ Zum Scrollen nach links oder rechts wischen ⟶',
         'institutions-title': 'Institutionen und Kooperationspartner',
         'institutions-intro': 'Regelmäßige Zusammenarbeit mit Gerichten, Behörden, Gesundheitseinrichtungen und sozialen Diensten in ganz Österreich.',
         'inst-1': 'Gerichte und Staatsanwaltschaften',
@@ -849,6 +873,7 @@
         'testimonial6-author': '— Abogado de Defensa, Graz',
         'testimonial7-text': '"En un procedimiento administrativo en la BH Bruck-Mürzzuschlag con una solicitante de asilo cubana, Felipe tradujo documentos y la entrevista con el oficial con extrema precisión. Su trabajo garantizó que la cliente comprendiera cada etapa del proceso y pudiera responder con claridad."',
         'testimonial7-author': '— Consultor Jurídico, Bruck an der Mur',
+        'testimonial-hint': '⟵ Desliza para ver más testimonios ⟶',
         'institutions-title': 'Instituciones y socios de cooperación',
         'institutions-intro': 'Colaboración regular con tribunales, autoridades, instituciones de salud y servicios sociales en toda Austria.',
         'inst-1': 'Tribunales y fiscalías',
@@ -989,6 +1014,7 @@
         'testimonial6-author': '— Advogado de Defesa, Graz',
         'testimonial7-text': '"Em um procedimento administrativo na BH Bruck-Mürzzuschlag com uma solicitante de asilo cubana, Felipe traduziu documentos e a entrevista com o oficial com extrema precisão. Seu trabalho garantiu que a cliente compreendesse cada etapa do processo e pudesse responder com clareza."',
         'testimonial7-author': '— Consultor Jurídico, Bruck an der Mur',
+        'testimonial-hint': '⟵ Deslize para ver mais depoimentos ⟶',
         'institutions-title': 'Instituições e parceiros de cooperação',
         'institutions-intro': 'Colaboração regular com tribunais, autoridades, instituições de saúde e serviços sociais em toda a Áustria.',
         'inst-1': 'Tribunais e ministérios públicos',
@@ -1129,6 +1155,7 @@
         'testimonial6-author': '— Defense Lawyer, Graz',
         'testimonial7-text': '"In an administrative procedure at the BH Bruck-Mürzzuschlag with a Cuban asylum seeker, Felipe translated documents and the interview with the official with extreme precision. His work ensured that the client understood each step of the process and could respond clearly."',
         'testimonial7-author': '— Legal Consultant, Bruck an der Mur',
+        'testimonial-hint': '⟵ Swipe left or right to see more testimonials ⟶',
         'institutions-title': 'Institutions & Cooperation Partners',
         'institutions-intro': 'Regular collaboration with courts, authorities, healthcare institutions and social services throughout Austria.',
         'inst-1': 'Courts & Prosecutor\'s Offices',
