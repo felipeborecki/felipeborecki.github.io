@@ -14,23 +14,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Felipe Borecki - Dolmetscher & Übersetzer für Gerichte & Behörden in Österreich</title>
   
-  <!-- Meta Description CORREGIDA (menos de 1000 píxeles) -->
   <meta name="description" content="Felipe Borecki: Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035. 900+ Einsätze. Graz.">
-  
-  <meta name="keywords" content="Dolmetscher, Übersetzer, GISA, Graz, Österreich, Spanisch, Portugiesisch, Deutsch, Gerichtsdolmetschen, Behörden, Medizin, Remote-Dolmetschen">
+  <meta name="keywords" content="Dolmetscher, Übersetzer, GISA, Graz, Österreich, Spanisch, Portugiesisch, Deutsch, Gerichtsdolmetschen, Behörden, Medizin, Remote-Dolmetschen, DSR, BMI">
   <meta name="author" content="Felipe Borecki">
   <meta name="robots" content="index, follow">
   
-  <!-- Open Graph / Social Media -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Felipe Borecki - Dolmetscher & Übersetzer für Gerichte & Behörden">
   <meta property="og:description" content="Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035. 900+ Einsätze.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://felipeborecki.com/">
   <meta property="og:image" content="https://felipeborecki.com/images/og-image.jpg">
   <meta property="og:locale" content="de_AT">
-  <meta property="og:locale:alternate" content="es_ES">
-  <meta property="og:locale:alternate" content="pt_BR">
-  <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
@@ -39,15 +34,14 @@
 
   <!-- Apple Touch Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
 
-  <!-- hreflang COMPLETO (incluyendo self-reference) -->
+  <!-- hreflang completo -->
   <link rel="alternate" hreflang="de" href="https://felipeborecki.com/#de">
   <link rel="alternate" hreflang="es" href="https://felipeborecki.com/#es">
   <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/#pt">
   <link rel="alternate" hreflang="en" href="https://felipeborecki.com/#en">
   <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/#de">
-  <!-- SELF-REFERENCE (corrige el error) -->
+  <!-- Self-reference -->
   <link rel="alternate" hreflang="de" href="https://felipeborecki.com/">
 
   <!-- Favicon -->
@@ -58,12 +52,12 @@
   <link rel="preconnect" href="https://formspree.io">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Schema.org microdatos -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Felipe Borecki - Dolmetscher & Übersetzer",
+      "name": "Felipe Borecki",
       "description": "Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035.",
       "address": {
         "@type": "PostalAddress",
@@ -80,7 +74,7 @@
   </script>
 
   <style>
-    /* ===== ESTILOS COMPLETOS (sin cambios en el diseño visual) ===== */
+    /* ===== ESTILOS COMPLETOS ===== */
     *{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{font-family:'Roboto',sans-serif;line-height:1.6;color:#333;background:#f8f9fa}
@@ -142,6 +136,12 @@
     .profil-text{flex:1;min-width:300px;max-width:760px}
     .profil-text p{margin-bottom:1rem}
 
+    /* About Me Section */
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1000px;margin:0 auto}
+    .about-grid .about-item{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);border-left:4px solid #0e1528}
+    .about-grid .about-item h3{color:#0e1528;font-size:1.1rem;margin-bottom:.5rem}
+    .about-grid .about-item p{font-size:0.95rem;color:#555;margin:0}
+
     .form-container{max-width:600px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
     .form-group{margin-bottom:1.5rem;text-align:left}
     .form-group label{display:block;margin-bottom:.5rem;font-weight:500}
@@ -173,10 +173,6 @@
     .social-share a.email{background:#666}
     .social-share a.email:hover{background:#555}
 
-    /* NUEVA SECCIÓN "ÜBER MICH" */
-    .about-text p{margin-bottom:1.2rem;text-align:justify}
-    .about-text strong{color:#0e1528}
-
     #back-to-top{position:fixed;bottom:2rem;right:2rem;background:#0e1528;color:#fff;border:none;border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);display:none;transition:all .25s ease;z-index:999}
     #back-to-top:hover{background:#1a2a4a;transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
 
@@ -199,6 +195,7 @@
 
     @media (max-width:900px){
       .grid-2,.credential-list{grid-template-columns:1fr}
+      .about-grid{grid-template-columns:1fr}
     }
 
     @media (max-width:768px){
@@ -225,6 +222,7 @@
       .section li{padding:1.2rem}
       .card{padding:1.2rem}
       .credential{padding:1rem}
+      .about-grid .about-item{padding:1.2rem}
       
       .whatsapp-link{margin-left:0;margin-top:6px;display:inline-flex;font-size:0.75rem;padding:4px 10px}
       .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3rem;font-size:0.9rem}
@@ -249,12 +247,10 @@
   <header>
     <div class="header-content">
       <div class="header-left">
-        <!-- H1 CORREGIDA (más larga) -->
-        <h1 data-lang="name">Felipe Borecki - Dolmetscher & Übersetzer</h1>
+        <h1 data-lang="name">Felipe Borecki</h1>
         <nav class="header-nav">
           <a href="#services" data-lang="nav-services">Leistungen</a>
-          <a href="#about" data-lang="nav-about">Profil</a>
-          <a href="#ueber-mich" data-lang="nav-aboutme">Über mich</a>
+          <a href="#about" data-lang="nav-about">Über mich</a>
           <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
           <a href="#contact" data-lang="nav-contact">Kontakt</a>
           <a href="/agb" data-lang="nav-agb">AGB</a>
@@ -275,8 +271,8 @@
     <div class="hero-banner" role="img" aria-label="Felipe Borecki - Dolmetscher und Übersetzer"></div>
     <div class="hero-content">
       <h2 data-lang="hero-title">Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte</h2>
-      <p data-lang="hero-desc">Professionelle Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich – präzise, vertraulich und verlässlich, vor Ort, remote und telefonisch.</p>
-      <p class="hero-subline" data-lang="hero-subline">GISA-registriert und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet. Über 900 Einsätze für Gerichte, Polizei, Kliniken, Sozialdienste und institutionelle Auftraggeber. Arbeitssprachen: ES | PT | DE.</p>
+      <p data-lang="hero-desc">Präzise, vertrauliche und verlässliche Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich – vor Ort, remote und telefonisch.</p>
+      <p class="hero-subline" data-lang="hero-subline">GISA-registriert (Nr. 32188035) und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet. Über 900 erfolgreiche Einsätze für Gerichte, Polizei, Kliniken, Sozialdienste und institutionelle Auftraggeber. Arbeitssprachen: ES | PT | DE.</p>
       <div class="cta-wrap">
         <a href="#contact" class="cta" data-lang="cta">Kontakt aufnehmen</a>
         <a href="#services" class="cta cta-secondary" data-lang="cta-secondary">Leistungen ansehen</a>
@@ -297,8 +293,8 @@
         <span data-lang="cred2-text">Registrierung Nr. 32188035</span>
       </div>
       <div class="credential">
-        <strong data-lang="cred3-title">Bundesministerium für Inneres</strong>
-        <span data-lang="cred3-text">Im österreichischen Dolmetscher- und Sachverständigenregister gelistet</span>
+        <strong data-lang="cred3-title">DSR BMI</strong>
+        <span data-lang="cred3-text">Im Dolmetscher- und Sachverständigenregister des Innenministeriums</span>
       </div>
       <div class="credential">
         <strong data-lang="cred4-title">ES | PT | DE</strong>
@@ -308,40 +304,50 @@
   </section>
 
   <section id="about" class="section">
+    <h2 data-lang="about-title">Über mich</h2>
     <div class="profil-container">
       <img src="/images/foto-perfil.jpg" alt="Felipe Borecki Profilfoto" class="profilfoto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" loading="lazy">
       <div class="profilfoto-placeholder">📸 Foto</div>
       <div class="profil-text">
-        <h2 data-lang="qual">Profil</h2>
-        <p data-lang="qual-desc">Ich arbeite als professioneller Dolmetscher und Übersetzer für Spanisch, Portugiesisch und Deutsch mit Schwerpunkt auf Gerichten, Behörden, Gesundheitseinrichtungen und weiteren sensiblen institutionellen Bereichen in Österreich.</p>
-        <p data-lang="expertise">Mein Profil verbindet sprachliche Präzision, Vertraulichkeit, interkulturelle Kompetenz und praktische Erfahrung in anspruchsvollen Situationen. Darüber hinaus begleite ich internationale Gäste, Delegationen und Projekte mit Bezug zu Europa und Lateinamerika.</p>
+        <p data-lang="about-p1">Ich bin <strong>Felipe Borecki</strong>, professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch mit Schwerpunkt auf juristischen, behördlichen, medizinischen und psychosozialen Kontexten in Österreich. Seit 2019 habe ich mehr als <strong>900 Einsätze</strong> für Gerichte, Staatsanwaltschaften, Krankenhäuser und öffentliche Einrichtungen erfolgreich durchgeführt.</p>
+        <p data-lang="about-p2">Meine Arbeit zeichnet sich durch <strong>terminologische Präzision, absolute Vertraulichkeit und Unparteilichkeit</strong> aus – Eigenschaften, die in sensiblen Verfahren und hochkomplexen Situationen unerlässlich sind. Als <strong>GISA-registrierter Dolmetscher</strong> (Nr. 32188035) und im <strong>Dolmetscher- und Sachverständigenregister des BMI</strong> gelistet, verfüge ich über die offiziellen Qualifikationen für die Tätigkeit vor Gericht und bei Behörden in ganz Österreich.</p>
+        <p data-lang="about-p3">Ich biete <strong>Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen</strong> sowie <strong>Fachübersetzungen</strong> juristischer, medizinischer und administrativer Dokumente. Meine langjährige internationale Erfahrung – ich habe in mehr als <strong>43 Ländern</strong> gelebt und gearbeitet – ermöglicht mir eine <strong>interkulturelle Vermittlung</strong>, die über die reine Sprachübertragung hinausgeht.</p>
+        <p data-lang="about-p4"><strong>Mein Versprechen:</strong> Präzision, Diskretion und Zuverlässigkeit – von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.</p>
       </div>
     </div>
-  </section>
 
-  <!-- NUEVA SECCIÓN "ÜBER MICH" (más texto para mejorar SEO) -->
-  <section id="ueber-mich" class="section">
-    <h2 data-lang="aboutme-title">Über mich</h2>
-    <div class="about-text" style="max-width:900px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)">
-      <p data-lang="aboutme-p1"><strong>Felipe Borecki</strong> ist ein erfahrener Dolmetscher und Übersetzer mit langjähriger Praxis in Österreich. Seine berufliche Laufbahn ist geprägt von einer Vielzahl anspruchsvoller Einsätze vor Gericht, bei Behörden, in Krankenhäusern und bei psychosozialen Diensten.</p>
-      <p data-lang="aboutme-p2">Die Kombination aus sprachlicher Exzellenz, interkultureller Kompetenz und einem ausgeprägten Verständnis für rechtliche und medizinische Fachterminologie macht ihn zu einem gefragten Partner für institutionelle Auftraggeber. Seine Arbeitsweise zeichnet sich durch höchste Diskretion, Zuverlässigkeit und Präzision aus.</p>
-      <p data-lang="aboutme-p3">Als GISA-registrierter Dolmetscher (Nr. 32188035) ist Felipe Borecki im offiziellen Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet. Diese Registrierung bestätigt seine Qualifikation und berechtigt ihn zur Tätigkeit für Gerichte und Behörden in ganz Österreich.</p>
-      <p data-lang="aboutme-p4">Seine Arbeitssprachen sind Spanisch (Muttersprache), Portugiesisch (Muttersprache) und Deutsch (fließend). Darüber hinaus verfügt er über fundierte Kenntnisse der lateinamerikanischen und europäischen Kulturräume, die ihn zu einem wertvollen Vermittler in internationalen Projekten und Delegationen machen.</p>
-      <p data-lang="aboutme-p5">Ob vor Ort in Graz und der Steiermark, remote oder telefonisch – Felipe Borecki bietet flexible und maßgeschneiderte Lösungen für jede sprachliche Herausforderung. Seine über 900 erfolgreich absolvierten Einsätze sprechen für sich und unterstreichen sein Engagement für höchste Qualität in der Sprachmittlung.</p>
+    <!-- Grid de valores -->
+    <div class="about-grid" style="margin-top:2rem;">
+      <div class="about-item">
+        <h3 data-lang="about-val1-title">⚖️ Präzision & Fachkompetenz</h3>
+        <p data-lang="about-val1-text">Terminologische Genauigkeit in straf-, zivil-, verwaltungs- und medizinrechtlichen Verfahren. Eigenes Fachglossar mit über 500 Begriffen.</p>
+      </div>
+      <div class="about-item">
+        <h3 data-lang="about-val2-title">🔒 Vertraulichkeit & Integrität</h3>
+        <p data-lang="about-val2-text">Absolute Diskretion und strikte Einhaltung der beruflichen Schweigepflicht in allen sensiblen Kontexten.</p>
+      </div>
+      <div class="about-item">
+        <h3 data-lang="about-val3-title">🌍 Interkulturelle Kompetenz</h3>
+        <p data-lang="about-val3-text">Erfahrung in 43+ Ländern und tiefes Verständnis der lateinamerikanischen und europäischen Kulturräume.</p>
+      </div>
+      <div class="about-item">
+        <h3 data-lang="about-val4-title">📱 Technische Flexibilität</h3>
+        <p data-lang="about-val4-text">Einsätze vor Ort, hybrid und remote via Zoom, MS Teams, Google Meet und spezialisierten OPI-Plattformen.</p>
+      </div>
     </div>
   </section>
 
   <section id="services" class="section">
     <h2 data-lang="services">Leistungen</h2>
-    <p class="section-intro" data-lang="services-intro">Spezialisierte Sprachdienstleistungen für Institutionen, Kanzleien, Agenturen, Unternehmen und Privatpersonen.</p>
+    <p class="section-intro" data-lang="services-intro">Ich biete massgeschneiderte Sprachdienstleistungen für Institutionen, Kanzleien, Agenturen, Unternehmen und Privatpersonen.</p>
     <div class="grid-2">
       <div class="card">
         <h3 data-lang="serv1-title">Dolmetschen</h3>
-        <p data-lang="serv1-text">Konsekutiv-, Simultan-, Begleit-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.</p>
+        <p data-lang="serv1-text">Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.</p>
       </div>
       <div class="card">
         <h3 data-lang="serv2-title">Fachübersetzungen</h3>
-        <p data-lang="serv2-text">Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt, sprachlicher Präzision und professioneller Qualitätskontrolle.</p>
+        <p data-lang="serv2-text">Präzise Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt und professioneller Qualitätskontrolle.</p>
       </div>
       <div class="card">
         <h3 data-lang="serv3-title">Remote-Unterstützung</h3>
@@ -349,7 +355,7 @@
       </div>
       <div class="card">
         <h3 data-lang="serv4-title">Internationale Begleitung</h3>
-        <p data-lang="serv4-text">Sprachliche Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.</p>
+        <p data-lang="serv4-text">Sprachliche und kulturelle Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.</p>
       </div>
     </div>
   </section>
@@ -357,28 +363,30 @@
   <section id="fields" class="section">
     <h2 data-lang="fields-title">Einsatzbereiche</h2>
     <ul>
-      <li data-lang="field1">Gerichte, Strafverfahren und behördliche Anhörungen</li>
-      <li data-lang="field2">Krankenhäuser, medizinische Konsultationen und psychosoziale Dienste</li>
-      <li data-lang="field3">Administrative Verfahren, Dokumentation und institutionelle Kommunikation</li>
-      <li data-lang="field4">Internationale Besuche, Delegationen und technische Gespräche</li>
-      <li data-lang="field5">Zusammenarbeit zwischen Österreich, dem DACH-Raum und Lateinamerika</li>
+      <li data-lang="field1">⚖️ Gerichte, Strafverfahren und behördliche Anhörungen</li>
+      <li data-lang="field2">🏥 Krankenhäuser, medizinische Konsultationen und psychosoziale Dienste</li>
+      <li data-lang="field3">📋 Administrative Verfahren, Dokumentation und institutionelle Kommunikation</li>
+      <li data-lang="field4">🌐 Internationale Besuche, Delegationen und technische Gespräche</li>
+      <li data-lang="field5">🤝 Zusammenarbeit zwischen Österreich, dem DACH-Raum und Lateinamerika</li>
     </ul>
   </section>
 
   <section id="value" class="section">
-    <h2 data-lang="value-title">Warum mit mir arbeiten</h2>
+    <h2 data-lang="value-title">Warum Sie mit mir zusammenarbeiten sollten</h2>
     <ul>
-      <li data-lang="value1">Zuverlässige Zusammenarbeit in sensiblen, vertraulichen und mehrsprachigen Situationen</li>
-      <li data-lang="value2">Kombination aus institutioneller Erfahrung, interkultureller Kompetenz und Fachsprache</li>
-      <li data-lang="value3">Professionelle Arbeitsweise vor Ort, remote und telefonisch</li>
-      <li data-lang="value4">Sprachliche Brückenfunktion zwischen Europa und Lateinamerika in rechtlichen, institutionellen und wirtschaftlichen Kontexten</li>
-      <li data-lang="value5">Klare Kommunikation, sorgfältige Vorbereitung und serviceorientierte Zusammenarbeit</li>
+      <li data-lang="value1">✅ <strong>900+ erfolgreiche Einsätze</strong> in sensiblen institutionellen Kontexten</li>
+      <li data-lang="value2">✅ <strong>Offiziell registriert</strong> (GISA #32188035, DSR BMI)</li>
+      <li data-lang="value3">✅ <strong>Absolute Vertraulichkeit</strong> und Unparteilichkeit</li>
+      <li data-lang="value4">✅ <strong>Terminologische Präzision</strong> mit eigenem Fachglossar (500+ Begriffe)</li>
+      <li data-lang="value5">✅ <strong>Interkulturelle Kompetenz</strong> aus 43+ Ländern Erfahrung</li>
+      <li data-lang="value6">✅ <strong>Flexibilität</strong> – vor Ort, remote oder telefonisch</li>
+      <li data-lang="value7">✅ <strong>Qualitätsgarantie</strong> – jeder Auftrag wird sorgfältig vorbereitet und nachbearbeitet</li>
     </ul>
   </section>
 
   <section id="contact" class="section">
     <h2 data-lang="contact">Kontakt</h2>
-    <p class="section-intro" data-lang="contact-intro">Für Anfragen zu Dolmetsch- und Übersetzungsleistungen, Verfügbarkeit oder Zusammenarbeit können Sie mich direkt kontaktieren.</p>
+    <p class="section-intro" data-lang="contact-intro">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.</p>
 
     <form id="contact-form" class="form-container" action="https://formspree.io/f/mbdokzdj" method="POST">
       <div class="form-group">
@@ -419,10 +427,10 @@
         </a>
       </p>
       <p><span data-lang="linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer">Profil</a></p>
-      <p><strong data-lang="available">Graz, Österreich | Sofort verfügbar</strong></p>
+      <p><strong data-lang="available">📍 Graz, Österreich | Sofort verfügbar</strong></p>
     </div>
 
-    <!-- SOCIAL SHARE BUTTONS -->
+    <!-- Social Share Buttons -->
     <div class="social-share">
       <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn" title="LinkedIn">in</a>
       <a href="https://twitter.com/intent/tweet?text=Felipe%20Borecki%20-%20Dolmetscher%20%26%20%C3%9Cbersetzer&url=https://felipeborecki.com" target="_blank" rel="noopener noreferrer" class="twitter" aria-label="Twitter" title="Auf Twitter teilen">🐦</a>
@@ -447,16 +455,15 @@
         desc: 'Felipe Borecki: Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035. 900+ Einsätze. Graz.',
         ogtitle: 'Felipe Borecki - Dolmetscher & Übersetzer für Gerichte & Behörden',
         ogdesc: 'Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035. 900+ Einsätze.',
-        name: 'Felipe Borecki - Dolmetscher & Übersetzer',
+        name: 'Felipe Borecki',
         'nav-services': 'Leistungen',
-        'nav-about': 'Profil',
-        'nav-aboutme': 'Über mich',
+        'nav-about': 'Über mich',
         'nav-book': 'Termin buchen',
         'nav-contact': 'Kontakt',
         'nav-agb': 'AGB',
         'hero-title': 'Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte',
-        'hero-desc': 'Professionelle Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich – präzise, vertraulich und verlässlich, vor Ort, remote und telefonisch.',
-        'hero-subline': 'GISA-registriert und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet. Über 900 Einsätze für Gerichte, Polizei, Kliniken, Sozialdienste und institutionelle Auftraggeber. Arbeitssprachen: ES | PT | DE.',
+        'hero-desc': 'Präzise, vertrauliche und verlässliche Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich – vor Ort, remote und telefonisch.',
+        'hero-subline': 'GISA-registriert (Nr. 32188035) und im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet. Über 900 erfolgreiche Einsätze für Gerichte, Polizei, Kliniken, Sozialdienste und institutionelle Auftraggeber. Arbeitssprachen: ES | PT | DE.',
         cta: 'Kontakt aufnehmen',
         'cta-secondary': 'Leistungen ansehen',
         'cta-book': '📅 Termin buchen',
@@ -465,49 +472,55 @@
         'cred1-text': 'Einsätze in sensiblen institutionellen Kontexten',
         'cred2-title': 'GISA',
         'cred2-text': 'Registrierung Nr. 32188035',
-        'cred3-title': 'Bundesministerium für Inneres',
-        'cred3-text': 'Im österreichischen Dolmetscher- und Sachverständigenregister gelistet',
+        'cred3-title': 'DSR BMI',
+        'cred3-text': 'Im Dolmetscher- und Sachverständigenregister des Innenministeriums',
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'Vor Ort, remote und telefonisch',
-        qual: 'Profil',
-        'qual-desc': 'Ich arbeite als professioneller Dolmetscher und Übersetzer für Spanisch, Portugiesisch und Deutsch mit Schwerpunkt auf Gerichten, Behörden, Gesundheitseinrichtungen und weiteren sensiblen institutionellen Bereichen in Österreich.',
-        expertise: 'Mein Profil verbindet sprachliche Präzision, Vertraulichkeit, interkulturelle Kompetenz und praktische Erfahrung in anspruchsvollen Situationen. Darüber hinaus begleite ich internationale Gäste, Delegationen und Projekte mit Bezug zu Europa und Lateinamerika.',
-        'aboutme-title': 'Über mich',
-        'aboutme-p1': 'Felipe Borecki ist ein erfahrener Dolmetscher und Übersetzer mit langjähriger Praxis in Österreich. Seine berufliche Laufbahn ist geprägt von einer Vielzahl anspruchsvoller Einsätze vor Gericht, bei Behörden, in Krankenhäusern und bei psychosozialen Diensten.',
-        'aboutme-p2': 'Die Kombination aus sprachlicher Exzellenz, interkultureller Kompetenz und einem ausgeprägten Verständnis für rechtliche und medizinische Fachterminologie macht ihn zu einem gefragten Partner für institutionelle Auftraggeber. Seine Arbeitsweise zeichnet sich durch höchste Diskretion, Zuverlässigkeit und Präzision aus.',
-        'aboutme-p3': 'Als GISA-registrierter Dolmetscher (Nr. 32188035) ist Felipe Borecki im offiziellen Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres gelistet. Diese Registrierung bestätigt seine Qualifikation und berechtigt ihn zur Tätigkeit für Gerichte und Behörden in ganz Österreich.',
-        'aboutme-p4': 'Seine Arbeitssprachen sind Spanisch (Muttersprache), Portugiesisch (Muttersprache) und Deutsch (fließend). Darüber hinaus verfügt er über fundierte Kenntnisse der lateinamerikanischen und europäischen Kulturräume, die ihn zu einem wertvollen Vermittler in internationalen Projekten und Delegationen machen.',
-        'aboutme-p5': 'Ob vor Ort in Graz und der Steiermark, remote oder telefonisch – Felipe Borecki bietet flexible und maßgeschneiderte Lösungen für jede sprachliche Herausforderung. Seine über 900 erfolgreich absolvierten Einsätze sprechen für sich und unterstreichen sein Engagement für höchste Qualität in der Sprachmittlung.',
+        'about-title': 'Über mich',
+        'about-p1': 'Ich bin <strong>Felipe Borecki</strong>, professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch mit Schwerpunkt auf juristischen, behördlichen, medizinischen und psychosozialen Kontexten in Österreich. Seit 2019 habe ich mehr als <strong>900 Einsätze</strong> für Gerichte, Staatsanwaltschaften, Krankenhäuser und öffentliche Einrichtungen erfolgreich durchgeführt.',
+        'about-p2': 'Meine Arbeit zeichnet sich durch <strong>terminologische Präzision, absolute Vertraulichkeit und Unparteilichkeit</strong> aus – Eigenschaften, die in sensiblen Verfahren und hochkomplexen Situationen unerlässlich sind. Als <strong>GISA-registrierter Dolmetscher</strong> (Nr. 32188035) und im <strong>Dolmetscher- und Sachverständigenregister des BMI</strong> gelistet, verfüge ich über die offiziellen Qualifikationen für die Tätigkeit vor Gericht und bei Behörden in ganz Österreich.',
+        'about-p3': 'Ich biete <strong>Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen</strong> sowie <strong>Fachübersetzungen</strong> juristischer, medizinischer und administrativer Dokumente. Meine langjährige internationale Erfahrung – ich habe in mehr als <strong>43 Ländern</strong> gelebt und gearbeitet – ermöglicht mir eine <strong>interkulturelle Vermittlung</strong>, die über die reine Sprachübertragung hinausgeht.',
+        'about-p4': '<strong>Mein Versprechen:</strong> Präzision, Diskretion und Zuverlässigkeit – von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.',
+        'about-val1-title': '⚖️ Präzision & Fachkompetenz',
+        'about-val1-text': 'Terminologische Genauigkeit in straf-, zivil-, verwaltungs- und medizinrechtlichen Verfahren. Eigenes Fachglossar mit über 500 Begriffen.',
+        'about-val2-title': '🔒 Vertraulichkeit & Integrität',
+        'about-val2-text': 'Absolute Diskretion und strikte Einhaltung der beruflichen Schweigepflicht in allen sensiblen Kontexten.',
+        'about-val3-title': '🌍 Interkulturelle Kompetenz',
+        'about-val3-text': 'Erfahrung in 43+ Ländern und tiefes Verständnis der lateinamerikanischen und europäischen Kulturräume.',
+        'about-val4-title': '📱 Technische Flexibilität',
+        'about-val4-text': 'Einsätze vor Ort, hybrid und remote via Zoom, MS Teams, Google Meet und spezialisierten OPI-Plattformen.',
         services: 'Leistungen',
-        'services-intro': 'Spezialisierte Sprachdienstleistungen für Institutionen, Kanzleien, Agenturen, Unternehmen und Privatpersonen.',
+        'services-intro': 'Ich biete massgeschneiderte Sprachdienstleistungen für Institutionen, Kanzleien, Agenturen, Unternehmen und Privatpersonen.',
         'serv1-title': 'Dolmetschen',
-        'serv1-text': 'Konsekutiv-, Simultan-, Begleit-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.',
+        'serv1-text': 'Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.',
         'serv2-title': 'Fachübersetzungen',
-        'serv2-text': 'Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt, sprachlicher Präzision und professioneller Qualitätskontrolle.',
+        'serv2-text': 'Präzise Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt und professioneller Qualitätskontrolle.',
         'serv3-title': 'Remote-Unterstützung',
         'serv3-text': 'Professionelle Einsätze über sichere Plattformen für Videodolmetschen, Telefongespräche, internationale Abstimmungen und grenzüberschreitende Kommunikation.',
         'serv4-title': 'Internationale Begleitung',
-        'serv4-text': 'Sprachliche Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.',
+        'serv4-text': 'Sprachliche und kulturelle Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.',
         'fields-title': 'Einsatzbereiche',
-        field1: 'Gerichte, Strafverfahren und behördliche Anhörungen',
-        field2: 'Krankenhäuser, medizinische Konsultationen und psychosoziale Dienste',
-        field3: 'Administrative Verfahren, Dokumentation und institutionelle Kommunikation',
-        field4: 'Internationale Besuche, Delegationen und technische Gespräche',
-        field5: 'Zusammenarbeit zwischen Österreich, dem DACH-Raum und Lateinamerika',
-        'value-title': 'Warum mit mir arbeiten',
-        value1: 'Zuverlässige Zusammenarbeit in sensiblen, vertraulichen und mehrsprachigen Situationen',
-        value2: 'Kombination aus institutioneller Erfahrung, interkultureller Kompetenz und Fachsprache',
-        value3: 'Professionelle Arbeitsweise vor Ort, remote und telefonisch',
-        value4: 'Sprachliche Brückenfunktion zwischen Europa und Lateinamerika in rechtlichen, institutionellen und wirtschaftlichen Kontexten',
-        value5: 'Klare Kommunikation, sorgfältige Vorbereitung und serviceorientierte Zusammenarbeit',
+        field1: '⚖️ Gerichte, Strafverfahren und behördliche Anhörungen',
+        field2: '🏥 Krankenhäuser, medizinische Konsultationen und psychosoziale Dienste',
+        field3: '📋 Administrative Verfahren, Dokumentation und institutionelle Kommunikation',
+        field4: '🌐 Internationale Besuche, Delegationen und technische Gespräche',
+        field5: '🤝 Zusammenarbeit zwischen Österreich, dem DACH-Raum und Lateinamerika',
+        'value-title': 'Warum Sie mit mir zusammenarbeiten sollten',
+        value1: '✅ <strong>900+ erfolgreiche Einsätze</strong> in sensiblen institutionellen Kontexten',
+        value2: '✅ <strong>Offiziell registriert</strong> (GISA #32188035, DSR BMI)',
+        value3: '✅ <strong>Absolute Vertraulichkeit</strong> und Unparteilichkeit',
+        value4: '✅ <strong>Terminologische Präzision</strong> mit eigenem Fachglossar (500+ Begriffe)',
+        value5: '✅ <strong>Interkulturelle Kompetenz</strong> aus 43+ Ländern Erfahrung',
+        value6: '✅ <strong>Flexibilität</strong> – vor Ort, remote oder telefonisch',
+        value7: '✅ <strong>Qualitätsgarantie</strong> – jeder Auftrag wird sorgfältig vorbereitet und nachbearbeitet',
         contact: 'Kontakt',
-        'contact-intro': 'Für Anfragen zu Dolmetsch- und Übersetzungsleistungen, Verfügbarkeit oder Zusammenarbeit können Sie mich direkt kontaktieren.',
+        'contact-intro': 'Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.',
         'booking-cta-text': '📅 Oder buchen Sie direkt einen Termin:',
         'booking-cta-btn': 'Termin buchen',
         email: 'E-Mail:',
         phone: 'Mobil:',
         linkedin: 'LinkedIn:',
-        available: 'Graz, Österreich | Sofort verfügbar',
+        available: '📍 Graz, Österreich | Sofort verfügbar',
         'form-name': 'Name',
         'form-email': 'E-Mail',
         'form-message': 'Nachricht',
@@ -517,16 +530,15 @@
         'form-sending': 'Sendet...'
       },
       es: {
-        name: 'Felipe Borecki - Intérprete & Traductor',
+        name: 'Felipe Borecki',
         'nav-services': 'Servicios',
-        'nav-about': 'Perfil',
-        'nav-aboutme': 'Sobre mí',
+        'nav-about': 'Sobre mí',
         'nav-book': 'Reservar cita',
         'nav-contact': 'Contacto',
         'nav-agb': 'Términos',
         'hero-title': 'Intérprete y traductor para tribunales, autoridades y contextos sensibles',
-        'hero-desc': 'Servicios lingüísticos precisos para ámbitos jurídicos, médicos, administrativos y psicosociales en Austria, de forma presencial, remota y telefónica.',
-        'hero-subline': 'Registrado en GISA e incluido en el registro de intérpretes y peritos del Ministerio del Interior de Austria. Más de 900 servicios para tribunales, policía, clínicas, servicios sociales e instituciones. Idiomas de trabajo: ES | PT | DE.',
+        'hero-desc': 'Servicios lingüísticos precisos, confidenciales y fiables para ámbitos jurídicos, médicos, administrativos y psicosociales en Austria – presencial, remoto y telefónico.',
+        'hero-subline': 'Registrado en GISA (nº 32188035) e incluido en el registro de intérpretes y peritos del Ministerio del Interior de Austria. Más de 900 servicios para tribunales, policía, clínicas, servicios sociales e instituciones. Idiomas de trabajo: ES | PT | DE.',
         cta: 'Contactar',
         'cta-secondary': 'Ver servicios',
         'cta-book': '📅 Reservar cita',
@@ -535,49 +547,55 @@
         'cred1-text': 'Servicios en contextos institucionales sensibles',
         'cred2-title': 'GISA',
         'cred2-text': 'Registro n.º 32188035',
-        'cred3-title': 'Ministerio del Interior de Austria',
-        'cred3-text': 'Incluido en el registro de intérpretes y peritos',
+        'cred3-title': 'DSR BMI',
+        'cred3-text': 'En el registro de intérpretes y peritos del Ministerio del Interior',
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'Presencial, remoto y telefónico',
-        qual: 'Perfil',
-        'qual-desc': 'Trabajo como intérprete y traductor profesional de español, portugués y alemán, con especialización en tribunales, autoridades, sector sanitario y otros contextos institucionales sensibles en Austria.',
-        expertise: 'Mi perfil combina precisión lingüística, confidencialidad, competencia intercultural y experiencia práctica en situaciones complejas. Además, ofrezco acompañamiento lingüístico a huéspedes internacionales, delegaciones y proyectos vinculados con Europa y Latinoamérica.',
-        'aboutme-title': 'Sobre mí',
-        'aboutme-p1': 'Felipe Borecki es un intérprete y traductor con amplia experiencia en Austria. Su carrera profesional está marcada por numerosos servicios en tribunales, autoridades, hospitales y servicios psicosociales.',
-        'aboutme-p2': 'La combinación de excelencia lingüística, competencia intercultural y un profundo conocimiento de la terminología jurídica y médica lo convierte en un socio muy solicitado para clientes institucionales. Su trabajo se caracteriza por la máxima discreción, fiabilidad y precisión.',
-        'aboutme-p3': 'Como intérprete registrado en GISA (n.º 32188035), Felipe Borecki figura en el registro oficial de intérpretes y peritos del Ministerio del Interior de Austria. Este registro acredita su cualificación y le autoriza a trabajar para tribunales y autoridades en toda Austria.',
-        'aboutme-p4': 'Sus idiomas de trabajo son español (lengua materna), portugués (lengua materna) y alemán (fluido). También posee un amplio conocimiento de los espacios culturales latinoamericanos y europeos, lo que lo convierte en un valioso mediador en proyectos internacionales y delegaciones.',
-        'aboutme-p5': 'Ya sea presencialmente en Graz y Estiria, a distancia o por teléfono, Felipe Borecki ofrece soluciones flexibles y personalizadas para cualquier desafío lingüístico. Sus más de 900 servicios realizados con éxito hablan por sí mismos y demuestran su compromiso con la máxima calidad en la interpretación y traducción.',
+        'about-title': 'Sobre mí',
+        'about-p1': 'Soy <strong>Felipe Borecki</strong>, intérprete y traductor profesional de portugués, español y alemán, especializado en contextos jurídicos, institucionales, médicos y psicosociales en Austria. Desde 2019 he realizado más de <strong>900 servicios</strong> para tribunales, fiscalías, hospitales y entidades públicas.',
+        'about-p2': 'Mi trabajo se caracteriza por la <strong>precisión terminológica, absoluta confidencialidad e imparcialidad</strong> – cualidades esenciales en procedimientos sensibles y situaciones de alta complejidad. Como <strong>intérprete registrado en GISA</strong> (nº 32188035) y en el <strong>registro de intérpretes y peritos del BMI</strong>, cuento con las credenciales oficiales para actuar ante tribunales y autoridades en toda Austria.',
+        'about-p3': 'Ofrezco <strong>interpretación simultánea, consecutiva, de acompañamiento, telefónica y remota</strong>, así como <strong>traducción especializada</strong> de documentos jurídicos, médicos y administrativos. Mi amplia experiencia internacional – he vivido y trabajado en más de <strong>43 países</strong> – me permite ofrecer una <strong>mediación intercultural</strong> que va más allá de la mera transmisión lingüística.',
+        'about-p4': '<strong>Mi compromiso:</strong> precisión, discreción y fiabilidad – desde la primera consulta hasta la ejecución exitosa de su encargo.',
+        'about-val1-title': '⚖️ Precisión & competencia',
+        'about-val1-text': 'Exactitud terminológica en procedimientos penales, civiles, administrativos y sanitarios. Glosario propio con más de 500 términos.',
+        'about-val2-title': '🔒 Confidencialidad & integridad',
+        'about-val2-text': 'Discreción absoluta y estricto cumplimiento del secreto profesional en todos los contextos sensibles.',
+        'about-val3-title': '🌍 Competencia intercultural',
+        'about-val3-text': 'Experiencia en 43+ países y profundo conocimiento de los espacios culturales latinoamericanos y europeos.',
+        'about-val4-title': '📱 Flexibilidad técnica',
+        'about-val4-text': 'Servicios presenciales, híbridos y remotos vía Zoom, MS Teams, Google Meet y plataformas OPI especializadas.',
         services: 'Servicios',
-        'services-intro': 'Servicios lingüísticos especializados para instituciones, despachos, agencias, empresas y clientes privados.',
+        'services-intro': 'Ofrezco servicios lingüísticos a medida para instituciones, despachos, agencias, empresas y clientes privados.',
         'serv1-title': 'Interpretación',
-        'serv1-text': 'Interpretación consecutiva, simultánea, de acompañamiento, telefónica y remota para tribunales, autoridades, policía, hospitales y otros contextos institucionales.',
-        'serv2-title': 'Traducciones especializadas',
-        'serv2-text': 'Traducción de documentos jurídicos, médicos, administrativos y técnicos con cuidado terminológico, precisión lingüística y control de calidad profesional.',
+        'serv1-text': 'Interpretación simultánea, consecutiva, de acompañamiento, telefónica y remota para tribunales, autoridades, policía, hospitales y otros contextos institucionales.',
+        'serv2-title': 'Traducción especializada',
+        'serv2-text': 'Traducción precisa de documentos jurídicos, médicos, administrativos y técnicos con rigor terminológico y control de calidad profesional.',
         'serv3-title': 'Soporte remoto',
-        'serv3-text': 'Servicios mediante plataformas seguras para videointerpretación, llamadas telefónicas, coordinación internacional y comunicación transfronteriza.',
+        'serv3-text': 'Servicios profesionales a través de plataformas seguras para videointerpretación, llamadas telefónicas, coordinación internacional y comunicación transfronteriza.',
         'serv4-title': 'Acompañamiento internacional',
-        'serv4-text': 'Apoyo lingüístico para huéspedes internacionales, visitantes profesionales, inversores, delegaciones y proyectos entre Europa y Latinoamérica.',
-        'fields-title': 'Ámbitos de trabajo',
-        field1: 'Tribunales, procedimientos penales y comparecencias ante autoridades',
-        field2: 'Hospitales, consultas médicas y servicios psicosociales',
-        field3: 'Procedimientos administrativos, documentación y comunicación institucional',
-        field4: 'Visitas internacionales, delegaciones y reuniones técnicas',
-        field5: 'Cooperación entre Austria, el espacio DACH y Latinoamérica',
+        'serv4-text': 'Acompañamiento lingüístico y cultural para huéspedes internacionales, visitantes profesionales, inversores, delegaciones y proyectos entre Europa y Latinoamérica.',
+        'fields-title': 'Áreas de trabajo',
+        field1: '⚖️ Tribunales, procedimientos penales y comparecencias ante autoridades',
+        field2: '🏥 Hospitales, consultas médicas y servicios psicosociales',
+        field3: '📋 Procedimientos administrativos, documentación y comunicación institucional',
+        field4: '🌐 Visitas internacionales, delegaciones y reuniones técnicas',
+        field5: '🤝 Cooperación entre Austria, el espacio DACH y Latinoamérica',
         'value-title': 'Por qué trabajar conmigo',
-        value1: 'Colaboración fiable en situaciones sensibles, confidenciales y multilingües',
-        value2: 'Combinación de experiencia institucional, competencia intercultural y lenguaje especializado',
-        value3: 'Trabajo profesional presencial, remoto y telefónico',
-        value4: 'Función de puente entre Europa y Latinoamérica en contextos jurídicos, institucionales y económicos',
-        value5: 'Comunicación clara, preparación cuidadosa y orientación al servicio',
+        value1: '✅ <strong>Más de 900 servicios</strong> en contextos institucionales sensibles',
+        value2: '✅ <strong>Registro oficial</strong> (GISA #32188035, DSR BMI)',
+        value3: '✅ <strong>Confidencialidad absoluta</strong> e imparcialidad',
+        value4: '✅ <strong>Precisión terminológica</strong> con glosario propio (500+ términos)',
+        value5: '✅ <strong>Competencia intercultural</strong> de 43+ países de experiencia',
+        value6: '✅ <strong>Flexibilidad</strong> – presencial, remoto o telefónico',
+        value7: '✅ <strong>Garantía de calidad</strong> – cada encargo se prepara y revisa cuidadosamente',
         contact: 'Contacto',
-        'contact-intro': 'Para consultas sobre interpretación, traducción, disponibilidad o colaboración profesional, puede escribirme directamente.',
+        'contact-intro': '¿Tiene preguntas o desea reservar una cita? Estaré encantado de atenderle.',
         'booking-cta-text': '📅 O reserve una cita directamente:',
         'booking-cta-btn': 'Reservar cita',
         email: 'E-mail:',
         phone: 'Móvil:',
         linkedin: 'LinkedIn:',
-        available: 'Graz, Austria | Disponible de inmediato',
+        available: '📍 Graz, Austria | Disponible de inmediato',
         'form-name': 'Nombre',
         'form-email': 'Correo electrónico',
         'form-message': 'Mensaje',
@@ -587,17 +605,16 @@
         'form-sending': 'Enviando...'
       },
       pt: {
-        name: 'Felipe Borecki - Intérprete & Tradutor',
+        name: 'Felipe Borecki',
         'nav-services': 'Serviços',
-        'nav-about': 'Perfil',
-        'nav-aboutme': 'Sobre mim',
+        'nav-about': 'Sobre mim',
         'nav-book': 'Agendar reunião',
         'nav-contact': 'Contato',
         'nav-agb': 'Termos',
         'hero-title': 'Intérprete e tradutor para tribunais, autoridades e contextos sensíveis',
-        'hero-desc': 'Serviços linguísticos precisos para áreas jurídicas, médicas, administrativas e psicossociais na Áustria, de forma presencial, remota e telefónica.',
-        'hero-subline': 'Registrado na GISA e incluído no registo de intérpretes e peritos do Ministério do Interior da Áustria. Mais de 900 serviços para tribunais, polícia, clínicas, serviços sociais e instituições. Línguas de trabalho: ES | PT | DE.',
-        cta: 'Entrar em contacto',
+        'hero-desc': 'Serviços linguísticos precisos, confidenciais e fiáveis para contextos jurídicos, médicos, administrativos e psicossociais na Áustria – presencial, remoto e telefónico.',
+        'hero-subline': 'Registado na GISA (n.º 32188035) e incluído no registo de intérpretes e peritos do Ministério do Interior da Áustria. Mais de 900 serviços para tribunais, polícia, clínicas, serviços sociais e instituições. Línguas de trabalho: ES | PT | DE.',
+        cta: 'Contactar',
         'cta-secondary': 'Ver serviços',
         'cta-book': '📅 Agendar reunião',
         'cred-title': 'Perfil breve',
@@ -605,49 +622,55 @@
         'cred1-text': 'Serviços em contextos institucionais sensíveis',
         'cred2-title': 'GISA',
         'cred2-text': 'Registo n.º 32188035',
-        'cred3-title': 'Ministério do Interior da Áustria',
-        'cred3-text': 'Incluído no registo de intérpretes e peritos',
+        'cred3-title': 'DSR BMI',
+        'cred3-text': 'No registo de intérpretes e peritos do Ministério do Interior',
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'Presencial, remoto e telefónico',
-        qual: 'Perfil',
-        'qual-desc': 'Atuo como intérprete e tradutor profissional de espanhol, português e alemão, com especialização em tribunais, autoridades, setor da saúde e outros contextos institucionais sensíveis na Áustria.',
-        expertise: 'O meu perfil combina precisão linguística, confidencialidade, competência intercultural e experiência prática em situações complexas. Além disso, ofereço acompanhamento linguístico a hóspedes internacionais, delegações e projetos ligados à Europa e à América Latina.',
-        'aboutme-title': 'Sobre mim',
-        'aboutme-p1': 'Felipe Borecki é um intérprete e tradutor experiente com vasta prática na Áustria. A sua carreira é marcada por numerosos serviços em tribunais, autoridades, hospitais e serviços psicossociais.',
-        'aboutme-p2': 'A combinação de excelência linguística, competência intercultural e profundo conhecimento da terminologia jurídica e médica faz dele um parceiro muito procurado por clientes institucionais. O seu trabalho caracteriza-se pela máxima discrição, fiabilidade e precisão.',
-        'aboutme-p3': 'Como intérprete registado na GISA (n.º 32188035), Felipe Borecki consta no registo oficial de intérpretes e peritos do Ministério do Interior da Áustria. Este registo comprova a sua qualificação e autoriza-o a trabalhar para tribunais e autoridades em toda a Áustria.',
-        'aboutme-p4': 'As suas línguas de trabalho são espanhol (língua materna), português (língua materna) e alemão (fluente). Possui também amplo conhecimento dos espaços culturais latino-americanos e europeus, o que o torna um valioso mediador em projetos internacionais e delegações.',
-        'aboutme-p5': 'Seja presencialmente em Graz e Estíria, remotamente ou por telefone, Felipe Borecki oferece soluções flexíveis e personalizadas para qualquer desafio linguístico. Os seus mais de 900 serviços realizados com sucesso falam por si e demonstram o seu compromisso com a mais alta qualidade na interpretação e tradução.',
+        'about-title': 'Sobre mim',
+        'about-p1': 'Sou <strong>Felipe Borecki</strong>, intérprete e tradutor profissional de português, espanhol e alemão, especializado em contextos jurídicos, institucionais, médicos e psicossociais na Áustria. Desde 2019 realizei mais de <strong>900 serviços</strong> para tribunais, Ministério Público, hospitais e entidades públicas.',
+        'about-p2': 'O meu trabalho caracteriza-se pela <strong>precisão terminológica, absoluta confidencialidade e imparcialidade</strong> – qualidades essenciais em processos sensíveis e situações de elevada complexidade. Como <strong>intérprete registado na GISA</strong> (n.º 32188035) e no <strong>registo de intérpretes e peritos do BMI</strong>, disponho das credenciais oficiais para atuar perante tribunais e autoridades em toda a Áustria.',
+        'about-p3': 'Ofereço <strong>interpretação simultânea, consecutiva, de ligação, telefónica e remota</strong>, bem como <strong>tradução especializada</strong> de documentos jurídicos, médicos e administrativos. A minha vasta experiência internacional – vivi e trabalhei em mais de <strong>43 países</strong> – permite-me oferecer uma <strong>mediação intercultural</strong> que vai além da mera transmissão linguística.',
+        'about-p4': '<strong>O meu compromisso:</strong> precisão, discrição e fiabilidade – desde o primeiro contacto até à execução bem-sucedida do seu serviço.',
+        'about-val1-title': '⚖️ Precisão & competência',
+        'about-val1-text': 'Exatidão terminológica em processos penais, cíveis, administrativos e de saúde. Glossário próprio com mais de 500 termos.',
+        'about-val2-title': '🔒 Confidencialidade & integridade',
+        'about-val2-text': 'Discrição absoluta e cumprimento rigoroso do segredo profissional em todos os contextos sensíveis.',
+        'about-val3-title': '🌍 Competência intercultural',
+        'about-val3-text': 'Experiência em 43+ países e profundo conhecimento dos espaços culturais latino-americanos e europeus.',
+        'about-val4-title': '📱 Flexibilidade técnica',
+        'about-val4-text': 'Serviços presenciais, híbridos e remotos via Zoom, MS Teams, Google Meet e plataformas OPI especializadas.',
         services: 'Serviços',
-        'services-intro': 'Serviços linguísticos especializados para instituições, escritórios, agências, empresas e clientes privados.',
+        'services-intro': 'Ofereço serviços linguísticos personalizados para instituições, escritórios, agências, empresas e clientes privados.',
         'serv1-title': 'Interpretação',
-        'serv1-text': 'Interpretação consecutiva, simultânea, de acompanhamento, telefónica e remota para tribunais, autoridades, polícia, hospitais e outros contextos institucionais.',
-        'serv2-title': 'Traduções especializadas',
-        'serv2-text': 'Tradução de documentos jurídicos, médicos, administrativos e técnicos com rigor terminológico, precisão linguística e controlo de qualidade profissional.',
+        'serv1-text': 'Interpretação simultânea, consecutiva, de ligação, telefónica e remota para tribunais, autoridades, polícia, hospitais e outros contextos institucionais.',
+        'serv2-title': 'Tradução especializada',
+        'serv2-text': 'Tradução precisa de documentos jurídicos, médicos, administrativos e técnicos com rigor terminológico e controlo de qualidade profissional.',
         'serv3-title': 'Suporte remoto',
-        'serv3-text': 'Serviços através de plataformas seguras para videointerpretação, chamadas telefónicas, coordenação internacional e comunicação transfronteiriça.',
+        'serv3-text': 'Serviços profissionais através de plataformas seguras para videointerpretação, chamadas telefónicas, coordenação internacional e comunicação transfronteiriça.',
         'serv4-title': 'Acompanhamento internacional',
-        'serv4-text': 'Apoio linguístico para hóspedes internacionais, visitantes profissionais, investidores, delegações e projetos entre a Europa e a América Latina.',
+        'serv4-text': 'Acompanhamento linguístico e cultural para hóspedes internacionais, visitantes profissionais, investidores, delegações e projetos entre a Europa e a América Latina.',
         'fields-title': 'Áreas de atuação',
-        field1: 'Tribunais, processos penais e audiências perante autoridades',
-        field2: 'Hospitais, consultas médicas e serviços psicossociais',
-        field3: 'Procedimentos administrativos, documentação e comunicação institucional',
-        field4: 'Visitas internacionais, delegações e reuniões técnicas',
-        field5: 'Cooperação entre a Áustria, o espaço DACH e a América Latina',
+        field1: '⚖️ Tribunais, processos penais e audiências perante autoridades',
+        field2: '🏥 Hospitais, consultas médicas e serviços psicossociais',
+        field3: '📋 Procedimentos administrativos, documentação e comunicação institucional',
+        field4: '🌐 Visitas internacionais, delegações e reuniões técnicas',
+        field5: '🤝 Cooperação entre a Áustria, o espaço DACH e a América Latina',
         'value-title': 'Por que trabalhar comigo',
-        value1: 'Colaboração fiável em situações sensíveis, confidenciais e multilingues',
-        value2: 'Combinação de experiência institucional, competência intercultural e linguagem especializada',
-        value3: 'Forma de trabalho profissional presencial, remota e telefónica',
-        value4: 'Função de ponte entre Europa e América Latina em contextos jurídicos, institucionais e económicos',
-        value5: 'Comunicação clara, preparação cuidadosa e orientação para o serviço',
+        value1: '✅ <strong>Mais de 900 serviços</strong> em contextos institucionais sensíveis',
+        value2: '✅ <strong>Registo oficial</strong> (GISA #32188035, DSR BMI)',
+        value3: '✅ <strong>Confidencialidade absoluta</strong> e imparcialidade',
+        value4: '✅ <strong>Precisão terminológica</strong> com glossário próprio (500+ termos)',
+        value5: '✅ <strong>Competência intercultural</strong> de 43+ países de experiência',
+        value6: '✅ <strong>Flexibilidade</strong> – presencial, remoto ou telefónico',
+        value7: '✅ <strong>Garantia de qualidade</strong> – cada serviço é cuidadosamente preparado e revisto',
         contact: 'Contato',
-        'contact-intro': 'Para pedidos de interpretação, tradução, disponibilidade ou colaboração profissional, pode entrar em contacto diretamente.',
+        'contact-intro': 'Tem perguntas ou deseja agendar uma reunião? Estarei feliz em atender.',
         'booking-cta-text': '📅 Ou agende uma reunião diretamente:',
         'booking-cta-btn': 'Agendar reunião',
         email: 'E-mail:',
         phone: 'Telemóvel:',
         linkedin: 'LinkedIn:',
-        available: 'Graz, Áustria | Disponível de imediato',
+        available: '📍 Graz, Áustria | Disponível de imediato',
         'form-name': 'Nome',
         'form-email': 'E-mail',
         'form-message': 'Mensagem',
@@ -657,16 +680,15 @@
         'form-sending': 'Enviando...'
       },
       en: {
-        name: 'Felipe Borecki - Interpreter & Translator',
+        name: 'Felipe Borecki',
         'nav-services': 'Services',
-        'nav-about': 'Profile',
-        'nav-aboutme': 'About me',
+        'nav-about': 'About me',
         'nav-book': 'Book appointment',
         'nav-contact': 'Contact',
         'nav-agb': 'Terms',
-        'hero-title': 'Interpreter and translator for courts, public authorities and sensitive professional contexts',
-        'hero-desc': 'Precise language support for legal, medical, administrative and psychosocial settings in Austria, on-site, remote and over the phone.',
-        'hero-subline': 'GISA-registered and listed in the Austrian Ministry of the Interior\'s register of interpreters and experts. Backed by 900+ assignments for courts, police, clinics, social services and institutional clients. Working languages: ES | PT | DE.',
+        'hero-title': 'Interpreter and translator for courts, authorities and sensitive professional contexts',
+        'hero-desc': 'Precise, confidential and reliable language support for legal, medical, administrative and psychosocial settings in Austria – on-site, remote and over the phone.',
+        'hero-subline': 'GISA-registered (No. 32188035) and listed in the Interpreter and Expert Register of the Austrian Ministry of the Interior. Over 900 successful assignments for courts, police, clinics, social services and institutional clients. Working languages: ES | PT | DE.',
         cta: 'Get in touch',
         'cta-secondary': 'View services',
         'cta-book': '📅 Book appointment',
@@ -674,50 +696,56 @@
         'cred1-title': '900+',
         'cred1-text': 'Assignments in sensitive institutional settings',
         'cred2-title': 'GISA',
-        'cred2-text': 'Registration no. 32188035',
-        'cred3-title': 'Austrian Ministry of the Interior',
-        'cred3-text': 'Listed in the register of interpreters and experts',
+        'cred2-text': 'Registration No. 32188035',
+        'cred3-title': 'DSR BMI',
+        'cred3-text': 'Listed in the Interpreter & Expert Register of the Ministry of the Interior',
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'On-site, remote and by phone',
-        qual: 'Profile',
-        'qual-desc': 'I work as a professional interpreter and translator in Spanish, Portuguese and German, with a focus on courts, public authorities, healthcare and other sensitive institutional settings in Austria.',
-        expertise: 'My profile combines linguistic precision, confidentiality, intercultural competence and practical experience in demanding situations. I also provide language support for international guests, delegations and projects connected with Europe and Latin America.',
-        'aboutme-title': 'About me',
-        'aboutme-p1': 'Felipe Borecki is an experienced interpreter and translator with extensive practice in Austria. His professional career is marked by numerous assignments in courts, authorities, hospitals and psychosocial services.',
-        'aboutme-p2': 'The combination of linguistic excellence, intercultural competence and a deep understanding of legal and medical terminology makes him a sought-after partner for institutional clients. His work is characterized by the utmost discretion, reliability and precision.',
-        'aboutme-p3': 'As a GISA-registered interpreter (No. 32188035), Felipe Borecki is listed in the official register of interpreters and experts of the Austrian Ministry of the Interior. This registration confirms his qualification and authorizes him to work for courts and authorities throughout Austria.',
-        'aboutme-p4': 'His working languages are Spanish (native), Portuguese (native) and German (fluent). He also has extensive knowledge of Latin American and European cultural areas, making him a valuable mediator in international projects and delegations.',
-        'aboutme-p5': 'Whether on-site in Graz and Styria, remotely or by phone – Felipe Borecki offers flexible and tailored solutions for every language challenge. His more than 900 successfully completed assignments speak for themselves and underline his commitment to the highest quality in interpreting and translation.',
+        'about-title': 'About me',
+        'about-p1': 'I am <strong>Felipe Borecki</strong>, a professional interpreter and translator in Portuguese, Spanish and German, specializing in legal, institutional, medical and psychosocial contexts in Austria. Since 2019, I have successfully completed more than <strong>900 assignments</strong> for courts, public prosecutors\' offices, hospitals and public institutions.',
+        'about-p2': 'My work is defined by <strong>terminological precision, absolute confidentiality and impartiality</strong> – essential qualities in sensitive proceedings and highly complex situations. As a <strong>GISA-registered interpreter</strong> (No. 32188035) and listed in the <strong>Interpreter and Expert Register of the BMI</strong>, I hold the official credentials to work before courts and authorities throughout Austria.',
+        'about-p3': 'I offer <strong>simultaneous, consecutive, liaison, telephone and remote interpreting</strong>, as well as <strong>specialized translation</strong> of legal, medical and administrative documents. My extensive international experience – having lived and worked in more than <strong>43 countries</strong> – enables me to provide <strong>intercultural mediation</strong> that goes beyond pure language transmission.',
+        'about-p4': '<strong>My commitment:</strong> precision, discretion and reliability – from the first inquiry to the successful completion of your assignment.',
+        'about-val1-title': '⚖️ Precision & expertise',
+        'about-val1-text': 'Terminological accuracy in criminal, civil, administrative and healthcare proceedings. Personal glossary with over 500 terms.',
+        'about-val2-title': '🔒 Confidentiality & integrity',
+        'about-val2-text': 'Absolute discretion and strict adherence to professional confidentiality in all sensitive contexts.',
+        'about-val3-title': '🌍 Intercultural competence',
+        'about-val3-text': 'Experience in 43+ countries and deep understanding of Latin American and European cultural spaces.',
+        'about-val4-title': '📱 Technical flexibility',
+        'about-val4-text': 'On-site, hybrid and remote assignments via Zoom, MS Teams, Google Meet and specialized OPI platforms.',
         services: 'Services',
-        'services-intro': 'Specialised language services for institutions, law firms, agencies, companies and private clients.',
+        'services-intro': 'I offer tailored language services for institutions, law firms, agencies, companies and private clients.',
         'serv1-title': 'Interpreting',
-        'serv1-text': 'Consecutive, simultaneous, escort, telephone and remote interpreting for courts, authorities, police, hospitals and other institutional settings.',
-        'serv2-title': 'Specialised translation',
-        'serv2-text': 'Translation of legal, medical, administrative and technical documents with careful terminology work, linguistic precision and professional quality control.',
+        'serv1-text': 'Simultaneous, consecutive, liaison, telephone and remote interpreting for courts, authorities, police, hospitals and other institutional settings.',
+        'serv2-title': 'Specialized translation',
+        'serv2-text': 'Precise translation of legal, medical, administrative and technical documents with terminological rigor and professional quality control.',
         'serv3-title': 'Remote support',
-        'serv3-text': 'Services via secure platforms for video interpreting, phone calls, international coordination and cross-border communication.',
+        'serv3-text': 'Professional services via secure platforms for video interpreting, phone calls, international coordination and cross-border communication.',
         'serv4-title': 'International support',
-        'serv4-text': 'Language support for international guests, trade visitors, investors, delegations and projects between Europe and Latin America.',
+        'serv4-text': 'Linguistic and cultural support for international guests, trade visitors, investors, delegations and projects between Europe and Latin America.',
         'fields-title': 'Areas of work',
-        field1: 'Courts, criminal proceedings and hearings before public authorities',
-        field2: 'Hospitals, medical consultations and psychosocial services',
-        field3: 'Administrative procedures, documentation and institutional communication',
-        field4: 'International visits, delegations and technical meetings',
-        field5: 'Cooperation between Austria, the DACH region and Latin America',
+        field1: '⚖️ Courts, criminal proceedings and hearings before authorities',
+        field2: '🏥 Hospitals, medical consultations and psychosocial services',
+        field3: '📋 Administrative procedures, documentation and institutional communication',
+        field4: '🌐 International visits, delegations and technical meetings',
+        field5: '🤝 Cooperation between Austria, the DACH region and Latin America',
         'value-title': 'Why work with me',
-        value1: 'Reliable cooperation in sensitive, confidential and multilingual situations',
-        value2: 'A combination of institutional experience, intercultural competence and specialist language',
-        value3: 'Professional on-site, remote and telephone-based work',
-        value4: 'A bridge between Europe and Latin America in legal, institutional and business contexts',
-        value5: 'Clear communication, careful preparation and service-oriented collaboration',
+        value1: '✅ <strong>900+ successful assignments</strong> in sensitive institutional contexts',
+        value2: '✅ <strong>Officially registered</strong> (GISA #32188035, DSR BMI)',
+        value3: '✅ <strong>Absolute confidentiality</strong> and impartiality',
+        value4: '✅ <strong>Terminological precision</strong> with personal glossary (500+ terms)',
+        value5: '✅ <strong>Intercultural competence</strong> from 43+ countries of experience',
+        value6: '✅ <strong>Flexibility</strong> – on-site, remote or by phone',
+        value7: '✅ <strong>Quality guarantee</strong> – every assignment is carefully prepared and reviewed',
         contact: 'Contact',
-        'contact-intro': 'For interpreting and translation requests, availability or professional cooperation, you are welcome to contact me directly.',
+        'contact-intro': 'Have questions or want to book an appointment? I look forward to hearing from you.',
         'booking-cta-text': '📅 Or book an appointment directly:',
         'booking-cta-btn': 'Book appointment',
         email: 'Email:',
         phone: 'Mobile:',
         linkedin: 'LinkedIn:',
-        available: 'Graz, Austria | Immediately available',
+        available: '📍 Graz, Austria | Immediately available',
         'form-name': 'Name',
         'form-email': 'Email',
         'form-message': 'Message',
