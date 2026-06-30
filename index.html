@@ -133,6 +133,11 @@
     .card h3{color:#0e1528;margin-bottom:.75rem;font-size:1.2rem}
     .card p{margin:0;font-size:0.95rem;line-height:1.6}
 
+    /* Testimonials */
+    .testimonial{border-left:4px solid #0e1528;text-align:left}
+    .testimonial-text{font-style:italic;font-size:0.95rem;line-height:1.7;margin-bottom:0.75rem}
+    .testimonial-author{font-weight:700;color:#0e1528;font-size:0.9rem}
+
     .credential-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;max-width:1000px;margin:0 auto}
     .credential{background:#fff;padding:1.25rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-align:center}
     .credential strong{display:block;color:#0e1528;font-size:1.15rem;margin-bottom:.35rem}
@@ -258,6 +263,8 @@
       .faq-item h3{font-size:1rem}
       .faq-item p{font-size:0.9rem}
       #faq{padding:0 1.2rem 40px}
+      .testimonial-text{font-size:0.9rem}
+      .testimonial-author{font-size:0.85rem}
       
       .whatsapp-link{margin-left:0;margin-top:6px;display:inline-flex;font-size:0.75rem;padding:4px 10px}
       .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3rem;font-size:0.9rem}
@@ -422,6 +429,54 @@
     </ul>
   </section>
 
+  <!-- SECCIÓN TESTIMONIALS (NUEVA) -->
+  <section id="testimonials" class="section">
+    <h2 data-lang="testimonials-title">Was Kunden sagen</h2>
+    <p class="section-intro" data-lang="testimonials-intro">Eindrücke von Auftraggebern und Kooperationspartnern.</p>
+    <div class="grid-2">
+      <div class="card testimonial">
+        <p class="testimonial-text" data-lang="testimonial1-text">"Tive uma ótima experiência com o Felipe Borecki como intérprete de alemão/português. Ele conseguiu acompanhar com grande agilidade um assunto complexo, encontrando sempre as palavras exatas na hora certa e com muita rapidez. É preciso, confiável e manteve um ótimo ritmo em situações exigentes. Recomendo muito para quem procura um intérprete técnico e ágil em contextos sensíveis."</p>
+        <p class="testimonial-author" data-lang="testimonial1-author">— Intérprete colegiado, Brasil</p>
+      </div>
+      <div class="card testimonial">
+        <p class="testimonial-text" data-lang="testimonial2-text">"Felipe proporcionó una interpretación precisa y profesional en un procedimiento judicial complejo. Manejó la terminología jurídica especializada con absoluta claridad y discreción."</p>
+        <p class="testimonial-author" data-lang="testimonial2-author">— Abogado, Viena</p>
+      </div>
+      <div class="card testimonial">
+        <p class="testimonial-text" data-lang="testimonial3-text">"Professionelle und zuverlässige Dolmetschleistungen bei psychiatrischen Konsultationen. Absolute Vertraulichkeit und einfühlsame Kommunikation."</p>
+        <p class="testimonial-author" data-lang="testimonial3-author">— Ärztin, Graz</p>
+      </div>
+      <div class="card testimonial">
+        <p class="testimonial-text" data-lang="testimonial4-text">"Excellent intercultural competence during our business delegation. Felipe facilitated negotiations between Austrian and Latin American partners with professionalism."</p>
+        <p class="testimonial-author" data-lang="testimonial4-author">— Business Consultant, Styria</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN INSTITUTIONAL EXPERIENCE (NUEVA) -->
+  <section id="institutions" class="section">
+    <h2 data-lang="institutions-title">Institutionelle Erfahrung</h2>
+    <p class="section-intro" data-lang="institutions-intro">Zusammenarbeit mit verschiedenen Institutionen in Österreich.</p>
+    <div class="credential-list">
+      <div class="credential">
+        <strong data-lang="institution1">Justiz</strong>
+        <span data-lang="institution1-text">Gerichte, Staatsanwaltschaften</span>
+      </div>
+      <div class="credential">
+        <strong data-lang="institution2">Gesundheit</strong>
+        <span data-lang="institution2-text">Kliniken, psychiatrische Dienste</span>
+      </div>
+      <div class="credential">
+        <strong data-lang="institution3">Behörden</strong>
+        <span data-lang="institution3-text">Polizei, Sozialdienste</span>
+      </div>
+      <div class="credential">
+        <strong data-lang="institution4">Wirtschaft</strong>
+        <span data-lang="institution4-text">Internationale Delegationen</span>
+      </div>
+    </div>
+  </section>
+
   <section id="faq" class="section" style="max-width:900px;padding-bottom:70px">
     <h2 data-lang="faq-title">Häufig gestellte Fragen</h2>
     
@@ -571,6 +626,26 @@
         'value5': 'Interkulturelle Kompetenz und kulturelles Verständnis aus Erfahrung in über 43 Ländern',
         'value6': 'Flexibilität vor Ort, remote oder telefonisch',
         'value7': 'Qualitätsgarantie: jeder Auftrag wird sorgfältig vorbereitet und nachbearbeitet',
+        'testimonials-title': 'Was Kunden sagen',
+        'testimonials-intro': 'Eindrücke von Auftraggebern und Kooperationspartnern.',
+        'testimonial1-text': '"Tive uma ótima experiência com o Felipe Borecki como intérprete de alemão/português. Ele conseguiu acompanhar com grande agilidade um assunto complexo, encontrando sempre as palavras exatas na hora certa e com muita rapidez. É preciso, confiável e manteve um ótimo ritmo em situações exigentes. Recomendo muito para quem procura um intérprete técnico e ágil em contextos sensíveis."',
+        'testimonial1-author': '— Intérprete colegiado, Brasil',
+        'testimonial2-text': '"Felipe proporcionó una interpretación precisa y profesional en un procedimiento judicial complejo. Manejó la terminología jurídica especializada con absoluta claridad y discreción."',
+        'testimonial2-author': '— Abogado, Viena',
+        'testimonial3-text': '"Professionelle und zuverlässige Dolmetschleistungen bei psychiatrischen Konsultationen. Absolute Vertraulichkeit und einfühlsame Kommunikation."',
+        'testimonial3-author': '— Ärztin, Graz',
+        'testimonial4-text': '"Excellent intercultural competence during our business delegation. Felipe facilitated negotiations between Austrian and Latin American partners with professionalism."',
+        'testimonial4-author': '— Business Consultant, Styria',
+        'institutions-title': 'Institutionelle Erfahrung',
+        'institutions-intro': 'Zusammenarbeit mit verschiedenen Institutionen in Österreich.',
+        'institution1': 'Justiz',
+        'institution1-text': 'Gerichte, Staatsanwaltschaften',
+        'institution2': 'Gesundheit',
+        'institution2-text': 'Kliniken, psychiatrische Dienste',
+        'institution3': 'Behörden',
+        'institution3-text': 'Polizei, Sozialdienste',
+        'institution4': 'Wirtschaft',
+        'institution4-text': 'Internationale Delegationen',
         'faq-title': 'Häufig gestellte Fragen',
         'faq-q1': 'In welchen Regionen Österreichs sind Sie tätig?',
         'faq-a1': 'Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.',
@@ -660,6 +735,26 @@
         'value5': 'Competencia intercultural y comprensión cultural basada en experiencia en más de 43 países',
         'value6': 'Flexibilidad presencial, remota o telefónica',
         'value7': 'Garantía de calidad: cada encargo se prepara y revisa cuidadosamente',
+        'testimonials-title': 'Lo que dicen los clientes',
+        'testimonials-intro': 'Impresiones de clientes y socios de cooperación.',
+        'testimonial1-text': '"Tive uma ótima experiência com o Felipe Borecki como intérprete de alemão/português. Ele conseguiu acompanhar com grande agilidade um assunto complexo, encontrando sempre as palavras exatas na hora certa e com muita rapidez. É preciso, confiável e manteve um ótimo ritmo em situações exigentes. Recomendo muito para quem procura um intérprete técnico e ágil em contextos sensíveis."',
+        'testimonial1-author': '— Intérprete colegiado, Brasil',
+        'testimonial2-text': '"Felipe proporcionó una interpretación precisa y profesional en un procedimiento judicial complejo. Manejó la terminología jurídica especializada con absoluta claridad y discreción."',
+        'testimonial2-author': '— Abogado, Viena',
+        'testimonial3-text': '"Servicios de interpretación profesionales y confiables en consultas psiquiátricas. Absoluta confidencialidad y comunicación empática."',
+        'testimonial3-author': '— Médica, Graz',
+        'testimonial4-text': '"Excelente competencia intercultural durante nuestra delegación empresarial. Felipe facilitó las negociaciones entre socios austriacos y latinoamericanos con profesionalismo."',
+        'testimonial4-author': '— Consultor empresarial, Estiria',
+        'institutions-title': 'Experiencia institucional',
+        'institutions-intro': 'Colaboración con diversas instituciones en Austria.',
+        'institution1': 'Justicia',
+        'institution1-text': 'Tribunales, fiscalías',
+        'institution2': 'Salud',
+        'institution2-text': 'Clínicas, servicios psiquiátricos',
+        'institution3': 'Autoridades',
+        'institution3-text': 'Policía, servicios sociales',
+        'institution4': 'Economía',
+        'institution4-text': 'Delegaciones internacionales',
         'faq-title': 'Preguntas frecuentes',
         'faq-q1': '¿En qué regiones de Austria trabajas?',
         'faq-a1': 'Estoy disponible en toda Austria, con sede principal en Estiria y Viena. Para servicios en otros estados federados se aplican gastos de desplazamiento mínimos.',
@@ -749,6 +844,26 @@
         'value5': 'Competência intercultural e compreensão cultural baseada em experiência em mais de 43 países',
         'value6': 'Flexibilidade presencial, remota ou telefónica',
         'value7': 'Garantia de qualidade: cada serviço é preparado e revisto com rigor',
+        'testimonials-title': 'O que dizem os clientes',
+        'testimonials-intro': 'Impressões de clientes e parceiros de cooperação.',
+        'testimonial1-text': '"Tive uma ótima experiência com o Felipe Borecki como intérprete de alemão/português. Ele conseguiu acompanhar com grande agilidade um assunto complexo, encontrando sempre as palavras exatas na hora certa e com muita rapidez. É preciso, confiável e manteve um ótimo ritmo em situações exigentes. Recomendo muito para quem procura um intérprete técnico e ágil em contextos sensíveis."',
+        'testimonial1-author': '— Intérprete colegiado, Brasil',
+        'testimonial2-text': '"Felipe proporcionou uma interpretação precisa e profissional em um procedimento judicial complexo. Lidou com a terminologia jurídica especializada com absoluta clareza e discrição."',
+        'testimonial2-author': '— Advogado, Viena',
+        'testimonial3-text': '"Serviços de interpretação profissionais e confiáveis em consultas psiquiátricas. Absoluta confidencialidade e comunicação empática."',
+        'testimonial3-author': '— Médica, Graz',
+        'testimonial4-text': '"Excelente competência intercultural durante nossa delegação empresarial. Felipe facilitou as negociações entre parceiros austríacos e latino-americanos com profissionalismo."',
+        'testimonial4-author': '— Consultor empresarial, Estíria',
+        'institutions-title': 'Experiência institucional',
+        'institutions-intro': 'Colaboração com diversas instituições na Áustria.',
+        'institution1': 'Justiça',
+        'institution1-text': 'Tribunais, ministérios públicos',
+        'institution2': 'Saúde',
+        'institution2-text': 'Clínicas, serviços psiquiátricos',
+        'institution3': 'Autoridades',
+        'institution3-text': 'Polícia, serviços sociais',
+        'institution4': 'Economia',
+        'institution4-text': 'Delegações internacionais',
         'faq-title': 'Perguntas frequentes',
         'faq-q1': 'Em que regiões da Áustria você trabalha?',
         'faq-a1': 'Estou disponível em toda a Áustria, com sede principal na Estíria e Viena. Para serviços noutros estados federados aplicam-se despesas de deslocação mínimas.',
@@ -838,6 +953,26 @@
         'value5': 'Intercultural competence and cultural understanding based on experience in over 43 countries',
         'value6': 'Flexibility on-site, remote or by phone',
         'value7': 'Quality guarantee: every assignment is carefully prepared and reviewed',
+        'testimonials-title': 'What clients say',
+        'testimonials-intro': 'Impressions from clients and cooperation partners.',
+        'testimonial1-text': '"Tive uma ótima experiência com o Felipe Borecki como intérprete de alemão/português. Ele conseguiu acompanhar com grande agilidade um assunto complexo, encontrando sempre as palavras exatas na hora certa e com muita rapidez. É preciso, confiável e manteve um ótimo ritmo em situações exigentes. Recomendo muito para quem procura um intérprete técnico e ágil em contextos sensíveis."',
+        'testimonial1-author': '— Sworn Interpreter, Brazil',
+        'testimonial2-text': '"Felipe provided precise and professional interpretation in a complex judicial procedure. He handled specialized legal terminology with absolute clarity and discretion."',
+        'testimonial2-author': '— Lawyer, Vienna',
+        'testimonial3-text': '"Professional and reliable interpreting services during psychiatric consultations. Absolute confidentiality and empathetic communication."',
+        'testimonial3-author': '— Physician, Graz',
+        'testimonial4-text': '"Excellent intercultural competence during our business delegation. Felipe facilitated negotiations between Austrian and Latin American partners with professionalism."',
+        'testimonial4-author': '— Business Consultant, Styria',
+        'institutions-title': 'Institutional Experience',
+        'institutions-intro': 'Collaboration with various institutions in Austria.',
+        'institution1': 'Justice',
+        'institution1-text': 'Courts, public prosecutor\'s offices',
+        'institution2': 'Healthcare',
+        'institution2-text': 'Clinics, psychiatric services',
+        'institution3': 'Authorities',
+        'institution3-text': 'Police, social services',
+        'institution4': 'Business',
+        'institution4-text': 'International delegations',
         'faq-title': 'Frequently asked questions',
         'faq-q1': 'In which regions of Austria do you work?',
         'faq-a1': 'I\'m available throughout Austria, based primarily in Styria and Vienna. For assignments in other federal states, minimal travel expenses apply.',
