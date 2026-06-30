@@ -144,6 +144,15 @@
     .about-grid .about-item h3{color:#0e1528;font-size:1.1rem;margin-bottom:.5rem}
     .about-grid .about-item p{font-size:0.95rem;color:#555;margin:0;line-height:1.6}
 
+    /* FAQ Section */
+    #faq{max-width:900px;margin:0 auto;padding:0 2rem 70px}
+    #faq h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#0e1528;position:relative}
+    #faq h2::after{content:'';display:block;width:60px;height:3px;background:rgba(14,21,40,0.3);margin:12px auto 0;border-radius:2px}
+    .faq-item{margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid #e8e8e8}
+    .faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+    .faq-item h3{font-size:1.2rem;margin-bottom:0.6rem;color:#0e1528;font-weight:500}
+    .faq-item p{font-size:1rem;color:#555;line-height:1.7}
+
     .form-container{max-width:600px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
     .form-group{margin-bottom:1.5rem;text-align:left}
     .form-group label{display:block;margin-bottom:.5rem;font-weight:500;font-size:1rem}
@@ -228,6 +237,9 @@
       .about-grid .about-item{padding:1.2rem}
       .about-grid .about-item h3{font-size:1rem}
       .about-grid .about-item p{font-size:0.9rem}
+      .faq-item h3{font-size:1rem}
+      .faq-item p{font-size:0.9rem}
+      #faq{padding:0 1.2rem 40px}
       
       .whatsapp-link{margin-left:0;margin-top:6px;display:inline-flex;font-size:0.75rem;padding:4px 10px}
       .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3rem;font-size:0.9rem}
@@ -315,9 +327,9 @@
       <img src="/images/foto-perfil.jpg" alt="Felipe Borecki Profilfoto" class="profilfoto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" loading="lazy">
       <div class="profilfoto-placeholder">📸 Foto</div>
       <div class="profil-text">
-        <p data-lang="about-p1"><strong>Felipe Borecki</strong> – professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch mit Schwerpunkt auf juristischen, behördlichen, medizinischen und psychosozialen Kontexten in Österreich. Seit 2019 habe ich mehr als <strong>900 Einsätze</strong> für Gerichte, Staatsanwaltschaften, Krankenhäuser und öffentliche Einrichtungen erfolgreich durchgeführt.</p>
-        <p data-lang="about-p2">Meine Arbeit zeichnet sich durch <strong>terminologische Präzision, absolute Vertraulichkeit und Unparteilichkeit</strong> aus – Eigenschaften, die in sensiblen Verfahren und hochkomplexen Situationen unerlässlich sind. Als <strong>GISA-registrierter Dolmetscher</strong> (Nr. 32188035) und im <strong>Dolmetscher- und Sachverständigenregister des BMI</strong> gelistet, verfüge ich über die offiziellen Qualifikationen für die Tätigkeit vor Gericht und bei Behörden in ganz Österreich.</p>
-        <p data-lang="about-p3">Ich biete <strong>Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen</strong> sowie <strong>Fachübersetzungen</strong> juristischer, medizinischer und administrativer Dokumente. Meine langjährige internationale Erfahrung – ich habe in mehr als <strong>43 Ländern</strong> gelebt und gearbeitet – ermöglicht mir eine <strong>interkulturelle Vermittlung</strong>, die über die reine Sprachübertragung hinausgeht.</p>
+        <p data-lang="about-p1"><strong>Felipe Borecki</strong> – professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch. Ich bewege mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.</p>
+        <p data-lang="about-p2">Als zertifizierter Gerichtsdolmetscher mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.</p>
+        <p data-lang="about-p3">Meine internationale Erfahrung umfasst über 43 Länder, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.</p>
         <p data-lang="about-p4"><strong>Mein Versprechen:</strong> Präzision, Diskretion und Zuverlässigkeit – von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.</p>
       </div>
     </div>
@@ -345,7 +357,7 @@
 
   <section id="services" class="section">
     <h2 data-lang="services">Leistungen</h2>
-    <p class="section-intro" data-lang="services-intro">Ich biete maßgeschneiderte Sprachdienstleistungen für Institutionen, Kanzleien, Agenturen, Unternehmen und Privatpersonen.</p>
+    <p class="section-intro" data-lang="services-intro">Ich biete maßgeschneiderte Dolmetschleistungen, die von der sorgfältigen Vorbereitung bis zur professionellen Durchführung reichen – mit präziser Beherrschung der fachspezifischen Terminologie.</p>
     <div class="grid-2">
       <div class="card">
         <h3 data-lang="serv1-title">Dolmetschen</h3>
@@ -381,13 +393,37 @@
     <h2 data-lang="value-title">Warum Sie mit mir zusammenarbeiten sollten</h2>
     <ul>
       <li data-lang="value1">✅ 900+ erfolgreiche Einsätze in sensiblen institutionellen Kontexten</li>
-      <li data-lang="value2">✅ Offiziell registriert (GISA #32188035, DSR BMI)</li>
+      <li data-lang="value2">✅ Offiziell registriert (GISA #32188035, DSR BMI) – mit strengster Vertraulichkeit</li>
       <li data-lang="value3">✅ Absolute Vertraulichkeit und Unparteilichkeit</li>
       <li data-lang="value4">✅ Terminologische Präzision mit eigenem Fachglossar (500+ Begriffe)</li>
-      <li data-lang="value5">✅ Interkulturelle Kompetenz aus 43+ Ländern Erfahrung</li>
+      <li data-lang="value5">✅ Interkulturelle Kompetenz und kulturelles Verständnis aus 43+ Ländern Erfahrung</li>
       <li data-lang="value6">✅ Flexibilität – vor Ort, remote oder telefonisch</li>
       <li data-lang="value7">✅ Qualitätsgarantie – jeder Auftrag wird sorgfältig vorbereitet und nachbearbeitet</li>
     </ul>
+  </section>
+
+  <section id="faq" class="section" style="max-width:900px;padding-bottom:70px">
+    <h2 data-lang="faq-title">Häufig gestellte Fragen</h2>
+    
+    <div class="faq-item">
+      <h3 data-lang="faq-q1">In welchen Regionen Österreichs sind Sie tätig?</h3>
+      <p data-lang="faq-a1">Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 data-lang="faq-q2">Wie weit im Voraus sollte ich buchen?</h3>
+      <p data-lang="faq-a2">Für geplante Termine empfehle ich eine Buchung 2-4 Wochen im Voraus. Bei kurzfristigen Anfragen kann ich je nach Verfügbarkeit auch innerhalb von 24-48 Stunden einspringen.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 data-lang="faq-q3">Welche Plattformen nutzen Sie für Videodolmetschen?</h3>
+      <p data-lang="faq-a3">Ich arbeite mit allen gängigen Plattformen: Zoom, Microsoft Teams, Jitsi Meet und Skype. Auf Wunsch kann ich auch dedizierte Dolmetscherplattformen nutzen.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 data-lang="faq-q4">Übersetzen Sie auch beglaubigte Dokumente?</h3>
+      <p data-lang="faq-a4">Ja, ich beglaubige Übersetzungen aus dem Spanischen, Portugiesischen und Englischen ins Deutsche sowie umgekehrt. Die Beglaubigung ist für offizielle Zwecke wie Gerichtsverfahren oder Behördengänge gültig.</p>
+    </div>
   </section>
 
   <section id="contact" class="section">
@@ -436,7 +472,7 @@
       <p><strong data-lang="available">📍 Graz, Österreich | Sofort verfügbar</strong></p>
     </div>
 
-    <!-- Social Share Buttons - Solo LinkedIn, WhatsApp y Email -->
+    <!-- Social Share Buttons -->
     <div class="social-share">
       <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn" title="LinkedIn">in</a>
       <a href="https://wa.me/?text=https://felipeborecki.com" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp" title="Auf WhatsApp teilen">💬</a>
@@ -481,9 +517,9 @@
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'Vor Ort, remote und telefonisch',
         'about-title': 'Über mich',
-        'about-p1': 'Felipe Borecki – professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch mit Schwerpunkt auf juristischen, behördlichen, medizinischen und psychosozialen Kontexten in Österreich. Seit 2019 habe ich mehr als 900 Einsätze für Gerichte, Staatsanwaltschaften, Krankenhäuser und öffentliche Einrichtungen erfolgreich durchgeführt.',
-        'about-p2': 'Meine Arbeit zeichnet sich durch terminologische Präzision, absolute Vertraulichkeit und Unparteilichkeit aus – Eigenschaften, die in sensiblen Verfahren und hochkomplexen Situationen unerlässlich sind. Als GISA-registrierter Dolmetscher (Nr. 32188035) und im Dolmetscher- und Sachverständigenregister des BMI gelistet, verfüge ich über die offiziellen Qualifikationen für die Tätigkeit vor Gericht und bei Behörden in ganz Österreich.',
-        'about-p3': 'Ich biete Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen sowie Fachübersetzungen juristischer, medizinischer und administrativer Dokumente. Meine langjährige internationale Erfahrung – ich habe in mehr als 43 Ländern gelebt und gearbeitet – ermöglicht mir eine interkulturelle Vermittlung, die über die reine Sprachübertragung hinausgeht.',
+        'about-p1': 'Felipe Borecki – professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch. Ich bewege mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.',
+        'about-p2': 'Als zertifizierter Gerichtsdolmetscher mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.',
+        'about-p3': 'Meine internationale Erfahrung umfasst über 43 Länder, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.',
         'about-p4': 'Mein Versprechen: Präzision, Diskretion und Zuverlässigkeit – von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.',
         'about-val1-title': '⚖️ Präzision & Fachkompetenz',
         'about-val1-text': 'Terminologische Genauigkeit in straf-, zivil-, verwaltungs- und medizinrechtlichen Verfahren. Eigenes Fachglossar mit über 500 Begriffen.',
@@ -494,7 +530,7 @@
         'about-val4-title': '📱 Technische Flexibilität',
         'about-val4-text': 'Einsätze vor Ort, hybrid und remote via Zoom, MS Teams, Google Meet und spezialisierten OPI-Plattformen.',
         services: 'Leistungen',
-        'services-intro': 'Ich biete maßgeschneiderte Sprachdienstleistungen für Institutionen, Kanzleien, Agenturen, Unternehmen und Privatpersonen.',
+        'services-intro': 'Ich biete maßgeschneiderte Dolmetschleistungen, die von der sorgfältigen Vorbereitung bis zur professionellen Durchführung reichen – mit präziser Beherrschung der fachspezifischen Terminologie.',
         'serv1-title': 'Dolmetschen',
         'serv1-text': 'Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.',
         'serv2-title': 'Fachübersetzungen',
@@ -511,12 +547,21 @@
         field5: 'Zusammenarbeit zwischen Österreich, dem DACH-Raum und Lateinamerika',
         'value-title': 'Warum Sie mit mir zusammenarbeiten sollten',
         value1: '✅ 900+ erfolgreiche Einsätze in sensiblen institutionellen Kontexten',
-        value2: '✅ Offiziell registriert (GISA #32188035, DSR BMI)',
+        value2: '✅ Offiziell registriert (GISA #32188035, DSR BMI) – mit strengster Vertraulichkeit',
         value3: '✅ Absolute Vertraulichkeit und Unparteilichkeit',
         value4: '✅ Terminologische Präzision mit eigenem Fachglossar (500+ Begriffe)',
-        value5: '✅ Interkulturelle Kompetenz aus 43+ Ländern Erfahrung',
+        value5: '✅ Interkulturelle Kompetenz und kulturelles Verständnis aus 43+ Ländern Erfahrung',
         value6: '✅ Flexibilität – vor Ort, remote oder telefonisch',
         value7: '✅ Qualitätsgarantie – jeder Auftrag wird sorgfältig vorbereitet und nachbearbeitet',
+        'faq-title': 'Häufig gestellte Fragen',
+        'faq-q1': 'In welchen Regionen Österreichs sind Sie tätig?',
+        'faq-a1': 'Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.',
+        'faq-q2': 'Wie weit im Voraus sollte ich buchen?',
+        'faq-a2': 'Für geplante Termine empfehle ich eine Buchung 2-4 Wochen im Voraus. Bei kurzfristigen Anfragen kann ich je nach Verfügbarkeit auch innerhalb von 24-48 Stunden einspringen.',
+        'faq-q3': 'Welche Plattformen nutzen Sie für Videodolmetschen?',
+        'faq-a3': 'Ich arbeite mit allen gängigen Plattformen: Zoom, Microsoft Teams, Jitsi Meet und Skype. Auf Wunsch kann ich auch dedizierte Dolmetscherplattformen nutzen.',
+        'faq-q4': 'Übersetzen Sie auch beglaubigte Dokumente?',
+        'faq-a4': 'Ja, ich beglaubige Übersetzungen aus dem Spanischen, Portugiesischen und Englischen ins Deutsche sowie umgekehrt. Die Beglaubigung ist für offizielle Zwecke wie Gerichtsverfahren oder Behördengänge gültig.',
         contact: 'Kontakt',
         'contact-intro': 'Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.',
         'booking-cta-text': '📅 Oder buchen Sie direkt einen Termin:',
@@ -556,9 +601,9 @@
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'Presencial, remoto y telefónico',
         'about-title': 'Sobre mí',
-        'about-p1': 'Felipe Borecki – intérprete y traductor profesional de portugués, español y alemán, especializado en contextos jurídicos, institucionales, médicos y psicosociales en Austria. Desde 2019 he realizado más de 900 servicios para tribunales, fiscalías, hospitales y entidades públicas.',
-        'about-p2': 'Mi trabajo se caracteriza por la precisión terminológica, absoluta confidencialidad e imparcialidad – cualidades esenciales en procedimientos sensibles y situaciones de alta complejidad. Como intérprete registrado en GISA (nº 32188035) y en el registro de intérpretes y peritos del BMI, cuento con las credenciales oficiales para actuar ante tribunales y autoridades en toda Austria.',
-        'about-p3': 'Ofrezco interpretación simultánea, consecutiva, de acompañamiento, telefónica y remota, así como traducción especializada de documentos jurídicos, médicos y administrativos. Mi amplia experiencia internacional – he vivido y trabajado en más de 43 países – me permite ofrecer una mediación intercultural que va más allá de la mera transmisión lingüística.',
+        'about-p1': 'Felipe Borecki – intérprete y traductor profesional de portugués, español y alemán. Me muevo con soltura en tribunales, autoridades, clínicas y servicios sociales.',
+        'about-p2': 'Como intérprete judicial certificado con más de 900 servicios completados exitosamente, cuento con experiencia sólida en contextos de alta sensibilidad. Mi trabajo exige no solo precisión lingüística, sino también un profundo conocimiento de la terminología especializada y la capacidad de actuar con seguridad en situaciones de alta exigencia.',
+        'about-p3': 'Mi experiencia internacional abarca más de 43 países, lo que me ha proporcionado una comprensión profunda de los matices culturales y las diferentes tradiciones comunicativas.',
         'about-p4': 'Mi compromiso: precisión, discreción y fiabilidad – desde la primera consulta hasta la finalización satisfactoria de su proyecto.',
         'about-val1-title': '⚖️ Precisión & competencia',
         'about-val1-text': 'Exactitud terminológica en procedimientos penales, civiles, administrativos y sanitarios. Glosario propio con más de 500 términos.',
@@ -569,7 +614,7 @@
         'about-val4-title': '📱 Flexibilidad técnica',
         'about-val4-text': 'Servicios presenciales, híbridos y remotos vía Zoom, MS Teams, Google Meet y plataformas OPI especializadas.',
         services: 'Servicios',
-        'services-intro': 'Ofrezco servicios lingüísticos a medida para instituciones, despachos, agencias, empresas y clientes privados.',
+        'services-intro': 'Ofrezco servicios de interpretación a medida que abarcan desde la preparación rigurosa hasta la ejecución profesional, con dominio preciso de la terminología especializada por sector.',
         'serv1-title': 'Interpretación',
         'serv1-text': 'Interpretación simultánea, consecutiva, de acompañamiento, telefónica y remota para tribunales, autoridades, policía, hospitales y otros contextos institucionales.',
         'serv2-title': 'Traducción especializada',
@@ -586,12 +631,21 @@
         field5: 'Cooperación entre Austria, el espacio DACH y Latinoamérica',
         'value-title': 'Por qué trabajar conmigo',
         value1: '✅ Más de 900 servicios en contextos institucionales sensibles',
-        value2: '✅ Registro oficial (GISA #32188035, DSR BMI)',
+        value2: '✅ Registro oficial (GISA #32188035, DSR BMI) – con confidencialidad absoluta',
         value3: '✅ Confidencialidad absoluta e imparcialidad',
         value4: '✅ Precisión terminológica con glosario propio (500+ términos)',
-        value5: '✅ Competencia intercultural de 43+ países de experiencia',
+        value5: '✅ Competencia intercultural y comprensión cultural de 43+ países de experiencia',
         value6: '✅ Flexibilidad – presencial, remoto o telefónico',
         value7: '✅ Garantía de calidad – cada encargo se prepara y revisa cuidadosamente',
+        'faq-title': 'Preguntas frecuentes',
+        'faq-q1': '¿En qué regiones de Austria trabajas?',
+        'faq-a1': 'Estoy disponible en toda Austria, con sede principal en Estiria y Viena. Para servicios en otros estados federados se aplican gastos de desplazamiento mínimos.',
+        'faq-q2': '¿Con cuánta anticipación debo reservar?',
+        'faq-a2': 'Para citas programadas recomiendo reservar con 2-4 semanas de antelación. Para solicitudes urgentes, dependiendo de la disponibilidad, puedo intervenir en un plazo de 24-48 horas.',
+        'faq-q3': '¿Qué plataformas usas para videointerpretación?',
+        'faq-a3': 'Trabajo con todas las plataformas habituales: Zoom, Microsoft Teams, Jitsi Meet y Skype. Si lo prefiere, también puedo utilizar plataformas especializadas de interpretación.',
+        'faq-q4': '¿Traduces también documentos certificados?',
+        'faq-a4': 'Sí, certifico traducciones del español, portugués e inglés al alemán y viceversa. La certificación es válida para fines oficiales como procedimientos judiciales o trámites ante autoridades.',
         contact: 'Contacto',
         'contact-intro': '¿Tiene preguntas o desea reservar una cita? Estaré encantado de atenderle.',
         'booking-cta-text': '📅 O reserve una cita directamente:',
@@ -631,9 +685,9 @@
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'Presencial, remoto e telefónico',
         'about-title': 'Sobre mim',
-        'about-p1': 'Felipe Borecki – intérprete e tradutor profissional de português, espanhol e alemão, especializado em contextos jurídicos, institucionais, médicos e psicossociais na Áustria. Desde 2019 realizei mais de 900 serviços para tribunais, Ministério Público, hospitais e entidades públicas.',
-        'about-p2': 'O meu trabalho caracteriza-se pela precisão terminológica, absoluta confidencialidade e imparcialidade – qualidades essenciais em processos sensíveis e situações de elevada complexidade. Como intérprete registado na GISA (n.º 32188035) e no registo de intérpretes e peritos do BMI, disponho das credenciais oficiais para atuar perante tribunais e autoridades em toda a Áustria.',
-        'about-p3': 'Ofereço interpretação simultânea, consecutiva, de ligação, telefónica e remota, bem como tradução especializada de documentos jurídicos, médicos e administrativos. A minha vasta experiência internacional – vivi e trabalhei em mais de 43 países – permite-me oferecer uma mediação intercultural que vai além da mera transmissão linguística.',
+        'about-p1': 'Felipe Borecki – intérprete e tradutor profissional de português, espanhol e alemão. Movo-me com segurança em tribunais, autoridades, clínicas e serviços sociais.',
+        'about-p2': 'Como intérprete judicial certificado com mais de 900 serviços concluídos com sucesso, possuo experiência sólida em contextos de alta sensibilidade. O meu trabalho exige não apenas precisão linguística, mas também um profundo conhecimento da terminologia especializada e a capacidade de atuar com segurança em situações de alta exigência.',
+        'about-p3': 'A minha experiência internacional abrange mais de 43 países, o que me proporcionou uma compreensão profunda das nuances culturais e das diferentes tradições comunicativas.',
         'about-p4': 'O meu compromisso: precisão, discrição e fiabilidade – desde o primeiro contacto até à conclusão satisfatória do seu projeto.',
         'about-val1-title': '⚖️ Precisão & competência',
         'about-val1-text': 'Exatidão terminológica em processos penais, cíveis, administrativos e de saúde. Glossário próprio com mais de 500 termos.',
@@ -644,7 +698,7 @@
         'about-val4-title': '📱 Flexibilidade técnica',
         'about-val4-text': 'Serviços presenciais, híbridos e remotos via Zoom, MS Teams, Google Meet e plataformas OPI especializadas.',
         services: 'Serviços',
-        'services-intro': 'Ofereço serviços linguísticos personalizados para instituições, escritórios, agências, empresas e clientes privados.',
+        'services-intro': 'Ofereço serviços de interpretação à medida que abrangem desde a preparação rigorosa até à execução profissional, com domínio preciso da terminologia especializada por setor.',
         'serv1-title': 'Interpretação',
         'serv1-text': 'Interpretação simultânea, consecutiva, de ligação, telefónica e remota para tribunais, autoridades, polícia, hospitais e outros contextos institucionais.',
         'serv2-title': 'Tradução especializada',
@@ -661,12 +715,21 @@
         field5: 'Cooperação entre a Áustria, o espaço DACH e a América Latina',
         'value-title': 'Por que trabalhar comigo',
         value1: '✅ Mais de 900 serviços em contextos institucionais sensíveis',
-        value2: '✅ Registo oficial (GISA #32188035, DSR BMI)',
+        value2: '✅ Registo oficial (GISA #32188035, DSR BMI) – com confidencialidade absoluta',
         value3: '✅ Confidencialidade absoluta e imparcialidade',
         value4: '✅ Precisão terminológica com glossário próprio (500+ termos)',
-        value5: '✅ Competência intercultural de 43+ países de experiência',
+        value5: '✅ Competência intercultural e compreensão cultural de 43+ países de experiência',
         value6: '✅ Flexibilidade – presencial, remoto ou telefónico',
         value7: '✅ Garantia de qualidade – cada serviço é cuidadosamente preparado e revisto',
+        'faq-title': 'Perguntas frequentes',
+        'faq-q1': 'Em que regiões da Áustria você trabalha?',
+        'faq-a1': 'Estou disponível em toda a Áustria, com sede principal na Estíria e Viena. Para serviços noutros estados federados aplicam-se despesas de deslocação mínimas.',
+        'faq-q2': 'Com quanta antecedência devo reservar?',
+        'faq-a2': 'Para marcações agendadas recomendo reservar com 2-4 semanas de antecedência. Para pedidos urgentes, dependendo da disponibilidade, posso intervir num prazo de 24-48 horas.',
+        'faq-q3': 'Que plataformas você usa para videointerpretação?',
+        'faq-a3': 'Trabalho com todas as plataformas habituais: Zoom, Microsoft Teams, Jitsi Meet e Skype. Se preferir, também posso utilizar plataformas especializadas de interpretação.',
+        'faq-q4': 'Você também traduz documentos certificados?',
+        'faq-a4': 'Sim, certifico traduções do espanhol, português e inglês para o alemão e vice-versa. A certificação é válida para fins oficiais como processos judiciais ou trâmites junto a autoridades.',
         contact: 'Contato',
         'contact-intro': 'Tem perguntas ou deseja agendar uma reunião? Estarei feliz em atender.',
         'booking-cta-text': '📅 Ou agende uma reunião diretamente:',
@@ -706,9 +769,9 @@
         'cred4-title': 'ES | PT | DE',
         'cred4-text': 'On-site, remote and by phone',
         'about-title': 'About me',
-        'about-p1': 'Felipe Borecki – professional interpreter and translator in Portuguese, Spanish and German, specializing in legal, institutional, medical and psychosocial contexts in Austria. Since 2019, I have successfully completed more than 900 assignments for courts, public prosecutors\' offices, hospitals and public institutions.',
-        'about-p2': 'My work is defined by terminological precision, absolute confidentiality and impartiality – essential qualities in sensitive proceedings and highly complex situations. As a GISA-registered interpreter (No. 32188035) and listed in the Interpreter and Expert Register of the BMI, I hold the official credentials to work before courts and authorities throughout Austria.',
-        'about-p3': 'I offer simultaneous, consecutive, liaison, telephone and remote interpreting, as well as specialized translation of legal, medical and administrative documents. My extensive international experience – having lived and worked in more than 43 countries – enables me to provide intercultural mediation that goes beyond pure language transmission.',
+        'about-p1': 'Felipe Borecki – professional interpreter and translator in Portuguese, Spanish and German. I navigate confidently through courts, authorities, clinics, and social services.',
+        'about-p2': 'As a certified court interpreter with over 900 successfully completed assignments, I have solid experience in highly sensitive contexts. My work demands not only linguistic precision but also deep knowledge of industry-specific terminology and the ability to perform confidently in high-stakes situations.',
+        'about-p3': 'My international experience spans over 43 countries, giving me a deep understanding of cultural nuances and diverse communication traditions.',
         'about-p4': 'My commitment: precision, discretion and reliability – from the first inquiry to the successful completion of your project.',
         'about-val1-title': '⚖️ Precision & expertise',
         'about-val1-text': 'Terminological accuracy in criminal, civil, administrative and healthcare proceedings. Personal glossary with over 500 terms.',
@@ -719,7 +782,7 @@
         'about-val4-title': '📱 Technical flexibility',
         'about-val4-text': 'On-site, hybrid and remote assignments via Zoom, MS Teams, Google Meet and specialized OPI platforms.',
         services: 'Services',
-        'services-intro': 'I offer tailored language services for institutions, law firms, agencies, companies and private clients.',
+        'services-intro': 'I offer tailored interpreting services that encompass rigorous preparation through to professional execution, with precise command of industry-specific terminology.',
         'serv1-title': 'Interpreting',
         'serv1-text': 'Simultaneous, consecutive, liaison, telephone and remote interpreting for courts, authorities, police, hospitals and other institutional settings.',
         'serv2-title': 'Specialized translation',
@@ -736,12 +799,21 @@
         field5: 'Cooperation between Austria, the DACH region and Latin America',
         'value-title': 'Why work with me',
         value1: '✅ 900+ successful assignments in sensitive institutional contexts',
-        value2: '✅ Officially registered (GISA #32188035, DSR BMI)',
+        value2: '✅ Officially registered (GISA #32188035, DSR BMI) – with strict confidentiality',
         value3: '✅ Absolute confidentiality and impartiality',
         value4: '✅ Terminological precision with personal glossary (500+ terms)',
-        value5: '✅ Intercultural competence from 43+ countries of experience',
+        value5: '✅ Cultural competence and understanding from 43+ countries of experience',
         value6: '✅ Flexibility – on-site, remote or by phone',
         value7: '✅ Quality guarantee – every assignment is carefully prepared and reviewed',
+        'faq-title': 'Frequently asked questions',
+        'faq-q1': 'In which regions of Austria do you work?',
+        'faq-a1': 'I\'m available throughout Austria, based primarily in Styria and Vienna. For assignments in other federal states, minimal travel expenses apply.',
+        'faq-q2': 'How far in advance should I book?',
+        'faq-a2': 'For scheduled appointments I recommend booking 2-4 weeks in advance. For urgent requests, depending on availability, I can step in within 24-48 hours.',
+        'faq-q3': 'Which platforms do you use for video interpreting?',
+        'faq-a3': 'I work with all common platforms: Zoom, Microsoft Teams, Jitsi Meet, and Skype. If preferred, I can also use dedicated interpreting platforms.',
+        'faq-q4': 'Do you also translate certified documents?',
+        'faq-a4': 'Yes, I certify translations from Spanish, Portuguese, and English into German and vice versa. The certification is valid for official purposes such as court proceedings or administrative procedures.',
         contact: 'Contact',
         'contact-intro': 'Have questions or want to book an appointment? I look forward to hearing from you.',
         'booking-cta-text': '📅 Or book an appointment directly:',
