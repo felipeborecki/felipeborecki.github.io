@@ -96,12 +96,28 @@
     .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
     .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
 
-    .hero{margin-top:72px;background:#0e1528}
-    .hero-banner{width:100%;height:400px;background:url('/images/header2.jpg') center/contain no-repeat;background-color:#0e1528;display:block}
-    .hero-content{max-width:1400px;margin:0 auto;padding:60px 4rem 80px;text-align:center;color:#fff}
-    .hero h2{font-size:3.2rem;margin-bottom:1.5rem;line-height:1.2;max-width:100%}
-    .hero p{font-size:1.2rem;margin:0 auto 1.5rem;max-width:90ch;line-height:1.7}
-    .hero-subline{font-size:1.05rem;opacity:.9;max-width:90ch;margin:0 auto 2.5rem;line-height:1.6}
+    .hero{margin-top:72px;background:#0e1528;padding:60px 2rem 80px;text-align:center;color:#fff;position:relative}
+    .hero-banner{position:absolute;top:0;left:0;width:100%;height:100%;background:url('/images/header2.jpg') center/cover no-repeat;opacity:.15;z-index:0}
+    .hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto}
+    .hero h1{font-size:3.2rem;margin-bottom:0.5rem;line-height:1.2}
+    .hero .subtitle{font-size:1.2rem;margin-bottom:1.5rem;opacity:.9}
+    .hero p{font-size:1.1rem;margin:0 auto 1.5rem;max-width:70ch;line-height:1.7}
+    .hero-subline{font-size:1rem;opacity:.85;max-width:72ch;margin:0 auto 2.5rem;line-height:1.6}
+    
+    /* Crossfade photo container */
+    .hero-photo-container{position:relative;width:280px;height:280px;margin:0 auto 2rem;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,0.3);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+    .hero-photo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:crossfade 10s infinite}
+    .hero-photo-1{animation-delay:0s}
+    .hero-photo-2{animation-delay:5s}
+
+    @keyframes crossfade{
+      0%{opacity:0}
+      5%{opacity:1}
+      45%{opacity:1}
+      50%{opacity:0}
+      100%{opacity:0}
+    }
+
     .cta-wrap{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
     .cta{background:#fff;color:#0e1528;padding:1rem 2.5rem;border-radius:5px;font-weight:700;display:inline-block;transition:background .25s ease,transform .25s ease;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
     .cta:hover{background:#f0f2f8;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
@@ -117,12 +133,10 @@
     .section h2::after{content:'';display:block;width:60px;height:3px;background:rgba(14,21,40,0.3);margin:12px auto 0;border-radius:2px}
     .section-intro{max-width:760px;margin:0 auto 2rem;text-align:center;font-size:1.05rem}
     
-    /* LISTAS ALINEADAS A LA IZQUIERDA */
     .section ul{display:grid;gap:1rem;max-width:920px;margin:0 auto;list-style:none;text-align:left}
     .section ul li{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .25s ease;font-size:1rem;text-align:left}
     .section ul li:hover{transform:translateY(-4px)}
     
-    /* Lista de "Warum" con iconos alineados */
     .value-list{max-width:920px;margin:0 auto}
     .value-list li{display:flex;align-items:flex-start;gap:0.75rem;background:#fff;padding:1.25rem 1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .25s ease;font-size:1rem;text-align:left}
     .value-list li:hover{transform:translateY(-4px)}
@@ -140,25 +154,15 @@
     .credential span{font-size:0.9rem;line-height:1.5}
 
     .profil-container{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
-    .profilfoto{width:250px;height:300px;border-radius:8px;object-fit:cover;box-shadow:0 8px 30px rgba(0,0,0,.25);border:5px solid #fff}
-    .profilfoto-placeholder{width:250px;height:300px;border-radius:8px;display:none;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25);background:#f0f0f0;align-items:center;justify-content:center;color:#999;font-size:0.9rem}
     .profil-text{flex:1;min-width:300px;max-width:760px}
     .profil-text p{margin-bottom:1rem;font-size:1rem;line-height:1.7}
     .profil-text p strong{color:#0e1528}
 
-    /* About photo secondary */
-    .about-photo-wrapper{display:flex;flex-wrap:wrap;align-items:center;gap:2rem;margin-top:1.5rem}
-    .about-photo-secondary{width:200px;height:200px;border-radius:50%;object-fit:cover;border:3px solid #2c3e50;box-shadow:0 4px 12px rgba(0,0,0,0.1);flex-shrink:0}
-    .about-text-extra{flex:1;min-width:250px}
-    .about-text-extra p{font-size:1rem;line-height:1.7;color:#555}
-
-    /* About Me Section */
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1000px;margin:2rem auto 0}
     .about-grid .about-item{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);border-left:4px solid #0e1528}
     .about-grid .about-item h3{color:#0e1528;font-size:1.1rem;margin-bottom:.5rem}
     .about-grid .about-item p{font-size:0.95rem;color:#555;margin:0;line-height:1.6}
 
-    /* FAQ Section */
     #faq{max-width:900px;margin:0 auto;padding:0 2rem 70px}
     #faq h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#0e1528;position:relative}
     #faq h2::after{content:'';display:block;width:60px;height:3px;background:rgba(14,21,40,0.3);margin:12px auto 0;border-radius:2px}
@@ -184,7 +188,6 @@
     .booking-cta-block{text-align:center;margin:2rem auto 0;padding:1.5rem;background:#f0f4f8;border-radius:8px;max-width:700px}
     .booking-cta-block p{margin-bottom:0.8rem;font-weight:500;color:#0e1528;font-size:1rem}
 
-    /* Social Share Buttons */
     .social-share{display:flex;justify-content:center;gap:0.8rem;margin-top:1.5rem;flex-wrap:wrap}
     .social-share a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#0e1528;color:#fff;text-decoration:none;font-size:1.2rem;transition:all .25s ease}
     .social-share a:hover{background:#1a2a4a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
@@ -211,10 +214,7 @@
       .header-left h1{font-size:1.3rem}
       .header-nav{gap:0.8rem}
       .header-nav a{font-size:0.8rem}
-      .hero-content{padding:40px 2rem 60px}
-      .hero h2{font-size:2.8rem}
-      .about-photo-wrapper{flex-direction:column;text-align:center}
-      .about-photo-secondary{width:180px;height:180px}
+      .hero h1{font-size:2.8rem}
     }
 
     @media (max-width:900px){
@@ -232,15 +232,15 @@
       .header-right{width:100%;justify-content:center;gap:0.3rem}
       .flags button{width:26px;height:26px;font-size:0.85rem}
       
-      .hero-banner{height:180px}
-      .hero-content{padding:25px 1.2rem 40px}
-      .hero h2{font-size:1.6rem}
+      .hero{padding:40px 1.2rem 60px}
+      .hero h1{font-size:2rem}
+      .hero .subtitle{font-size:1rem}
       .hero p{font-size:0.9rem}
-      .hero-subline{font-size:0.8rem}
+      .hero-subline{font-size:0.85rem}
+      .hero-photo-container{width:200px;height:200px}
+      
       .cta{font-size:0.85rem;padding:0.8rem 1.5rem}
       
-      .profil-container{flex-direction:column;text-align:center}
-      .profilfoto,.profilfoto-placeholder{width:180px;height:230px}
       .section h2{font-size:1.6rem}
       .section{padding:40px 1.2rem}
       .section ul li{padding:1.2rem;font-size:0.9rem;text-align:left}
@@ -257,9 +257,6 @@
       .faq-item h3{font-size:1rem}
       .faq-item p{font-size:0.9rem}
       #faq{padding:0 1.2rem 40px}
-      .about-photo-wrapper{flex-direction:column;text-align:center}
-      .about-photo-secondary{width:150px;height:150px;margin:0 auto}
-      .about-text-extra{text-align:center}
       
       .whatsapp-link{margin-left:0;margin-top:6px;display:inline-flex;font-size:0.75rem;padding:4px 10px}
       .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3rem;font-size:0.9rem}
@@ -277,7 +274,8 @@
       .header-nav a{font-size:0.55rem}
       .header-nav{gap:0.25rem}
       .flags button{width:22px;height:22px;font-size:0.7rem}
-      .hero h2{font-size:1.3rem}
+      .hero h1{font-size:1.6rem}
+      .hero-photo-container{width:160px;height:160px}
     }
   </style>
 </head>
@@ -306,14 +304,21 @@
   </header>
 
   <section id="home" class="hero">
-    <div class="hero-banner" role="img" aria-label="Felipe Borecki - Dolmetscher und Übersetzer"></div>
+    <div class="hero-banner"></div>
     <div class="hero-content">
-      <h2 data-lang="hero-title">Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte</h2>
+      <!-- Crossfade photo container -->
+      <div class="hero-photo-container">
+        <img src="/images/foto-perfil.jpg" alt="Felipe Borecki" class="hero-photo hero-photo-1">
+        <img src="/images/perfilborecki.png" alt="Felipe Borecki" class="hero-photo hero-photo-2">
+      </div>
+      
+      <h1 data-lang="hero-name">Felipe Borecki</h1>
+      <p class="subtitle" data-lang="hero-subtitle">Dolmetscher & Übersetzer</p>
       <p data-lang="hero-desc">Präzise, vertrauliche und verlässliche Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich – vor Ort, remote und telefonisch.</p>
       <p class="hero-subline" data-lang="hero-subline">GISA-registriert (Nr. 32188035) | 900+ Einsätze für Gerichte, Behörden und Institutionen | Arbeitssprachen: ES | PT | DE</p>
       <div class="cta-wrap">
         <a href="#contact" class="cta" data-lang="cta">Kontakt aufnehmen</a>
-        <a href="#services" class="cta cta-secondary" data-lang="cta-secondary">Referenzen & Projekte</a>
+        <a href="#contact" class="cta cta-secondary" data-lang="cta-secondary">Kontakt aufnehmen</a>
         <a href="/appointment.html" class="cta cta-outline" data-lang="cta-book">📅 Termin buchen</a>
       </div>
     </div>
@@ -344,25 +349,14 @@
   <section id="about" class="section">
     <h2 data-lang="about-title">Über mich</h2>
     <div class="profil-container">
-      <img src="/images/foto-perfil.jpg" alt="Felipe Borecki Profilfoto" class="profilfoto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" loading="lazy">
-      <div class="profilfoto-placeholder">📸 Foto</div>
       <div class="profil-text">
         <p data-lang="about-p1"><strong>Felipe Borecki</strong> – professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch. Ich bewege mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.</p>
         <p data-lang="about-p2">Als zertifizierter Gerichtsdolmetscher mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.</p>
         <p data-lang="about-p3">Meine internationale Erfahrung umfasst über 43 Länder, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.</p>
         <p data-lang="about-p4"><strong>Mein Versprechen:</strong> Präzision, Diskretion und Zuverlässigkeit – von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.</p>
-        
-        <!-- Segunda foto -->
-        <div class="about-photo-wrapper">
-          <img src="images/perfilborecki.png" alt="Felipe Borecki" class="about-photo-secondary" loading="lazy">
-          <div class="about-text-extra">
-            <p data-lang="about-extra">Mit über 900 erfolgreichen Einsätzen und langjähriger Erfahrung in den Bereichen Justiz, Medizin und Verwaltung stehe ich für höchste Qualität und Professionalität in der Sprachmittlung.</p>
-          </div>
-        </div>
       </div>
     </div>
 
-    <!-- Grid de valores -->
     <div class="about-grid">
       <div class="about-item">
         <h3 data-lang="about-val1-title">⚖️ Präzision & Fachkompetenz</h3>
@@ -500,7 +494,6 @@
       <p><strong data-lang="available">📍 Graz, Österreich | Sofort verfügbar</strong></p>
     </div>
 
-    <!-- Social Share Buttons -->
     <div class="social-share">
       <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn" title="LinkedIn">in</a>
       <a href="https://wa.me/?text=https://felipeborecki.com" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp" title="Auf WhatsApp teilen">💬</a>
@@ -524,16 +517,17 @@
         ogtitle: 'Felipe Borecki - Dolmetscher & Übersetzer für Gerichte & Behörden',
         ogdesc: 'Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035. 900+ Einsätze.',
         name: 'Felipe Borecki',
+        'hero-name': 'Felipe Borecki',
+        'hero-subtitle': 'Dolmetscher & Übersetzer',
         'nav-services': 'Leistungen',
         'nav-about': 'Über mich',
         'nav-book': 'Termin buchen',
         'nav-contact': 'Kontakt',
         'nav-agb': 'AGB',
-        'hero-title': 'Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte',
         'hero-desc': 'Präzise, vertrauliche und verlässliche Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich – vor Ort, remote und telefonisch.',
         'hero-subline': 'GISA-registriert (Nr. 32188035) | 900+ Einsätze für Gerichte, Behörden und Institutionen | Arbeitssprachen: ES | PT | DE',
         cta: 'Kontakt aufnehmen',
-        'cta-secondary': 'Referenzen & Projekte',
+        'cta-secondary': 'Kontakt aufnehmen',
         'cta-book': '📅 Termin buchen',
         'cred-title': 'Kurzprofil',
         'cred1-title': '900+',
@@ -549,7 +543,6 @@
         'about-p2': 'Als zertifizierter Gerichtsdolmetscher mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.',
         'about-p3': 'Meine internationale Erfahrung umfasst über 43 Länder, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.',
         'about-p4': 'Mein Versprechen: Präzision, Diskretion und Zuverlässigkeit – von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.',
-        'about-extra': 'Mit über 900 erfolgreichen Einsätzen und langjähriger Erfahrung in den Bereichen Justiz, Medizin und Verwaltung stehe ich für höchste Qualität und Professionalität in der Sprachmittlung.',
         'about-val1-title': '⚖️ Präzision & Fachkompetenz',
         'about-val1-text': 'Terminologische Genauigkeit in straf-, zivil-, verwaltungs- und medizinrechtlichen Verfahren. Eigenes Fachglossar mit über 500 Begriffen.',
         'about-val2-title': '🔒 Vertraulichkeit & Integrität',
@@ -606,16 +599,17 @@
         ogtitle: 'Felipe Borecki - Intérprete y Traductor para Tribunales y Autoridades',
         ogdesc: 'Intérprete y traductor profesional para tribunales, autoridades y salud en Austria. GISA #32188035. 900+ servicios.',
         name: 'Felipe Borecki',
+        'hero-name': 'Felipe Borecki',
+        'hero-subtitle': 'Intérprete & Traductor',
         'nav-services': 'Servicios',
         'nav-about': 'Sobre mí',
         'nav-book': 'Reservar cita',
         'nav-contact': 'Contacto',
         'nav-agb': 'Términos',
-        'hero-title': 'Intérprete y traductor para tribunales, autoridades y contextos sensibles',
         'hero-desc': 'Servicios lingüísticos precisos, confidenciales y fiables para ámbitos jurídicos, médicos, administrativos y psicosociales en Austria – presencial, remoto y telefónico.',
         'hero-subline': 'Registrado en GISA (n.º 32188035) | 900+ servicios para tribunales, autoridades e instituciones | Idiomas: ES | PT | DE',
-        cta: 'Contactar',
-        'cta-secondary': 'Casos de éxito',
+        cta: 'Solicitar presupuesto',
+        'cta-secondary': 'Solicitar presupuesto',
         'cta-book': '📅 Reservar cita',
         'cred-title': 'Perfil breve',
         'cred1-title': '900+',
@@ -631,7 +625,6 @@
         'about-p2': 'Como intérprete judicial certificado con más de 900 servicios completados exitosamente, cuento con experiencia sólida en contextos de alta sensibilidad. Mi trabajo exige no solo precisión lingüística, sino también un profundo conocimiento de la terminología especializada y la capacidad de actuar con seguridad en situaciones de alta exigencia.',
         'about-p3': 'Mi experiencia internacional abarca más de 43 países, lo que me ha proporcionado una comprensión profunda de los matices culturales y las diferentes tradiciones comunicativas.',
         'about-p4': 'Mi compromiso: precisión, discreción y fiabilidad – desde la primera consulta hasta la finalización satisfactoria de su proyecto.',
-        'about-extra': 'Con más de 900 servicios exitosos y amplia experiencia en los ámbitos de justicia, medicina y administración, garantizo la máxima calidad y profesionalidad en la mediación lingüística.',
         'about-val1-title': '⚖️ Precisión & competencia',
         'about-val1-text': 'Exactitud terminológica en procedimientos penales, civiles, administrativos y sanitarios. Glosario propio con más de 500 términos.',
         'about-val2-title': '🔒 Confidencialidad & integridad',
@@ -688,16 +681,17 @@
         ogtitle: 'Felipe Borecki - Intérprete e Tradutor para Tribunais e Autoridades',
         ogdesc: 'Intérprete e tradutor profissional para tribunais, autoridades e saúde na Áustria. GISA #32188035. 900+ serviços.',
         name: 'Felipe Borecki',
+        'hero-name': 'Felipe Borecki',
+        'hero-subtitle': 'Intérprete & Tradutor',
         'nav-services': 'Serviços',
         'nav-about': 'Sobre mim',
         'nav-book': 'Agendar reunião',
         'nav-contact': 'Contato',
         'nav-agb': 'Termos',
-        'hero-title': 'Intérprete e tradutor para tribunais, autoridades e contextos sensíveis',
         'hero-desc': 'Serviços linguísticos precisos, confidenciais e fiáveis para contextos jurídicos, médicos, administrativos e psicossociais na Áustria – presencial, remoto e telefónico.',
         'hero-subline': 'Registado na GISA (n.º 32188035) | 900+ serviços para tribunais, autoridades e instituições | Línguas: ES | PT | DE',
-        cta: 'Contactar',
-        'cta-secondary': 'Casos de sucesso',
+        cta: 'Solicitar orçamento',
+        'cta-secondary': 'Solicitar orçamento',
         'cta-book': '📅 Agendar reunião',
         'cred-title': 'Perfil breve',
         'cred1-title': '900+',
@@ -713,7 +707,6 @@
         'about-p2': 'Como intérprete judicial certificado com mais de 900 serviços concluídos com sucesso, possuo experiência sólida em contextos de alta sensibilidade. O meu trabalho exige não apenas precisão linguística, mas também um profundo conhecimento da terminologia especializada e a capacidade de atuar com segurança em situações de alta exigência.',
         'about-p3': 'A minha experiência internacional abrange mais de 43 países, o que me proporcionou uma compreensão profunda das nuances culturais e das diferentes tradições comunicativas.',
         'about-p4': 'O meu compromisso: precisão, discrição e fiabilidade – desde o primeiro contacto até à conclusão satisfatória do seu projeto.',
-        'about-extra': 'Com mais de 900 serviços bem-sucedidos e vasta experiência nas áreas da justiça, medicina e administração, garanto a máxima qualidade e profissionalismo na mediação linguística.',
         'about-val1-title': '⚖️ Precisão & competência',
         'about-val1-text': 'Exatidão terminológica em processos penais, cíveis, administrativos e de saúde. Glossário próprio com mais de 500 termos.',
         'about-val2-title': '🔒 Confidencialidade & integridade',
@@ -770,16 +763,17 @@
         ogtitle: 'Felipe Borecki - Interpreter & Translator for Courts & Authorities',
         ogdesc: 'Professional interpreter and translator for courts, authorities and healthcare in Austria. GISA #32188035. 900+ assignments.',
         name: 'Felipe Borecki',
+        'hero-name': 'Felipe Borecki',
+        'hero-subtitle': 'Interpreter & Translator',
         'nav-services': 'Services',
         'nav-about': 'About me',
         'nav-book': 'Book appointment',
         'nav-contact': 'Contact',
         'nav-agb': 'Terms',
-        'hero-title': 'Interpreter and translator for courts, authorities and sensitive professional contexts',
         'hero-desc': 'Precise, confidential and reliable language support for legal, medical, administrative and psychosocial settings in Austria – on-site, remote and over the phone.',
         'hero-subline': 'GISA-registered (No. 32188035) | 900+ assignments for courts, authorities and institutions | Languages: ES | PT | DE',
-        cta: 'Get in touch',
-        'cta-secondary': 'Success stories',
+        cta: 'Request a quote',
+        'cta-secondary': 'Request a quote',
         'cta-book': '📅 Book appointment',
         'cred-title': 'Profile at a glance',
         'cred1-title': '900+',
@@ -795,7 +789,6 @@
         'about-p2': 'As a certified court interpreter with over 900 successfully completed assignments, I have solid experience in highly sensitive contexts. My work demands not only linguistic precision but also deep knowledge of industry-specific terminology and the ability to perform confidently in high-stakes situations.',
         'about-p3': 'My international experience spans over 43 countries, giving me a deep understanding of cultural nuances and diverse communication traditions.',
         'about-p4': 'My commitment: precision, discretion and reliability – from the first inquiry to the successful completion of your project.',
-        'about-extra': 'With over 900 successful assignments and extensive experience in justice, healthcare, and administration, I stand for the highest quality and professionalism in language mediation.',
         'about-val1-title': '⚖️ Precision & expertise',
         'about-val1-text': 'Terminological accuracy in criminal, civil, administrative and healthcare proceedings. Personal glossary with over 500 terms.',
         'about-val2-title': '🔒 Confidentiality & integrity',
@@ -900,12 +893,7 @@
       document.querySelectorAll('[data-lang]').forEach(el => {
         const key = el.dataset.lang;
         if (t[key] !== undefined) {
-          // Si contiene HTML, usar innerHTML, si no textContent
-          if (key === 'about-p1' || key === 'about-p2' || key === 'about-p3' || key === 'about-p4' || key === 'about-extra') {
-            el.innerHTML = t[key];
-          } else {
-            el.textContent = t[key];
-          }
+          el.textContent = t[key];
         }
       });
 
