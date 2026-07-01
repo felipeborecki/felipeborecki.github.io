@@ -1,1 +1,398 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8FPVG53SY');
+  </script>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Borecki - Institutionen & Kooperationspartner</title>
+  <meta name="description" content="Institutionen und Kooperationspartner von Felipe Borecki: Gerichte, Behörden, Kliniken, Sozialdienste in Österreich.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== MISMOS ESTILOS ===== */
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Roboto',sans-serif;line-height:1.7;color:#333;background:#f8f9fa;font-size:16px}
+    
+    header{background:#0e1528;color:#fff;padding:0.8rem 1.5rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.12);border-bottom:1px solid rgba(255,255,255,0.08)}
+    .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;padding:0 1rem;width:100%;flex-wrap:wrap;gap:0.5rem}
+    .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+    .header-left h1{font-size:1.6rem;margin:0;white-space:nowrap}
+    .header-nav{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+    .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.85rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
+    .header-nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#fff;transition:width .3s ease}
+    .header-nav a:hover{color:#fff}
+    .header-nav a:hover::after{width:100%}
+    .header-nav a.active{color:#fff}
+    .header-nav a.active::after{width:100%}
+    .header-right{display:flex;align-items:center;gap:0.8rem}
+    .flags{display:flex;gap:.3rem}
+    .flags button{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
+    .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
+
+    .page-hero{background:#0e1528;color:#fff;padding:120px 2rem 60px;text-align:center}
+    .page-hero h1{font-size:2.8rem;margin-bottom:1rem}
+    .page-hero p{font-size:1.2rem;max-width:760px;margin:0 auto;opacity:.9}
+
+    .section{padding:60px 2rem;max-width:1200px;margin:0 auto}
+    .section h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#0e1528;position:relative}
+    .section h2::after{content:'';display:block;width:60px;height:3px;background:rgba(14,21,40,0.3);margin:12px auto 0;border-radius:2px}
+    .section-intro{max-width:760px;margin:0 auto 2rem;text-align:center;font-size:1.05rem}
+
+    .institution-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.75rem;max-width:1000px;margin:0 auto 2rem}
+    .institution-badge{background:#fff;padding:0.9rem 1.2rem;border-radius:6px;text-align:center;font-size:0.9rem;font-weight:500;color:#0e1528;border:1px solid #e0e0e0;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+    .institution-badge:hover{background:#0e1528;color:#fff;border-color:#0e1528;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+
+    .institution-examples{max-width:800px;margin:0 auto;background:#f8f9fa;padding:2rem;border-radius:8px;border-left:4px solid #0e1528}
+    .institution-examples-title{font-weight:700;color:#0e1528;margin-bottom:1rem;font-size:1rem}
+    .institution-examples-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0.5rem}
+    .institution-examples-list li{padding:0.4rem 0;font-size:0.9rem;color:#333}
+    .institution-examples-list li::before{content:'✓ ';color:#0e1528;font-weight:700}
+    .institution-note{margin-top:1rem;font-style:italic;color:#666;font-size:0.9rem}
+
+    .back-link{display:inline-block;margin-top:2rem;color:#0e1528;font-weight:500;text-decoration:none;transition:all .25s ease}
+    .back-link:hover{transform:translateX(-4px)}
+
+    footer{background:#0e1528;color:#fff;text-align:center;padding:2rem;font-size:0.95rem}
+    footer a{color:#fff;text-decoration:underline}
+    footer a:hover{color:#ddd}
+    [data-lang]{transition:opacity .25s ease}
+    a{color:#0e1528;font-weight:500}
+    a:hover{color:#142135;text-decoration:none}
+
+    @media (max-width:768px){
+      header{padding:0.5rem 0.8rem}
+      .header-content{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0.3rem;padding:0 0.3rem}
+      .header-left{width:100%;justify-content:center;flex-wrap:wrap;gap:0.4rem}
+      .header-left h1{font-size:1.1rem;white-space:nowrap}
+      .header-nav{gap:0.4rem;justify-content:center;width:100%}
+      .header-nav a{font-size:0.65rem;padding-bottom:1px;white-space:nowrap}
+      .header-right{width:100%;justify-content:center;gap:0.3rem}
+      .flags button{width:26px;height:26px;font-size:0.85rem}
+      
+      .page-hero{padding:100px 1.2rem 40px}
+      .page-hero h1{font-size:2rem}
+      .page-hero p{font-size:1rem}
+      
+      .section{padding:40px 1.2rem}
+      .section h2{font-size:1.6rem}
+      .institution-grid{grid-template-columns:repeat(2,1fr)}
+      .institution-examples-list{grid-template-columns:1fr}
+    }
+
+    @media (max-width:480px){
+      .institution-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1 data-lang="name">Felipe Borecki</h1>
+        <nav class="header-nav">
+          <a href="/#services" data-lang="nav-services">Leistungen</a>
+          <a href="/about.html" data-lang="nav-about">Über mich</a>
+          <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
+          <a href="/#contact" data-lang="nav-contact">Kontakt</a>
+          <a href="/agb" data-lang="nav-agb">AGB</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="flags">
+          <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch">🇩🇪</button>
+          <button type="button" onclick="setLang(event,'es')" title="Español">🇪🇸</button>
+          <button type="button" onclick="setLang(event,'pt')" title="Português (BR)">🇧🇷</button>
+          <button type="button" onclick="setLang(event,'en')" title="English">🇬🇧</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1 data-lang="hero-title">Institutionen & Kooperationspartner</h1>
+    <p data-lang="hero-sub">Regelmäßige Zusammenarbeit mit Gerichten, Behörden, Gesundheitseinrichtungen und sozialen Diensten in ganz Österreich</p>
+  </section>
+
+  <section class="section">
+    <div class="institution-grid">
+      <div class="institution-badge" data-lang="inst-1">Gerichte und Staatsanwaltschaften</div>
+      <div class="institution-badge" data-lang="inst-2">Verwaltungsgerichte</div>
+      <div class="institution-badge" data-lang="inst-3">Justizvollzugsanstalten</div>
+      <div class="institution-badge" data-lang="inst-4">Bezirkshauptmannschaften</div>
+      <div class="institution-badge" data-lang="inst-5">Universitätskliniken</div>
+      <div class="institution-badge" data-lang="inst-6">Psychiatrische Dienste</div>
+      <div class="institution-badge" data-lang="inst-7">Jugendschutz und Jugendämter</div>
+      <div class="institution-badge" data-lang="inst-8">Frauenhäuser</div>
+      <div class="institution-badge" data-lang="inst-9">Polizei</div>
+      <div class="institution-badge" data-lang="inst-10">Caritas</div>
+      <div class="institution-badge" data-lang="inst-11">Sachverständige und Psychologen</div>
+      <div class="institution-badge" data-lang="inst-12">Familiengerichtshilfe</div>
+    </div>
+
+    <div class="institution-examples">
+      <p class="institution-examples-title" data-lang="examples-title">Auswahl meiner Kooperationspartner:</p>
+      <ul class="institution-examples-list">
+        <li data-lang="ex-1">Landesgericht für Strafsachen Graz</li>
+        <li data-lang="ex-2">Staatsanwaltschaft Graz</li>
+        <li data-lang="ex-3">Amt für Jugend und Familie – Magistrat Graz</li>
+        <li data-lang="ex-4">Justizvollzugsanstalt</li>
+        <li data-lang="ex-5">Jugendschutzzentrum Graz</li>
+        <li data-lang="ex-6">KAGes – Verband der Steiermärkischen Krankenanstaltengesellschaft m.b.H.</li>
+        <li data-lang="ex-7">Familiengerichtshilfe Graz</li>
+        <li data-lang="ex-8">Frauenhaus Graz</li>
+        <li data-lang="ex-9">Caritas der Diözese Graz-Seckau</li>
+        <li data-lang="ex-10">BH Graz-Umgebung – Außenstelle Graz-West</li>
+        <li data-lang="ex-11">BH Graz-Umgebung – Außenstelle Graz-Ost</li>
+        <li data-lang="ex-12">Landesverwaltungsgericht Steiermark</li>
+        <li data-lang="ex-13">Landesgericht Klagenfurt</li>
+        <li data-lang="ex-14">Bezirksgerichte in Österreich, nach Bedarf</li>
+        <li data-lang="ex-15">Staatsanwaltschaften in Österreich, nach Bedarf</li>
+      </ul>
+      <p class="institution-note" data-lang="note">… und viele weitere Institutionen in ganz Österreich.</p>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/" class="back-link" data-lang="back">← Zurück zur Startseite</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Felipe Borecki. <span data-lang="footer-rights">Alle Rechte vorbehalten.</span> | <a href="/agb" data-lang="footer-terms">AGB / Datenschutz</a></p>
+  </footer>
+
+  <script>
+    // ===== SISTEMA DE IDIOMAS =====
+    let currentLang = 'de';
+    const translations = {
+      de: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Leistungen',
+        'nav-about': 'Über mich',
+        'nav-book': 'Termin buchen',
+        'nav-contact': 'Kontakt',
+        'nav-agb': 'AGB',
+        'hero-title': 'Institutionen & Kooperationspartner',
+        'hero-sub': 'Regelmäßige Zusammenarbeit mit Gerichten, Behörden, Gesundheitseinrichtungen und sozialen Diensten in ganz Österreich',
+        'inst-1': 'Gerichte und Staatsanwaltschaften',
+        'inst-2': 'Verwaltungsgerichte',
+        'inst-3': 'Justizvollzugsanstalten',
+        'inst-4': 'Bezirkshauptmannschaften',
+        'inst-5': 'Universitätskliniken',
+        'inst-6': 'Psychiatrische Dienste',
+        'inst-7': 'Jugendschutz und Jugendämter',
+        'inst-8': 'Frauenhäuser',
+        'inst-9': 'Polizei',
+        'inst-10': 'Caritas',
+        'inst-11': 'Sachverständige und Psychologen',
+        'inst-12': 'Familiengerichtshilfe',
+        'examples-title': 'Auswahl meiner Kooperationspartner:',
+        'ex-1': 'Landesgericht für Strafsachen Graz',
+        'ex-2': 'Staatsanwaltschaft Graz',
+        'ex-3': 'Amt für Jugend und Familie – Magistrat Graz',
+        'ex-4': 'Justizvollzugsanstalt',
+        'ex-5': 'Jugendschutzzentrum Graz',
+        'ex-6': 'KAGes – Verband der Steiermärkischen Krankenanstaltengesellschaft m.b.H.',
+        'ex-7': 'Familiengerichtshilfe Graz',
+        'ex-8': 'Frauenhaus Graz',
+        'ex-9': 'Caritas der Diözese Graz-Seckau',
+        'ex-10': 'BH Graz-Umgebung – Außenstelle Graz-West',
+        'ex-11': 'BH Graz-Umgebung – Außenstelle Graz-Ost',
+        'ex-12': 'Landesverwaltungsgericht Steiermark',
+        'ex-13': 'Landesgericht Klagenfurt',
+        'ex-14': 'Bezirksgerichte in Österreich, nach Bedarf',
+        'ex-15': 'Staatsanwaltschaften in Österreich, nach Bedarf',
+        'note': '… und viele weitere Institutionen in ganz Österreich.',
+        back: '← Zurück zur Startseite',
+        'footer-rights': 'Alle Rechte vorbehalten.',
+        'footer-terms': 'AGB / Datenschutz'
+      },
+      es: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Servicios',
+        'nav-about': 'Sobre mí',
+        'nav-book': 'Reservar cita',
+        'nav-contact': 'Contacto',
+        'nav-agb': 'Términos',
+        'hero-title': 'Instituciones y socios de cooperación',
+        'hero-sub': 'Colaboración regular con tribunales, autoridades, instituciones de salud y servicios sociales en toda Austria',
+        'inst-1': 'Tribunales y fiscalías',
+        'inst-2': 'Tribunales administrativos',
+        'inst-3': 'Instituciones penitenciarias',
+        'inst-4': 'Autoridades distritales',
+        'inst-5': 'Hospitales universitarios',
+        'inst-6': 'Servicios psiquiátricos',
+        'inst-7': 'Protección de menores y oficinas de juventud',
+        'inst-8': 'Casas de acogida para mujeres',
+        'inst-9': 'Policía',
+        'inst-10': 'Caritas',
+        'inst-11': 'Peritos judiciales y psicólogos',
+        'inst-12': 'Asistencia familiar judicial',
+        'examples-title': 'Selección de instituciones con las que colaboro:',
+        'ex-1': 'Tribunal Provincial de lo Penal de Graz',
+        'ex-2': 'Fiscalía de Graz',
+        'ex-3': 'Oficina de Juventud y Familia – Magistrat de Graz',
+        'ex-4': 'Centro Penitenciario',
+        'ex-5': 'Centro de Protección Juvenil de Graz',
+        'ex-6': 'KAGes – Asociación de Hospitales de Estiria',
+        'ex-7': 'Asistencia Judicial Familiar de Graz',
+        'ex-8': 'Casa de Acogida para Mujeres de Graz',
+        'ex-9': 'Caritas de la Diócesis de Graz-Seckau',
+        'ex-10': 'Autoridad Distrital de Graz-Alrededores – Sede Graz-Oeste',
+        'ex-11': 'Autoridad Distrital de Graz-Alrededores – Sede Graz-Este',
+        'ex-12': 'Tribunal Administrativo de Estiria',
+        'ex-13': 'Tribunal Provincial de Klagenfurt',
+        'ex-14': 'Tribunales distritales en Austria, según necesidad',
+        'ex-15': 'Fiscalías en Austria, según necesidad',
+        'note': '… y muchas más instituciones en toda Austria.',
+        back: '← Volver al inicio',
+        'footer-rights': 'Todos los derechos reservados.',
+        'footer-terms': 'Términos y Privacidad'
+      },
+      pt: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Serviços',
+        'nav-about': 'Sobre mim',
+        'nav-book': 'Agendar reunião',
+        'nav-contact': 'Contato',
+        'nav-agb': 'Termos',
+        'hero-title': 'Instituições e parceiros de cooperação',
+        'hero-sub': 'Colaboração regular com tribunais, autoridades, instituições de saúde e serviços sociais em toda a Áustria',
+        'inst-1': 'Tribunais e ministérios públicos',
+        'inst-2': 'Tribunais administrativos',
+        'inst-3': 'Instituições penitenciárias',
+        'inst-4': 'Autoridades distritais',
+        'inst-5': 'Hospitais universitários',
+        'inst-6': 'Serviços psiquiátricos',
+        'inst-7': 'Proteção de menores e departamentos de juventude',
+        'inst-8': 'Casas de acolhimento para mulheres',
+        'inst-9': 'Polícia',
+        'inst-10': 'Caritas',
+        'inst-11': 'Peritos judiciais e psicólogos',
+        'inst-12': 'Assistência familiar judicial',
+        'examples-title': 'Seleção de instituições com as quais colaboro:',
+        'ex-1': 'Tribunal Provincial Criminal de Graz',
+        'ex-2': 'Ministério Público de Graz',
+        'ex-3': 'Departamento de Juventude e Família – Magistrat de Graz',
+        'ex-4': 'Estabelecimento Prisional',
+        'ex-5': 'Centro de Proteção Juvenil de Graz',
+        'ex-6': 'KAGes – Associação de Hospitais da Estíria',
+        'ex-7': 'Assistência Judicial Familiar de Graz',
+        'ex-8': 'Casa de Acolhimento para Mulheres de Graz',
+        'ex-9': 'Caritas da Diocese de Graz-Seckau',
+        'ex-10': 'Autoridade Distrital de Graz-Arredores – Sede Graz-Oeste',
+        'ex-11': 'Autoridade Distrital de Graz-Arredores – Sede Graz-Este',
+        'ex-12': 'Tribunal Administrativo da Estíria',
+        'ex-13': 'Tribunal Provincial de Klagenfurt',
+        'ex-14': 'Tribunais distritais na Áustria, conforme necessidade',
+        'ex-15': 'Ministérios públicos na Áustria, conforme necessidade',
+        'note': '… e muitas outras instituições em toda a Áustria.',
+        back: '← Voltar ao início',
+        'footer-rights': 'Todos os direitos reservados.',
+        'footer-terms': 'Termos e Privacidade'
+      },
+      en: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Services',
+        'nav-about': 'About me',
+        'nav-book': 'Book appointment',
+        'nav-contact': 'Contact',
+        'nav-agb': 'Terms',
+        'hero-title': 'Institutions & Cooperation Partners',
+        'hero-sub': 'Regular collaboration with courts, authorities, healthcare institutions and social services throughout Austria',
+        'inst-1': 'Courts & Prosecutor\'s Offices',
+        'inst-2': 'Administrative Courts',
+        'inst-3': 'Penal Institutions',
+        'inst-4': 'District Authorities',
+        'inst-5': 'University Hospitals',
+        'inst-6': 'Psychiatric Services',
+        'inst-7': 'Youth Protection & Youth Offices',
+        'inst-8': 'Women\'s Shelters',
+        'inst-9': 'Police',
+        'inst-10': 'Caritas',
+        'inst-11': 'Court Experts & Psychologists',
+        'inst-12': 'Family Court Assistance',
+        'examples-title': 'Selection of institutions I work with:',
+        'ex-1': 'Provincial Court for Criminal Matters Graz',
+        'ex-2': 'Public Prosecutor\'s Office Graz',
+        'ex-3': 'Youth and Family Office – Magistrate of Graz',
+        'ex-4': 'Penal Institution',
+        'ex-5': 'Youth Protection Center Graz',
+        'ex-6': 'KAGes – Association of Styrian Hospital Companies Ltd.',
+        'ex-7': 'Family Court Assistance Graz',
+        'ex-8': 'Women\'s Shelter Graz',
+        'ex-9': 'Caritas of the Diocese Graz-Seckau',
+        'ex-10': 'District Authority Graz-Surroundings – Branch Graz-West',
+        'ex-11': 'District Authority Graz-Surroundings – Branch Graz-East',
+        'ex-12': 'Administrative Court Styria',
+        'ex-13': 'Regional Court Klagenfurt',
+        'ex-14': 'District courts throughout Austria, as needed',
+        'ex-15': 'Public prosecutor\'s offices throughout Austria, as needed',
+        'note': '… and many more institutions throughout Austria.',
+        back: '← Back to home',
+        'footer-rights': 'All rights reserved.',
+        'footer-terms': 'Terms & Privacy'
+      }
+    };
+
+    function safeGetStoredLang() {
+      try { return localStorage.getItem('lang') || 'de'; }
+      catch (e) { return 'de'; }
+    }
+
+    function safeSetStoredLang(lang) {
+      try { localStorage.setItem('lang', lang); }
+      catch (e) {}
+    }
+
+    function setLang(evt, lang) {
+      const t = translations[lang] || translations.de;
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      safeSetStoredLang(lang);
+
+      document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
+      if (evt && evt.target) {
+        evt.target.classList.add('active');
+      } else {
+        const btn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
+        if (btn) btn.classList.add('active');
+      }
+
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) {
+          el.textContent = t[key];
+        }
+      });
+
+      document.querySelectorAll('.header-nav a[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedLang = safeGetStoredLang();
+      const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
+      if (btn) {
+        setLang({ target: btn }, savedLang);
+      }
+    });
+  </script>
+</body>
+</html>
