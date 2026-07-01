@@ -1,1 +1,286 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8FPVG53SY');
+  </script>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Borecki - Häufig gestellte Fragen (FAQ)</title>
+  <meta name="description" content="Häufig gestellte Fragen zu den Dienstleistungen von Felipe Borecki, Dolmetscher und Übersetzer in Österreich.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== MISMOS ESTILOS ===== */
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Roboto',sans-serif;line-height:1.7;color:#333;background:#f8f9fa;font-size:16px}
+    
+    header{background:#0e1528;color:#fff;padding:0.8rem 1.5rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.12);border-bottom:1px solid rgba(255,255,255,0.08)}
+    .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;padding:0 1rem;width:100%;flex-wrap:wrap;gap:0.5rem}
+    .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+    .header-left h1{font-size:1.6rem;margin:0;white-space:nowrap}
+    .header-nav{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+    .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.85rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
+    .header-nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#fff;transition:width .3s ease}
+    .header-nav a:hover{color:#fff}
+    .header-nav a:hover::after{width:100%}
+    .header-nav a.active{color:#fff}
+    .header-nav a.active::after{width:100%}
+    .header-right{display:flex;align-items:center;gap:0.8rem}
+    .flags{display:flex;gap:.3rem}
+    .flags button{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
+    .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
+
+    .page-hero{background:#0e1528;color:#fff;padding:120px 2rem 60px;text-align:center}
+    .page-hero h1{font-size:2.8rem;margin-bottom:1rem}
+    .page-hero p{font-size:1.2rem;max-width:760px;margin:0 auto;opacity:.9}
+
+    .section{padding:60px 2rem;max-width:900px;margin:0 auto}
+    .section h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#0e1528;position:relative}
+    .section h2::after{content:'';display:block;width:60px;height:3px;background:rgba(14,21,40,0.3);margin:12px auto 0;border-radius:2px}
+
+    .faq-item{margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid #e8e8e8}
+    .faq-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+    .faq-item h3{font-size:1.2rem;margin-bottom:0.6rem;color:#0e1528;font-weight:500}
+    .faq-item p{font-size:1rem;color:#555;line-height:1.7}
+
+    .back-link{display:inline-block;margin-top:2rem;color:#0e1528;font-weight:500;text-decoration:none;transition:all .25s ease}
+    .back-link:hover{transform:translateX(-4px)}
+
+    footer{background:#0e1528;color:#fff;text-align:center;padding:2rem;font-size:0.95rem}
+    footer a{color:#fff;text-decoration:underline}
+    footer a:hover{color:#ddd}
+    [data-lang]{transition:opacity .25s ease}
+    a{color:#0e1528;font-weight:500}
+    a:hover{color:#142135;text-decoration:none}
+
+    @media (max-width:768px){
+      header{padding:0.5rem 0.8rem}
+      .header-content{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0.3rem;padding:0 0.3rem}
+      .header-left{width:100%;justify-content:center;flex-wrap:wrap;gap:0.4rem}
+      .header-left h1{font-size:1.1rem;white-space:nowrap}
+      .header-nav{gap:0.4rem;justify-content:center;width:100%}
+      .header-nav a{font-size:0.65rem;padding-bottom:1px;white-space:nowrap}
+      .header-right{width:100%;justify-content:center;gap:0.3rem}
+      .flags button{width:26px;height:26px;font-size:0.85rem}
+      
+      .page-hero{padding:100px 1.2rem 40px}
+      .page-hero h1{font-size:2rem}
+      .page-hero p{font-size:1rem}
+      
+      .section{padding:40px 1.2rem}
+      .section h2{font-size:1.6rem}
+      .faq-item h3{font-size:1rem}
+      .faq-item p{font-size:0.9rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1 data-lang="name">Felipe Borecki</h1>
+        <nav class="header-nav">
+          <a href="/#services" data-lang="nav-services">Leistungen</a>
+          <a href="/about.html" data-lang="nav-about">Über mich</a>
+          <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
+          <a href="/#contact" data-lang="nav-contact">Kontakt</a>
+          <a href="/agb" data-lang="nav-agb">AGB</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="flags">
+          <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch">🇩🇪</button>
+          <button type="button" onclick="setLang(event,'es')" title="Español">🇪🇸</button>
+          <button type="button" onclick="setLang(event,'pt')" title="Português (BR)">🇧🇷</button>
+          <button type="button" onclick="setLang(event,'en')" title="English">🇬🇧</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1 data-lang="hero-title">Häufig gestellte Fragen</h1>
+    <p data-lang="hero-sub">Antworten auf die wichtigsten Fragen zu meinen Dienstleistungen</p>
+  </section>
+
+  <section class="section">
+    <div class="faq-item">
+      <h3 data-lang="q1">In welchen Regionen Österreichs sind Sie tätig?</h3>
+      <p data-lang="a1">Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 data-lang="q2">Wie weit im Voraus sollte ich buchen?</h3>
+      <p data-lang="a2">Für geplante Termine empfehle ich eine Buchung 2 bis 4 Wochen im Voraus. Bei kurzfristigen Anfragen in Graz kann ich je nach Verfügbarkeit auch innerhalb einer Stunde vor Ort sein. Für Einsätze außerhalb von Graz benötige ich in der Regel 24 bis 48 Stunden Vorlaufzeit.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 data-lang="q3">Welche Plattformen nutzen Sie für Videodolmetschen?</h3>
+      <p data-lang="a3">Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten eine zuverlässige Verbindungsqualität. Auf Wunsch können auch andere Plattformen genutzt werden.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 data-lang="q4">Übersetzen Sie auch beglaubigte Dokumente?</h3>
+      <p data-lang="a4">Ich erstelle präzise Fachübersetzungen. Auf Wunsch koordiniere ich die offizielle Beglaubigung durch einen gerichtlich beeideten Übersetzer, sodass die Unterlagen für Behörden und Gerichte gültig sind.</p>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/" class="back-link" data-lang="back">← Zurück zur Startseite</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Felipe Borecki. <span data-lang="footer-rights">Alle Rechte vorbehalten.</span> | <a href="/agb" data-lang="footer-terms">AGB / Datenschutz</a></p>
+  </footer>
+
+  <script>
+    // ===== SISTEMA DE IDIOMAS =====
+    let currentLang = 'de';
+    const translations = {
+      de: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Leistungen',
+        'nav-about': 'Über mich',
+        'nav-book': 'Termin buchen',
+        'nav-contact': 'Kontakt',
+        'nav-agb': 'AGB',
+        'hero-title': 'Häufig gestellte Fragen',
+        'hero-sub': 'Antworten auf die wichtigsten Fragen zu meinen Dienstleistungen',
+        'q1': 'In welchen Regionen Österreichs sind Sie tätig?',
+        'a1': 'Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.',
+        'q2': 'Wie weit im Voraus sollte ich buchen?',
+        'a2': 'Für geplante Termine empfehle ich eine Buchung 2 bis 4 Wochen im Voraus. Bei kurzfristigen Anfragen in Graz kann ich je nach Verfügbarkeit auch innerhalb einer Stunde vor Ort sein. Für Einsätze außerhalb von Graz benötige ich in der Regel 24 bis 48 Stunden Vorlaufzeit.',
+        'q3': 'Welche Plattformen nutzen Sie für Videodolmetschen?',
+        'a3': 'Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten eine zuverlässige Verbindungsqualität. Auf Wunsch können auch andere Plattformen genutzt werden.',
+        'q4': 'Übersetzen Sie auch beglaubigte Dokumente?',
+        'a4': 'Ich erstelle präzise Fachübersetzungen. Auf Wunsch koordiniere ich die offizielle Beglaubigung durch einen gerichtlich beeideten Übersetzer, sodass die Unterlagen für Behörden und Gerichte gültig sind.',
+        back: '← Zurück zur Startseite',
+        'footer-rights': 'Alle Rechte vorbehalten.',
+        'footer-terms': 'AGB / Datenschutz'
+      },
+      es: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Servicios',
+        'nav-about': 'Sobre mí',
+        'nav-book': 'Reservar cita',
+        'nav-contact': 'Contacto',
+        'nav-agb': 'Términos',
+        'hero-title': 'Preguntas frecuentes',
+        'hero-sub': 'Respuestas a las preguntas más importantes sobre mis servicios',
+        'q1': '¿En qué regiones de Austria trabajas?',
+        'a1': 'Estoy disponible en toda Austria, con sede principal en Estiria y Viena. Para servicios en otros estados federados se aplican gastos de desplazamiento mínimos.',
+        'q2': '¿Con cuánta anticipación debo reservar?',
+        'a2': 'Para citas programadas recomiendo reservar con 2 a 4 semanas de antelación. Para solicitudes urgentes en Graz, dependiendo de la disponibilidad, puedo estar presente en menos de una hora. Para servicios fuera de Graz, necesito generalmente entre 24 y 48 horas de antelación.',
+        'q3': '¿Qué plataformas usas para videointerpretación?',
+        'a3': 'Trabajo con las plataformas más utilizadas: Zoom, Microsoft Teams y Google Meet. Son las más habituales en contextos institucionales y ofrecen una calidad de conexión fiable. Si se desea, también se pueden utilizar otras plataformas.',
+        'q4': '¿También traduces documentos certificados?',
+        'a4': 'Elaboro traducciones especializadas precisas. Si se desea, coordino la certificación oficial mediante un traductor juramentado, para que los documentos sean válidos ante autoridades y tribunales.',
+        back: '← Volver al inicio',
+        'footer-rights': 'Todos los derechos reservados.',
+        'footer-terms': 'Términos y Privacidad'
+      },
+      pt: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Serviços',
+        'nav-about': 'Sobre mim',
+        'nav-book': 'Agendar reunião',
+        'nav-contact': 'Contato',
+        'nav-agb': 'Termos',
+        'hero-title': 'Perguntas frequentes',
+        'hero-sub': 'Respostas às perguntas mais importantes sobre meus serviços',
+        'q1': 'Em que regiões da Áustria você trabalha?',
+        'a1': 'Estou disponível em toda a Áustria, com sede principal na Estíria e Viena. Para serviços noutros estados federados aplicam-se despesas de deslocação mínimas.',
+        'q2': 'Com quanta antecedência devo reservar?',
+        'a2': 'Para marcações agendadas recomendo reservar com 2 a 4 semanas de antecedência. Para pedidos urgentes em Graz, dependendo da disponibilidade, posso estar presente em menos de uma hora. Para serviços fora de Graz, necessito geralmente de 24 a 48 horas de antecedência.',
+        'q3': 'Que plataformas você usa para videointerpretação?',
+        'a3': 'Trabalho com as plataformas mais utilizadas: Zoom, Microsoft Teams e Google Meet. São as mais habituais em contextos institucionais e oferecem uma qualidade de conexão fiável. Se desejado, outras plataformas também podem ser utilizadas.',
+        'q4': 'Também traduz documentos certificados?',
+        'a4': 'Elaboro traduções especializadas precisas. Se desejar, coordeno a certificação oficial através de um tradutor juramentado, para que os documentos sejam válidos perante autoridades e tribunais.',
+        back: '← Voltar ao início',
+        'footer-rights': 'Todos os direitos reservados.',
+        'footer-terms': 'Termos e Privacidade'
+      },
+      en: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Services',
+        'nav-about': 'About me',
+        'nav-book': 'Book appointment',
+        'nav-contact': 'Contact',
+        'nav-agb': 'Terms',
+        'hero-title': 'Frequently asked questions',
+        'hero-sub': 'Answers to the most important questions about my services',
+        'q1': 'In which regions of Austria do you work?',
+        'a1': 'I\'m available throughout Austria, based primarily in Styria and Vienna. For assignments in other federal states, minimal travel expenses apply.',
+        'q2': 'How far in advance should I book?',
+        'a2': 'For scheduled appointments I recommend booking 2 to 4 weeks in advance. For urgent requests in Graz, depending on availability, I can be on site within an hour. For assignments outside Graz, I typically require 24 to 48 hours notice.',
+        'q3': 'Which platforms do you use for video interpreting?',
+        'a3': 'I work with the most commonly used platforms: Zoom, Microsoft Teams, and Google Meet. These are the most widespread in institutional contexts and offer reliable connection quality. Other platforms can also be used upon request.',
+        'q4': 'Do you also translate certified documents?',
+        'a4': 'I prepare precise specialized translations. Upon request, I coordinate official certification through a court-sworn translator, ensuring documents are valid for authorities and courts.',
+        back: '← Back to home',
+        'footer-rights': 'All rights reserved.',
+        'footer-terms': 'Terms & Privacy'
+      }
+    };
+
+    function safeGetStoredLang() {
+      try { return localStorage.getItem('lang') || 'de'; }
+      catch (e) { return 'de'; }
+    }
+
+    function safeSetStoredLang(lang) {
+      try { localStorage.setItem('lang', lang); }
+      catch (e) {}
+    }
+
+    function setLang(evt, lang) {
+      const t = translations[lang] || translations.de;
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      safeSetStoredLang(lang);
+
+      document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
+      if (evt && evt.target) {
+        evt.target.classList.add('active');
+      } else {
+        const btn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
+        if (btn) btn.classList.add('active');
+      }
+
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) {
+          el.textContent = t[key];
+        }
+      });
+
+      document.querySelectorAll('.header-nav a[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedLang = safeGetStoredLang();
+      const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
+      if (btn) {
+        setLang({ target: btn }, savedLang);
+      }
+    });
+  </script>
+</body>
+</html>
