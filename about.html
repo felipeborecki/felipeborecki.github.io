@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,24 +11,9 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felipe Borecki - Zertifizierungen</title>
-  
-  <meta name="description" content="Felipe Borecki: Zertifizierungen und Qualifikationen als Dolmetscher und Übersetzer in Österreich. GISA #32188035.">
-  <meta name="keywords" content="Dolmetscher, Übersetzer, GISA, Zertifizierungen, Qualifikationen, Graz, Österreich">
-  <meta name="author" content="Felipe Borecki">
+  <title>Felipe Borecki - Über mich</title>
+  <meta name="description" content="Felipe Borecki: Professioneller Dolmetscher und Übersetzer. Über 900 Einsätze, Erfahrung in über 43 Ländern.">
   <meta name="robots" content="index, follow">
-  
-  <meta property="og:title" content="Felipe Borecki - Zertifizierungen">
-  <meta property="og:description" content="Zertifizierungen und Qualifikationen von Felipe Borecki, Dolmetscher und Übersetzer in Österreich. GISA #32188035.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://felipeborecki.com/certifications.html">
-  <meta property="og:locale" content="de_AT">
-
-  <link rel="alternate" hreflang="de" href="https://felipeborecki.com/certifications.html#de">
-  <link rel="alternate" hreflang="es" href="https://felipeborecki.com/certifications.html#es">
-  <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/certifications.html#pt">
-  <link rel="alternate" hreflang="en" href="https://felipeborecki.com/certifications.html#en">
-  <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/certifications.html#de">
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
   
@@ -38,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <style>
+    /* ===== ESTILOS COMPARTIDOS CON INDEX ===== */
     *{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{font-family:'Roboto',sans-serif;line-height:1.7;color:#333;background:#f8f9fa;font-size:16px}
@@ -46,7 +31,6 @@
     .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;padding:0 1rem;width:100%;flex-wrap:wrap;gap:0.5rem}
     .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
     .header-left h1{font-size:1.6rem;margin:0;white-space:nowrap}
-    .header-left h1 a{color:#fff;text-decoration:none}
     .header-nav{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
     .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.85rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
     .header-nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#fff;transition:width .3s ease}
@@ -59,35 +43,39 @@
     .flags button{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
     .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
     .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
-    .back-link{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.8rem;display:flex;align-items:center;gap:4px;transition:color .25s ease}
-    .back-link:hover{color:#fff}
 
-    .page-wrap{max-width:1200px;margin:100px auto 40px;padding:0 2rem}
-    .page-card{background:#fff;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,.08);padding:2.5rem}
-    .page-card h1{font-size:2.4rem;color:#0e1528;margin-bottom:0.5rem;font-weight:500}
-    .page-card .sub{color:#888;font-size:1rem;margin-bottom:2rem}
+    .page-hero{background:#0e1528;color:#fff;padding:120px 2rem 60px;text-align:center}
+    .page-hero h1{font-size:2.8rem;margin-bottom:1rem}
+    .page-hero p{font-size:1.2rem;max-width:760px;margin:0 auto;opacity:.9}
 
-    .cert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;max-width:1000px;margin:0 auto}
-    .cert-card{background:#f8f9fa;padding:1.5rem;border-radius:8px;border-left:4px solid #0e1528}
-    .cert-card h3{color:#0e1528;font-size:1.15rem;margin-bottom:.5rem}
-    .cert-card p{font-size:0.95rem;color:#555;margin:0;line-height:1.6}
+    .section{padding:60px 2rem;max-width:1200px;margin:0 auto}
+    .section h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#0e1528;position:relative}
+    .section h2::after{content:'';display:block;width:60px;height:3px;background:rgba(14,21,40,0.3);margin:12px auto 0;border-radius:2px}
+    .section-intro{max-width:760px;margin:0 auto 2rem;text-align:center;font-size:1.05rem}
 
-    .back-to-home{text-align:center;margin-top:2rem}
-    .back-to-home a{display:inline-block;background:#0e1528;color:#fff;padding:0.8rem 2rem;border-radius:5px;text-decoration:none;font-weight:500;transition:all .25s ease}
-    .back-to-home a:hover{background:#1a2a4a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1000px;margin:2rem auto 0}
+    .about-item{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);border-left:4px solid #0e1528}
+    .about-item h3{color:#0e1528;font-size:1.1rem;margin-bottom:.5rem}
+    .about-item p{font-size:0.95rem;color:#555;margin:0;line-height:1.6}
+
+    .profil-container{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:2rem}
+    .profil-photo-container{width:300px;height:360px;border-radius:8px;overflow:hidden;flex-shrink:0;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .profil-photo-single{width:100%;height:100%;object-fit:cover}
+    .profil-text{flex:1;min-width:300px;max-width:760px}
+    .profil-text p{margin-bottom:1rem;font-size:1rem;line-height:1.7}
+
+    .back-link{display:inline-block;margin-top:2rem;color:#0e1528;font-weight:500;text-decoration:none;transition:all .25s ease}
+    .back-link:hover{transform:translateX(-4px)}
 
     footer{background:#0e1528;color:#fff;text-align:center;padding:2rem;font-size:0.95rem}
     footer a{color:#fff;text-decoration:underline}
     footer a:hover{color:#ddd}
     [data-lang]{transition:opacity .25s ease}
+    a{color:#0e1528;font-weight:500}
+    a:hover{color:#142135;text-decoration:none}
 
-    @media (max-width:1024px){
-      .header-content{padding:0 0.5rem;gap:0.3rem}
-      .header-left{gap:1rem}
-      .header-left h1{font-size:1.3rem}
-      .header-nav{gap:0.8rem}
-      .header-nav a{font-size:0.8rem}
-    }
+    .whatsapp-link{display:inline-flex;align-items:center;gap:6px;margin-left:12px;background:#25D366;color:white;padding:6px 12px;border-radius:50px;text-decoration:none;font-size:0.85rem;font-weight:500;transition:background .2s ease,transform .2s ease}
+    .whatsapp-link:hover{background:#1da851;color:white;transform:translateY(-2px)}
 
     @media (max-width:768px){
       header{padding:0.5rem 0.8rem}
@@ -98,236 +86,240 @@
       .header-nav a{font-size:0.65rem;padding-bottom:1px;white-space:nowrap}
       .header-right{width:100%;justify-content:center;gap:0.3rem}
       .flags button{width:26px;height:26px;font-size:0.85rem}
-      .back-link{font-size:0.65rem}
       
-      .page-wrap{margin:85px auto 20px;padding:0 0.8rem}
-      .page-card{padding:1.2rem}
-      .page-card h1{font-size:1.6rem}
-      .cert-grid{grid-template-columns:1fr}
-      .cert-card{padding:1.2rem}
+      .page-hero{padding:100px 1.2rem 40px}
+      .page-hero h1{font-size:2rem}
+      .page-hero p{font-size:1rem}
+      
+      .section{padding:40px 1.2rem}
+      .section h2{font-size:1.6rem}
+      .profil-container{flex-direction:column;text-align:center}
+      .profil-photo-container{width:200px;height:240px}
+      .about-grid{grid-template-columns:1fr}
+      .whatsapp-link{margin-left:0;margin-top:6px}
     }
   </style>
 </head>
 <body>
-
-<header>
-  <div class="header-content">
-    <div class="header-left">
-      <h1><a href="/#de" data-lang="name">Felipe Borecki</a></h1>
-      <nav class="header-nav">
-        <a href="/#services" data-lang="nav-services">Leistungen</a>
-        <a href="/about.html" data-lang="nav-about">Über mich</a>
-        <a href="/certifications.html" class="active" data-lang="nav-cert">Zertifizierungen</a>
-        <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
-        <a href="/#contact" data-lang="nav-contact">Kontakt</a>
-        <a href="/agb" data-lang="nav-agb">AGB</a>
-      </nav>
-    </div>
-    <div class="header-right">
-      <a href="/" class="back-link" data-lang="back-home">← Zurück</a>
-      <div class="flags">
-        <button class="active" type="button" onclick="setLang('de')" title="Deutsch">🇩🇪</button>
-        <button type="button" onclick="setLang('es')" title="Español">🇪🇸</button>
-        <button type="button" onclick="setLang('pt')" title="Português">🇧🇷</button>
-        <button type="button" onclick="setLang('en')" title="English">🇬🇧</button>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1 data-lang="name">Felipe Borecki</h1>
+        <nav class="header-nav">
+          <a href="/#services" data-lang="nav-services">Leistungen</a>
+          <a href="/about.html" data-lang="nav-about" class="active">Über mich</a>
+          <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
+          <a href="/#contact" data-lang="nav-contact">Kontakt</a>
+          <a href="/agb" data-lang="nav-agb">AGB</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="flags">
+          <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch">🇩🇪</button>
+          <button type="button" onclick="setLang(event,'es')" title="Español">🇪🇸</button>
+          <button type="button" onclick="setLang(event,'pt')" title="Português (BR)">🇧🇷</button>
+          <button type="button" onclick="setLang(event,'en')" title="English">🇬🇧</button>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<div class="page-wrap">
-  <div class="page-card">
-    <h1 data-lang="page-title">📜 Zertifizierungen & Qualifikationen</h1>
-    <p class="sub" data-lang="page-sub">Offizielle Registrierungen und fachliche Spezialisierungen.</p>
+  <section class="page-hero">
+    <h1 data-lang="hero-title">Über mich</h1>
+    <p data-lang="hero-sub">Professioneller Dolmetscher und Übersetzer mit über 900 Einsätzen in sensiblen Kontexten</p>
+  </section>
 
-    <div class="cert-grid">
-      <div class="cert-card">
-        <h3 data-lang="cert1-title">GISA-Registrierung</h3>
-        <p data-lang="cert1-text">Offizielle Registrierung Nr. 32188035 im Gewerberegister für Dolmetsch- und Übersetzungsdienstleistungen in Österreich.</p>
+  <section class="section">
+    <div class="profil-container">
+      <div class="profil-photo-container">
+        <img src="/images/perfilborecki.png" alt="Felipe Borecki" class="profil-photo-single" loading="lazy">
       </div>
-      <div class="cert-card">
-        <h3 data-lang="cert2-title">Gerichtsdolmetscher</h3>
-        <p data-lang="cert2-text">Eingetragen im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres für Gerichtsverfahren.</p>
-      </div>
-      <div class="cert-card">
-        <h3 data-lang="cert3-title">Sprachkombinationen</h3>
-        <p data-lang="cert3-text">Deutsch (C2), Spanisch (Muttersprache), Portugiesisch (Muttersprache), Englisch (C1). Zertifizierte Übersetzungen in alle Richtungen.</p>
-      </div>
-      <div class="cert-card">
-        <h3 data-lang="cert4-title">Fachspezialisierung</h3>
-        <p data-lang="cert4-text">Spezialisiert auf juristische, medizinische und behördliche Terminologie. Eigenes Fachglossar mit über 5.000 Begriffen.</p>
-      </div>
-      <div class="cert-card">
-        <h3 data-lang="cert5-title">Ausbildung & Weiterbildung</h3>
-        <p data-lang="cert5-text">Intensivkurse im Gerichtsdolmetschen an der Universidad de Las Palmas de Gran Canaria (ULPGC), Spanien. Konsekutiv- und Simultandolmetschen, CAT-Tools und juristisch-wirtschaftliche Übersetzung.</p>
-      </div>
-      <div class="cert-card">
-        <h3 data-lang="cert6-title">Kommunikation & Transkulturalität</h3>
-        <p data-lang="cert6-text">Studium der Transkulturellen Kommunikation an der Karl-Franzens-Universität Graz. Offizielle Deutschprüfung C1+ der Universitäten Graz.</p>
+      <div class="profil-text">
+        <p data-lang="about-p1">Als professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch bewege ich mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.</p>
+        <p data-lang="about-p2">Mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.</p>
+        <p data-lang="about-p3">Ich bin in über 43 Länder gereist, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.</p>
+        <p data-lang="about-p4">Mein Versprechen ist Präzision, Diskretion und Zuverlässigkeit von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.</p>
       </div>
     </div>
 
-    <div class="back-to-home">
-      <a href="/" data-lang="back-to-home">← Zurück zur Startseite</a>
+    <div class="about-grid">
+      <div class="about-item">
+        <h3 data-lang="val1-title">⚖️ Präzision & Fachkompetenz</h3>
+        <p data-lang="val1-text">Terminologische Genauigkeit in straf-, zivil-, verwaltungs- und medizinrechtlichen Verfahren. Eigenes Fachglossar mit über 5.000 Begriffen.</p>
+      </div>
+      <div class="about-item">
+        <h3 data-lang="val2-title">🔒 Vertraulichkeit & Integrität</h3>
+        <p data-lang="val2-text">Absolute Diskretion und strikte Einhaltung der beruflichen Schweigepflicht in allen sensiblen Kontexten.</p>
+      </div>
+      <div class="about-item">
+        <h3 data-lang="val3-title">🌍 Interkulturelle Kompetenz</h3>
+        <p data-lang="val3-text">Reiseerfahrung in über 43 Ländern und tiefes Verständnis der lateinamerikanischen und europäischen Kulturräume.</p>
+      </div>
+      <div class="about-item">
+        <h3 data-lang="val4-title">📱 Technische Flexibilität</h3>
+        <p data-lang="val4-text">Einsätze vor Ort, hybrid und remote via Zoom, MS Teams, Google Meet und spezialisierten OPI-Plattformen.</p>
+      </div>
     </div>
-  </div>
-</div>
 
-<footer>
-  <p>&copy; 2026 Felipe Borecki. <span data-lang="footer-rights">Alle Rechte vorbehalten.</span> | <a href="/agb" data-lang="footer-terms">AGB / Datenschutz</a></p>
-</footer>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/" class="back-link" data-lang="back">← Zurück zur Startseite</a>
+    </div>
+  </section>
 
-<script>
-  let currentLang = 'de';
+  <footer>
+    <p>&copy; 2026 Felipe Borecki. <span data-lang="footer-rights">Alle Rechte vorbehalten.</span> | <a href="/agb" data-lang="footer-terms">AGB / Datenschutz</a></p>
+  </footer>
 
-  const translations = {
-    de: {
-      name: 'Felipe Borecki',
-      'nav-services': 'Leistungen',
-      'nav-about': 'Über mich',
-      'nav-cert': 'Zertifizierungen',
-      'nav-book': 'Termin buchen',
-      'nav-contact': 'Kontakt',
-      'nav-agb': 'AGB',
-      'back-home': '← Zurück',
-      'page-title': '📜 Zertifizierungen & Qualifikationen',
-      'page-sub': 'Offizielle Registrierungen und fachliche Spezialisierungen.',
-      'cert1-title': 'GISA-Registrierung',
-      'cert1-text': 'Offizielle Registrierung Nr. 32188035 im Gewerberegister für Dolmetsch- und Übersetzungsdienstleistungen in Österreich.',
-      'cert2-title': 'Gerichtsdolmetscher',
-      'cert2-text': 'Eingetragen im Dolmetscher- und Sachverständigenregister des österreichischen Bundesministeriums für Inneres für Gerichtsverfahren.',
-      'cert3-title': 'Sprachkombinationen',
-      'cert3-text': 'Deutsch (C2), Spanisch (Muttersprache), Portugiesisch (Muttersprache), Englisch (C1). Zertifizierte Übersetzungen in alle Richtungen.',
-      'cert4-title': 'Fachspezialisierung',
-      'cert4-text': 'Spezialisiert auf juristische, medizinische und behördliche Terminologie. Eigenes Fachglossar mit über 5.000 Begriffen.',
-      'cert5-title': 'Ausbildung & Weiterbildung',
-      'cert5-text': 'Intensivkurse im Gerichtsdolmetschen an der Universidad de Las Palmas de Gran Canaria (ULPGC), Spanien. Konsekutiv- und Simultandolmetschen, CAT-Tools und juristisch-wirtschaftliche Übersetzung.',
-      'cert6-title': 'Kommunikation & Transkulturalität',
-      'cert6-text': 'Studium der Transkulturellen Kommunikation an der Karl-Franzens-Universität Graz. Offizielle Deutschprüfung C1+ der Universitäten Graz.',
-      'back-to-home': '← Zurück zur Startseite',
-      'footer-rights': 'Alle Rechte vorbehalten.',
-      'footer-terms': 'AGB / Datenschutz'
-    },
-    es: {
-      name: 'Felipe Borecki',
-      'nav-services': 'Servicios',
-      'nav-about': 'Sobre mí',
-      'nav-cert': 'Certificaciones',
-      'nav-book': 'Reservar cita',
-      'nav-contact': 'Contacto',
-      'nav-agb': 'Términos',
-      'back-home': '← Volver',
-      'page-title': '📜 Certificaciones & Cualificaciones',
-      'page-sub': 'Registros oficiales y especializaciones profesionales.',
-      'cert1-title': 'Registro GISA',
-      'cert1-text': 'Registro oficial n.º 32188035 en el registro comercial de servicios de interpretación y traducción en Austria.',
-      'cert2-title': 'Intérprete judicial',
-      'cert2-text': 'Inscrito en el registro de intérpretes y peritos del Ministerio Federal del Interior de Austria para procedimientos judiciales.',
-      'cert3-title': 'Combinaciones lingüísticas',
-      'cert3-text': 'Alemán (C2), Español (lengua materna), Portugués (lengua materna), Inglés (C1). Traducciones certificadas en todas las direcciones.',
-      'cert4-title': 'Especialización técnica',
-      'cert4-text': 'Especializado en terminología jurídica, médica y administrativa. Glosario técnico propio con más de 5.000 términos.',
-      'cert5-title': 'Formación y especialización',
-      'cert5-text': 'Cursos intensivos de interpretación judicial en la Universidad de Las Palmas de Gran Canaria (ULPGC), España. Interpretación consecutiva y simultánea, herramientas CAT y traducción jurídico-económica.',
-      'cert6-title': 'Comunicación y transculturalidad',
-      'cert6-text': 'Estudios de Comunicación Transcultural en la Universidad Karl-Franzens de Graz. Examen oficial de alemán C1+ de las universidades de Graz.',
-      'back-to-home': '← Volver al inicio',
-      'footer-rights': 'Todos los derechos reservados.',
-      'footer-terms': 'Términos y Privacidad'
-    },
-    pt: {
-      name: 'Felipe Borecki',
-      'nav-services': 'Serviços',
-      'nav-about': 'Sobre mim',
-      'nav-cert': 'Certificações',
-      'nav-book': 'Agendar reunião',
-      'nav-contact': 'Contato',
-      'nav-agb': 'Termos',
-      'back-home': '← Voltar',
-      'page-title': '📜 Certificações & Qualificações',
-      'page-sub': 'Registos oficiais e especializações profissionais.',
-      'cert1-title': 'Registro GISA',
-      'cert1-text': 'Registro oficial n.º 32188035 no registro comercial de serviços de interpretação e tradução na Áustria.',
-      'cert2-title': 'Intérprete judicial',
-      'cert2-text': 'Inscrito no registro de intérpretes e peritos do Ministério Federal do Interior da Áustria para procedimentos judiciais.',
-      'cert3-title': 'Combinações linguísticas',
-      'cert3-text': 'Alemão (C2), Espanhol (língua materna), Português (língua materna), Inglês (C1). Traduções certificadas em todas as direções.',
-      'cert4-title': 'Especialização técnica',
-      'cert4-text': 'Especializado em terminologia jurídica, médica e administrativa. Glossário técnico próprio com mais de 5.000 termos.',
-      'cert5-title': 'Formação e especialização',
-      'cert5-text': 'Cursos intensivos de interpretação judicial na Universidad de Las Palmas de Gran Canaria (ULPGC), Espanha. Interpretação consecutiva e simultânea, ferramentas CAT e tradução jurídico-económica.',
-      'cert6-title': 'Comunicação e transculturalidade',
-      'cert6-text': 'Estudos de Comunicação Transcultural na Universidade Karl-Franzens de Graz. Exame oficial de alemão C1+ das universidades de Graz.',
-      'back-to-home': '← Voltar ao início',
-      'footer-rights': 'Todos os direitos reservados.',
-      'footer-terms': 'Termos e Privacidade'
-    },
-    en: {
-      name: 'Felipe Borecki',
-      'nav-services': 'Services',
-      'nav-about': 'About me',
-      'nav-cert': 'Certifications',
-      'nav-book': 'Book appointment',
-      'nav-contact': 'Contact',
-      'nav-agb': 'Terms',
-      'back-home': '← Back',
-      'page-title': '📜 Certifications & Qualifications',
-      'page-sub': 'Official registrations and professional specializations.',
-      'cert1-title': 'GISA Registration',
-      'cert1-text': 'Official registration No. 32188035 in the commercial register for interpreting and translation services in Austria.',
-      'cert2-title': 'Court Interpreter',
-      'cert2-text': 'Listed in the Interpreter and Expert Register of the Austrian Federal Ministry of the Interior for court proceedings.',
-      'cert3-title': 'Language Combinations',
-      'cert3-text': 'German (C2), Spanish (native), Portuguese (native), English (C1). Certified translations in all directions.',
-      'cert4-title': 'Technical Specialization',
-      'cert4-text': 'Specialized in legal, medical and administrative terminology. Personal technical glossary with over 5,000 terms.',
-      'cert5-title': 'Education & Training',
-      'cert5-text': 'Intensive courses in court interpreting at the Universidad de Las Palmas de Gran Canaria (ULPGC), Spain. Consecutive and simultaneous interpreting, CAT tools and legal-economic translation.',
-      'cert6-title': 'Communication & Transculturality',
-      'cert6-text': 'Studies in Transcultural Communication at Karl-Franzens-Universität Graz. Official German language exam C1+ by the Universities of Graz.',
-      'back-to-home': '← Back to home',
-      'footer-rights': 'All rights reserved.',
-      'footer-terms': 'Terms & Privacy'
-    }
-  };
+  <script>
+    // ===== SISTEMA DE IDIOMAS (mismo que index) =====
+    let currentLang = 'de';
+    const translations = {
+      de: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Leistungen',
+        'nav-about': 'Über mich',
+        'nav-book': 'Termin buchen',
+        'nav-contact': 'Kontakt',
+        'nav-agb': 'AGB',
+        'hero-title': 'Über mich',
+        'hero-sub': 'Professioneller Dolmetscher und Übersetzer mit über 900 Einsätzen in sensiblen Kontexten',
+        'about-p1': 'Als professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch bewege ich mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.',
+        'about-p2': 'Mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.',
+        'about-p3': 'Ich bin in über 43 Länder gereist, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.',
+        'about-p4': 'Mein Versprechen ist Präzision, Diskretion und Zuverlässigkeit von der ersten Anfrage bis zur erfolgreichen Durchführung Ihres Auftrags.',
+        'val1-title': '⚖️ Präzision & Fachkompetenz',
+        'val1-text': 'Terminologische Genauigkeit in straf-, zivil-, verwaltungs- und medizinrechtlichen Verfahren. Eigenes Fachglossar mit über 5.000 Begriffen.',
+        'val2-title': '🔒 Vertraulichkeit & Integrität',
+        'val2-text': 'Absolute Diskretion und strikte Einhaltung der beruflichen Schweigepflicht in allen sensiblen Kontexten.',
+        'val3-title': '🌍 Interkulturelle Kompetenz',
+        'val3-text': 'Reiseerfahrung in über 43 Ländern und tiefes Verständnis der lateinamerikanischen und europäischen Kulturräume.',
+        'val4-title': '📱 Technische Flexibilität',
+        'val4-text': 'Einsätze vor Ort, hybrid und remote via Zoom, MS Teams, Google Meet und spezialisierten OPI-Plattformen.',
+        back: '← Zurück zur Startseite',
+        'footer-rights': 'Alle Rechte vorbehalten.',
+        'footer-terms': 'AGB / Datenschutz'
+      },
+      es: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Servicios',
+        'nav-about': 'Sobre mí',
+        'nav-book': 'Reservar cita',
+        'nav-contact': 'Contacto',
+        'nav-agb': 'Términos',
+        'hero-title': 'Sobre mí',
+        'hero-sub': 'Intérprete y traductor profesional con más de 900 servicios en contextos sensibles',
+        'about-p1': 'Como intérprete y traductor profesional de portugués, español y alemán, me muevo con soltura en tribunales, autoridades, clínicas y servicios sociales.',
+        'about-p2': 'Con más de 900 servicios completados exitosamente, cuento con experiencia sólida en contextos de alta sensibilidad. Mi trabajo exige no solo precisión lingüística, sino también un profundo conocimiento de la terminología especializada y la capacidad de actuar con seguridad en situaciones de alta exigencia.',
+        'about-p3': 'He viajado a más de 43 países, lo que me ha proporcionado una comprensión profunda de los matices culturales y las diferentes tradiciones comunicativas.',
+        'about-p4': 'Mi compromiso es la precisión, la discreción y la fiabilidad desde la primera consulta hasta la finalización satisfactoria de su proyecto.',
+        'val1-title': '⚖️ Precisión & competencia',
+        'val1-text': 'Exactitud terminológica en procedimientos penales, civiles, administrativos y sanitarios. Glosario propio con más de 5.000 términos.',
+        'val2-title': '🔒 Confidencialidad & integridad',
+        'val2-text': 'Discreción absoluta y estricto cumplimiento del secreto profesional en todos los contextos sensibles.',
+        'val3-title': '🌍 Competencia intercultural',
+        'val3-text': 'Experiencia de viaje en más de 43 países y profundo conocimiento de los espacios culturales latinoamericanos y europeos.',
+        'val4-title': '📱 Flexibilidad técnica',
+        'val4-text': 'Servicios presenciales, híbridos y remotos vía Zoom, MS Teams, Google Meet y plataformas OPI especializadas.',
+        back: '← Volver al inicio',
+        'footer-rights': 'Todos los derechos reservados.',
+        'footer-terms': 'Términos y Privacidad'
+      },
+      pt: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Serviços',
+        'nav-about': 'Sobre mim',
+        'nav-book': 'Agendar reunião',
+        'nav-contact': 'Contato',
+        'nav-agb': 'Termos',
+        'hero-title': 'Sobre mim',
+        'hero-sub': 'Intérprete e tradutor profissional com mais de 900 serviços em contextos sensíveis',
+        'about-p1': 'Como intérprete e tradutor profissional de português, espanhol e alemão, movo-me com segurança em tribunais, autoridades, clínicas e serviços sociais.',
+        'about-p2': 'Com mais de 900 serviços concluídos com sucesso, possuo experiência sólida em contextos de alta sensibilidade. O meu trabalho exige não apenas precisão linguística, mas também um profundo conhecimento da terminologia especializada e a capacidade de atuar com segurança em situações de alta exigência.',
+        'about-p3': 'Viajei para mais de 43 países, o que me proporcionou uma compreensão profunda das nuances culturais e das diferentes tradições comunicativas.',
+        'about-p4': 'O meu compromisso é a precisão, a discrição e a fiabilidade desde o primeiro contacto até à conclusão satisfatória do seu projeto.',
+        'val1-title': '⚖️ Precisão & competência',
+        'val1-text': 'Exatidão terminológica em processos penais, cíveis, administrativos e de saúde. Glossário próprio com mais de 5.000 termos.',
+        'val2-title': '🔒 Confidencialidade & integridade',
+        'val2-text': 'Discrição absoluta e cumprimento rigoroso do segredo profissional em todos os contextos sensíveis.',
+        'val3-title': '🌍 Competência intercultural',
+        'val3-text': 'Experiência de viagem em mais de 43 países e profundo conhecimento dos espaços culturais latino-americanos e europeus.',
+        'val4-title': '📱 Flexibilidade técnica',
+        'val4-text': 'Serviços presenciais, híbridos e remotos via Zoom, MS Teams, Google Meet e plataformas OPI especializadas.',
+        back: '← Voltar ao início',
+        'footer-rights': 'Todos os direitos reservados.',
+        'footer-terms': 'Termos e Privacidade'
+      },
+      en: {
+        name: 'Felipe Borecki',
+        'nav-services': 'Services',
+        'nav-about': 'About me',
+        'nav-book': 'Book appointment',
+        'nav-contact': 'Contact',
+        'nav-agb': 'Terms',
+        'hero-title': 'About me',
+        'hero-sub': 'Professional interpreter and translator with over 900 assignments in sensitive contexts',
+        'about-p1': 'As a professional interpreter and translator in Portuguese, Spanish and German, I navigate confidently through courts, authorities, clinics, and social services.',
+        'about-p2': 'With over 900 successfully completed assignments, I have solid experience in highly sensitive contexts. My work demands not only linguistic precision but also deep knowledge of industry-specific terminology and the ability to perform confidently in high-stakes situations.',
+        'about-p3': 'I have traveled to over 43 countries, giving me a deep understanding of cultural nuances and diverse communication traditions.',
+        'about-p4': 'My commitment is precision, discretion and reliability from the first inquiry to the successful completion of your project.',
+        'val1-title': '⚖️ Precision & expertise',
+        'val1-text': 'Terminological accuracy in criminal, civil, administrative and healthcare proceedings. Personal glossary with over 5,000 terms.',
+        'val2-title': '🔒 Confidentiality & integrity',
+        'val2-text': 'Absolute discretion and strict adherence to professional confidentiality in all sensitive contexts.',
+        'val3-title': '🌍 Intercultural competence',
+        'val3-text': 'Travel experience in over 43 countries and deep understanding of Latin American and European cultural spaces.',
+        'val4-title': '📱 Technical flexibility',
+        'val4-text': 'On-site, hybrid and remote assignments via Zoom, MS Teams, Google Meet and specialized OPI platforms.',
+        back: '← Back to home',
+        'footer-rights': 'All rights reserved.',
+        'footer-terms': 'Terms & Privacy'
+      }
+    };
 
-  function safeGetStoredLang() {
-    try { return localStorage.getItem('lang') || 'de'; }
-    catch (e) { return 'de'; }
-  }
-
-  function safeSetStoredLang(lang) {
-    try { localStorage.setItem('lang', lang); }
-    catch (e) {}
-  }
-
-  function setLang(lang) {
-    const t = translations[lang] || translations.de;
-    currentLang = lang;
-    document.documentElement.lang = lang;
-    safeSetStoredLang(lang);
-
-    if (window.history && window.history.replaceState) {
-      window.history.replaceState(null, '', '/certifications.html#' + lang);
+    function safeGetStoredLang() {
+      try { return localStorage.getItem('lang') || 'de'; }
+      catch (e) { return 'de'; }
     }
 
-    document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
-    const activeBtn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
-    if (activeBtn) activeBtn.classList.add('active');
+    function safeSetStoredLang(lang) {
+      try { localStorage.setItem('lang', lang); }
+      catch (e) {}
+    }
 
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      const key = el.dataset.lang;
-      if (t[key] !== undefined) el.textContent = t[key];
+    function setLang(evt, lang) {
+      const t = translations[lang] || translations.de;
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      safeSetStoredLang(lang);
+
+      document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
+      if (evt && evt.target) {
+        evt.target.classList.add('active');
+      } else {
+        const btn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
+        if (btn) btn.classList.add('active');
+      }
+
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) {
+          el.textContent = t[key];
+        }
+      });
+
+      document.querySelectorAll('.header-nav a[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedLang = safeGetStoredLang();
+      const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
+      if (btn) {
+        setLang({ target: btn }, savedLang);
+      }
     });
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const hash = window.location.hash.replace('#', '');
-    const savedLang = safeGetStoredLang();
-    const detectedLang = translations[hash] ? hash : savedLang;
-    setLang(detectedLang);
-  });
-</script>
-
+  </script>
 </body>
 </html>
