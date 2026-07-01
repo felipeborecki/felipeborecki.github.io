@@ -142,19 +142,10 @@
     .credential strong{display:block;color:#0e1528;font-size:1.15rem;margin-bottom:.35rem}
     .credential span{font-size:0.9rem;line-height:1.5}
 
+    /* PROFIL-FOTO - SINGLE IMAGE */
     .profil-container{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
-    .profil-photo-container{position:relative;width:250px;height:300px;border-radius:8px;overflow:hidden;flex-shrink:0;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25)}
-    .profil-photo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:crossfade 10s infinite}
-    .profil-photo-1{animation-delay:0s}
-    .profil-photo-2{animation-delay:5s}
-
-    @keyframes crossfade{
-      0%{opacity:0}
-      5%{opacity:1}
-      45%{opacity:1}
-      50%{opacity:0}
-      100%{opacity:0}
-    }
+    .profil-photo-container{position:relative;width:300px;height:360px;border-radius:8px;overflow:hidden;flex-shrink:0;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .profil-photo-single{width:100%;height:100%;object-fit:cover}
 
     .profil-text{flex:1;min-width:300px;max-width:760px}
     .profil-text p{margin-bottom:1rem;font-size:1rem;line-height:1.7}
@@ -229,7 +220,7 @@
       .header-nav a{font-size:0.8rem}
       .hero-content{padding:40px 2rem 60px}
       .hero h2{font-size:2.8rem}
-      .profil-photo-container{width:200px;height:240px}
+      .profil-photo-container{width:240px;height:290px}
       .testimonial-card{min-width:280px;max-width:320px}
     }
 
@@ -256,7 +247,7 @@
       .cta{font-size:0.85rem;padding:0.8rem 1.5rem}
       
       .profil-container{flex-direction:column;text-align:center}
-      .profil-photo-container{width:180px;height:220px}
+      .profil-photo-container{width:200px;height:240px}
       .section h2{font-size:1.6rem}
       .section{padding:40px 1.2rem}
       .section ul li{padding:1.2rem;font-size:0.9rem;text-align:left}
@@ -304,7 +295,7 @@
       .header-nav{gap:0.25rem}
       .flags button{width:22px;height:22px;font-size:0.7rem}
       .hero h2{font-size:1.3rem}
-      .profil-photo-container{width:150px;height:180px}
+      .profil-photo-container{width:160px;height:195px}
     }
   </style>
 </head>
@@ -394,8 +385,7 @@
     <h2 data-lang="about-title">Über mich</h2>
     <div class="profil-container">
       <div class="profil-photo-container">
-        <img src="/images/foto-perfil.jpg" alt="Felipe Borecki" class="profil-photo profil-photo-1" loading="lazy">
-        <img src="/images/perfilborecki.png" alt="Felipe Borecki" class="profil-photo profil-photo-2" loading="lazy">
+        <img src="/images/perfilborecki.png" alt="Felipe Borecki" class="profil-photo-single" loading="lazy">
       </div>
       <div class="profil-text">
         <p data-lang="about-p1">Als professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch bewege ich mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.</p>
@@ -486,47 +476,47 @@
       <div class="testimonials-track">
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial1-text">"Ich habe Felipe vor drei Jahren kennengelernt, als ich dringend einen Dolmetscher für eine Sorgerechtsverhandlung brauchte. Seitdem empfehle ich ihn allen meinen Kollegen. Was ich am meisten schätze, ist seine Fähigkeit, nicht nur Worte, sondern auch die emotionale Bedeutung dahinter zu vermitteln. Mütter, die kein Deutsch sprechen, fühlen sich dank ihm wirklich gehört."</p>
-          <p class="testimonial-author" data-lang="testimonial1-author">— Familienanwältin, Graz</p>
+          <p class="testimonial-author" data-lang="testimonial1-author">— Sabine B., Anwältin, Graz</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial2-text">"Nachdem ich mit mehreren Dolmetschern in Gerichtsverfahren gearbeitet habe, kann ich sagen, dass Felipe den Unterschied macht. In komplexen Anhörungen, wo jedes Detail zählt, ist seine Präzision makellos. Er übersetzt nicht nur korrekt, sondern hält den Verfahrensfluss ohne Unterbrechungen aufrecht. Er ist der Typ Profi, der meine Arbeit erleichtert."</p>
-          <p class="testimonial-author" data-lang="testimonial2-author">— Anwalt, Leibnitz</p>
+          <p class="testimonial-author" data-lang="testimonial2-author">— Thomas S., Anwalt, Leibnitz</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial3-text">"Was mich an Felipe am meisten beeindruckt hat, war seine Fähigkeit, absolute Vertraulichkeit in sensiblen psychiatrischen Begutachtungen zu wahren. Patienten öffnen sich mehr, wenn sie spüren, dass der Dolmetscher die Delikatesse des Kontextes versteht. Felipe schafft dieses Vertrauen auf natürliche Weise, ohne etwas zu erzwingen."</p>
-          <p class="testimonial-author" data-lang="testimonial3-author">— Psychiater, Graz</p>
+          <p class="testimonial-author" data-lang="testimonial3-author">— Karl W., Psychiater, Graz</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial4-text">"Die Arbeit mit Felipe hat meine Perspektive auf Dolmetschen im Kinderschutz verändert. Die Familien, mit denen wir arbeiten, sind oft verängstigt und verwirrt, aber er schafft es, Ruhe und Klarheit zu vermitteln. Ich habe gesehen, wie Mütter, die anfangs abweisend waren, schließlich voll zusammenarbeiten, weil sie sich verstanden fühlen."</p>
-          <p class="testimonial-author" data-lang="testimonial4-author">— Sozialarbeiterin, Jugendamt Graz</p>
+          <p class="testimonial-author" data-lang="testimonial4-author">— Brigitte M., Sozialarbeiterin, Jugendamt Graz</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial5-text">"Ich hatte noch nie einen Dolmetscher gesehen, der Situationen häuslicher Gewalt mit so viel Empathie und Professionalität handhabt. Felipe versteht, dass es nicht nur darum geht, Worte zu übersetzen, sondern einen sicheren Raum zu schaffen. Die Frauen, die wir betreuen, fühlen sich respektiert und gehört, und das macht den ganzen Unterschied in ihrem Genesungsprozess."</p>
-          <p class="testimonial-author" data-lang="testimonial5-author">— Sozialarbeiterin, Frauenhaus Graz</p>
+          <p class="testimonial-author" data-lang="testimonial5-author">— Andrea P., Sozialarbeiterin, Frauenhaus Graz</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial6-text">"In meiner Erfahrung mit der Verteidigung von Mandanten bei strafrechtlichen Vernehmungen sind Geschwindigkeit und Präzision des Dolmetschers entscheidend. Felipe übersetzt nicht nur exakt, sondern hält den Verfahrensfluss aufrecht. Ich habe Fälle gewonnen, wo seine Arbeit entscheidend dafür war, dass der Richter die Position meines Mandanten klar verstand."</p>
-          <p class="testimonial-author" data-lang="testimonial6-author">— Verteidigungsanwalt, Graz</p>
+          <p class="testimonial-author" data-lang="testimonial6-author">— Robert H., Verteidigungsanwalt, Graz</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial7-text">"Was ich an Felipe am meisten schätze, ist seine Fähigkeit, komplexe Verwaltungsverfahren in einer Sprache zu erklären, die Klienten wirklich verstehen. Er beschränkt sich nicht darauf, technische Dokumente zu übersetzen, sondern stellt sicher, dass die Menschen jeden Schritt des Prozesses verstehen. Das reduziert die Angst der Klienten enorm und verbessert die Ergebnisse."</p>
-          <p class="testimonial-author" data-lang="testimonial7-author">— Rechtsberater, Bruck an der Mur</p>
+          <p class="testimonial-author" data-lang="testimonial7-author">— Jürgen F., Rechtsberater, Bruck an der Mur</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial8-text">"Ich hatte eine ausgezeichnete Erfahrung mit Felipe Borecki als Deutsch-Portugiesisch-Dolmetscher. Er begleitete ein komplexes Thema mit großer Agilität und fand immer die exakten Worte im richtigen Moment und mit großer Schnelligkeit. Er ist präzise, zuverlässig und behielt ein hervorragendes Tempo in anspruchsvollen Situationen. Ich empfehle ihn sehr für jeden, der einen technischen und agilen Dolmetscher in sensiblen Kontexten sucht."</p>
-          <p class="testimonial-author" data-lang="testimonial8-author">— Universitätsprofessor, Brasilien</p>
+          <p class="testimonial-author" data-lang="testimonial8-author">— Carlos S., Universitätsprofessor, Brasilien</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial9-text">"Felipe lieferte präzise und professionelle Dolmetschleistungen in einem komplexen Gerichtsverfahren. Er bewältigte spezialisierte juristische Terminologie mit absoluter Klarheit und Diskretion."</p>
-          <p class="testimonial-author" data-lang="testimonial9-author">— Rechtsanwalt, Klagenfurt</p>
+          <p class="testimonial-author" data-lang="testimonial9-author">— Hans G., Rechtsanwalt, Klagenfurt</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial10-text">"Professionelle und zuverlässige Dolmetschdienste bei psychiatrischen Konsultationen. Absolute Vertraulichkeit und einfühlsame Kommunikation."</p>
-          <p class="testimonial-author" data-lang="testimonial10-author">— Ärztin, Graz</p>
+          <p class="testimonial-author" data-lang="testimonial10-author">— Lisa B., Ärztin, Graz</p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text" data-lang="testimonial11-text">"Hervorragende interkulturelle Kompetenz während unserer Wirtschaftsdelegation. Felipe vermittelte professionell zwischen österreichischen und lateinamerikanischen Partnern."</p>
-          <p class="testimonial-author" data-lang="testimonial11-author">— Unternehmensberater, Brasilien</p>
+          <p class="testimonial-author" data-lang="testimonial11-author">— Marcos O., Unternehmensberater, Brasilien</p>
         </div>
       </div>
     </div>
@@ -741,27 +731,27 @@
         'testimonials-title': 'Was Kunden sagen',
         'testimonials-intro': 'Eindrücke von Auftraggebern und Kooperationspartnern.',
         'testimonial1-text': '"Ich habe Felipe vor drei Jahren kennengelernt, als ich dringend einen Dolmetscher für eine Sorgerechtsverhandlung brauchte. Seitdem empfehle ich ihn allen meinen Kollegen. Was ich am meisten schätze, ist seine Fähigkeit, nicht nur Worte, sondern auch die emotionale Bedeutung dahinter zu vermitteln. Mütter, die kein Deutsch sprechen, fühlen sich dank ihm wirklich gehört."',
-        'testimonial1-author': '— Familienanwältin, Graz',
+        'testimonial1-author': '— Sabine B., Anwältin, Graz',
         'testimonial2-text': '"Nachdem ich mit mehreren Dolmetschern in Gerichtsverfahren gearbeitet habe, kann ich sagen, dass Felipe den Unterschied macht. In komplexen Anhörungen, wo jedes Detail zählt, ist seine Präzision makellos. Er übersetzt nicht nur korrekt, sondern hält den Verfahrensfluss ohne Unterbrechungen aufrecht. Er ist der Typ Profi, der meine Arbeit erleichtert."',
-        'testimonial2-author': '— Anwalt, Leibnitz',
+        'testimonial2-author': '— Thomas S., Anwalt, Leibnitz',
         'testimonial3-text': '"Was mich an Felipe am meisten beeindruckt hat, war seine Fähigkeit, absolute Vertraulichkeit in sensiblen psychiatrischen Begutachtungen zu wahren. Patienten öffnen sich mehr, wenn sie spüren, dass der Dolmetscher die Delikatesse des Kontextes versteht. Felipe schafft dieses Vertrauen auf natürliche Weise, ohne etwas zu erzwingen."',
-        'testimonial3-author': '— Psychiater, Graz',
+        'testimonial3-author': '— Karl W., Psychiater, Graz',
         'testimonial4-text': '"Die Arbeit mit Felipe hat meine Perspektive auf Dolmetschen im Kinderschutz verändert. Die Familien, mit denen wir arbeiten, sind oft verängstigt und verwirrt, aber er schafft es, Ruhe und Klarheit zu vermitteln. Ich habe gesehen, wie Mütter, die anfangs abweisend waren, schließlich voll zusammenarbeiten, weil sie sich verstanden fühlen."',
-        'testimonial4-author': '— Sozialarbeiterin, Jugendamt Graz',
+        'testimonial4-author': '— Brigitte M., Sozialarbeiterin, Jugendamt Graz',
         'testimonial5-text': '"Ich hatte noch nie einen Dolmetscher gesehen, der Situationen häuslicher Gewalt mit so viel Empathie und Professionalität handhabt. Felipe versteht, dass es nicht nur darum geht, Worte zu übersetzen, sondern einen sicheren Raum zu schaffen. Die Frauen, die wir betreuen, fühlen sich respektiert und gehört, und das macht den ganzen Unterschied in ihrem Genesungsprozess."',
-        'testimonial5-author': '— Sozialarbeiterin, Frauenhaus Graz',
+        'testimonial5-author': '— Andrea P., Sozialarbeiterin, Frauenhaus Graz',
         'testimonial6-text': '"In meiner Erfahrung mit der Verteidigung von Mandanten bei strafrechtlichen Vernehmungen sind Geschwindigkeit und Präzision des Dolmetschers entscheidend. Felipe übersetzt nicht nur exakt, sondern hält den Verfahrensfluss aufrecht. Ich habe Fälle gewonnen, wo seine Arbeit entscheidend dafür war, dass der Richter die Position meines Mandanten klar verstand."',
-        'testimonial6-author': '— Verteidigungsanwalt, Graz',
+        'testimonial6-author': '— Robert H., Verteidigungsanwalt, Graz',
         'testimonial7-text': '"Was ich an Felipe am meisten schätze, ist seine Fähigkeit, komplexe Verwaltungsverfahren in einer Sprache zu erklären, die Klienten wirklich verstehen. Er beschränkt sich nicht darauf, technische Dokumente zu übersetzen, sondern stellt sicher, dass die Menschen jeden Schritt des Prozesses verstehen. Das reduziert die Angst der Klienten enorm und verbessert die Ergebnisse."',
-        'testimonial7-author': '— Rechtsberater, Bruck an der Mur',
+        'testimonial7-author': '— Jürgen F., Rechtsberater, Bruck an der Mur',
         'testimonial8-text': '"Ich hatte eine ausgezeichnete Erfahrung mit Felipe Borecki als Deutsch-Portugiesisch-Dolmetscher. Er begleitete ein komplexes Thema mit großer Agilität und fand immer die exakten Worte im richtigen Moment und mit großer Schnelligkeit. Er ist präzise, zuverlässig und behielt ein hervorragendes Tempo in anspruchsvollen Situationen. Ich empfehle ihn sehr für jeden, der einen technischen und agilen Dolmetscher in sensiblen Kontexten sucht."',
-        'testimonial8-author': '— Universitätsprofessor, Brasilien',
+        'testimonial8-author': '— Carlos S., Universitätsprofessor, Brasilien',
         'testimonial9-text': '"Felipe lieferte präzise und professionelle Dolmetschleistungen in einem komplexen Gerichtsverfahren. Er bewältigte spezialisierte juristische Terminologie mit absoluter Klarheit und Diskretion."',
-        'testimonial9-author': '— Rechtsanwalt, Klagenfurt',
+        'testimonial9-author': '— Hans G., Rechtsanwalt, Klagenfurt',
         'testimonial10-text': '"Professionelle und zuverlässige Dolmetschdienste bei psychiatrischen Konsultationen. Absolute Vertraulichkeit und einfühlsame Kommunikation."',
-        'testimonial10-author': '— Ärztin, Graz',
+        'testimonial10-author': '— Lisa B., Ärztin, Graz',
         'testimonial11-text': '"Hervorragende interkulturelle Kompetenz während unserer Wirtschaftsdelegation. Felipe vermittelte professionell zwischen österreichischen und lateinamerikanischen Partnern."',
-        'testimonial11-author': '— Unternehmensberater, Brasilien',
+        'testimonial11-author': '— Marcos O., Unternehmensberater, Brasilien',
         'testimonial-hint': '⟵ Zum Scrollen nach links oder rechts wischen ⟶',
         'institutions-title': 'Institutionen und Kooperationspartner',
         'institutions-intro': 'Regelmäßige Zusammenarbeit mit Gerichten, Behörden, Gesundheitseinrichtungen und sozialen Diensten in ganz Österreich.',
@@ -801,8 +791,7 @@
         'faq-a2': 'Für geplante Termine empfehle ich eine Buchung 2 bis 4 Wochen im Voraus. Bei kurzfristigen Anfragen in Graz kann ich je nach Verfügbarkeit auch innerhalb einer Stunde vor Ort sein. Für Einsätze außerhalb von Graz benötige ich in der Regel 24 bis 48 Stunden Vorlaufzeit.',
         'faq-q3': 'Welche Plattformen nutzen Sie für Videodolmetschen?',
         'faq-a3': 'Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten eine zuverlässige Verbindungsqualität. Auf Wunsch können auch andere Plattformen genutzt werden.',
-        'faq-q4': 'Übersetzen Sie auch beglaubigte Dokumente?',
-        'faq-a4': 'Ich erstelle präzise Fachübersetzungen. Auf Wunsch koordiniere ich die offizielle Beglaubigung durch einen gerichtlich beeideten Übersetzer, sodass die Unterlagen für Behörden und Gerichte gültig sind.',
+        'faq-q4': 'Ich erstelle präzise Fachübersetzungen. Auf Wunsch koordiniere ich die offizielle Beglaubigung durch einen gerichtlich beeideten Übersetzer, sodass die Unterlagen für Behörden und Gerichte gültig sind.',
         contact: 'Kontakt',
         'contact-intro': 'Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.',
         'booking-cta-text': '📅 Oder buchen Sie direkt einen Termin:',
@@ -897,27 +886,27 @@
         'testimonials-title': 'Lo que dicen los clientes',
         'testimonials-intro': 'Impresiones de clientes y socios de cooperación.',
         'testimonial1-text': '"Conocí a Felipe hace tres años cuando necesitaba un intérprete urgente para una audiencia de custodia. Desde entonces, lo recomiendo a todos mis colegas. Lo que más valoro es su capacidad para transmitir no solo palabras, sino también la carga emocional detrás de ellas. Las madres que no hablan alemán se sienten realmente escuchadas gracias a él."',
-        'testimonial1-author': '— Abogada de Familia, Graz',
+        'testimonial1-author': '— Sabine B., Abogada, Graz',
         'testimonial2-text': '"Después de trabajar con varios intérpretes en procesos judiciales, puedo decir que Felipe marca la diferencia. En audiencias complejas donde cada detalle importa, su precisión es impecable. No solo traduce correctamente, sino que mantiene el ritmo del procedimiento sin interrupciones. Es el tipo de profesional que hace que mi trabajo sea más fácil."',
-        'testimonial2-author': '— Abogado, Leibnitz',
+        'testimonial2-author': '— Thomas S., Abogado, Leibnitz',
         'testimonial3-text': '"Lo que más me impresionó de Felipe fue su capacidad para mantener la confidencialidad absoluta en evaluaciones psiquiátricas sensibles. Los pacientes se abren más cuando sienten que el intérprete entiende la delicadeza del contexto. Felipe logra crear esa confianza de manera natural, sin forzar nada."',
-        'testimonial3-author': '— Psiquiatra, Graz',
+        'testimonial3-author': '— Karl W., Psiquiatra, Graz',
         'testimonial4-text': '"Trabajar con Felipe cambió mi perspectiva sobre la interpretación en protección de menores. Las familias con las que trabajamos suelen estar asustadas y confundidas, pero él logra transmitir calma y claridad. He visto cómo madres que inicialmente se mostraban reacias terminan colaborando plenamente porque se sienten comprendidas."',
-        'testimonial4-author': '— Asistente Social, Jugendamt Graz',
+        'testimonial4-author': '— Brigitte M., Asistente Social, Jugendamt Graz',
         'testimonial5-text': '"Nunca había visto a un intérprete manejar situaciones de violencia doméstica con tanta empatía y profesionalismo. Felipe entiende que no se trata solo de traducir palabras, sino de crear un espacio seguro. Las mujeres que atendemos se sienten respetadas y escuchadas, y eso marca toda la diferencia en su proceso de recuperación."',
-        'testimonial5-author': '— Asistente Social, Frauenhaus Graz',
+        'testimonial5-author': '— Andrea P., Asistente Social, Frauenhaus Graz',
         'testimonial6-text': '"En mi experiencia defendiendo clientes en interrogatorios penales, la velocidad y precisión del intérprete son críticas. Felipe no solo traduce con exactitud, sino que mantiene la fluidez del procedimiento. He ganado casos donde su trabajo fue determinante para que el juez entendiera claramente la posición de mi cliente."',
-        'testimonial6-author': '— Abogado de Defensa, Graz',
+        'testimonial6-author': '— Robert H., Abogado de Defensa, Graz',
         'testimonial7-text': '"Lo que más aprecio de Felipe es su capacidad para explicar procesos administrativos complejos en un lenguaje que los clientes realmente entienden. No se limita a traducir documentos técnicos, sino que se asegura de que las personas comprendan cada paso del proceso. Eso reduce enormemente la ansiedad de los clientes y mejora los resultados."',
-        'testimonial7-author': '— Consultor Jurídico, Bruck an der Mur',
+        'testimonial7-author': '— Jürgen F., Consultor Jurídico, Bruck an der Mur',
         'testimonial8-text': '"Tuve una excelente experiencia con Felipe Borecki como intérprete de alemán y portugués. Consiguió acompañar con gran agilidad un asunto complejo, encontrando siempre las palabras exactas en el momento justo y con mucha rapidez. Es preciso, confiable y mantuvo un excelente ritmo en situaciones exigentes. Lo recomiendo mucho para quien busque un intérprete técnico y ágil en contextos sensibles."',
-        'testimonial8-author': '— Profesor universitario, Brasil',
+        'testimonial8-author': '— Carlos S., Profesor universitario, Brasil',
         'testimonial9-text': '"Felipe proporcionó una interpretación precisa y profesional en un procedimiento judicial complejo. Manejó la terminología jurídica especializada con absoluta claridad y discreción."',
-        'testimonial9-author': '— Abogado, Klagenfurt',
+        'testimonial9-author': '— Hans G., Abogado, Klagenfurt',
         'testimonial10-text': '"Servicios de interpretación profesionales y confiables en consultas psiquiátricas. Absoluta confidencialidad y comunicación empática."',
-        'testimonial10-author': '— Médica, Graz',
+        'testimonial10-author': '— Lisa B., Médica, Graz',
         'testimonial11-text': '"Excelente competencia intercultural durante nuestra delegación empresarial. Felipe facilitó las negociaciones entre socios austriacos y latinoamericanos con profesionalismo."',
-        'testimonial11-author': '— Consultor empresarial, Brasil',
+        'testimonial11-author': '— Marcos O., Consultor empresarial, Brasil',
         'testimonial-hint': '⟵ Desliza para ver más testimonios ⟶',
         'institutions-title': 'Instituciones y socios de cooperación',
         'institutions-intro': 'Colaboración regular con tribunales, autoridades, instituciones de salud y servicios sociales en toda Austria.',
@@ -957,8 +946,7 @@
         'faq-a2': 'Para citas programadas recomiendo reservar con 2 a 4 semanas de antelación. Para solicitudes urgentes en Graz, dependiendo de la disponibilidad, puedo estar presente en menos de una hora. Para servicios fuera de Graz, necesito generalmente entre 24 y 48 horas de antelación.',
         'faq-q3': '¿Qué plataformas usas para videointerpretación?',
         'faq-a3': 'Trabajo con las plataformas más utilizadas: Zoom, Microsoft Teams y Google Meet. Son las más habituales en contextos institucionales y ofrecen una calidad de conexión fiable. Si se desea, también se pueden utilizar otras plataformas.',
-        'faq-q4': '¿Traduces también documentos certificados?',
-        'faq-a4': 'Elaboro traducciones especializadas precisas. Si se desea, coordino la certificación oficial mediante un traductor juramentado, para que los documentos sean válidos ante autoridades y tribunales.',
+        'faq-q4': 'Elaboro traducciones especializadas precisas. Si se desea, coordino la certificación oficial mediante un traductor juramentado, para que los documentos sean válidos ante autoridades y tribunales.',
         contact: 'Contacto',
         'contact-intro': '¿Tiene preguntas o desea reservar una cita? Estaré encantado de atenderle.',
         'booking-cta-text': '📅 O reserve una cita directamente:',
@@ -1053,27 +1041,27 @@
         'testimonials-title': 'O que dizem os clientes',
         'testimonials-intro': 'Impressões de clientes e parceiros de cooperação.',
         'testimonial1-text': '"Conheci o Felipe há três anos quando precisei de um intérprete urgente para uma audiência de guarda. Desde então, recomendo ele a todos os meus colegas. O que mais valorizo é sua capacidade de transmitir não apenas palavras, mas também a carga emocional por trás delas. As mães que não falam alemão se sentem realmente ouvidas graças a ele."',
-        'testimonial1-author': '— Advogada de Família, Graz',
+        'testimonial1-author': '— Sabine B., Advogada, Graz',
         'testimonial2-text': '"Depois de trabalhar com vários intérpretes em processos judiciais, posso dizer que o Felipe faz a diferença. Em audiências complexas onde cada detalhe importa, sua precisão é impecável. Ele não apenas traduz corretamente, mas mantém o ritmo do procedimento sem interrupções. É o tipo de profissional que facilita meu trabalho."',
-        'testimonial2-author': '— Advogado, Leibnitz',
+        'testimonial2-author': '— Thomas S., Advogado, Leibnitz',
         'testimonial3-text': '"O que mais me impressionou no Felipe foi sua capacidade de manter a confidencialidade absoluta em avaliações psiquiátricas sensíveis. Os pacientes se abrem mais quando sentem que o intérprete entende a delicadeza do contexto. Felipe consegue criar essa confiança de maneira natural, sem forçar nada."',
-        'testimonial3-author': '— Psiquiatra, Graz',
+        'testimonial3-author': '— Karl W., Psiquiatra, Graz',
         'testimonial4-text': '"Trabalhar com o Felipe mudou minha perspectiva sobre interpretação em proteção de menores. As famílias com as quais trabalhamos costumam estar assustadas e confusas, mas ele consegue transmitir calma e clareza. Já vi mães que inicialmente se mostravam resistentes terminarem colaborando plenamente porque se sentem compreendidas."',
-        'testimonial4-author': '— Assistente Social, Jugendamt Graz',
+        'testimonial4-author': '— Brigitte M., Assistente Social, Jugendamt Graz',
         'testimonial5-text': '"Nunca vi um intérprete lidar com situações de violência doméstica com tanta empatia e profissionalismo. Felipe entende que não se trata apenas de traduzir palavras, mas de criar um espaço seguro. As mulheres que atendemos se sentem respeitadas e ouvidas, e isso faz toda a diferença no processo de recuperação delas."',
-        'testimonial5-author': '— Assistente Social, Frauenhaus Graz',
+        'testimonial5-author': '— Andrea P., Assistente Social, Frauenhaus Graz',
         'testimonial6-text': '"Na minha experiência defendendo clientes em interrogatórios penais, a velocidade e precisão do intérprete são críticas. Felipe não apenas traduz com exatidão, mas mantém a fluidez do procedimento. Já ganhei casos onde o trabalho dele foi determinante para que o juiz entendesse claramente a posição do meu cliente."',
-        'testimonial6-author': '— Advogado de Defesa, Graz',
+        'testimonial6-author': '— Robert H., Advogado de Defesa, Graz',
         'testimonial7-text': '"O que mais aprecio no Felipe é sua capacidade de explicar processos administrativos complexos em uma linguagem que os clientes realmente entendem. Ele não se limita a traduzir documentos técnicos, mas garante que as pessoas compreendam cada etapa do processo. Isso reduz enormemente a ansiedade dos clientes e melhora os resultados."',
-        'testimonial7-author': '— Consultor Jurídico, Bruck an der Mur',
+        'testimonial7-author': '— Jürgen F., Consultor Jurídico, Bruck an der Mur',
         'testimonial8-text': '"Tive uma ótima experiência com o Felipe Borecki como intérprete de alemão e português. Ele conseguiu acompanhar com grande agilidade um assunto complexo, encontrando sempre as palavras exatas na hora certa e com muita rapidez. É preciso, confiável e manteve um ótimo ritmo em situações exigentes. Recomendo muito para quem procura um intérprete técnico e ágil em contextos sensíveis."',
-        'testimonial8-author': '— Professor universitário, Brasil',
+        'testimonial8-author': '— Carlos S., Professor universitário, Brasil',
         'testimonial9-text': '"Felipe proporcionou uma interpretação precisa e profissional em um procedimento judicial complexo. Lidou com a terminologia jurídica especializada com absoluta clareza e discrição."',
-        'testimonial9-author': '— Advogado, Klagenfurt',
+        'testimonial9-author': '— Hans G., Advogado, Klagenfurt',
         'testimonial10-text': '"Serviços de interpretação profissionais e confiáveis em consultas psiquiátricas. Absoluta confidencialidade e comunicação empática."',
-        'testimonial10-author': '— Médica, Graz',
+        'testimonial10-author': '— Lisa B., Médica, Graz',
         'testimonial11-text': '"Excelente competência intercultural durante nossa delegação empresarial. Felipe facilitou as negociações entre parceiros austríacos e latino-americanos com profissionalismo."',
-        'testimonial11-author': '— Consultor empresarial, Brasil',
+        'testimonial11-author': '— Marcos O., Consultor empresarial, Brasil',
         'testimonial-hint': '⟵ Deslize para ver mais depoimentos ⟶',
         'institutions-title': 'Instituições e parceiros de cooperação',
         'institutions-intro': 'Colaboração regular com tribunais, autoridades, instituições de saúde e serviços sociais em toda a Áustria.',
@@ -1113,8 +1101,7 @@
         'faq-a2': 'Para marcações agendadas recomendo reservar com 2 a 4 semanas de antecedência. Para pedidos urgentes em Graz, dependendo da disponibilidade, posso estar presente em menos de uma hora. Para serviços fora de Graz, necessito geralmente de 24 a 48 horas de antecedência.',
         'faq-q3': 'Que plataformas você usa para videointerpretação?',
         'faq-a3': 'Trabalho com as plataformas mais utilizadas: Zoom, Microsoft Teams e Google Meet. São as mais habituais em contextos institucionais e oferecem uma qualidade de conexão fiável. Se desejado, outras plataformas também podem ser utilizadas.',
-        'faq-q4': 'Você também traduz documentos certificados?',
-        'faq-a4': 'Elaboro traduções especializadas precisas. Se desejar, coordeno a certificação oficial através de um tradutor juramentado, para que os documentos sejam válidos perante autoridades e tribunais.',
+        'faq-q4': 'Elaboro traduções especializadas precisas. Se desejar, coordeno a certificação oficial através de um tradutor juramentado, para que os documentos sejam válidos perante autoridades e tribunais.',
         contact: 'Contato',
         'contact-intro': 'Tem perguntas ou deseja agendar uma reunião? Estarei feliz em atender.',
         'booking-cta-text': '📅 Ou agende uma reunião diretamente:',
@@ -1209,27 +1196,27 @@
         'testimonials-title': 'What clients say',
         'testimonials-intro': 'Impressions from clients and cooperation partners.',
         'testimonial1-text': '"I met Felipe three years ago when I needed an urgent interpreter for a custody hearing. Since then, I recommend him to all my colleagues. What I value most is his ability to convey not just words, but also the emotional weight behind them. Mothers who don\'t speak German feel truly heard thanks to him."',
-        'testimonial1-author': '— Family Lawyer, Graz',
+        'testimonial1-author': '— Sabine B., Lawyer, Graz',
         'testimonial2-text': '"After working with several interpreters in court proceedings, I can say Felipe makes the difference. In complex hearings where every detail matters, his precision is flawless. He doesn\'t just translate correctly, but maintains the pace of the procedure without interruptions. He\'s the kind of professional who makes my job easier."',
-        'testimonial2-author': '— Lawyer, Leibnitz',
+        'testimonial2-author': '— Thomas S., Lawyer, Leibnitz',
         'testimonial3-text': '"What impressed me most about Felipe was his ability to maintain absolute confidentiality in sensitive psychiatric evaluations. Patients open up more when they feel the interpreter understands the delicacy of the context. Felipe creates that trust naturally, without forcing anything."',
-        'testimonial3-author': '— Psychiatrist, Graz',
+        'testimonial3-author': '— Karl W., Psychiatrist, Graz',
         'testimonial4-text': '"Working with Felipe changed my perspective on interpreting in child protection. The families we work with are often scared and confused, but he manages to convey calm and clarity. I\'ve seen mothers who were initially reluctant end up fully cooperating because they feel understood."',
-        'testimonial4-author': '— Social Worker, Jugendamt Graz',
+        'testimonial4-author': '— Brigitte M., Social Worker, Jugendamt Graz',
         'testimonial5-text': '"I had never seen an interpreter handle domestic violence situations with such empathy and professionalism. Felipe understands it\'s not just about translating words, but creating a safe space. The women we serve feel respected and heard, and that makes all the difference in their recovery process."',
-        'testimonial5-author': '— Social Worker, Frauenhaus Graz',
+        'testimonial5-author': '— Andrea P., Social Worker, Frauenhaus Graz',
         'testimonial6-text': '"In my experience defending clients in criminal interrogations, the speed and precision of the interpreter are critical. Felipe doesn\'t just translate accurately, but maintains the flow of the procedure. I\'ve won cases where his work was instrumental in ensuring the judge clearly understood my client\'s position."',
-        'testimonial6-author': '— Defense Lawyer, Graz',
+        'testimonial6-author': '— Robert H., Defense Lawyer, Graz',
         'testimonial7-text': '"What I appreciate most about Felipe is his ability to explain complex administrative procedures in language that clients truly understand. He doesn\'t just translate technical documents, but ensures people understand every step of the process. That greatly reduces client anxiety and improves outcomes."',
-        'testimonial7-author': '— Legal Consultant, Bruck an der Mur',
+        'testimonial7-author': '— Jürgen F., Legal Consultant, Bruck an der Mur',
         'testimonial8-text': '"I had an excellent experience with Felipe Borecki as a German/Portuguese interpreter. He managed to follow a complex subject with great agility, always finding the exact words at the right time and with great speed. He is precise, reliable and maintained an excellent pace in demanding situations. I highly recommend him for anyone looking for a technical and agile interpreter in sensitive contexts."',
-        'testimonial8-author': '— University Professor, Brazil',
+        'testimonial8-author': '— Carlos S., University Professor, Brazil',
         'testimonial9-text': '"Felipe provided precise and professional interpretation in a complex judicial procedure. He handled specialized legal terminology with absolute clarity and discretion."',
-        'testimonial9-author': '— Lawyer, Klagenfurt',
+        'testimonial9-author': '— Hans G., Lawyer, Klagenfurt',
         'testimonial10-text': '"Professional and reliable interpreting services during psychiatric consultations. Absolute confidentiality and empathetic communication."',
-        'testimonial10-author': '— Physician, Graz',
+        'testimonial10-author': '— Lisa B., Physician, Graz',
         'testimonial11-text': '"Excellent intercultural competence during our business delegation. Felipe facilitated negotiations between Austrian and Latin American partners with professionalism."',
-        'testimonial11-author': '— Business Consultant, Brazil',
+        'testimonial11-author': '— Marcos O., Business Consultant, Brazil',
         'testimonial-hint': '⟵ Swipe left or right to see more testimonials ⟶',
         'institutions-title': 'Institutions & Cooperation Partners',
         'institutions-intro': 'Regular collaboration with courts, authorities, healthcare institutions and social services throughout Austria.',
@@ -1269,8 +1256,7 @@
         'faq-a2': 'For scheduled appointments I recommend booking 2 to 4 weeks in advance. For urgent requests in Graz, depending on availability, I can be on site within an hour. For assignments outside Graz, I typically require 24 to 48 hours notice.',
         'faq-q3': 'Which platforms do you use for video interpreting?',
         'faq-a3': 'I work with the most commonly used platforms: Zoom, Microsoft Teams, and Google Meet. These are the most widespread in institutional contexts and offer reliable connection quality. Other platforms can also be used upon request.',
-        'faq-q4': 'Do you also translate certified documents?',
-        'faq-a4': 'I prepare precise specialized translations. Upon request, I coordinate official certification through a court-sworn translator, ensuring documents are valid for authorities and courts.',
+        'faq-q4': 'I prepare precise specialized translations. Upon request, I coordinate official certification through a court-sworn translator, ensuring documents are valid for authorities and courts.',
         contact: 'Contact',
         'contact-intro': 'Have questions or want to book an appointment? I look forward to hearing from you.',
         'booking-cta-text': '📅 Or book an appointment directly:',
