@@ -32,6 +32,12 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="de_AT">
 
+  <link rel="alternate" hreflang="de" href="https://felipeborecki.com/">
+  <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/pt/">
+  <link rel="alternate" hreflang="es" href="https://felipeborecki.com/es/">
+  <link rel="alternate" hreflang="en" href="https://felipeborecki.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/">
+
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,9 +83,9 @@
     .header-nav a.active::after{width:100%}
     .header-right{display:flex;align-items:center;gap:0.8rem}
     .flags{display:flex;gap:.3rem}
-    .flags button{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
-    .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
-    .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
+    .flags a{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center;text-decoration:none}
+    .flags a:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags a.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
 
     .hero{margin-top:72px;background:#0e1528}
     .hero-banner{width:100%;height:400px;background:url('/images/header2.jpg') center/contain no-repeat;background-color:#0e1528;display:block}
@@ -159,7 +165,6 @@
     footer{background:#0e1528;color:#fff;text-align:center;padding:2rem;font-size:0.95rem}
     footer a{color:#fff;text-decoration:underline}
     footer a:hover{color:#ddd}
-    [data-lang]{transition:opacity .25s ease}
     a{color:#0e1528;font-weight:500}
     a:hover{color:#142135;text-decoration:none}
 
@@ -190,7 +195,7 @@
       .header-nav{gap:0.4rem;justify-content:center;width:100%}
       .header-nav a{font-size:0.65rem;padding-bottom:1px;white-space:nowrap}
       .header-right{width:100%;justify-content:center;gap:0.3rem}
-      .flags button{width:26px;height:26px;font-size:0.85rem}
+      .flags a{width:26px;height:26px;font-size:0.85rem}
       
       .hero-banner{height:180px}
       .hero-content{padding:25px 1.2rem 40px}
@@ -228,7 +233,7 @@
       .header-left h1{font-size:0.95rem}
       .header-nav a{font-size:0.55rem}
       .header-nav{gap:0.25rem}
-      .flags button{width:22px;height:22px;font-size:0.7rem}
+      .flags a{width:22px;height:22px;font-size:0.7rem}
       .hero h2{font-size:1.3rem}
       .profil-photo-container{width:160px;height:195px}
       .page-links{grid-template-columns:1fr}
@@ -240,21 +245,21 @@
   <header>
     <div class="header-content">
       <div class="header-left">
-        <h1 data-lang="name">Felipe Borecki</h1>
+        <h1>Felipe Borecki</h1>
         <nav class="header-nav">
-          <a href="#services" data-lang="nav-services">Leistungen</a>
-          <a href="#about" data-lang="nav-about">Über mich</a>
-          <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
-          <a href="#contact" data-lang="nav-contact">Kontakt</a>
-          <a href="/agb" data-lang="nav-agb">AGB</a>
+          <a href="#services">Leistungen</a>
+          <a href="#about">Über mich</a>
+          <a href="/appointment.html">Termin buchen</a>
+          <a href="#contact">Kontakt</a>
+          <a href="/agb">AGB</a>
         </nav>
       </div>
       <div class="header-right">
         <div class="flags">
-          <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch" aria-label="Switch to German">🇩🇪</button>
-          <button type="button" onclick="setLang(event,'es')" title="Español" aria-label="Switch to Spanish">🇪🇸</button>
-          <button type="button" onclick="setLang(event,'pt')" title="Português (BR)" aria-label="Switch to Portuguese">🇧🇷</button>
-          <button type="button" onclick="setLang(event,'en')" title="English" aria-label="Switch to English">🇬🇧</button>
+          <a href="/" class="active" title="Deutsch" aria-label="Deutsch">🇩🇪</a>
+          <a href="/pt/" title="Português (BR)" aria-label="Português">🇧🇷</a>
+          <a href="/es/" title="Español" aria-label="Español">🇪🇸</a>
+          <a href="/en/" title="English" aria-label="English">🇬🇧</a>
         </div>
       </div>
     </div>
@@ -263,124 +268,124 @@
   <section id="home" class="hero">
     <div class="hero-banner" role="img" aria-label="Felipe Borecki - Dolmetscher und Übersetzer"></div>
     <div class="hero-content">
-      <h2 data-lang="hero-title">Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte</h2>
-      <p data-lang="hero-desc">Professionelle Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich, präzise, vertraulich und verlässlich, vor Ort, remote und telefonisch.</p>
-      <p class="hero-subline" data-lang="hero-subline">GISA-registriert (Nr. 32188035), im Dolmetscher- und Sachverständigenregister des Innenministeriums gelistet und als Hausdolmetscher für Portugiesisch und Spanisch am Landesgericht für Strafsachen Graz beeidigt. Über 900 Einsätze für Gerichte, Polizei, Kliniken und Sozialdienste. Arbeitssprachen: ES | PT | DE.</p>
+      <h2>Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte</h2>
+      <p>Professionelle Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich, präzise, vertraulich und verlässlich, vor Ort, remote und telefonisch.</p>
+      <p class="hero-subline">GISA-registriert (Nr. 32188035), im Dolmetscher- und Sachverständigenregister des Innenministeriums gelistet und als Hausdolmetscher für Portugiesisch und Spanisch am Landesgericht für Strafsachen Graz beeidigt. Über 900 Einsätze für Gerichte, Polizei, Kliniken und Sozialdienste. Arbeitssprachen: ES | PT | DE.</p>
       <div class="cta-wrap">
-        <a href="#contact" class="cta" data-lang="cta">Kontakt aufnehmen</a>
-        <a href="#services" class="cta cta-secondary" data-lang="cta-secondary">Angebot anfordern</a>
-        <a href="/appointment.html" class="cta cta-outline" data-lang="cta-book">📅 Termin buchen</a>
+        <a href="#contact" class="cta">Kontakt aufnehmen</a>
+        <a href="#services" class="cta cta-secondary">Angebot anfordern</a>
+        <a href="/appointment.html" class="cta cta-outline">📅 Termin buchen</a>
       </div>
     </div>
   </section>
 
   <section id="credentials" class="section">
-    <h2 data-lang="cred-title">Kurzprofil</h2>
+    <h2>Kurzprofil</h2>
     <div class="credential-list">
       <div class="credential">
-        <strong data-lang="cred1-title">900+</strong>
-        <span data-lang="cred1-text">Einsätze in sensiblen institutionellen Kontexten</span>
+        <strong>900+</strong>
+        <span>Einsätze in sensiblen institutionellen Kontexten</span>
       </div>
       <div class="credential">
-        <strong data-lang="cred2-title">GISA</strong>
-        <span data-lang="cred2-text">Registrierung Nr. 32188035</span>
+        <strong>GISA</strong>
+        <span>Registrierung Nr. 32188035</span>
       </div>
       <div class="credential">
-        <strong data-lang="cred3-title">Innenministerium</strong>
-        <span data-lang="cred3-text">Im Dolmetscher- und Sachverständigenregister des Innenministeriums</span>
+        <strong>Innenministerium</strong>
+        <span>Im Dolmetscher- und Sachverständigenregister des Innenministeriums</span>
       </div>
       <div class="credential">
-        <strong data-lang="cred5-title">LG Graz</strong>
-        <span data-lang="cred5-text">Als Hausdolmetscher für Portugiesisch und Spanisch am Landesgericht für Strafsachen Graz beeidigt</span>
+        <strong>LG Graz</strong>
+        <span>Als Hausdolmetscher für Portugiesisch und Spanisch am Landesgericht für Strafsachen Graz beeidigt</span>
       </div>
       <div class="credential">
-        <strong data-lang="cred4-title">ES | PT | DE</strong>
-        <span data-lang="cred4-text">Vor Ort, remote und telefonisch</span>
+        <strong>ES | PT | DE</strong>
+        <span>Vor Ort, remote und telefonisch</span>
       </div>
     </div>
   </section>
 
   <section id="about" class="section">
-    <h2 data-lang="about-title">Über mich</h2>
+    <h2>Über mich</h2>
     <div class="profil-container">
       <div class="profil-photo-container">
         <img src="/images/perfilborecki.png" alt="Felipe Borecki" class="profil-photo-single" loading="lazy">
       </div>
       <div class="profil-text">
-        <p data-lang="about-p1">Als professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch bewege ich mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.</p>
-        <p data-lang="about-p2">Mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.</p>
-        <p data-lang="about-p3">Ich bin in über 43 Länder gereist, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.</p>
+        <p>Als professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch bewege ich mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.</p>
+        <p>Mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.</p>
+        <p>Ich bin in über 43 Länder gereist, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.</p>
       </div>
     </div>
 
     <div class="page-links">
-      <a href="/about.html" class="page-link" data-lang="link-about">📖 Mehr über mich <span class="arrow">→</span></a>
-      <a href="/certifications.html" class="page-link" data-lang="link-certifications">📜 Zertifizierungen <span class="arrow">→</span></a>
-      <a href="/institutions.html" class="page-link" data-lang="link-institutions">🏛️ Institutionen <span class="arrow">→</span></a>
-      <a href="/faq.html" class="page-link" data-lang="link-faq">❓ FAQ <span class="arrow">→</span></a>
+      <a href="/about.html" class="page-link">📖 Mehr über mich <span class="arrow">→</span></a>
+      <a href="/certifications.html" class="page-link">📜 Zertifizierungen <span class="arrow">→</span></a>
+      <a href="/institutions.html" class="page-link">🏛️ Institutionen <span class="arrow">→</span></a>
+      <a href="/faq.html" class="page-link">❓ FAQ <span class="arrow">→</span></a>
     </div>
   </section>
 
   <section id="services" class="section">
-    <h2 data-lang="services">Leistungen</h2>
-    <p class="section-intro" data-lang="services-intro">Ich biete maßgeschneiderte Dolmetschleistungen, die von der sorgfältigen Vorbereitung bis zur professionellen Durchführung reichen und eine präzise Beherrschung der fachspezifischen Terminologie voraussetzen.</p>
+    <h2>Leistungen</h2>
+    <p class="section-intro">Ich biete maßgeschneiderte Dolmetschleistungen, die von der sorgfältigen Vorbereitung bis zur professionellen Durchführung reichen und eine präzise Beherrschung der fachspezifischen Terminologie voraussetzen.</p>
     <div class="grid-2">
       <div class="card">
-        <h3 data-lang="serv1-title">Dolmetschen</h3>
-        <p data-lang="serv1-text">Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.</p>
+        <h3>Dolmetschen</h3>
+        <p>Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.</p>
       </div>
       <div class="card">
-        <h3 data-lang="serv2-title">Fachübersetzungen</h3>
-        <p data-lang="serv2-text">Präzise Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt und professioneller Qualitätskontrolle.</p>
+        <h3>Fachübersetzungen</h3>
+        <p>Präzise Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt und professioneller Qualitätskontrolle.</p>
       </div>
       <div class="card">
-        <h3 data-lang="serv3-title">Remote-Unterstützung</h3>
-        <p data-lang="serv3-text">Professionelle Einsätze über sichere Plattformen für Videodolmetschen, Telefongespräche, internationale Abstimmungen und grenzüberschreitende Kommunikation.</p>
+        <h3>Remote-Unterstützung</h3>
+        <p>Professionelle Einsätze über sichere Plattformen für Videodolmetschen, Telefongespräche, internationale Abstimmungen und grenzüberschreitende Kommunikation.</p>
       </div>
       <div class="card">
-        <h3 data-lang="serv4-title">Internationale Begleitung</h3>
-        <p data-lang="serv4-text">Sprachliche und kulturelle Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.</p>
+        <h3>Internationale Begleitung</h3>
+        <p>Sprachliche und kulturelle Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.</p>
       </div>
     </div>
     <div class="booking-cta-block" style="margin-top:2rem">
-      <p data-lang="services-cta-text">Benötigen Sie einen professionellen Dolmetscher? Fordern Sie ein unverbindliches Angebot an.</p>
-      <a href="#contact" class="cta cta-dark" data-lang="services-cta-btn">Jetzt Angebot anfordern</a>
+      <p>Benötigen Sie einen professionellen Dolmetscher? Fordern Sie ein unverbindliches Angebot an.</p>
+      <a href="#contact" class="cta cta-dark">Jetzt Angebot anfordern</a>
     </div>
   </section>
 
   <section id="contact" class="section">
-    <h2 data-lang="contact">Kontakt</h2>
-    <p class="section-intro" data-lang="contact-intro">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.</p>
+    <h2>Kontakt</h2>
+    <p class="section-intro">Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.</p>
 
     <form id="contact-form" class="form-container" action="https://formspree.io/f/mbdokzdj" method="POST">
       <div class="form-group">
-        <label for="name" data-lang="form-name">Name</label>
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
       </div>
 
       <div class="form-group">
-        <label for="email" data-lang="form-email">E-Mail</label>
+        <label for="email">E-Mail</label>
         <input type="email" id="email" name="email" required>
       </div>
 
       <div class="form-group">
-        <label for="message" data-lang="form-message">Nachricht</label>
+        <label for="message">Nachricht</label>
         <textarea id="message" name="message" rows="5" required></textarea>
       </div>
 
-      <button type="submit" class="cta" style="width:100%;margin-top:1rem;" data-lang="form-submit">Absenden</button>
+      <button type="submit" class="cta" style="width:100%;margin-top:1rem;">Absenden</button>
       <p id="form-status"></p>
     </form>
 
     <div class="booking-cta-block">
-      <p data-lang="booking-cta-text">📅 Oder buchen Sie direkt einen Termin:</p>
-      <a href="/appointment.html" class="cta cta-dark" data-lang="booking-cta-btn">Termin buchen</a>
+      <p>📅 Oder buchen Sie direkt einen Termin:</p>
+      <a href="/appointment.html" class="cta cta-dark">Termin buchen</a>
     </div>
 
     <div class="contact-info-block">
-      <p><span data-lang="email">E-Mail:</span> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
+      <p><span>E-Mail:</span> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
       <p>
-        <span data-lang="phone">Mobil:</span> 
+        <span>Mobil:</span> 
         <a href="tel:+436781247285">+43 678 1247285</a>
         <a href="https://wa.me/436781247285" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="vertical-align:middle">
@@ -390,8 +395,8 @@
           WhatsApp
         </a>
       </p>
-      <p><span data-lang="linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer">Profil</a></p>
-      <p><strong data-lang="available">📍 Graz, Österreich | Verfügbar für Einsätze in ganz Österreich</strong></p>
+      <p><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer">Profil</a></p>
+      <p><strong>📍 Graz, Österreich | Verfügbar für Einsätze in ganz Österreich</strong></p>
     </div>
 
     <div class="social-share">
@@ -402,346 +407,47 @@
   </section>
 
   <footer>
-    <p>&copy; 2026 Felipe Borecki. <span data-lang="footer-rights">Alle Rechte vorbehalten.</span> | <a href="/agb" data-lang="footer-terms">AGB / Datenschutz</a></p>
+    <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten. | <a href="/agb">AGB / Datenschutz</a></p>
   </footer>
 
   <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Nach oben">↑</button>
 
   <script>
-    let currentLang = 'de';
+    // ===== DETEKCE JAZYKA PROHLÍŽEČE (pouze při první návštěvě) =====
+    (function() {
+      try {
+        // Pokud uživatel už má uloženou volbu jazyka, respektujeme ji
+        const savedLang = localStorage.getItem('preferred-lang');
+        if (savedLang) return;
 
-    const translations = {
-      de: {
-        title: 'Felipe Borecki – Dolmetscher & Übersetzer',
-        desc: 'Felipe Borecki: Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035. 900+ Einsätze. Graz.',
-        ogtitle: 'Felipe Borecki - Dolmetscher & Übersetzer für Gerichte & Behörden',
-        ogdesc: 'Professioneller Dolmetscher und Übersetzer für Gerichte, Behörden und Gesundheitseinrichtungen in Österreich. GISA #32188035. 900+ Einsätze.',
-        name: 'Felipe Borecki',
-        'nav-services': 'Leistungen',
-        'nav-about': 'Über mich',
-        'nav-book': 'Termin buchen',
-        'nav-contact': 'Kontakt',
-        'nav-agb': 'AGB',
-        'hero-title': 'Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte',
-        'hero-desc': 'Professionelle Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich, präzise, vertraulich und verlässlich, vor Ort, remote und telefonisch.',
-        'hero-subline': 'GISA-registriert (Nr. 32188035), im Dolmetscher- und Sachverständigenregister des Innenministeriums gelistet und als Hausdolmetscher für Portugiesisch und Spanisch am Landesgericht für Strafsachen Graz beeidigt. Über 900 Einsätze für Gerichte, Polizei, Kliniken und Sozialdienste. Arbeitssprachen: ES | PT | DE.',
-        cta: 'Kontakt aufnehmen',
-        'cta-secondary': 'Angebot anfordern',
-        'cta-book': '📅 Termin buchen',
-        'cred-title': 'Kurzprofil',
-        'cred1-title': '900+',
-        'cred1-text': 'Einsätze in sensiblen institutionellen Kontexten',
-        'cred2-title': 'GISA',
-        'cred2-text': 'Registrierung Nr. 32188035',
-        'cred3-title': 'Innenministerium',
-        'cred3-text': 'Im Dolmetscher- und Sachverständigenregister des Innenministeriums',
-        'cred4-title': 'ES | PT | DE',
-        'cred4-text': 'Vor Ort, remote und telefonisch',
-        'cred5-title': 'LG Graz',
-        'cred5-text': 'Als Hausdolmetscher für Portugiesisch und Spanisch am Landesgericht für Strafsachen Graz beeidigt',
-        'about-title': 'Über mich',
-        'about-p1': 'Als professioneller Dolmetscher und Übersetzer für Portugiesisch, Spanisch und Deutsch bewege ich mich sicher in Gerichten, Behörden, Kliniken und Sozialdiensten.',
-        'about-p2': 'Mit über 900 erfolgreich abgeschlossenen Einsätzen verfüge ich über fundierte Erfahrung in hochsensiblen Kontexten. Meine Arbeit erfordert nicht nur sprachliche Präzision, sondern auch tiefes Verständnis für fachspezifische Terminologie und die Fähigkeit, in anspruchsvollen Situationen souverän zu agieren.',
-        'about-p3': 'Ich bin in über 43 Länder gereist, was mir ein tiefes Verständnis für kulturelle Nuancen und unterschiedliche Kommunikationstraditionen vermittelt hat.',
-        'link-about': '📖 Mehr über mich →',
-        'link-certifications': '📜 Zertifizierungen →',
-        'link-institutions': '🏛️ Institutionen →',
-        'link-faq': '❓ FAQ →',
-        services: 'Leistungen',
-        'services-intro': 'Ich biete maßgeschneiderte Dolmetschleistungen, die von der sorgfältigen Vorbereitung bis zur professionellen Durchführung reichen und eine präzise Beherrschung der fachspezifischen Terminologie voraussetzen.',
-        'serv1-title': 'Dolmetschen',
-        'serv1-text': 'Simultan-, Konsekutiv-, Gesprächs-, Telefon- und Remote-Dolmetschen für Gerichte, Behörden, Polizei, medizinische Einrichtungen und weitere institutionelle Kontexte.',
-        'serv2-title': 'Fachübersetzungen',
-        'serv2-text': 'Präzise Übersetzungen juristischer, medizinischer, administrativer und technischer Dokumente mit terminologischer Sorgfalt und professioneller Qualitätskontrolle.',
-        'serv3-title': 'Remote-Unterstützung',
-        'serv3-text': 'Professionelle Einsätze über sichere Plattformen für Videodolmetschen, Telefongespräche, internationale Abstimmungen und grenzüberschreitende Kommunikation.',
-        'serv4-title': 'Internationale Begleitung',
-        'serv4-text': 'Sprachliche und kulturelle Begleitung für internationale Gäste, Fachbesucher, Investoren, Delegationen und Projekte zwischen Europa und Lateinamerika.',
-        'services-cta-text': 'Benötigen Sie einen professionellen Dolmetscher? Fordern Sie ein unverbindliches Angebot an.',
-        'services-cta-btn': 'Jetzt Angebot anfordern',
-        contact: 'Kontakt',
-        'contact-intro': 'Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? Ich freue mich auf Ihre Nachricht.',
-        'booking-cta-text': '📅 Oder buchen Sie direkt einen Termin:',
-        'booking-cta-btn': 'Termin buchen',
-        email: 'E-Mail:',
-        phone: 'Mobil:',
-        linkedin: 'LinkedIn:',
-        available: '📍 Graz, Österreich | Verfügbar für Einsätze in ganz Österreich',
-        'form-name': 'Name',
-        'form-email': 'E-Mail',
-        'form-message': 'Nachricht',
-        'form-submit': 'Absenden',
-        'form-success': '✓ Nachricht erfolgreich versendet!',
-        'form-error': '✗ Fehler beim Versenden. Bitte versuchen Sie es später erneut.',
-        'form-sending': 'Sendet...',
-        'footer-rights': 'Alle Rechte vorbehalten.',
-        'footer-terms': 'AGB / Datenschutz'
-      },
-      es: {
-        title: 'Felipe Borecki – Intérprete y Traductor',
-        desc: 'Felipe Borecki: Intérprete y traductor profesional para tribunales, autoridades y salud en Austria. GISA #32188035. 900+ servicios. Graz.',
-        ogtitle: 'Felipe Borecki - Intérprete y Traductor para Tribunales y Autoridades',
-        ogdesc: 'Intérprete y traductor profesional para tribunales, autoridades y salud en Austria. GISA #32188035. 900+ servicios.',
-        name: 'Felipe Borecki',
-        'nav-services': 'Servicios',
-        'nav-about': 'Sobre mí',
-        'nav-book': 'Reservar cita',
-        'nav-contact': 'Contacto',
-        'nav-agb': 'Términos',
-        'hero-title': 'Intérprete y traductor para tribunales, autoridades y contextos sensibles',
-        'hero-desc': 'Servicios lingüísticos precisos, confidenciales y fiables para ámbitos jurídicos, médicos, administrativos y psicosociales en Austria, de forma presencial, remota y telefónica.',
-        'hero-subline': 'Registrado en GISA (n.º 32188035), en el registro de intérpretes y peritos del Ministerio del Interior y jurado como intérprete de portugués y español en el Tribunal Penal de Graz (LG für Strafsachen Graz). Más de 900 servicios para tribunales, policía, clínicas y servicios sociales. Idiomas de trabajo: ES | PT | DE.',
-        cta: 'Solicitar presupuesto',
-        'cta-secondary': 'Ver servicios',
-        'cta-book': '📅 Reservar cita',
-        'cred-title': 'Perfil breve',
-        'cred1-title': '900+',
-        'cred1-text': 'Servicios en contextos institucionales sensibles',
-        'cred2-title': 'GISA',
-        'cred2-text': 'Registro n.º 32188035',
-        'cred3-title': 'Ministerio del Interior',
-        'cred3-text': 'En el registro de intérpretes y peritos del Ministerio del Interior',
-        'cred4-title': 'ES | PT | DE',
-        'cred4-text': 'Presencial, remoto y telefónico',
-        'cred5-title': 'LG Graz',
-        'cred5-text': 'Jurado como intérprete de portugués y español en el Tribunal Penal de Graz',
-        'about-title': 'Sobre mí',
-        'about-p1': 'Como intérprete y traductor profesional de portugués, español y alemán, me muevo con soltura en tribunales, autoridades, clínicas y servicios sociales.',
-        'about-p2': 'Con más de 900 servicios completados exitosamente, cuento con experiencia sólida en contextos de alta sensibilidad. Mi trabajo exige no solo precisión lingüística, sino también un profundo conocimiento de la terminología especializada y la capacidad de actuar con seguridad en situaciones de alta exigencia.',
-        'about-p3': 'He viajado a más de 43 países, lo que me ha proporcionado una comprensión profunda de los matices culturales y las diferentes tradiciones comunicativas.',
-        'link-about': '📖 Más sobre mí →',
-        'link-certifications': '📜 Certificaciones →',
-        'link-institutions': '🏛️ Instituciones →',
-        'link-faq': '❓ FAQ →',
-        services: 'Servicios',
-        'services-intro': 'Ofrezco servicios de interpretación a medida que abarcan desde la preparación rigurosa hasta la ejecución profesional, con dominio preciso de la terminología especializada por sector.',
-        'serv1-title': 'Interpretación',
-        'serv1-text': 'Interpretación simultánea, consecutiva, de acompañamiento, telefónica y remota para tribunales, autoridades, policía, hospitales y otros contextos institucionales.',
-        'serv2-title': 'Traducción especializada',
-        'serv2-text': 'Traducción precisa de documentos jurídicos, médicos, administrativos y técnicos con rigor terminológico y control de calidad profesional.',
-        'serv3-title': 'Soporte remoto',
-        'serv3-text': 'Servicios profesionales a través de plataformas seguras para videointerpretación, llamadas telefónicas, coordinación internacional y comunicación transfronteriza.',
-        'serv4-title': 'Acompañamiento internacional',
-        'serv4-text': 'Acompañamiento lingüístico y cultural para visitantes internacionales, profesionales, inversores, delegaciones y proyectos entre Europa y Latinoamérica.',
-        'services-cta-text': '¿Necesita un intérprete profesional? Solicite un presupuesto sin compromiso.',
-        'services-cta-btn': 'Solicitar presupuesto ahora',
-        contact: 'Contacto',
-        'contact-intro': '¿Tiene preguntas o desea reservar una cita? Estaré encantado de atenderle.',
-        'booking-cta-text': '📅 O reserve una cita directamente:',
-        'booking-cta-btn': 'Reservar cita',
-        email: 'E-mail:',
-        phone: 'Móvil:',
-        linkedin: 'LinkedIn:',
-        available: '📍 Graz, Austria | Disponible para servicios en toda Austria',
-        'form-name': 'Nombre',
-        'form-email': 'Correo electrónico',
-        'form-message': 'Mensaje',
-        'form-submit': 'Enviar',
-        'form-success': '✓ ¡Mensaje enviado con éxito!',
-        'form-error': '✗ Error al enviar. Por favor, inténtelo más tarde.',
-        'form-sending': 'Enviando...',
-        'footer-rights': 'Todos los derechos reservados.',
-        'footer-terms': 'Términos y Privacidad'
-      },
-      pt: {
-        title: 'Felipe Borecki – Intérprete e Tradutor',
-        desc: 'Felipe Borecki: Intérprete e tradutor profissional para tribunais, autoridades e saúde na Áustria. GISA #32188035. 900+ serviços. Graz.',
-        ogtitle: 'Felipe Borecki - Intérprete e Tradutor para Tribunais e Autoridades',
-        ogdesc: 'Intérprete e tradutor profissional para tribunais, autoridades e saúde na Áustria. GISA #32188035. 900+ serviços.',
-        name: 'Felipe Borecki',
-        'nav-services': 'Serviços',
-        'nav-about': 'Sobre mim',
-        'nav-book': 'Agendar reunião',
-        'nav-contact': 'Contato',
-        'nav-agb': 'Termos',
-        'hero-title': 'Intérprete e tradutor para tribunais, autoridades e contextos sensíveis',
-        'hero-desc': 'Serviços linguísticos precisos, confidenciais e fiáveis para contextos jurídicos, médicos, administrativos e psicossociais na Áustria, de forma presencial, remota e telefónica.',
-        'hero-subline': 'Registado na GISA (n.º 32188035), no registo de intérpretes e peritos do Ministério do Interior e ajuramentado como intérprete de português e espanhol no Tribunal Criminal de Graz (LG für Strafsachen Graz). Mais de 900 serviços para tribunais, polícia, clínicas e serviços sociais. Línguas de trabalho: ES | PT | DE.',
-        cta: 'Solicitar orçamento',
-        'cta-secondary': 'Ver serviços',
-        'cta-book': '📅 Agendar reunião',
-        'cred-title': 'Perfil breve',
-        'cred1-title': '900+',
-        'cred1-text': 'Serviços em contextos institucionais sensíveis',
-        'cred2-title': 'GISA',
-        'cred2-text': 'Registo n.º 32188035',
-        'cred3-title': 'Ministério do Interior',
-        'cred3-text': 'No registo de intérpretes e peritos do Ministério do Interior',
-        'cred4-title': 'ES | PT | DE',
-        'cred4-text': 'Presencial, remoto e telefónico',
-        'cred5-title': 'LG Graz',
-        'cred5-text': 'Ajuramentado como intérprete de português e espanhol no Tribunal Criminal de Graz',
-        'about-title': 'Sobre mim',
-        'about-p1': 'Como intérprete e tradutor profissional de português, espanhol e alemão, movo-me com segurança em tribunais, autoridades, clínicas e serviços sociais.',
-        'about-p2': 'Com mais de 900 serviços concluídos com sucesso, possuo experiência sólida em contextos de alta sensibilidade. O meu trabalho exige não apenas precisão linguística, mas também um profundo conhecimento da terminologia especializada e a capacidade de atuar com segurança em situações de alta exigência.',
-        'about-p3': 'Viajei para mais de 43 países, o que me proporcionou uma compreensão profunda das nuances culturais e das diferentes tradições comunicativas.',
-        'link-about': '📖 Mais sobre mim →',
-        'link-certifications': '📜 Certificações →',
-        'link-institutions': '🏛️ Instituições →',
-        'link-faq': '❓ FAQ →',
-        services: 'Serviços',
-        'services-intro': 'Ofereço serviços de interpretação à medida que abrangem desde a preparação rigorosa até à execução profissional, com domínio preciso da terminologia especializada por setor.',
-        'serv1-title': 'Interpretação',
-        'serv1-text': 'Interpretação simultânea, consecutiva, de ligação, telefónica e remota para tribunais, autoridades, polícia, hospitais e outros contextos institucionais.',
-        'serv2-title': 'Tradução especializada',
-        'serv2-text': 'Tradução precisa de documentos jurídicos, médicos, administrativos e técnicos com rigor terminológico e controlo de qualidade profissional.',
-        'serv3-title': 'Suporte remoto',
-        'serv3-text': 'Serviços profissionais através de plataformas seguras para videointerpretação, chamadas telefónicas, coordenação internacional e comunicação transfronteiriça.',
-        'serv4-title': 'Acompanhamento internacional',
-        'serv4-text': 'Acompanhamento linguístico e cultural para visitantes internacionais, profissionais, investidores, delegações e projetos entre a Europa e a América Latina.',
-        'services-cta-text': 'Precisa de um intérprete profissional? Solicite um orçamento sem compromisso.',
-        'services-cta-btn': 'Solicitar orçamento agora',
-        contact: 'Contato',
-        'contact-intro': 'Tem perguntas ou deseja agendar uma reunião? Estarei feliz em atender.',
-        'booking-cta-text': '📅 Ou agende uma reunião diretamente:',
-        'booking-cta-btn': 'Agendar reunião',
-        email: 'E-mail:',
-        phone: 'Telemóvel:',
-        linkedin: 'LinkedIn:',
-        available: '📍 Graz, Áustria | Disponível para serviços em toda a Áustria',
-        'form-name': 'Nome',
-        'form-email': 'E-mail',
-        'form-message': 'Mensagem',
-        'form-submit': 'Enviar',
-        'form-success': '✓ Mensagem enviada com sucesso!',
-        'form-error': '✗ Erro ao enviar. Tente novamente mais tarde.',
-        'form-sending': 'Enviando...',
-        'footer-rights': 'Todos os direitos reservados.',
-        'footer-terms': 'Termos e Privacidade'
-      },
-      en: {
-        title: 'Felipe Borecki – Interpreter & Translator',
-        desc: 'Felipe Borecki: Professional interpreter and translator for courts, authorities and healthcare in Austria. GISA #32188035. 900+ assignments. Graz.',
-        ogtitle: 'Felipe Borecki - Interpreter & Translator for Courts & Authorities',
-        ogdesc: 'Professional interpreter and translator for courts, authorities and healthcare in Austria. GISA #32188035. 900+ assignments.',
-        name: 'Felipe Borecki',
-        'nav-services': 'Services',
-        'nav-about': 'About me',
-        'nav-book': 'Book appointment',
-        'nav-contact': 'Contact',
-        'nav-agb': 'Terms',
-        'hero-title': 'Interpreter and translator for courts, authorities and sensitive professional contexts',
-        'hero-desc': 'Precise, confidential and reliable language support for legal, medical, administrative and psychosocial settings in Austria, provided on-site, remotely and over the phone.',
-        'hero-subline': 'GISA-registered (No. 32188035), listed in the Interpreter and Expert Register of the Austrian Ministry of the Interior, and sworn as court interpreter for Portuguese and Spanish at the Criminal Court of Graz (LG für Strafsachen Graz). Over 900 assignments for courts, police, clinics and social services. Working languages: ES | PT | DE.',
-        cta: 'Request a quote',
-        'cta-secondary': 'View services',
-        'cta-book': '📅 Book appointment',
-        'cred-title': 'Profile at a glance',
-        'cred1-title': '900+',
-        'cred1-text': 'Assignments in sensitive institutional settings',
-        'cred2-title': 'GISA',
-        'cred2-text': 'Registration No. 32188035',
-        'cred3-title': 'Ministry of the Interior',
-        'cred3-text': 'Listed in the Interpreter & Expert Register of the Ministry of the Interior',
-        'cred4-title': 'ES | PT | DE',
-        'cred4-text': 'On-site, remote and by phone',
-        'cred5-title': 'LG Graz',
-        'cred5-text': 'Sworn court interpreter for Portuguese and Spanish at the Criminal Court of Graz',
-        'about-title': 'About me',
-        'about-p1': 'As a professional interpreter and translator in Portuguese, Spanish and German, I navigate confidently through courts, authorities, clinics, and social services.',
-        'about-p2': 'With over 900 successfully completed assignments, I have solid experience in highly sensitive contexts. My work demands not only linguistic precision but also deep knowledge of industry-specific terminology and the ability to perform confidently in high-stakes situations.',
-        'about-p3': 'I have traveled to over 43 countries, giving me a deep understanding of cultural nuances and diverse communication traditions.',
-        'link-about': '📖 More about me →',
-        'link-certifications': '📜 Certifications →',
-        'link-institutions': '🏛️ Institutions →',
-        'link-faq': '❓ FAQ →',
-        services: 'Services',
-        'services-intro': 'I offer tailored interpreting services that encompass rigorous preparation through to professional execution, with precise command of industry-specific terminology.',
-        'serv1-title': 'Interpreting',
-        'serv1-text': 'Simultaneous, consecutive, liaison, telephone and remote interpreting for courts, authorities, police, hospitals and other institutional settings.',
-        'serv2-title': 'Specialized translation',
-        'serv2-text': 'Precise translation of legal, medical, administrative and technical documents with terminological rigor and professional quality control.',
-        'serv3-title': 'Remote support',
-        'serv3-text': 'Professional services via secure platforms for video interpreting, phone calls, international coordination and cross-border communication.',
-        'serv4-title': 'International support',
-        'serv4-text': 'Linguistic and cultural support for international visitors, professional visitors, investors, delegations and projects between Europe and Latin America.',
-        'services-cta-text': 'Need a professional interpreter? Request a no-obligation quote.',
-        'services-cta-btn': 'Request quote now',
-        contact: 'Contact',
-        'contact-intro': 'Have questions or want to book an appointment? I look forward to hearing from you.',
-        'booking-cta-text': '📅 Or book an appointment directly:',
-        'booking-cta-btn': 'Book appointment',
-        email: 'Email:',
-        phone: 'Mobile:',
-        linkedin: 'LinkedIn:',
-        available: '📍 Graz, Austria | Available for assignments throughout Austria',
-        'form-name': 'Name',
-        'form-email': 'Email',
-        'form-message': 'Message',
-        'form-submit': 'Send',
-        'form-success': '✓ Message sent successfully!',
-        'form-error': '✗ Error sending message. Please try again later.',
-        'form-sending': 'Sending...',
-        'footer-rights': 'All rights reserved.',
-        'footer-terms': 'Terms & Privacy'
-      }
-    };
+        // Získáme jazyk prohlížeče
+        const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
 
-    function safeGetStoredLang() {
-      try { return localStorage.getItem('lang') || 'de'; }
-      catch (e) { return currentLang || 'de'; }
-    }
-
-    function safeSetStoredLang(lang) {
-      try { localStorage.setItem('lang', lang); }
-      catch (e) {}
-    }
-
-    function updateMeta(t) {
-      document.title = t.title;
-      const metaDesc = document.querySelector('meta[name="description"]');
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      const ogDesc = document.querySelector('meta[property="og:description"]');
-      if (metaDesc) metaDesc.setAttribute('content', t.desc);
-      if (ogTitle) ogTitle.setAttribute('content', t.ogtitle || t.title);
-      if (ogDesc) ogDesc.setAttribute('content', t.ogdesc || t.desc);
-    }
-
-    function setLang(evt, lang) {
-      const t = translations[lang] || translations.de;
-      currentLang = lang;
-      document.documentElement.lang = lang;
-      safeSetStoredLang(lang);
-      updateMeta(t);
-
-      if (window.history && window.history.replaceState) {
-        window.history.replaceState(null, '', '#' + lang);
-      }
-
-      const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.setAttribute('content', 'https://felipeborecki.com/#' + lang);
-
-      document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
-      if (evt && evt.target) {
-        evt.target.classList.add('active');
-      } else {
-        const btn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
-        if (btn) btn.classList.add('active');
-      }
-
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        const key = el.dataset.lang;
-        if (t[key] !== undefined) {
-          el.textContent = t[key];
+        // Mapování jazyka prohlížeče na naše URL
+        let redirectTo = null;
+        if (browserLang.startsWith('pt')) {
+          redirectTo = '/pt/';
+        } else if (browserLang.startsWith('es')) {
+          redirectTo = '/es/';
+        } else if (browserLang.startsWith('en')) {
+          redirectTo = '/en/';
         }
-      });
+        // Pro 'de' nebo jakýkoli jiný jazyk → zůstáváme na '/'
 
-      document.querySelectorAll('.header-nav a[data-lang]').forEach(el => {
-        const key = el.dataset.lang;
-        if (t[key] !== undefined) el.textContent = t[key];
-      });
-
-      if (typeof gtag === 'function') {
-        gtag('event', 'language_switch', {
-          'event_category': 'engagement',
-          'event_label': lang
-        });
+        if (redirectTo) {
+          // Uložíme volbu, aby se přesměrování neopakovalo
+          localStorage.setItem('preferred-lang', redirectTo.replace(/\//g, ''));
+          window.location.replace(redirectTo);
+        }
+      } catch (e) {
+        // Pokud localStorage není dostupný, prostě ignorujeme
       }
-    }
+    })();
 
+    // ===== NAV ATIVO =====
     function updateActiveNav() {
       const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.header-nav a:not([href*="appointment"])');
+      const navLinks = document.querySelectorAll('.header-nav a:not([href*="appointment"]):not([href*="agb"])');
       let current = '';
       
       sections.forEach(section => {
@@ -770,6 +476,7 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
+      // CTA tracking
       document.querySelectorAll('.cta, .whatsapp-link').forEach(el => {
         el.addEventListener('click', function(e) {
           const label = this.textContent.trim().substring(0, 50);
@@ -783,17 +490,23 @@
         });
       });
 
-      const hash = window.location.hash.replace('#', '');
-      const savedLang = safeGetStoredLang();
-      const detectedLang = translations[hash] ? hash : savedLang;
-      
-      const btn = document.querySelector(`.flags button[onclick*="'${detectedLang}'"]`) || document.querySelector('.flags button');
-      if (btn) {
-        setLang({ target: btn }, detectedLang);
-      }
+      // Tracking pro přepínač jazyků
+      document.querySelectorAll('.flags a').forEach(el => {
+        el.addEventListener('click', function() {
+          const lang = this.getAttribute('href').replace(/\//g, '') || 'de';
+          try { localStorage.setItem('preferred-lang', lang); } catch(e) {}
+          if (typeof gtag === 'function') {
+            gtag('event', 'language_switch', {
+              'event_category': 'engagement',
+              'event_label': lang
+            });
+          }
+        });
+      });
 
       setTimeout(updateActiveNav, 100);
 
+      // Form submit
       const form = document.getElementById('contact-form');
       if (form) {
         form.addEventListener('submit', async function(e) {
@@ -801,17 +514,15 @@
 
           const statusDiv = document.getElementById('form-status');
           const btnSubmit = form.querySelector('button[type="submit"]');
-          const lang = safeGetStoredLang();
-          const t = translations[lang] || translations.de;
           const originalBtnText = btnSubmit ? btnSubmit.textContent : '';
 
           if (btnSubmit) {
             btnSubmit.disabled = true;
-            btnSubmit.textContent = t['form-sending'];
+            btnSubmit.textContent = 'Sendet...';
           }
 
           if (statusDiv) {
-            statusDiv.textContent = t['form-sending'];
+            statusDiv.textContent = 'Sendet...';
             statusDiv.style.color = '#0e1528';
             statusDiv.style.display = 'block';
           }
@@ -824,18 +535,11 @@
             });
 
             if (!response.ok) {
-              let errorMessage = t['form-error'];
-              try {
-                const data = await response.json();
-                if (data && Array.isArray(data.errors) && data.errors.length) {
-                  errorMessage = data.errors.map(err => err.message).join(', ');
-                }
-              } catch (jsonError) {}
-              throw new Error(errorMessage);
+              throw new Error('Fehler beim Versenden. Bitte versuchen Sie es später erneut.');
             }
 
             if (statusDiv) {
-              statusDiv.textContent = t['form-success'];
+              statusDiv.textContent = '✓ Nachricht erfolgreich versendet!';
               statusDiv.style.color = '#28a745';
             }
             form.reset();
@@ -848,16 +552,8 @@
             }
           } catch (error) {
             if (statusDiv) {
-              statusDiv.textContent = error.message || t['form-error'];
+              statusDiv.textContent = error.message || 'Fehler beim Versenden.';
               statusDiv.style.color = '#dc3545';
-            }
-            console.error('Form submit error:', error);
-            
-            if (typeof gtag === 'function') {
-              gtag('event', 'form_submit', {
-                'event_category': 'contact',
-                'event_label': 'error'
-              });
             }
           } finally {
             if (btnSubmit) {
