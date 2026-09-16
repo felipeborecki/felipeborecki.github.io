@@ -12,12 +12,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificações e Qualificações - Felipe Borecki | Intérprete em Graz</title>
-  <meta name="description" content="Certificações de Felipe Borecki: GISA n.º 32188035, Registo do Ministério do Interior, Intérprete ajuramentado no Tribunal Criminal de Graz.">
+  <meta name="description" content="Certificações de Felipe Borecki: GISA n.º 32188035, Registo do Ministério do Interior, Intérprete ajuramentado no Tribunal Criminal de Graz para português, espanhol e alemão.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://felipeborecki.com/pt/certifications.html">
 
   <meta property="og:title" content="Certificações e Qualificações - Felipe Borecki">
-  <meta property="og:description" content="GISA n.º 32188035, Registo do Ministério do Interior, Intérprete ajuramentado no Tribunal Criminal de Graz.">
+  <meta property="og:description" content="GISA n.º 32188035, Registo do Ministério do Interior, Intérprete ajuramentado no Tribunal Criminal de Graz para português, espanhol e alemão.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://felipeborecki.com/pt/certifications.html">
   <meta property="og:image" content="https://felipeborecki.com/images/perfilborecki.png">
@@ -62,7 +62,7 @@
         },
         {
           "@type": "EducationalOccupationalCredential",
-          "name": "Intérprete ajuramentado no Tribunal Criminal de Graz (português e espanhol)",
+          "name": "Intérprete ajuramentado no Tribunal Criminal de Graz (português, espanhol e alemão)",
           "credentialCategory": "Ajuramentação judicial"
         }
       ],
@@ -168,7 +168,7 @@
     <div class="grid-2">
       <div class="card">
         <h3>Intérprete do Tribunal Criminal de Graz</h3>
-        <p>Ajuramentado como intérprete de português e espanhol no Tribunal Criminal de Graz e inscrito na lista oficial de intérpretes desse tribunal.</p>
+        <p>Ajuramentado como intérprete de português, espanhol e alemão no Tribunal Criminal de Graz e inscrito na lista oficial de intérpretes desse tribunal.</p>
       </div>
       <div class="card">
         <h3>Registo GISA</h3>
@@ -203,10 +203,7 @@
         const lang = this.getAttribute('href').replace(/\//g, '') || 'de';
         try { localStorage.setItem('preferred-lang', lang); } catch(e) {}
         if (typeof gtag === 'function') {
-          gtag('event', 'language_switch', {
-            'event_category': 'engagement',
-            'event_label': lang
-          });
+          gtag('event', 'language_switch', { 'event_category': 'engagement', 'event_label': lang });
         }
       });
     });
