@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8FPVG53SY');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Borecki - Interpreter & Translator for Courts and Authorities in Austria</title>
+  
+  <meta name="description" content="Felipe Borecki: Professional interpreter and translator for courts, authorities and healthcare institutions in Austria. GISA #32188035. 900+ assignments. Graz.">
+  <meta name="author" content="Felipe Borecki">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://felipeborecki.com/en/">
+  <meta name="geo.region" content="AT-6">
+  <meta name="geo.placename" content="Graz">
+  
+  <meta property="og:title" content="Felipe Borecki - Interpreter & Translator for Courts and Authorities">
+  <meta property="og:description" content="Professional interpreter and translator for courts, authorities and healthcare institutions in Austria. GISA #32188035. 900+ assignments.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felipeborecki.com/en/">
+  <meta property="og:image" content="https://felipeborecki.com/images/header2.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="alternate" hreflang="de" href="https://felipeborecki.com/">
+  <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/pt/">
+  <link rel="alternate" hreflang="es" href="https://felipeborecki.com/es/">
+  <link rel="alternate" hreflang="en" href="https://felipeborecki.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://formspree.io">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Felipe Borecki",
+      "description": "Professional interpreter and translator for courts, authorities and healthcare institutions in Austria. GISA #32188035.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Graz",
+        "addressCountry": "AT"
+      },
+      "telephone": "+43-678-1247285",
+      "email": "info@felipeborecki.com",
+      "url": "https://felipeborecki.com/en/",
+      "priceRange": "$$",
+      "areaServed": "AT",
+      "availableLanguage": ["EN", "PT", "ES", "DE"]
+    }
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Roboto',sans-serif;line-height:1.7;color:#333;background:#f8f9fa;font-size:16px}
+    
+    header{background:#0e1528;color:#fff;padding:0.8rem 1.5rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.12);border-bottom:1px solid rgba(255,255,255,0.08)}
+    .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;padding:0 1rem;width:100%;flex-wrap:wrap;gap:0.5rem}
+    .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+    .header-left h1{font-size:1.6rem;margin:0;white-space:nowrap}
+    .header-nav{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+    .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.85rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
+    .header-nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#fff;transition:width .3s ease}
+    .header-nav a:hover{color:#fff}
+    .header-nav a:hover::after{width:100%}
+    .header-nav a.active{color:#fff}
+    .header-nav a.active::after{width:100%}
+    .header-right{display:flex;align-items:center;gap:0.8rem}
+    .flags{display:flex;gap:.3rem}
+    .flags a{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center;text-decoration:none}
+    .flags a:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags a.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
+
+    .hero{margin-top:72px;background:#0e1528}
+    .hero-banner{width:100%;height:400px;background:url('/images/header2.jpg') center/contain no-repeat;background-color:#0e1528;display:block}
+    .hero-content{max-width:1400px;margin:0 auto;padding:60px 4rem 80px;text-align:center;color:#fff}
+    .hero h2{font-size:3.2rem;margin-bottom:1.5rem;line-height:1.2;max-width:100%}
+    .hero p{font-size:1.2rem;margin:0 auto 1.5rem;max-width:90ch;line-height:1.7}
+    .hero-subline{font-size:1.05rem;opacity:.9;max-width:90ch;margin:0 auto 2.5rem;line-height:1.6}
+    .cta-wrap{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+    .cta{background:#fff;color:#0e1528;padding:1rem 2.5rem;border-radius:5px;font-weight:700;display:inline-block;transition:background .25s ease,transform .25s ease;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+    .cta:hover{background:#f0f2f8;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .cta-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+    .cta-secondary:hover{background:rgba(255,255,255,.1);border-color:#fff}
+    .cta-outline{background:transparent;color:#fff;border:2px solid #fff}
+    .cta-outline:hover{background:rgba(255,255,255,.1);border-color:#fff;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .cta-dark{background:#0e1528;color:#fff;border:2px solid #0e1528}
+    .cta-dark:hover{background:#1a2a4a;border-color:#1a2a4a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+
+    .section{padding:70px 2rem;max-width:1200px;margin:0 auto}
+    .section h2{text-align:center;font-size:2.2rem;margin-bottom:2rem;color:#0e1528;position:relative}
+    .section h2::after{content:'';display:block;width:60px;height:3px;background:rgba(14,21,40,0.3);margin:12px auto 0;border-radius:2px}
+    .section-intro{max-width:760px;margin:0 auto 2rem;text-align:center;font-size:1.05rem}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;max-width:1000px;margin:0 auto}
+    .card{background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .25s ease}
+    .card:hover{transform:translateY(-4px)}
+    .card h3{color:#0e1528;margin-bottom:.75rem;font-size:1.2rem}
+    .card p{margin:0;font-size:0.95rem;line-height:1.6}
+
+    .credential-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem;max-width:1100px;margin:0 auto}
+    .credential{background:#fff;padding:1.25rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-align:center}
+    .credential strong{display:block;color:#0e1528;font-size:1.15rem;margin-bottom:.35rem}
+    .credential span{font-size:0.9rem;line-height:1.5}
+
+    .profil-container{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
+    .profil-photo-container{position:relative;width:300px;height:360px;border-radius:8px;overflow:hidden;flex-shrink:0;border:5px solid #fff;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .profil-photo-single{width:100%;height:100%;object-fit:cover}
+    .profil-text{flex:1;min-width:300px;max-width:760px}
+    .profil-text p{margin-bottom:1rem;font-size:1rem;line-height:1.7}
+    .profil-text p strong{color:#0e1528}
+
+    .form-container{max-width:600px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+    .form-group{margin-bottom:1.5rem;text-align:left}
+    .form-group label{display:block;margin-bottom:.5rem;font-weight:500;font-size:1rem}
+    .form-group input,.form-group textarea{width:100%;padding:.75rem;border:1px solid #ddd;border-radius:5px;font-size:1rem;font-family:inherit}
+    .form-group input:focus,.form-group textarea:focus{outline:none;border-color:#0e1528;box-shadow:0 0 0 3px rgba(14,21,40,.12)}
+    .form-group textarea{resize:vertical}
+    #form-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
+
+    .whatsapp-link{display:inline-flex;align-items:center;gap:6px;margin-left:12px;background:#25D366;color:white;padding:6px 12px;border-radius:50px;text-decoration:none;font-size:0.85rem;font-weight:500;transition:background .2s ease,transform .2s ease}
+    .whatsapp-link:hover{background:#1da851;color:white;transform:translateY(-2px)}
+    .contact-info-block{text-align:center;margin-top:3rem}
+    .contact-info-block p{margin:0.5rem 0;font-size:1rem}
+    .contact-info-block a{font-size:1rem}
+
+    .booking-cta-block{text-align:center;margin:2rem auto 0;padding:1.5rem;background:#f0f4f8;border-radius:8px;max-width:700px}
+    .booking-cta-block p{margin-bottom:0.8rem;font-weight:500;color:#0e1528;font-size:1rem}
+
+    .social-share{display:flex;justify-content:center;gap:0.8rem;margin-top:1.5rem;flex-wrap:wrap}
+    .social-share a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#0e1528;color:#fff;text-decoration:none;font-size:1.2rem;transition:all .25s ease}
+    .social-share a:hover{background:#1a2a4a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .social-share a.linkedin{background:#0077b5}
+    .social-share a.linkedin:hover{background:#006399}
+    .social-share a.whatsapp{background:#25D366}
+    .social-share a.whatsapp:hover{background:#1da851}
+    .social-share a.email{background:#666}
+    .social-share a.email:hover{background:#555}
+
+    .page-links{display:grid;grid-template-columns:repeat(4,1fr);gap:0.8rem;max-width:900px;margin:2rem auto 0}
+    .page-link{background:#fff;padding:0.8rem 1.2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);text-decoration:none;color:#0e1528;font-weight:500;font-size:0.9rem;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .25s ease;border:1px solid #e0e0e0}
+    .page-link:hover{background:#0e1528;color:#fff;transform:translateY(-3px);box-shadow:0 4px 16px rgba(0,0,0,.12);border-color:#0e1528}
+    .page-link .arrow{transition:transform .25s ease}
+    .page-link:hover .arrow{transform:translateX(4px)}
+
+    #back-to-top{position:fixed;bottom:2rem;right:2rem;background:#0e1528;color:#fff;border:none;border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);display:none;transition:all .25s ease;z-index:999}
+    #back-to-top:hover{background:#1a2a4a;transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+
+    footer{background:#0e1528;color:#fff;text-align:center;padding:2rem;font-size:0.95rem}
+    footer a{color:#fff;text-decoration:underline}
+    footer a:hover{color:#ddd}
+    a{color:#0e1528;font-weight:500}
+    a:hover{color:#142135;text-decoration:none}
+
+    @media (max-width:1024px){
+      .header-content{padding:0 0.5rem;gap:0.3rem}
+      .header-left{gap:1rem}
+      .header-left h1{font-size:1.3rem}
+      .header-nav{gap:0.8rem}
+      .header-nav a{font-size:0.8rem}
+      .hero-content{padding:40px 2rem 60px}
+      .hero h2{font-size:2.8rem}
+      .profil-photo-container{width:240px;height:290px}
+      .page-links{grid-template-columns:repeat(4,1fr)}
+      .credential-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+    }
+
+    @media (max-width:900px){
+      .grid-2{grid-template-columns:1fr}
+      .credential-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .page-links{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width:768px){
+      header{padding:0.5rem 0.8rem}
+      .header-content{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0.3rem;padding:0 0.3rem}
+      .header-left{width:100%;justify-content:center;flex-wrap:wrap;gap:0.4rem}
+      .header-left h1{font-size:1.1rem;white-space:nowrap}
+      .header-nav{gap:0.4rem;justify-content:center;width:100%}
+      .header-nav a{font-size:0.65rem;padding-bottom:1px;white-space:nowrap}
+      .header-right{width:100%;justify-content:center;gap:0.3rem}
+      .flags a{width:26px;height:26px;font-size:0.85rem}
+      
+      .hero-banner{height:180px}
+      .hero-content{padding:25px 1.2rem 40px}
+      .hero h2{font-size:1.6rem}
+      .hero p{font-size:0.9rem}
+      .hero-subline{font-size:0.8rem}
+      .cta{font-size:0.85rem;padding:0.8rem 1.5rem}
+      
+      .profil-container{flex-direction:column;text-align:center}
+      .profil-photo-container{width:200px;height:240px}
+      .section h2{font-size:1.6rem}
+      .section{padding:40px 1.2rem}
+      .card{padding:1.2rem}
+      .card p{font-size:0.9rem}
+      .credential{padding:1rem}
+      .credential strong{font-size:1rem}
+      .credential span{font-size:0.8rem}
+      .profil-text p{font-size:0.95rem}
+      
+      .page-links{grid-template-columns:1fr 1fr;gap:0.5rem}
+      .page-link{font-size:0.8rem;padding:0.6rem 1rem}
+      
+      .whatsapp-link{margin-left:0;margin-top:6px;display:inline-flex;font-size:0.75rem;padding:4px 10px}
+      .contact-info-block p{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3rem;font-size:0.9rem}
+      .contact-info-block a{font-size:0.9rem}
+      
+      #back-to-top{width:40px;height:40px;font-size:1.1rem;bottom:1rem;right:1rem}
+      .form-container{padding:1.5rem}
+      .booking-cta-block{padding:1rem;margin:1rem auto 0}
+      .booking-cta-block .cta{font-size:0.95rem;padding:0.7rem 1.8rem}
+      .social-share a{width:36px;height:36px;font-size:1rem}
+    }
+
+    @media (max-width:400px){
+      .header-left h1{font-size:0.95rem}
+      .header-nav a{font-size:0.55rem}
+      .header-nav{gap:0.25rem}
+      .flags a{width:22px;height:22px;font-size:0.7rem}
+      .hero h2{font-size:1.3rem}
+      .profil-photo-container{width:160px;height:195px}
+      .page-links{grid-template-columns:1fr}
+      .credential-list{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1>Felipe Borecki</h1>
+        <nav class="header-nav">
+          <a href="#services">Services</a>
+          <a href="#about">About me</a>
+          <a href="/en/appointment.html">Book appointment</a>
+          <a href="#contact">Contact</a>
+          <a href="/en/agb">Terms</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="flags">
+          <a href="/" title="Deutsch" aria-label="Deutsch">🇩🇪</a>
+          <a href="/pt/" title="Português (BR)" aria-label="Português">🇧🇷</a>
+          <a href="/es/" title="Español" aria-label="Español">🇪🇸</a>
+          <a href="/en/" class="active" title="English" aria-label="English">🇬🇧</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-banner" role="img" aria-label="Felipe Borecki - Interpreter and Translator"></div>
+    <div class="hero-content">
+      <h2>Interpreter and translator for courts, authorities and sensitive professional contexts</h2>
+      <p>Precise, confidential and reliable language support for legal, medical, administrative and psychosocial settings in Austria — on-site, remotely and over the phone.</p>
+      <p class="hero-subline">GISA-registered (No. 32188035), listed in the Interpreter and Expert Register of the Austrian Ministry of the Interior, and sworn as court interpreter for Portuguese and Spanish at the Criminal Court of Graz (LG für Strafsachen Graz). Over 900 assignments for courts, police, clinics and social services. Working languages: ES | PT | DE.</p>
+      <div class="cta-wrap">
+        <a href="#contact" class="cta">Request a quote</a>
+        <a href="#services" class="cta cta-secondary">View services</a>
+        <a href="/en/appointment.html" class="cta cta-outline">📅 Book appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="credentials" class="section">
+    <h2>Profile at a glance</h2>
+    <div class="credential-list">
+      <div class="credential">
+        <strong>900+</strong>
+        <span>Assignments in sensitive institutional settings</span>
+      </div>
+      <div class="credential">
+        <strong>GISA</strong>
+        <span>Registration No. 32188035</span>
+      </div>
+      <div class="credential">
+        <strong>Ministry of the Interior</strong>
+        <span>Listed in the Interpreter &amp; Expert Register of the Ministry of the Interior</span>
+      </div>
+      <div class="credential">
+        <strong>LG Graz</strong>
+        <span>Sworn court interpreter for Portuguese and Spanish at the Criminal Court of Graz</span>
+      </div>
+      <div class="credential">
+        <strong>ES | PT | DE</strong>
+        <span>On-site, remote and by phone</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About me</h2>
+    <div class="profil-container">
+      <div class="profil-photo-container">
+        <img src="/images/perfilborecki.png" alt="Felipe Borecki" class="profil-photo-single" loading="lazy">
+      </div>
+      <div class="profil-text">
+        <p>As a professional interpreter and translator in Portuguese, Spanish and German, I navigate confidently through courts, authorities, clinics, and social services.</p>
+        <p>With over 900 successfully completed assignments, I have solid experience in highly sensitive contexts. My work demands not only linguistic precision but also deep knowledge of industry-specific terminology and the ability to perform confidently in high-stakes situations.</p>
+        <p>I have traveled to over 43 countries, giving me a deep understanding of cultural nuances and diverse communication traditions.</p>
+      </div>
+    </div>
+
+    <div class="page-links">
+      <a href="/en/about.html" class="page-link">📖 More about me <span class="arrow">→</span></a>
+      <a href="/en/certifications.html" class="page-link">📜 Certifications <span class="arrow">→</span></a>
+      <a href="/en/institutions.html" class="page-link">🏛️ Institutions <span class="arrow">→</span></a>
+      <a href="/en/faq.html" class="page-link">❓ FAQ <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <p class="section-intro">I offer tailored interpreting services that encompass rigorous preparation through to professional execution, with precise command of industry-specific terminology.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Interpreting</h3>
+        <p>Simultaneous, consecutive, liaison, telephone and remote interpreting for courts, authorities, police, hospitals and other institutional settings.</p>
+      </div>
+      <div class="card">
+        <h3>Specialized translation</h3>
+        <p>Precise translation of legal, medical, administrative and technical documents with terminological rigor and professional quality control.</p>
+      </div>
+      <div class="card">
+        <h3>Remote support</h3>
+        <p>Professional services via secure platforms for video interpreting, phone calls, international coordination and cross-border communication.</p>
+      </div>
+      <div class="card">
+        <h3>International support</h3>
+        <p>Linguistic and cultural support for international visitors, professional visitors, investors, delegations and projects between Europe and Latin America.</p>
+      </div>
+    </div>
+    <div class="booking-cta-block" style="margin-top:2rem">
+      <p>Need a professional interpreter? Request a no-obligation quote.</p>
+      <a href="#contact" class="cta cta-dark">Request quote now</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p class="section-intro">Have questions or want to book an appointment? I look forward to hearing from you.</p>
+
+    <form id="contact-form" class="form-container" action="https://formspree.io/f/mbdokzdj" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="cta" style="width:100%;margin-top:1rem;">Send</button>
+      <p id="form-status"></p>
+    </form>
+
+    <div class="booking-cta-block">
+      <p>📅 Or book an appointment directly:</p>
+      <a href="/en/appointment.html" class="cta cta-dark">Book appointment</a>
+    </div>
+
+    <div class="contact-info-block">
+      <p><span>Email:</span> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
+      <p>
+        <span>Mobile:</span> 
+        <a href="tel:+436781247285">+43 678 1247285</a>
+        <a href="https://wa.me/436781247285" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="vertical-align:middle">
+            <path d="M12.032 2.017c-5.523 0-10 4.477-10 10 0 1.821.486 3.604 1.41 5.165l-1.5 5.5 5.656-1.479c1.497.856 3.206 1.314 4.937 1.314 5.522 0 10-4.477 10-10s-4.478-10-10-10zm0 18c-1.631 0-3.238-.444-4.648-1.285l-.334-.198-3.357.878.898-3.276-.218-.347c-.901-1.426-1.377-3.067-1.377-4.772 0-4.688 3.814-8.5 8.5-8.5s8.5 3.812 8.5 8.5-3.814 8.5-8.5 8.5z"/>
+            <path d="M16.688 14.254c-.248-.124-1.465-.723-1.692-.805-.227-.082-.392-.124-.557.124-.165.248-.637.805-.781.97-.144.165-.289.186-.537.062s-1.048-.386-1.996-1.231c-.738-.657-1.236-1.468-1.38-1.716-.144-.248-.015-.382.109-.505.111-.111.248-.289.372-.433.124-.144.165-.248.248-.413.083-.165.041-.31-.021-.434s-.557-1.341-.763-1.836c-.201-.483-.406-.418-.557-.426-.144-.008-.31-.01-.476-.01-.165 0-.434.062-.66.31-.227.248-.866.846-.866 2.064s.887 2.394 1.011 2.56c.124.165 1.746 2.666 4.23 3.739.591.255 1.052.408 1.412.522.593.189 1.134.162 1.562.098.477-.071 1.465-.598 1.671-1.176.206-.578.206-1.073.144-1.176-.062-.103-.227-.165-.475-.289z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </p>
+      <p><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer">Profile</a></p>
+      <p><strong>📍 Graz, Austria | Available for assignments throughout Austria</strong></p>
+    </div>
+
+    <div class="social-share">
+      <a href="https://www.linkedin.com/in/felipeborecki" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn" title="LinkedIn">in</a>
+      <a href="https://wa.me/?text=https://felipeborecki.com/en/" target="_blank" rel="noopener noreferrer" class="whatsapp" aria-label="WhatsApp" title="Share on WhatsApp">💬</a>
+      <a href="mailto:?subject=Felipe%20Borecki%20-%20Interpreter%20%26%20Translator&body=https://felipeborecki.com/en/" class="email" aria-label="Email" title="Share by email">✉</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Felipe Borecki. All rights reserved. | <a href="/en/agb">Terms &amp; Privacy</a></p>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <script>
+    function updateActiveNav() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.header-nav a:not([href*="appointment"]):not([href*="agb"])');
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', function() {
+      const btn = document.getElementById('back-to-top');
+      if (window.scrollY > 300) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
+      updateActiveNav();
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.cta, .whatsapp-link').forEach(el => {
+        el.addEventListener('click', function(e) {
+          const label = this.textContent.trim().substring(0, 50);
+          if (typeof gtag === 'function') {
+            gtag('event', 'click', {
+              'event_category': 'CTA',
+              'event_label': label,
+              'event_value': 1
+            });
+          }
+        });
+      });
+
+      setTimeout(updateActiveNav, 100);
+
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          const statusDiv = document.getElementById('form-status');
+          const btnSubmit = form.querySelector('button[type="submit"]');
+          const originalBtnText = btnSubmit ? btnSubmit.textContent : '';
+
+          if (btnSubmit) {
+            btnSubmit.disabled = true;
+            btnSubmit.textContent = 'Sending...';
+          }
+
+          if (statusDiv) {
+            statusDiv.textContent = 'Sending...';
+            statusDiv.style.color = '#0e1528';
+            statusDiv.style.display = 'block';
+          }
+
+          try {
+            const response = await fetch(form.action, {
+              method: form.method,
+              body: new FormData(form),
+              headers: { 'Accept': 'application/json' }
+            });
+
+            if (!response.ok) {
+              throw new Error('Error sending. Please try again later.');
+            }
+
+            if (statusDiv) {
+              statusDiv.textContent = '✓ Message sent successfully!';
+              statusDiv.style.color = '#28a745';
+            }
+            form.reset();
+
+            if (typeof gtag === 'function') {
+              gtag('event', 'form_submit', {
+                'event_category': 'contact',
+                'event_label': 'success'
+              });
+            }
+          } catch (error) {
+            if (statusDiv) {
+              statusDiv.textContent = error.message || 'Error sending.';
+              statusDiv.style.color = '#dc3545';
+            }
+          } finally {
+            if (btnSubmit) {
+              btnSubmit.disabled = false;
+              btnSubmit.textContent = originalBtnText;
+            }
+            if (statusDiv) {
+              setTimeout(() => {
+                statusDiv.style.display = 'none';
+              }, 5000);
+            }
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
