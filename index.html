@@ -270,10 +270,9 @@
     <div class="hero-content">
       <h2>Dolmetscher und Übersetzer für Gerichte, Behörden und sensible Fachkontexte</h2>
       <p>Professionelle Sprachmittlung für juristische, medizinische, behördliche und psychosoziale Kontexte in Österreich, präzise, vertraulich und verlässlich, vor Ort, remote und telefonisch.</p>
-      <p class="hero-subline">GISA-registriert (Nr. 32188035), im Dolmetscher- und Sachverständigenregister des Innenministeriums gelistet und als Hausdolmetscher für Portugiesisch, Spanisch und Deutsch am Landesgericht für Strafsachen Graz beeidigt. Über 900 Einsätze für Gerichte, Polizei, Kliniken und Sozialdienste. Arbeitssprachen: ES | PT | DE.</p>
+      <p class="hero-subline">GISA-registriert (Nr. 32188035), im Dolmetscher- und Sachverständigenregister des Innenministeriums gelistet und als Hausdolmetscher für Portugiesisch, Spanisch und Deutsch am Landesgericht für Strafsachen Graz beeidigt. Über 900 Einsätze für Gerichte, Polizei, Kliniken und Sozialdienste. Arbeitssprachen: Portugiesisch, Spanisch, Deutsch (+ Englisch für ausgewählte Einsätze).</p>
       <div class="cta-wrap">
-        <a href="#contact" class="cta">Kontakt aufnehmen</a>
-        <a href="#services" class="cta cta-secondary">Angebot anfordern</a>
+        <a href="#contact" class="cta">Angebot anfordern</a>
         <a href="/appointment.html" class="cta cta-outline">📅 Termin buchen</a>
       </div>
     </div>
@@ -299,7 +298,7 @@
         <span>Als Hausdolmetscher für Portugiesisch, Spanisch und Deutsch am Landesgericht für Strafsachen Graz beeidigt</span>
       </div>
       <div class="credential">
-        <strong>ES | PT | DE</strong>
+        <strong>PT | ES | DE</strong>
         <span>Vor Ort, remote und telefonisch</span>
       </div>
     </div>
@@ -413,37 +412,6 @@
   <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Nach oben">↑</button>
 
   <script>
-    // ===== DETEKCE JAZYKA PROHLÍŽEČE (pouze při první návštěvě) =====
-    (function() {
-      try {
-        // Pokud uživatel už má uloženou volbu jazyka, respektujeme ji
-        const savedLang = localStorage.getItem('preferred-lang');
-        if (savedLang) return;
-
-        // Získáme jazyk prohlížeče
-        const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-
-        // Mapování jazyka prohlížeče na naše URL
-        let redirectTo = null;
-        if (browserLang.startsWith('pt')) {
-          redirectTo = '/pt/';
-        } else if (browserLang.startsWith('es')) {
-          redirectTo = '/es/';
-        } else if (browserLang.startsWith('en')) {
-          redirectTo = '/en/';
-        }
-        // Pro 'de' nebo jakýkoli jiný jazyk → zůstáváme na '/'
-
-        if (redirectTo) {
-          // Uložíme volbu, aby se přesměrování neopakovalo
-          localStorage.setItem('preferred-lang', redirectTo.replace(/\//g, ''));
-          window.location.replace(redirectTo);
-        }
-      } catch (e) {
-        // Pokud localStorage není dostupný, prostě ignorujeme
-      }
-    })();
-
     // ===== NAV ATIVO =====
     function updateActiveNav() {
       const sections = document.querySelectorAll('section[id]');
@@ -476,7 +444,6 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-      // CTA tracking
       document.querySelectorAll('.cta, .whatsapp-link').forEach(el => {
         el.addEventListener('click', function(e) {
           const label = this.textContent.trim().substring(0, 50);
@@ -490,7 +457,6 @@
         });
       });
 
-      // Tracking pro přepínač jazyků
       document.querySelectorAll('.flags a').forEach(el => {
         el.addEventListener('click', function() {
           const lang = this.getAttribute('href').replace(/\//g, '') || 'de';
@@ -506,7 +472,6 @@
 
       setTimeout(updateActiveNav, 100);
 
-      // Form submit
       const form = document.getElementById('contact-form');
       if (form) {
         form.addEventListener('submit', async function(e) {
