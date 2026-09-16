@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8FPVG53SY');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung - Felipe Borecki - Dolmetscher & Übersetzer</title>
+  <meta name="description" content="Datenschutzerklärung von Felipe Borecki, Dolmetscher und Übersetzer in Österreich. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://felipeborecki.com/datenschutz">
+
+  <meta property="og:title" content="Datenschutzerklärung - Felipe Borecki">
+  <meta property="og:description" content="Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felipeborecki.com/datenschutz">
+  <meta property="og:image" content="https://felipeborecki.com/images/perfilborecki.png">
+  <meta property="og:locale" content="de_AT">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Roboto',sans-serif;line-height:1.8;color:#2c3e50;background:#f5f6fa}
+    
+    header{background:#0e1528;color:#fff;padding:0.8rem 1.5rem;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.12);border-bottom:1px solid rgba(255,255,255,0.08)}
+    .header-content{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;padding:0 1rem;width:100%;flex-wrap:wrap;gap:0.5rem}
+    .header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+    .header-left h1{font-size:1.6rem;margin:0;white-space:nowrap}
+    .header-left h1 a{color:#fff;text-decoration:none}
+    .header-left h1 a:hover{color:#c0c8d8}
+    .header-nav{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+    .header-nav a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;font-weight:500;transition:all .25s ease;position:relative;padding-bottom:2px;white-space:nowrap}
+    .header-nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#fff;transition:width .3s ease}
+    .header-nav a:hover{color:#fff}
+    .header-nav a:hover::after{width:100%}
+    .header-nav a.active{color:#fff}
+    .header-nav a.active::after{width:100%}
+    .header-right{display:flex;align-items:center;gap:0.8rem}
+    .flags{display:flex;gap:.3rem}
+    .flags button{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
+    .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
+
+    .container{max-width:1000px;margin:130px auto 40px;padding:0 2rem}
+    .dsgvo-content{background:white;padding:3.5rem;border-radius:12px;box-shadow:0 4px 30px rgba(0,0,0,0.08);border-top:4px solid #001f3f}
+    
+    .dsgvo-content h2{color:#001f3f;font-size:2.2rem;margin-bottom:0.5rem;font-weight:700}
+    .dsgvo-content .subtitle{color:#5a6c7d;font-size:1.1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid #e8edf2}
+    
+    .dsgvo-content h3{color:#003d73;font-size:1.2rem;margin-top:2.2rem;margin-bottom:0.8rem;font-weight:700}
+    
+    .dsgvo-content p{margin-bottom:0.9rem;text-align:justify;color:#2c3e50}
+    .dsgvo-content p strong{color:#001f3f}
+    .dsgvo-content ul{margin-left:2rem;margin-bottom:1rem;list-style-type:square}
+    .dsgvo-content ul li{margin-bottom:0.5rem;color:#2c3e50}
+    .dsgvo-content ul li::marker{color:#001f3f}
+    .dsgvo-content a{color:#003d73;text-decoration:none;border-bottom:1px dotted transparent;transition:border-color 0.3s}
+    .dsgvo-content a:hover{border-bottom-color:#003d73}
+    
+    .info-box{background:#f0f7fe;padding:1.8rem;border-radius:10px;margin:2rem 0;border-left:5px solid #001f3f}
+    .info-box h4{color:#001f3f;margin-bottom:0.5rem;font-size:1.1rem}
+    .info-box p{margin-bottom:0.3rem}
+    
+    .contact-box{background:#f8f9fa;padding:2rem;border-radius:10px;margin-top:2.5rem;border:1px solid #e8edf2}
+    .contact-box h3{color:#001f3f;margin-top:0;font-size:1.4rem}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.5rem}
+    .contact-item{display:flex;align-items:center;gap:0.5rem;padding:0.3rem 0}
+    .contact-item strong{min-width:100px;color:#001f3f}
+    
+    footer{background:#0e1528;color:#fff;text-align:center;padding:2.5rem;margin-top:3rem}
+    footer a{color:rgba(255,255,255,0.8);text-decoration:none;transition:all .3s ease}
+    footer a:hover{color:#fff}
+    
+    .lang-content{display:none}
+    .lang-content.active{display:block}
+    
+    @media (max-width:1024px){
+      .header-content{padding:0 0.5rem;gap:0.3rem}
+      .header-left{gap:1rem}
+      .header-left h1{font-size:1.3rem}
+      .header-nav{gap:0.8rem}
+      .header-nav a{font-size:0.8rem}
+    }
+
+    @media (max-width:768px){
+      header{padding:0.5rem 0.8rem}
+      .header-content{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:0.3rem;padding:0 0.3rem}
+      .header-left{width:100%;justify-content:center;flex-wrap:wrap;gap:0.4rem}
+      .header-left h1{font-size:1.1rem;white-space:nowrap}
+      .header-nav{gap:0.5rem;justify-content:center;width:100%}
+      .header-nav a{font-size:0.7rem;padding-bottom:1px;white-space:nowrap}
+      .header-right{width:100%;justify-content:center;gap:0.3rem}
+      .flags button{width:28px;height:28px;font-size:0.9rem}
+      
+      .container{margin-top:180px;padding:0 1rem}
+      .dsgvo-content{padding:2rem 1.5rem}
+      .dsgvo-content h2{font-size:1.7rem}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    
+    @media (max-width:480px){
+      .container{margin-top:200px}
+      .dsgvo-content{padding:1.5rem 1rem}
+      .header-left h1{font-size:0.95rem}
+      .header-nav a{font-size:0.6rem}
+      .header-nav{gap:0.3rem}
+      .flags button{width:24px;height:24px;font-size:0.75rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1><a href="/" data-lang="name">Felipe Borecki</a></h1>
+        <nav class="header-nav">
+          <a href="/#services" data-lang="nav-services">Leistungen</a>
+          <a href="/#about" data-lang="nav-about">Profil</a>
+          <a href="/#contact" data-lang="nav-contact">Kontakt</a>
+          <a href="/agb" data-lang="nav-agb">AGB</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="flags">
+          <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch" aria-label="Switch to German">🇩🇪</button>
+          <button type="button" onclick="setLang(event,'en')" title="English" aria-label="Switch to English">🇬🇧</button>
+          <button type="button" onclick="setLang(event,'es')" title="Español" aria-label="Switch to Spanish">🇪🇸</button>
+          <button type="button" onclick="setLang(event,'pt')" title="Português (BR)" aria-label="Switch to Portuguese">🇧🇷</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="dsgvo-content">
+      
+      <!-- ==================== ALEMÁN ==================== -->
+      <div id="lang-de" class="lang-content active">
+        <h2>Datenschutzerklärung</h2>
+        <p class="subtitle"><strong>Felipe Borecki</strong> · Dolmetsch- und Übersetzungsdienstleistungen · GISA-Nr. 32188035 · Stand: Januar 2026</p>
+
+        <div class="info-box">
+          <h4>📋 Kurzübersicht</h4>
+          <p>Der Schutz Ihrer personenbezogenen Daten ist mir wichtig. Diese Erklärung informiert Sie darüber, welche Daten ich erhebe, wie ich sie verwende und welche Rechte Sie haben.</p>
+        </div>
+
+        <h3>1. Verantwortlicher</h3>
+        <p>Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+        <p><strong>Felipe Borecki</strong><br>
+        Dolmetscher und Übersetzer<br>
+        Graz, Österreich<br>
+        E-Mail: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a><br>
+        Telefon: <a href="tel:+436781247285">+43 678 1247285</a></p>
+
+        <h3>2. Erhebung und Verarbeitung personenbezogener Daten</h3>
+        <p><strong>(1) Beim Besuch der Website:</strong> Beim Aufruf meiner Website werden automatisch bestimmte Daten erfasst, die Ihr Browser an den Server übermittelt. Diese Daten (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, Browsertyp, Betriebssystem, aufgerufene Seite) werden ausschließlich zur Sicherstellung eines störungsfreien Betriebs und zur Verbesserung meines Angebots verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).</p>
+        <p><strong>(2) Kontaktformular:</strong> Wenn Sie das Kontaktformular nutzen, werden die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage und für den Fall von Anschlussfragen bei mir gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung Ihrer Anfrage).</p>
+        <p><strong>(3) Terminbuchung:</strong> Für die Buchung von Terminen nutze ich den Dienst Zoho Calendar. Wenn Sie einen Termin buchen, werden die von Ihnen angegebenen Daten (Name, E-Mail, Terminwunsch) an Zoho übermittelt und dort verarbeitet. Nähere Informationen finden Sie in der Datenschutzerklärung von Zoho.</p>
+
+        <h3>3. Weitergabe von Daten an Dritte</h3>
+        <p>Ihre personenbezogenen Daten werden nur dann an Dritte weitergegeben, wenn dies zur Vertragserfüllung erforderlich ist, Sie ausdrücklich eingewilligt haben oder eine gesetzliche Verpflichtung besteht.</p>
+        <p>Folgende Dienstleister werden eingesetzt:</p>
+        <ul>
+          <li><strong>Formspree</strong> (Formularverarbeitung) – Server in den USA, Standardvertragsklauseln gemäß DSGVO</li>
+          <li><strong>Zoho Corporation</strong> (Terminbuchung) – Server in der EU, DSGVO-konform</li>
+          <li><strong>Google Analytics</strong> (Webanalyse, anonymisiert) – Server weltweit, Standardvertragsklauseln gemäß DSGVO</li>
+        </ul>
+
+        <h3>4. Cookies</h3>
+        <p>Diese Website verwendet nur technisch notwendige Cookies. Auf eine Einwilligung zur Speicherung von Cookies wird daher verzichtet, soweit keine Analyse- oder Marketing-Cookies eingesetzt werden. Google Analytics wird mit aktivierter IP-Anonymisierung betrieben.</p>
+
+        <h3>5. Speicherdauer</h3>
+        <p>Personenbezogene Daten werden nur so lange gespeichert, wie es für die Erfüllung der jeweiligen Zwecke erforderlich ist. Im Falle einer Geschäftsbeziehung werden Daten gemäß den gesetzlichen Aufbewahrungsfristen (in Österreich in der Regel 7 Jahre) aufbewahrt.</p>
+
+        <h3>6. Ihre Rechte</h3>
+        <p>Sie haben jederzeit das Recht auf:</p>
+        <ul>
+          <li>Auskunft über die zu Ihrer Person gespeicherten Daten (Art. 15 DSGVO)</li>
+          <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+          <li>Löschung Ihrer Daten (Art. 17 DSGVO)</li>
+          <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+          <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+          <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+        </ul>
+        <p>Zur Ausübung Ihrer Rechte wenden Sie sich bitte an: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
+
+        <h3>7. Beschwerderecht</h3>
+        <p>Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt, haben Sie das Recht, sich bei der Aufsichtsbehörde zu beschweren. In Österreich ist dies die <strong>Datenschutzbehörde</strong> (Barichgasse 40-42, 1030 Wien, <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a>).</p>
+
+        <h3>8. Änderungen dieser Erklärung</h3>
+        <p>Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder Änderungen meiner Dienstleistungen anzupassen. Es gilt jeweils die auf dieser Seite veröffentlichte aktuelle Version.</p>
+
+        <div class="contact-box">
+          <h3>Kontakt für Datenschutzfragen</h3>
+          <div class="contact-grid">
+            <div>
+              <div class="contact-item"><strong>Name:</strong> Felipe Borecki</div>
+              <div class="contact-item"><strong>Standort:</strong> Graz, Österreich</div>
+            </div>
+            <div>
+              <div class="contact-item"><strong>E-Mail:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+              <div class="contact-item"><strong>Telefon:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== INGLÉS ==================== -->
+      <div id="lang-en" class="lang-content">
+        <h2>Privacy Policy</h2>
+        <p class="subtitle"><strong>Felipe Borecki</strong> · Interpreting &amp; Translation Services · GISA No. 32188035 · Version: January 2026</p>
+
+        <div class="info-box">
+          <h4>📋 Quick overview</h4>
+          <p>The protection of your personal data is important to me. This policy explains what data I collect, how I use it, and what rights you have.</p>
+        </div>
+
+        <h3>1. Controller</h3>
+        <p>The controller responsible for data processing on this website within the meaning of the General Data Protection Regulation (GDPR) is:</p>
+        <p><strong>Felipe Borecki</strong><br>
+        Interpreter and Translator<br>
+        Graz, Austria<br>
+        Email: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a><br>
+        Phone: <a href="tel:+436781247285">+43 678 1247285</a></p>
+
+        <h3>2. Collection and Processing of Personal Data</h3>
+        <p><strong>(1) Visiting the website:</strong> When you visit my website, certain data is automatically collected that your browser transmits to the server. This data (e.g. IP address, date and time of access, browser type, operating system, page visited) is processed exclusively to ensure smooth operation and to improve my services. The legal basis is Art. 6(1)(f) GDPR (legitimate interest).</p>
+        <p><strong>(2) Contact form:</strong> If you use the contact form, the data you enter (name, email address, message) will be stored for the purpose of processing your inquiry and in case of follow-up questions. The legal basis is Art. 6(1)(b) GDPR (performance of a contract) or Art. 6(1)(f) GDPR (legitimate interest in responding to your inquiry).</p>
+        <p><strong>(3) Appointment booking:</strong> For booking appointments, I use the Zoho Calendar service. When you book an appointment, the data you provide (name, email, appointment request) is transmitted to and processed by Zoho. For more information, please refer to Zoho's privacy policy.</p>
+
+        <h3>3. Disclosure of Data to Third Parties</h3>
+        <p>Your personal data will only be disclosed to third parties if this is necessary for the performance of the contract, you have expressly consented, or there is a legal obligation.</p>
+        <p>The following service providers are used:</p>
+        <ul>
+          <li><strong>Formspree</strong> (form processing) – servers in the USA, standard contractual clauses according to GDPR</li>
+          <li><strong>Zoho Corporation</strong> (appointment booking) – servers in the EU, GDPR-compliant</li>
+          <li><strong>Google Analytics</strong> (web analytics, anonymized) – servers worldwide, standard contractual clauses according to GDPR</li>
+        </ul>
+
+        <h3>4. Cookies</h3>
+        <p>This website uses only technically necessary cookies. Consent for storing cookies is therefore not required, provided that no analysis or marketing cookies are used. Google Analytics is operated with IP anonymization enabled.</p>
+
+        <h3>5. Storage Duration</h3>
+        <p>Personal data is only stored for as long as necessary to fulfill the respective purposes. In the case of a business relationship, data is stored in accordance with statutory retention periods (in Austria generally 7 years).</p>
+
+        <h3>6. Your Rights</h3>
+        <p>You have the right at any time to:</p>
+        <ul>
+          <li>Access to the data stored about you (Art. 15 GDPR)</li>
+          <li>Rectification of incorrect data (Art. 16 GDPR)</li>
+          <li>Erasure of your data (Art. 17 GDPR)</li>
+          <li>Restriction of processing (Art. 18 GDPR)</li>
+          <li>Data portability (Art. 20 GDPR)</li>
+          <li>Objection to processing (Art. 21 GDPR)</li>
+        </ul>
+        <p>To exercise your rights, please contact: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
+
+        <h3>7. Right to Lodge a Complaint</h3>
+        <p>If you believe that the processing of your personal data violates the GDPR, you have the right to lodge a complaint with the supervisory authority. In Austria, this is the <strong>Data Protection Authority</strong> (Barichgasse 40-42, 1030 Vienna, <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a>).</p>
+
+        <h3>8. Changes to this Policy</h3>
+        <p>I reserve the right to adapt this privacy policy to reflect changes in legal requirements or my services. The current version published on this page applies.</p>
+
+        <div class="contact-box">
+          <h3>Contact for Data Protection Matters</h3>
+          <div class="contact-grid">
+            <div>
+              <div class="contact-item"><strong>Name:</strong> Felipe Borecki</div>
+              <div class="contact-item"><strong>Location:</strong> Graz, Austria</div>
+            </div>
+            <div>
+              <div class="contact-item"><strong>Email:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+              <div class="contact-item"><strong>Phone:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ESPAÑOL ==================== -->
+      <div id="lang-es" class="lang-content">
+        <h2>Política de Privacidad</h2>
+        <p class="subtitle"><strong>Felipe Borecki</strong> · Servicios de Interpretación y Traducción · Nº GISA: 32188035 · Versión: Enero 2026</p>
+
+        <div class="info-box">
+          <h4>📋 Resumen rápido</h4>
+          <p>La protección de sus datos personales es importante para mí. Esta política le informa qué datos recopilo, cómo los utilizo y qué derechos tiene.</p>
+        </div>
+
+        <h3>1. Responsable</h3>
+        <p>El responsable del tratamiento de datos en este sitio web en el sentido del Reglamento General de Protección de Datos (RGPD) es:</p>
+        <p><strong>Felipe Borecki</strong><br>
+        Intérprete y Traductor<br>
+        Graz, Austria<br>
+        Correo: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a><br>
+        Teléfono: <a href="tel:+436781247285">+43 678 1247285</a></p>
+
+        <h3>2. Recopilación y tratamiento de datos personales</h3>
+        <p><strong>(1) Visita del sitio web:</strong> Al visitar mi sitio web, se recopilan automáticamente ciertos datos que su navegador transmite al servidor. Estos datos (por ejemplo, dirección IP, fecha y hora de acceso, tipo de navegador, sistema operativo, página visitada) se procesan exclusivamente para garantizar un funcionamiento sin problemas y mejorar mis servicios. La base jurídica es el Art. 6.1.f del RGPD (interés legítimo).</p>
+        <p><strong>(2) Formulario de contacto:</strong> Si utiliza el formulario de contacto, los datos que introduzca (nombre, correo electrónico, mensaje) se almacenarán con el fin de procesar su consulta y en caso de preguntas posteriores. La base jurídica es el Art. 6.1.b del RGPD (ejecución del contrato) o el Art. 6.1.f del RGPD (interés legítimo en responder a su consulta).</p>
+        <p><strong>(3) Reserva de cita:</strong> Para reservar citas, utilizo el servicio Zoho Calendar. Cuando reserva una cita, los datos que proporciona (nombre, correo, cita solicitada) se transmiten a Zoho y se procesan allí. Para más información, consulte la política de privacidad de Zoho.</p>
+
+        <h3>3. Comunicación de datos a terceros</h3>
+        <p>Sus datos personales solo se comunicarán a terceros si ello es necesario para el cumplimiento del contrato, usted ha dado su consentimiento expreso o existe una obligación legal.</p>
+        <p>Se utilizan los siguientes proveedores de servicios:</p>
+        <ul>
+          <li><strong>Formspree</strong> (procesamiento de formularios) – servidores en EE. UU., cláusulas contractuales tipo según el RGPD</li>
+          <li><strong>Zoho Corporation</strong> (reserva de citas) – servidores en la UE, conforme al RGPD</li>
+          <li><strong>Google Analytics</strong> (análisis web, anonimizado) – servidores en todo el mundo, cláusulas contractuales tipo según el RGPD</li>
+        </ul>
+
+        <h3>4. Cookies</h3>
+        <p>Este sitio web utiliza únicamente cookies técnicamente necesarias. Por lo tanto, no se requiere consentimiento para el almacenamiento de cookies, siempre que no se utilicen cookies de análisis o marketing. Google Analytics se opera con la anonimización de IP activada.</p>
+
+        <h3>5. Duración del almacenamiento</h3>
+        <p>Los datos personales solo se almacenan durante el tiempo necesario para cumplir los fines respectivos. En caso de una relación comercial, los datos se conservan de acuerdo con los plazos legales de conservación (en Austria, generalmente 7 años).</p>
+
+        <h3>6. Sus derechos</h3>
+        <p>Tiene derecho en todo momento a:</p>
+        <ul>
+          <li>Acceso a los datos almacenados sobre usted (Art. 15 RGPD)</li>
+          <li>Rectificación de datos incorrectos (Art. 16 RGPD)</li>
+          <li>Supresión de sus datos (Art. 17 RGPD)</li>
+          <li>Limitación del tratamiento (Art. 18 RGPD)</li>
+          <li>Portabilidad de los datos (Art. 20 RGPD)</li>
+          <li>Oposición al tratamiento (Art. 21 RGPD)</li>
+        </ul>
+        <p>Para ejercer sus derechos, diríjase a: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
+
+        <h3>7. Derecho de reclamación</h3>
+        <p>Si considera que el tratamiento de sus datos personales infringe el RGPD, tiene derecho a presentar una reclamación ante la autoridad de control. En Austria, esta es la <strong>Autoridad de Protección de Datos</strong> (Barichgasse 40-42, 1030 Viena, <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a>).</p>
+
+        <h3>8. Modificaciones de esta política</h3>
+        <p>Me reservo el derecho de adaptar esta política de privacidad para reflejar cambios en los requisitos legales o en mis servicios. Se aplica la versión actual publicada en esta página.</p>
+
+        <div class="contact-box">
+          <h3>Contacto para asuntos de protección de datos</h3>
+          <div class="contact-grid">
+            <div>
+              <div class="contact-item"><strong>Nombre:</strong> Felipe Borecki</div>
+              <div class="contact-item"><strong>Ubicación:</strong> Graz, Austria</div>
+            </div>
+            <div>
+              <div class="contact-item"><strong>Correo:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+              <div class="contact-item"><strong>Teléfono:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PORTUGUÉS ==================== -->
+      <div id="lang-pt" class="lang-content">
+        <h2>Política de Privacidade</h2>
+        <p class="subtitle"><strong>Felipe Borecki</strong> · Serviços de Interpretação e Tradução · N.º GISA: 32188035 · Versão: Janeiro 2026</p>
+
+        <div class="info-box">
+          <h4>📋 Resumo rápido</h4>
+          <p>A proteção dos seus dados pessoais é importante para mim. Esta política informa-o sobre que dados recolho, como os utilizo e que direitos tem.</p>
+        </div>
+
+        <h3>1. Responsável</h3>
+        <p>O responsável pelo tratamento de dados neste site, no sentido do Regulamento Geral sobre a Proteção de Dados (RGPD), é:</p>
+        <p><strong>Felipe Borecki</strong><br>
+        Intérprete e Tradutor<br>
+        Graz, Áustria<br>
+        E-mail: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a><br>
+        Telefone: <a href="tel:+436781247285">+43 678 1247285</a></p>
+
+        <h3>2. Recolha e tratamento de dados pessoais</h3>
+        <p><strong>(1) Visita do site:</strong> Ao visitar o meu site, são recolhidos automaticamente determinados dados que o seu navegador transmite ao servidor. Estes dados (por exemplo, endereço IP, data e hora do acesso, tipo de navegador, sistema operativo, página visitada) são tratados exclusivamente para garantir um funcionamento sem problemas e melhorar os meus serviços. A base jurídica é o Art. 6.º, n.º 1, alínea f) do RGPD (interesse legítimo).</p>
+        <p><strong>(2) Formulário de contacto:</strong> Se utilizar o formulário de contacto, os dados que introduzir (nome, endereço de e-mail, mensagem) serão armazenados para o efeito de processar o seu pedido e para eventuais perguntas subsequentes. A base jurídica é o Art. 6.º, n.º 1, alínea b) do RGPD (execução do contrato) ou o Art. 6.º, n.º 1, alínea f) do RGPD (interesse legítimo em responder ao seu pedido).</p>
+        <p><strong>(3) Marcação de reuniões:</strong> Para a marcação de reuniões, utilizo o serviço Zoho Calendar. Ao marcar uma reunião, os dados que fornece (nome, e-mail, pedido de reunião) são transmitidos e tratados pela Zoho. Para mais informações, consulte a política de privacidade da Zoho.</p>
+
+        <h3>3. Comunicação de dados a terceiros</h3>
+        <p>Os seus dados pessoais só serão comunicados a terceiros se tal for necessário para a execução do contrato, se tiver dado o seu consentimento expresso ou se existir uma obrigação legal.</p>
+        <p>São utilizados os seguintes prestadores de serviços:</p>
+        <ul>
+          <li><strong>Formspree</strong> (processamento de formulários) – servidores nos EUA, cláusulas contratuais-tipo em conformidade com o RGPD</li>
+          <li><strong>Zoho Corporation</strong> (marcação de reuniões) – servidores na UE, em conformidade com o RGPD</li>
+          <li><strong>Google Analytics</strong> (análise web, anonimizada) – servidores em todo o mundo, cláusulas contratuais-tipo em conformidade com o RGPD</li>
+        </ul>
+
+        <h3>4. Cookies</h3>
+        <p>Este site utiliza apenas cookies tecnicamente necessários. Por conseguinte, não é necessário consentimento para o armazenamento de cookies, desde que não sejam utilizados cookies de análise ou marketing. O Google Analytics é operado com a anonimização de IP ativada.</p>
+
+        <h3>5. Duração do armazenamento</h3>
+        <p>Os dados pessoais são armazenados apenas durante o tempo necessário para cumprir os respetivos fins. No caso de uma relação comercial, os dados são conservados de acordo com os prazos legais de conservação (na Áustria, geralmente 7 anos).</p>
+
+        <h3>6. Os seus direitos</h3>
+        <p>Tem o direito, em qualquer momento, a:</p>
+        <ul>
+          <li>Acesso aos dados armazenados sobre si (Art. 15.º RGPD)</li>
+          <li>Retificação de dados incorretos (Art. 16.º RGPD)</li>
+          <li>Apagamento dos seus dados (Art. 17.º RGPD)</li>
+          <li>Limitação do tratamento (Art. 18.º RGPD)</li>
+          <li>Portabilidade dos dados (Art. 20.º RGPD)</li>
+          <li>Oposição ao tratamento (Art. 21.º RGPD)</li>
+        </ul>
+        <p>Para exercer os seus direitos, contacte: <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></p>
+
+        <h3>7. Direito de reclamação</h3>
+        <p>Se considerar que o tratamento dos seus dados pessoais viola o RGPD, tem o direito de apresentar uma reclamação junto da autoridade de controlo. Na Áustria, esta é a <strong>Autoridade de Proteção de Dados</strong> (Barichgasse 40-42, 1030 Viena, <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a>).</p>
+
+        <h3>8. Alterações a esta política</h3>
+        <p>Reservo-me o direito de adaptar esta política de privacidade para refletir alterações nos requisitos legais ou nos meus serviços. Aplica-se a versão atual publicada nesta página.</p>
+
+        <div class="contact-box">
+          <h3>Contacto para assuntos de proteção de dados</h3>
+          <div class="contact-grid">
+            <div>
+              <div class="contact-item"><strong>Nome:</strong> Felipe Borecki</div>
+              <div class="contact-item"><strong>Localização:</strong> Graz, Áustria</div>
+            </div>
+            <div>
+              <div class="contact-item"><strong>E-mail:</strong> <a href="mailto:info@felipeborecki.com">info@felipeborecki.com</a></div>
+              <div class="contact-item"><strong>Telefone:</strong> <a href="tel:+436781247285">+43 678 1247285</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    const headerTranslations = {
+      de: { name: 'Felipe Borecki', 'nav-services': 'Leistungen', 'nav-about': 'Profil', 'nav-contact': 'Kontakt', 'nav-agb': 'AGB' },
+      en: { name: 'Felipe Borecki', 'nav-services': 'Services', 'nav-about': 'Profile', 'nav-contact': 'Contact', 'nav-agb': 'Terms' },
+      es: { name: 'Felipe Borecki', 'nav-services': 'Servicios', 'nav-about': 'Perfil', 'nav-contact': 'Contacto', 'nav-agb': 'CyG' },
+      pt: { name: 'Felipe Borecki', 'nav-services': 'Serviços', 'nav-about': 'Perfil', 'nav-contact': 'Contato', 'nav-agb': 'CG' }
+    };
+
+    const titles = {
+      'de': 'Datenschutzerklärung - Felipe Borecki - Dolmetscher & Übersetzer',
+      'en': 'Privacy Policy - Felipe Borecki - Interpreter & Translator',
+      'es': 'Política de Privacidad - Felipe Borecki - Intérprete y Traductor',
+      'pt': 'Política de Privacidade - Felipe Borecki - Intérprete e Tradutor'
+    };
+
+    function setLang(evt, lang) {
+      if (evt && evt.preventDefault) evt.preventDefault();
+
+      document.querySelectorAll('.flags button').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      document.querySelectorAll('.lang-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      const target = document.getElementById('lang-' + lang);
+      if (target) target.classList.add('active');
+
+      document.title = titles[lang] || titles['de'];
+      document.documentElement.lang = lang;
+
+      const t = headerTranslations[lang] || headerTranslations['de'];
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+
+      try { localStorage.setItem('lang', lang); } catch(e) {}
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'language_switch', {
+          'event_category': 'engagement',
+          'event_label': lang
+        });
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      let savedLang = 'de';
+      try { savedLang = localStorage.getItem('lang') || 'de'; } catch(e) {}
+      const validLang = headerTranslations[savedLang] ? savedLang : 'de';
+      setLang(null, validLang);
+    });
+  </script>
+</body>
+</html>
