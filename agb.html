@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8FPVG53SY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8FPVG53SY');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AGB - Felipe Borecki - Dolmetscher & Übersetzer</title>
   <meta name="description" content="Allgemeine Geschäftsbedingungen für Dolmetsch- und Übersetzungsdienstleistungen von Felipe Borecki, GISA-registrierter Dolmetscher und Übersetzer.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://felipeborecki.com/agb">
+
+  <meta property="og:title" content="AGB - Felipe Borecki - Dolmetscher & Übersetzer">
+  <meta property="og:description" content="Allgemeine Geschäftsbedingungen für Dolmetsch- und Übersetzungsdienstleistungen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felipeborecki.com/agb">
+  <meta property="og:image" content="https://felipeborecki.com/images/perfilborecki.png">
+  <meta property="og:locale" content="de_AT">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
   
-  <!-- Favicon profesional -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23001f3f'/><text x='50' y='68' font-size='44' font-weight='700' font-family='Arial' fill='white' text-anchor='middle'>FB</text></svg>">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <style>
@@ -159,7 +177,7 @@
         <p><strong>(1) Dolmetschleistungen:</strong> Simultan-, Konsekutiv-, Verhandlungs- und Telefondolmetschen (OPI) in den Sprachkombinationen Portugiesisch/Spanisch ↔ Deutsch/Englisch.</p>
         <p><strong>(2) Übersetzungsleistungen:</strong> Fachübersetzungen für medizinische, juristische und technische Dokumente in den genannten Sprachkombinationen. Die Übersetzungen erfolgen nach den Qualitätsstandards der <strong>ISO 17100</strong>.</p>
         <p><strong>(3)</strong> Der konkrete Leistungsumfang, Termin, Ort und Vergütung ergeben sich aus der jeweiligen schriftlichen Auftragsbestätigung (E-Mail ausreichend).</p>
-        <p><strong>(4)</strong> Zusätzliche Leistungen (z. B. Layout-Anpassungen, DTP, Beglaubigungen) werden gesondert vereinbart und abgerechnet.</p>
+        <p><strong>(4)</strong> Zusätzliche Leistungen (z. B. Layout-Anpassungen, DTP, Beglaubigungen) werden gesondert vereinbart und abgerechnet.</p>
 
         <h3><span class="section-number">§ 3</span> Auftragserteilung und Bestätigung</h3>
         <p><strong>(1)</strong> Aufträge bedürfen der schriftlichen Bestätigung durch den Auftragnehmer. Eine Bestätigung per E-Mail gilt als ausreichend.</p>
@@ -529,62 +547,56 @@
       pt: { name: 'Felipe Borecki', 'nav-services': 'Serviços', 'nav-about': 'Perfil', 'nav-contact': 'Contato', 'nav-agb': 'CG' }
     };
 
-    // Selector de idioma
-    document.querySelectorAll('.flags button').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const lang = this.textContent.trim();
-        const langMap = { '🇩🇪': 'de', '🇬🇧': 'en', '🇪🇸': 'es', '🇧🇷': 'pt' };
-        const langCode = langMap[lang] || 'de';
-        
-        // Actualizar botones activos
-        document.querySelectorAll('.flags button').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        
-        // Mostrar contenido correspondiente
-        document.querySelectorAll('.lang-content').forEach(content => {
-          content.classList.remove('active');
-        });
-        document.getElementById('lang-' + langCode).classList.add('active');
-        
-        // Actualizar título
-        const titles = {
-          'de': 'AGB - Felipe Borecki - Dolmetscher & Übersetzer',
-          'en': 'Terms - Felipe Borecki - Interpreter & Translator',
-          'es': 'Condiciones - Felipe Borecki - Intérprete y Traductor',
-          'pt': 'Condições - Felipe Borecki - Intérprete e Tradutor'
-        };
-        document.title = titles[langCode] || titles['de'];
-        
-        document.documentElement.lang = langCode;
-        
-        // Actualizar header con traducciones
-        const t = headerTranslations[langCode] || headerTranslations['de'];
-        document.querySelectorAll('[data-lang]').forEach(el => {
-          const key = el.dataset.lang;
-          if (t[key] !== undefined) el.textContent = t[key];
-        });
-        
-        localStorage.setItem('agb-lang', langCode);
+    const titles = {
+      'de': 'AGB - Felipe Borecki - Dolmetscher & Übersetzer',
+      'en': 'Terms - Felipe Borecki - Interpreter & Translator',
+      'es': 'Condiciones - Felipe Borecki - Intérprete y Traductor',
+      'pt': 'Condições - Felipe Borecki - Intérprete e Tradutor'
+    };
+
+    function setLang(evt, lang) {
+      if (evt && evt.preventDefault) evt.preventDefault();
+
+      // Actualizar botones activos
+      document.querySelectorAll('.flags button').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      // Mostrar contenido correspondiente
+      document.querySelectorAll('.lang-content').forEach(content => {
+        content.classList.remove('active');
       });
-    });
-    
+      const target = document.getElementById('lang-' + lang);
+      if (target) target.classList.add('active');
+
+      // Actualizar título
+      document.title = titles[lang] || titles['de'];
+      document.documentElement.lang = lang;
+
+      // Actualizar header con traducciones
+      const t = headerTranslations[lang] || headerTranslations['de'];
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        const key = el.dataset.lang;
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+
+      try { localStorage.setItem('lang', lang); } catch(e) {}
+      try { localStorage.setItem('agb-lang', lang); } catch(e) {}
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'language_switch', {
+          'event_category': 'engagement',
+          'event_label': lang
+        });
+      }
+    }
+
     // Restaurar idioma guardado
     document.addEventListener('DOMContentLoaded', function() {
-      const savedLang = localStorage.getItem('agb-lang');
-      if (savedLang) {
-        const langMap = { 'de': '🇩🇪', 'en': '🇬🇧', 'es': '🇪🇸', 'pt': '🇧🇷' };
-        const flag = langMap[savedLang];
-        if (flag) {
-          const btn = document.querySelector(`.flags button:not(.active)`);
-          document.querySelectorAll('.flags button').forEach(b => {
-            if (b.textContent.trim() === flag) {
-              b.click();
-            }
-          });
-        }
-      }
+      let savedLang = 'de';
+      try { savedLang = localStorage.getItem('lang') || localStorage.getItem('agb-lang') || 'de'; } catch(e) {}
+      const validLang = headerTranslations[savedLang] ? savedLang : 'de';
+      setLang(null, validLang);
     });
   </script>
 </body>
