@@ -23,6 +23,12 @@
   <meta property="og:image" content="https://felipeborecki.com/images/perfilborecki.png">
   <meta property="og:locale" content="de_AT">
 
+  <link rel="alternate" hreflang="de" href="https://felipeborecki.com/faq.html">
+  <link rel="alternate" hreflang="pt" href="https://felipeborecki.com/pt/faq.html">
+  <link rel="alternate" hreflang="es" href="https://felipeborecki.com/es/faq.html">
+  <link rel="alternate" hreflang="en" href="https://felipeborecki.com/en/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://felipeborecki.com/faq.html">
+
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1528'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='48' font-weight='700' fill='white' text-anchor='middle'%3EFB%3C/text%3E%3C/svg%3E">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,7 +109,6 @@
   </script>
 
   <style>
-    /* ===== MISMOS ESTILOS ===== */
     *{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{font-family:'Roboto',sans-serif;line-height:1.7;color:#333;background:#f8f9fa;font-size:16px}
@@ -121,9 +126,9 @@
     .header-nav a.active::after{width:100%}
     .header-right{display:flex;align-items:center;gap:0.8rem}
     .flags{display:flex;gap:.3rem}
-    .flags button{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center}
-    .flags button:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
-    .flags button.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
+    .flags a{width:32px;height:32px;border:none;background:rgba(255,255,255,.12);border-radius:50%;cursor:pointer;transition:all .25s ease;font-size:1.1rem;line-height:1;display:flex;align-items:center;justify-content:center;text-decoration:none}
+    .flags a:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+    .flags a.active{outline:2px solid rgba(255,255,255,.9);outline-offset:2px;background:rgba(255,255,255,.25)}
 
     .page-hero{background:#0e1528;color:#fff;padding:120px 2rem 60px;text-align:center}
     .page-hero h1{font-size:2.8rem;margin-bottom:1rem}
@@ -138,13 +143,27 @@
     .faq-item h3{font-size:1.2rem;margin-bottom:0.6rem;color:#0e1528;font-weight:500}
     .faq-item p{font-size:1rem;color:#555;line-height:1.7}
 
+    .related-box{background:#f0f4f8;padding:1.5rem;border-radius:8px;border-left:4px solid #0077b5;margin:2rem 0;text-align:center}
+    .related-box p{margin:0 0 0.8rem 0;color:#0e1528;font-weight:500}
+    .related-box a{color:#0077b5;font-weight:600;text-decoration:none;font-size:1rem}
+    .related-box a:hover{text-decoration:underline}
+
+    .inquiry-form{background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);max-width:700px;margin:2rem auto 0}
+    .form-group{margin-bottom:1.2rem;text-align:left}
+    .form-group label{display:block;margin-bottom:.4rem;font-weight:500;font-size:0.95rem}
+    .form-group input,.form-group textarea,.form-group select{width:100%;padding:.7rem;border:1px solid #ddd;border-radius:5px;font-size:0.95rem;font-family:inherit}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:#0e1528;box-shadow:0 0 0 3px rgba(14,21,40,.12)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    #inquiry-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
+    .cta{background:#0e1528;color:#fff;padding:1rem 2.5rem;border-radius:5px;font-weight:700;display:inline-block;transition:all .25s ease;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+    .cta:hover{background:#1a2a4a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+
     .back-link{display:inline-block;margin-top:2rem;color:#0e1528;font-weight:500;text-decoration:none;transition:all .25s ease}
     .back-link:hover{transform:translateX(-4px)}
 
     footer{background:#0e1528;color:#fff;text-align:center;padding:2rem;font-size:0.95rem}
     footer a{color:#fff;text-decoration:underline}
     footer a:hover{color:#ddd}
-    [data-lang]{transition:opacity .25s ease}
     a{color:#0e1528;font-weight:500}
     a:hover{color:#142135;text-decoration:none}
 
@@ -156,7 +175,7 @@
       .header-nav{gap:0.4rem;justify-content:center;width:100%}
       .header-nav a{font-size:0.65rem;padding-bottom:1px;white-space:nowrap}
       .header-right{width:100%;justify-content:center;gap:0.3rem}
-      .flags button{width:26px;height:26px;font-size:0.85rem}
+      .flags a{width:26px;height:26px;font-size:0.85rem}
       
       .page-hero{padding:100px 1.2rem 40px}
       .page-hero h1{font-size:2rem}
@@ -166,6 +185,7 @@
       .section h2{font-size:1.6rem}
       .faq-item h3{font-size:1rem}
       .faq-item p{font-size:0.9rem}
+      .form-row{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -173,254 +193,171 @@
   <header>
     <div class="header-content">
       <div class="header-left">
-        <h1 data-lang="name">Felipe Borecki</h1>
+        <h1>Felipe Borecki</h1>
         <nav class="header-nav">
-          <a href="/#services" data-lang="nav-services">Leistungen</a>
-          <a href="/about.html" data-lang="nav-about">Über mich</a>
-          <a href="/appointment.html" data-lang="nav-book">Termin buchen</a>
-          <a href="/#contact" data-lang="nav-contact">Kontakt</a>
-          <a href="/agb" data-lang="nav-agb">AGB</a>
+          <a href="/#services">Leistungen</a>
+          <a href="/about.html">Über mich</a>
+          <a href="/appointment.html">Termin buchen</a>
+          <a href="/#contact">Kontakt</a>
+          <a href="/agb">AGB</a>
         </nav>
       </div>
       <div class="header-right">
         <div class="flags">
-          <button class="active" type="button" onclick="setLang(event,'de')" title="Deutsch">🇩🇪</button>
-          <button type="button" onclick="setLang(event,'es')" title="Español">🇪🇸</button>
-          <button type="button" onclick="setLang(event,'pt')" title="Português (BR)">🇧🇷</button>
-          <button type="button" onclick="setLang(event,'en')" title="English">🇬🇧</button>
+          <a href="/" class="active" title="Deutsch">🇩🇪</a>
+          <a href="/pt/" title="Português (BR)">🇧🇷</a>
+          <a href="/es/" title="Español">🇪🇸</a>
+          <a href="/en/" title="English">🇬🇧</a>
         </div>
       </div>
     </div>
   </header>
 
   <section class="page-hero">
-    <h1 data-lang="hero-title">Häufig gestellte Fragen</h1>
-    <p data-lang="hero-sub">Antworten auf die wichtigsten Fragen zu meinen Dienstleistungen</p>
+    <h1>Häufig gestellte Fragen</h1>
+    <p>Antworten auf die wichtigsten Fragen zu meinen Dienstleistungen</p>
   </section>
 
   <section class="section">
     <div class="faq-item">
-      <h3 data-lang="q1">In welchen Regionen Österreichs sind Sie tätig?</h3>
-      <p data-lang="a1">Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.</p>
+      <h3>In welchen Regionen Österreichs sind Sie tätig?</h3>
+      <p>Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.</p>
     </div>
 
     <div class="faq-item">
-      <h3 data-lang="q2">Wie weit im Voraus sollte ich buchen?</h3>
-      <p data-lang="a2">Für geplante Termine empfehle ich eine Buchung 2 bis 4 Wochen im Voraus. Bei kurzfristigen Anfragen in Graz kann ich je nach Verfügbarkeit auch innerhalb einer Stunde vor Ort sein. Für Einsätze außerhalb von Graz benötige ich in der Regel 24 bis 48 Stunden Vorlaufzeit.</p>
+      <h3>Wie weit im Voraus sollte ich buchen?</h3>
+      <p>Für geplante Termine empfehle ich eine Buchung 2 bis 4 Wochen im Voraus. Bei kurzfristigen Anfragen in Graz kann ich je nach Verfügbarkeit auch innerhalb einer Stunde vor Ort sein. Für Einsätze außerhalb von Graz benötige ich in der Regel 24 bis 48 Stunden Vorlaufzeit.</p>
     </div>
 
     <div class="faq-item">
-      <h3 data-lang="q3">Welche Plattformen nutzen Sie für Videodolmetschen?</h3>
-      <p data-lang="a3">Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten eine zuverlässige Verbindungsqualität. Auf Wunsch können auch andere Plattformen genutzt werden.</p>
+      <h3>Welche Plattformen nutzen Sie für Videodolmetschen?</h3>
+      <p>Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten eine zuverlässige Verbindungsqualität. Auf Wunsch können auch andere Plattformen genutzt werden.</p>
     </div>
 
     <div class="faq-item">
-      <h3 data-lang="q4">Übersetzen Sie auch beglaubigte Dokumente?</h3>
-      <p data-lang="a4">Ich erstelle präzise Fachübersetzungen. Auf Wunsch koordiniere ich die offizielle Beglaubigung durch einen allgemein beeideten Übersetzer, sodass die Unterlagen für Behörden und Gerichte gültig sind.</p>
+      <h3>Übersetzen Sie auch beglaubigte Dokumente?</h3>
+      <p>Ich erstelle präzise Fachübersetzungen. Auf Wunsch koordiniere ich die offizielle Beglaubigung durch einen allgemein beeideten Übersetzer, sodass die Unterlagen für Behörden und Gerichte gültig sind.</p>
     </div>
 
     <div class="faq-item">
-      <h3 data-lang="q5">Welche Sprachen decken Sie ab?</h3>
-      <p data-lang="a5">Meine Arbeitssprachen sind Spanisch, Portugiesisch und Deutsch. Zusätzlich biete ich Englisch als Arbeitssprache für Dolmetscheinsätze an. Alle Sprachrichtungen sind möglich.</p>
+      <h3>Welche Sprachen decken Sie ab?</h3>
+      <p>Meine Arbeitssprachen sind Spanisch, Portugiesisch und Deutsch. Zusätzlich biete ich Englisch als Arbeitssprache für Dolmetscheinsätze an. Alle Sprachrichtungen sind möglich.</p>
     </div>
 
     <div class="faq-item">
-      <h3 data-lang="q6">Wie wird die Vertraulichkeit meiner Daten und Gespräche gewährleistet?</h3>
-      <p data-lang="a6">Als gerichtlich beeidigter Dolmetscher unterliege ich der beruflichen Schweigepflicht gemäß § 10 GISA-Gesetz. Alle Informationen, Dokumente und Gesprächsinhalte werden streng vertraulich behandelt – auch nach Abschluss des Auftrags.</p>
+      <h3>Wie wird die Vertraulichkeit meiner Daten und Gespräche gewährleistet?</h3>
+      <p>Als gerichtlich beeidigter Dolmetscher unterliege ich der beruflichen Schweigepflicht gemäß § 10 GISA-Gesetz. Alle Informationen, Dokumente und Gesprächsinhalte werden streng vertraulich behandelt – auch nach Abschluss des Auftrags.</p>
     </div>
 
     <div class="faq-item">
-      <h3 data-lang="q7">Wie erhalte ich ein Angebot?</h3>
-      <p data-lang="a7">Senden Sie mir eine E-Mail mit Datum, Ort, Dauer und Sprache(n) des Einsatzes. Ich melde mich in der Regel innerhalb von 24 Stunden mit einem unverbindlichen Angebot.</p>
+      <h3>Wie erhalte ich ein Angebot?</h3>
+      <p>Senden Sie mir eine E-Mail mit Datum, Ort, Dauer und Sprache(n) des Einsatzes. Ich melde mich in der Regel innerhalb von 24 Stunden mit einem unverbindlichen Angebot.</p>
     </div>
 
     <div class="faq-item">
-      <h3 data-lang="q8">Stellen Sie Rechnungen für Unternehmen und Privatpersonen aus?</h3>
-      <p data-lang="a8">Ja, ich stelle für alle Auftraggeber – Unternehmen, Behörden, Institutionen und Privatpersonen – ordnungsgemäße Rechnungen mit meiner GISA-Nummer 32188035 aus.</p>
+      <h3>Stellen Sie Rechnungen für Unternehmen und Privatpersonen aus?</h3>
+      <p>Ja, ich stelle für alle Auftraggeber – Unternehmen, Behörden, Institutionen und Privatpersonen – ordnungsgemäße Rechnungen mit meiner GISA-Nummer 32188035 aus.</p>
     </div>
+
+    <div class="related-box">
+      <p>Haben Sie Fragen zu Gerichtsverfahren?</p>
+      <a href="/gerichtsdolmetscher.html">Mehr über Gerichtsdolmetschen →</a>
+    </div>
+
+    <h2 style="margin-top:3rem;text-align:center">Direkte Anfrage</h2>
+    <p style="text-align:center;margin-bottom:1rem">Senden Sie mir die wichtigsten Eckdaten — ich melde mich innerhalb von 24 Stunden.</p>
+
+    <form id="inquiry-form" class="inquiry-form" action="https://formspree.io/f/mbdokzdj" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="datum">Datum *</label>
+          <input type="date" id="datum" name="datum" required>
+        </div>
+        <div class="form-group">
+          <label for="ort">Ort / Gericht *</label>
+          <input type="text" id="ort" name="ort" placeholder="z. B. Graz" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="sprache">Sprache(n) *</label>
+          <select id="sprache" name="sprache" required>
+            <option value="">Bitte wählen</option>
+            <option value="Portugiesisch ↔ Deutsch">Portugiesisch ↔ Deutsch</option>
+            <option value="Spanisch ↔ Deutsch">Spanisch ↔ Deutsch</option>
+            <option value="Portugiesisch ↔ Spanisch">Portugiesisch ↔ Spanisch</option>
+            <option value="Sonstige Kombination">Sonstige Kombination</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name">Ihr Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="nachricht">Zusätzliche Informationen (optional)</label>
+        <textarea id="nachricht" name="nachricht" rows="3" placeholder="Weitere Details..."></textarea>
+      </div>
+      <button type="submit" class="cta" style="width:100%">Anfrage senden</button>
+      <p id="inquiry-status"></p>
+    </form>
 
     <div style="text-align:center;margin-top:2rem">
-      <a href="/" class="back-link" data-lang="back">← Zurück zur Startseite</a>
+      <a href="/" class="back-link">← Zurück zur Startseite</a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Felipe Borecki. <span data-lang="footer-rights">Alle Rechte vorbehalten.</span> | <a href="/agb" data-lang="footer-terms">AGB / Datenschutz</a></p>
+    <p>&copy; 2026 Felipe Borecki. Alle Rechte vorbehalten. | <a href="/agb">AGB / Datenschutz</a></p>
   </footer>
 
   <script>
-    // ===== SISTEMA DE IDIOMAS =====
-    let currentLang = 'de';
-    const translations = {
-      de: {
-        name: 'Felipe Borecki',
-        'nav-services': 'Leistungen',
-        'nav-about': 'Über mich',
-        'nav-book': 'Termin buchen',
-        'nav-contact': 'Kontakt',
-        'nav-agb': 'AGB',
-        'hero-title': 'Häufig gestellte Fragen',
-        'hero-sub': 'Antworten auf die wichtigsten Fragen zu meinen Dienstleistungen',
-        'q1': 'In welchen Regionen Österreichs sind Sie tätig?',
-        'a1': 'Ich bin in ganz Österreich verfügbar, mit Schwerpunkt in der Steiermark und Wien. Für Einsätze in anderen Bundesländern fallen geringe Reisekosten an.',
-        'q2': 'Wie weit im Voraus sollte ich buchen?',
-        'a2': 'Für geplante Termine empfehle ich eine Buchung 2 bis 4 Wochen im Voraus. Bei kurzfristigen Anfragen in Graz kann ich je nach Verfügbarkeit auch innerhalb einer Stunde vor Ort sein. Für Einsätze außerhalb von Graz benötige ich in der Regel 24 bis 48 Stunden Vorlaufzeit.',
-        'q3': 'Welche Plattformen nutzen Sie für Videodolmetschen?',
-        'a3': 'Ich arbeite mit den gängigsten Plattformen: Zoom, Microsoft Teams und Google Meet. Diese sind in institutionellen Kontexten am weitesten verbreitet und bieten eine zuverlässige Verbindungsqualität. Auf Wunsch können auch andere Plattformen genutzt werden.',
-        'q4': 'Übersetzen Sie auch beglaubigte Dokumente?',
-        'a4': 'Ich erstelle präzise Fachübersetzungen. Auf Wunsch koordiniere ich die offizielle Beglaubigung durch einen allgemein beeideten Übersetzer, sodass die Unterlagen für Behörden und Gerichte gültig sind.',
-        'q5': 'Welche Sprachen decken Sie ab?',
-        'a5': 'Meine Arbeitssprachen sind Spanisch, Portugiesisch und Deutsch. Zusätzlich biete ich Englisch als Arbeitssprache für Dolmetscheinsätze an. Alle Sprachrichtungen sind möglich.',
-        'q6': 'Wie wird die Vertraulichkeit meiner Daten und Gespräche gewährleistet?',
-        'a6': 'Als gerichtlich beeidigter Dolmetscher unterliege ich der beruflichen Schweigepflicht gemäß § 10 GISA-Gesetz. Alle Informationen, Dokumente und Gesprächsinhalte werden streng vertraulich behandelt – auch nach Abschluss des Auftrags.',
-        'q7': 'Wie erhalte ich ein Angebot?',
-        'a7': 'Senden Sie mir eine E-Mail mit Datum, Ort, Dauer und Sprache(n) des Einsatzes. Ich melde mich in der Regel innerhalb von 24 Stunden mit einem unverbindlichen Angebot.',
-        'q8': 'Stellen Sie Rechnungen für Unternehmen und Privatpersonen aus?',
-        'a8': 'Ja, ich stelle für alle Auftraggeber – Unternehmen, Behörden, Institutionen und Privatpersonen – ordnungsgemäße Rechnungen mit meiner GISA-Nummer 32188035 aus.',
-        back: '← Zurück zur Startseite',
-        'footer-rights': 'Alle Rechte vorbehalten.',
-        'footer-terms': 'AGB / Datenschutz'
-      },
-      es: {
-        name: 'Felipe Borecki',
-        'nav-services': 'Servicios',
-        'nav-about': 'Sobre mí',
-        'nav-book': 'Reservar cita',
-        'nav-contact': 'Contacto',
-        'nav-agb': 'Términos',
-        'hero-title': 'Preguntas frecuentes',
-        'hero-sub': 'Respuestas a las preguntas más importantes sobre mis servicios',
-        'q1': '¿En qué regiones de Austria trabajas?',
-        'a1': 'Estoy disponible en toda Austria, con sede principal en Estiria y Viena. Para servicios en otros estados federados se aplican gastos de desplazamiento mínimos.',
-        'q2': '¿Con cuánta anticipación debo reservar?',
-        'a2': 'Para citas programadas recomiendo reservar con 2 a 4 semanas de antelación. Para solicitudes urgentes en Graz, dependiendo de la disponibilidad, puedo estar presente en menos de una hora. Para servicios fuera de Graz, necesito generalmente entre 24 y 48 horas de antelación.',
-        'q3': '¿Qué plataformas usas para videointerpretación?',
-        'a3': 'Trabajo con las plataformas más utilizadas: Zoom, Microsoft Teams y Google Meet. Son las más habituales en contextos institucionales y ofrecen una calidad de conexión fiable. Si se desea, también se pueden utilizar otras plataformas.',
-        'q4': '¿También traduces documentos certificados?',
-        'a4': 'Elaboro traducciones especializadas precisas. Si se desea, coordino la certificación oficial mediante un traductor jurado, para que los documentos sean válidos ante autoridades y tribunales.',
-        'q5': '¿Qué idiomas cubres?',
-        'a5': 'Mis idiomas de trabajo son español, portugués y alemán. Además, ofrezco inglés como idioma de trabajo para servicios de interpretación. Todas las direcciones lingüísticas son posibles.',
-        'q6': '¿Cómo se garantiza la confidencialidad de mis datos y conversaciones?',
-        'a6': 'Como intérprete jurado, estoy sujeto al secreto profesional según el artículo 10 de la Ley GISA. Toda la información, documentos y contenidos de las conversaciones se tratan con estricta confidencialidad, también después de finalizar el encargo.',
-        'q7': '¿Cómo obtengo un presupuesto?',
-        'a7': 'Envíeme un correo electrónico con la fecha, el lugar, la duración y el/los idioma(s) del servicio. Normalmente respondo en un plazo de 24 horas con un presupuesto sin compromiso.',
-        'q8': '¿Emite facturas para empresas y particulares?',
-        'a8': 'Sí, emito facturas reglamentarias con mi número GISA 32188035 para todo tipo de clientes: empresas, autoridades, instituciones y particulares.',
-        back: '← Volver al inicio',
-        'footer-rights': 'Todos los derechos reservados.',
-        'footer-terms': 'Términos y Privacidad'
-      },
-      pt: {
-        name: 'Felipe Borecki',
-        'nav-services': 'Serviços',
-        'nav-about': 'Sobre mim',
-        'nav-book': 'Agendar reunião',
-        'nav-contact': 'Contato',
-        'nav-agb': 'Termos',
-        'hero-title': 'Perguntas frequentes',
-        'hero-sub': 'Respostas às perguntas mais importantes sobre meus serviços',
-        'q1': 'Em que regiões da Áustria você trabalha?',
-        'a1': 'Estou disponível em toda a Áustria, com sede principal na Estíria e Viena. Para serviços noutros estados federados aplicam-se despesas de deslocação mínimas.',
-        'q2': 'Com quanta antecedência devo reservar?',
-        'a2': 'Para marcações agendadas recomendo reservar com 2 a 4 semanas de antecedência. Para pedidos urgentes em Graz, dependendo da disponibilidade, posso estar presente em menos de uma hora. Para serviços fora de Graz, necessito geralmente de 24 a 48 horas de antecedência.',
-        'q3': 'Que plataformas você usa para videointerpretação?',
-        'a3': 'Trabalho com as plataformas mais utilizadas: Zoom, Microsoft Teams e Google Meet. São as mais habituais em contextos institucionais e oferecem uma qualidade de conexão fiável. Se desejado, outras plataformas também podem ser utilizadas.',
-        'q4': 'Também traduz documentos certificados?',
-        'a4': 'Elaboro traduções especializadas precisas. Se desejar, coordeno a certificação oficial através de um tradutor juramentado, para que os documentos sejam válidos perante autoridades e tribunais.',
-        'q5': 'Que idiomas cobre?',
-        'a5': 'As minhas línguas de trabalho são espanhol, português e alemão. Além disso, ofereço inglês como língua de trabalho para serviços de interpretação. Todas as direções linguísticas são possíveis.',
-        'q6': 'Como é garantida a confidencialidade dos meus dados e conversas?',
-        'a6': 'Como intérprete ajuramentado, estou sujeito ao sigilo profissional nos termos do artigo 10.º da Lei GISA. Todas as informações, documentos e conteúdos das conversas são tratados com estrita confidencialidade, também após a conclusão do serviço.',
-        'q7': 'Como obtenho um orçamento?',
-        'a7': 'Envie-me um e-mail com a data, o local, a duração e o(s) idioma(s) do serviço. Normalmente respondo no prazo de 24 horas com um orçamento sem compromisso.',
-        'q8': 'Emite faturas para empresas e particulares?',
-        'a8': 'Sim, emito faturas regulares com o meu número GISA 32188035 para todos os tipos de clientes: empresas, autoridades, instituições e particulares.',
-        back: '← Voltar ao início',
-        'footer-rights': 'Todos os direitos reservados.',
-        'footer-terms': 'Termos e Privacidade'
-      },
-      en: {
-        name: 'Felipe Borecki',
-        'nav-services': 'Services',
-        'nav-about': 'About me',
-        'nav-book': 'Book appointment',
-        'nav-contact': 'Contact',
-        'nav-agb': 'Terms',
-        'hero-title': 'Frequently asked questions',
-        'hero-sub': 'Answers to the most important questions about my services',
-        'q1': 'In which regions of Austria do you work?',
-        'a1': 'I\'m available throughout Austria, based primarily in Styria and Vienna. For assignments in other federal states, minimal travel expenses apply.',
-        'q2': 'How far in advance should I book?',
-        'a2': 'For scheduled appointments I recommend booking 2 to 4 weeks in advance. For urgent requests in Graz, depending on availability, I can be on site within an hour. For assignments outside Graz, I typically require 24 to 48 hours notice.',
-        'q3': 'Which platforms do you use for video interpreting?',
-        'a3': 'I work with the most commonly used platforms: Zoom, Microsoft Teams, and Google Meet. These are the most widespread in institutional contexts and offer reliable connection quality. Other platforms can also be used upon request.',
-        'q4': 'Do you also translate certified documents?',
-        'a4': 'I prepare precise specialized translations. Upon request, I coordinate official certification through a generally sworn translator, ensuring documents are valid for authorities and courts.',
-        'q5': 'Which languages do you cover?',
-        'a5': 'My working languages are Spanish, Portuguese and German. In addition, I offer English as a working language for interpreting assignments. All language directions are possible.',
-        'q6': 'How is the confidentiality of my data and conversations ensured?',
-        'a6': 'As a sworn court interpreter, I am bound by professional confidentiality under Section 10 of the GISA Act. All information, documents and conversation content are treated with strict confidentiality – also after the assignment has been completed.',
-        'q7': 'How do I get a quote?',
-        'a7': 'Send me an email with the date, location, duration and language(s) of the assignment. I usually respond within 24 hours with a non-binding quote.',
-        'q8': 'Do you issue invoices for companies and private individuals?',
-        'a8': 'Yes, I issue proper invoices with my GISA number 32188035 for all clients: companies, authorities, institutions and private individuals.',
-        back: '← Back to home',
-        'footer-rights': 'All rights reserved.',
-        'footer-terms': 'Terms & Privacy'
-      }
-    };
-
-    function safeGetStoredLang() {
-      try { return localStorage.getItem('lang') || 'de'; }
-      catch (e) { return 'de'; }
-    }
-
-    function safeSetStoredLang(lang) {
-      try { localStorage.setItem('lang', lang); }
-      catch (e) {}
-    }
-
-    function setLang(evt, lang) {
-      const t = translations[lang] || translations.de;
-      currentLang = lang;
-      document.documentElement.lang = lang;
-      safeSetStoredLang(lang);
-
-      document.querySelectorAll('.flags button').forEach(btn => btn.classList.remove('active'));
-      if (evt && evt.target) {
-        evt.target.classList.add('active');
-      } else {
-        const btn = document.querySelector(`.flags button[onclick*="'${lang}'"]`);
-        if (btn) btn.classList.add('active');
-      }
-
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        const key = el.dataset.lang;
-        if (t[key] !== undefined) {
-          el.textContent = t[key];
+    document.querySelectorAll('.flags a').forEach(el => {
+      el.addEventListener('click', function() {
+        const lang = this.getAttribute('href').replace(/\//g, '') || 'de';
+        try { localStorage.setItem('preferred-lang', lang); } catch(e) {}
+        if (typeof gtag === 'function') {
+          gtag('event', 'language_switch', { 'event_category': 'engagement', 'event_label': lang });
         }
       });
-
-      document.querySelectorAll('.header-nav a[data-lang]').forEach(el => {
-        const key = el.dataset.lang;
-        if (t[key] !== undefined) el.textContent = t[key];
-      });
-
-      if (typeof gtag === 'function') {
-        gtag('event', 'language_switch', {
-          'event_category': 'engagement',
-          'event_label': lang
-        });
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      const savedLang = safeGetStoredLang();
-      const btn = document.querySelector(`.flags button[onclick*="'${savedLang}'"]`) || document.querySelector('.flags button');
-      if (btn) {
-        setLang({ target: btn }, savedLang);
-      }
     });
+
+    const form = document.getElementById('inquiry-form');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const status = document.getElementById('inquiry-status');
+        const btn = form.querySelector('button[type="submit"]');
+        const original = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Sendet...';
+        status.style.display = 'block';
+        status.style.color = '#0e1528';
+        status.textContent = 'Sendet...';
+        try {
+          const res = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (!res.ok) throw new Error('Fehler beim Versenden.');
+          status.style.color = '#28a745';
+          status.textContent = '✓ Anfrage erfolgreich gesendet!';
+          form.reset();
+        } catch (err) {
+          status.style.color = '#dc3545';
+          status.textContent = err.message || 'Fehler beim Versenden.';
+        } finally {
+          btn.disabled = false;
+          btn.textContent = original;
+          setTimeout(() => { status.style.display = 'none'; }, 5000);
+        }
+      });
+    }
   </script>
 </body>
 </html>
