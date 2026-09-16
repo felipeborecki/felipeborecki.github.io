@@ -268,10 +268,9 @@
     <div class="hero-content">
       <h2>Intérprete y traductor para tribunales, autoridades y contextos sensibles</h2>
       <p>Servicios lingüísticos profesionales para ámbitos jurídicos, médicos, administrativos y psicosociales en Austria — precisos, confidenciales y fiables. Presencial, remoto y telefónico.</p>
-      <p class="hero-subline">Registrado en GISA (n.º 32188035), en el registro de intérpretes y peritos del Ministerio del Interior y jurado como intérprete de portugués, español y alemán en el Tribunal Penal de Graz (LG für Strafsachen Graz). Más de 900 servicios para tribunales, policía, clínicas y servicios sociales. Idiomas de trabajo: ES | PT | DE.</p>
+      <p class="hero-subline">Registrado en GISA (n.º 32188035), en el registro de intérpretes y peritos del Ministerio del Interior y jurado como intérprete de español, portugués y alemán en el Tribunal Penal de Graz (LG für Strafsachen Graz). Más de 900 servicios para tribunales, policía, clínicas y servicios sociales. Idiomas de trabajo: Español, Portugués y Alemán (+ Inglés para servicios seleccionados).</p>
       <div class="cta-wrap">
         <a href="#contact" class="cta">Solicitar presupuesto</a>
-        <a href="#services" class="cta cta-secondary">Ver servicios</a>
         <a href="/es/appointment.html" class="cta cta-outline">📅 Reservar cita</a>
       </div>
     </div>
@@ -294,7 +293,7 @@
       </div>
       <div class="credential">
         <strong>LG Graz</strong>
-        <span>Jurado como intérprete de portugués, español y alemán en el Tribunal Penal de Graz</span>
+        <span>Jurado como intérprete de español, portugués y alemán en el Tribunal Penal de Graz</span>
       </div>
       <div class="credential">
         <strong>ES | PT | DE</strong>
@@ -450,6 +449,19 @@
               'event_category': 'CTA',
               'event_label': label,
               'event_value': 1
+            });
+          }
+        });
+      });
+
+      document.querySelectorAll('.flags a').forEach(el => {
+        el.addEventListener('click', function() {
+          const lang = this.getAttribute('href').replace(/\//g, '') || 'de';
+          try { localStorage.setItem('preferred-lang', lang); } catch(e) {}
+          if (typeof gtag === 'function') {
+            gtag('event', 'language_switch', {
+              'event_category': 'engagement',
+              'event_label': lang
             });
           }
         });
