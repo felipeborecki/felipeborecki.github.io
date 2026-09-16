@@ -151,8 +151,9 @@
     <p class="sub" data-lang="sub">Wählen Sie Datum, Uhrzeit und Dauer</p>
     
     <iframe 
-      src="https://calendar.zoho.eu/eventreqForm/zz08011230b9e2d616c045e5b4f294cd5fa24d3706e7026723eff3f04489af41322699b4573acd69eb413ccd3ee637b1c006f86c4e?theme=1&l=en&tz=Europe/Vienna"
-      title="Programar cita"
+      id="zoho-calendar"
+      src="https://calendar.zoho.eu/eventreqForm/zz08011230b9e2d616c045e5b4f294cd5fa24d3706e7026723eff3f04489af41322699b4573acd69eb413ccd3ee637b1c006f86c4e?theme=1&l=de&tz=Europe/Vienna"
+      title="Terminbuchung"
       frameborder="0"
       scrolling="no"
       marginwidth="0"
@@ -182,7 +183,8 @@
       'nav-agb': 'AGB',
       'back-home': '← Zurück',
       title: '📅 Termin buchen',
-      sub: 'Wählen Sie Datum, Uhrzeit und Dauer'
+      sub: 'Wählen Sie Datum, Uhrzeit und Dauer',
+      iframeTitle: 'Terminbuchung'
     },
     es: {
       name: 'Felipe Borecki',
@@ -193,7 +195,8 @@
       'nav-agb': 'Términos',
       'back-home': '← Volver',
       title: '📅 Reservar cita',
-      sub: 'Elija fecha, hora y duración'
+      sub: 'Elija fecha, hora y duración',
+      iframeTitle: 'Reserva de cita'
     },
     pt: {
       name: 'Felipe Borecki',
@@ -204,7 +207,8 @@
       'nav-agb': 'Termos',
       'back-home': '← Voltar',
       title: '📅 Agendar reunião',
-      sub: 'Escolha data, horário e duração'
+      sub: 'Escolha data, horário e duração',
+      iframeTitle: 'Agendamento de reunião'
     },
     en: {
       name: 'Felipe Borecki',
@@ -215,9 +219,13 @@
       'nav-agb': 'Terms',
       'back-home': '← Back',
       title: '📅 Book appointment',
-      sub: 'Choose date, time and duration'
+      sub: 'Choose date, time and duration',
+      iframeTitle: 'Appointment booking'
     }
   };
+
+  // URL base do iframe do Zoho (sem o parâmetro l=)
+  const ZOHO_BASE_URL = 'https://calendar.zoho.eu/eventreqForm/zz08011230b9e2d616c045e5b4f294cd5fa24d3706e7026723eff3f04489af41322699b4573acd69eb413ccd3ee637b1c006f86c4e?theme=1&tz=Europe/Vienna';
 
   let currentLang = 'de';
 
@@ -229,6 +237,19 @@
   function safeSetStoredLang(lang) {
     try { localStorage.setItem('lang', lang); }
     catch (e) {}
+  }
+
+  function updateCalendarLang(lang) {
+    const iframe = document.getElementById('zoho-calendar');
+    if (!iframe) return;
+
+    // Constrói a URL com o idioma selecionado
+    const newSrc = ZOHO_BASE_URL + '&l=' + lang;
+
+    // Só troca se realmente mudou (evita recarregar à toa)
+    if (iframe.src !== newSrc) {
+      iframe.src = newSrc;
+    }
   }
 
   function setLang(lang) {
@@ -249,6 +270,13 @@
       const key = el.dataset.lang;
       if (t[key] !== undefined) el.textContent = t[key];
     });
+
+    // Atualiza o título do iframe (acessibilidade)
+    const iframe = document.getElementById('zoho-calendar');
+    if (iframe && t.iframeTitle) iframe.setAttribute('title', t.iframeTitle);
+
+    // Troca o idioma do calendário Zoho
+    updateCalendarLang(lang);
 
     if (typeof gtag === 'function') {
       gtag('event', 'language_switch', {
