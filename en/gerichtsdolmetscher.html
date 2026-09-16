@@ -12,12 +12,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Court Interpreter in Graz for Portuguese and Spanish | LG Graz Sworn</title>
-  <meta name="description" content="Sworn court interpreter at the Criminal Court of Graz. Portuguese and Spanish for criminal, civil and administrative proceedings. GISA No. 32188035. Request a quote.">
+  <meta name="description" content="Sworn court interpreter at the Criminal Court of Graz. Portuguese, Spanish and German for criminal, civil and administrative proceedings. GISA No. 32188035. Request a quote.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://felipeborecki.com/en/gerichtsdolmetscher.html">
 
   <meta property="og:title" content="Court Interpreter in Graz for Portuguese and Spanish">
-  <meta property="og:description" content="Sworn at the Criminal Court of Graz. Portuguese and Spanish for criminal, civil and administrative proceedings.">
+  <meta property="og:description" content="Sworn at the Criminal Court of Graz. Portuguese, Spanish and German for criminal, civil and administrative proceedings.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://felipeborecki.com/en/gerichtsdolmetscher.html">
   <meta property="og:image" content="https://felipeborecki.com/images/header2.jpg">
@@ -33,6 +33,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://formspree.io">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
@@ -105,6 +106,14 @@
     .cta{background:#0e1528;color:#fff;padding:1rem 2.5rem;border-radius:5px;font-weight:700;display:inline-block;transition:all .25s ease;text-decoration:none;font-size:1rem}
     .cta:hover{background:#1a2a4a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
 
+    .inquiry-form{background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.08);max-width:700px;margin:2rem auto 0}
+    .form-group{margin-bottom:1.2rem;text-align:left}
+    .form-group label{display:block;margin-bottom:.4rem;font-weight:500;font-size:0.95rem}
+    .form-group input,.form-group textarea,.form-group select{width:100%;padding:.7rem;border:1px solid #ddd;border-radius:5px;font-size:0.95rem;font-family:inherit}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:#0e1528;box-shadow:0 0 0 3px rgba(14,21,40,.12)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    #inquiry-status{text-align:center;margin-top:1rem;color:#0e1528;font-weight:500;display:none}
+
     .back-link{display:inline-block;margin-top:2rem;color:#0e1528;font-weight:500;text-decoration:none;transition:all .25s ease}
     .back-link:hover{transform:translateX(-4px)}
 
@@ -132,6 +141,7 @@
       .section h2{font-size:1.4rem}
       .section h3{font-size:1.05rem}
       .info-cards{grid-template-columns:1fr}
+      .form-row{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -165,7 +175,7 @@
   </section>
 
   <section class="section">
-    <p>As a <strong>sworn court interpreter for Portuguese, Spanish and German</strong>, I support courts, public prosecutor's offices, lawyers and private individuals in legal proceedings throughout Austria. My swearing-in at the <strong>Criminal Court of Graz (LG für Strafsachen Graz)</strong> and my registration in the Interpreter and Expert Register of the Ministry of the Interior guarantee the highest technical and legal reliability.</p>
+    <p>As a <strong>sworn court interpreter for Portuguese, Spanish and German</strong>, I support courts, public prosecutor's offices, lawyers and private individuals in legal proceedings throughout Austria. My swearing-in at the <strong>Criminal Court of Graz (LG für Strafsachen Graz)</strong> and my registration in the Interpreter and Expert Register of the Ministry of the Interior document my qualification for court interpreting assignments.</p>
 
     <div class="info-cards">
       <div class="info-card">
@@ -208,7 +218,7 @@
     <h2>Why a sworn court interpreter?</h2>
     <p>Swearing-in is more than a formality. It means:</p>
     <ul>
-      <li><strong>Legal recognition</strong> — my interpretations are admissible in court</li>
+      <li><strong>Legal recognition</strong> — my swearing-in qualifies me for interpreting assignments in court proceedings</li>
       <li><strong>Professional confidentiality</strong> — I am bound by professional secrecy under Section 10 of the GISA Act</li>
       <li><strong>Technical qualification</strong> — verified knowledge of legal terminology in both languages</li>
       <li><strong>Neutrality</strong> — I interpret impartially for all parties involved</li>
@@ -241,8 +251,68 @@
 
     <div class="cta-block">
       <p>Do you need a court interpreter for Portuguese, Spanish or German?</p>
-      <a href="/en/#contact" class="cta">Request a quote</a>
+      <a href="/en/appointment.html" class="cta">Request a quote</a>
     </div>
+
+    <h2 style="margin-top:3rem;text-align:center">Direct inquiry</h2>
+    <p style="text-align:center;margin-bottom:1rem">Send me the key details — I respond within 24 hours.</p>
+
+    <form id="inquiry-form" class="inquiry-form" action="https://formspree.io/f/mbdokzdj" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="datum">Date *</label>
+          <input type="date" id="datum" name="datum" required>
+        </div>
+        <div class="form-group">
+          <label for="dauer">Estimated duration *</label>
+          <input type="text" id="dauer" name="dauer" placeholder="e.g. 2 hours" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="gericht">Court / Location *</label>
+          <input type="text" id="gericht" name="gericht" placeholder="e.g. Criminal Court of Graz" required>
+        </div>
+        <div class="form-group">
+          <label for="verfahren">Type of proceeding *</label>
+          <select id="verfahren" name="verfahren" required>
+            <option value="">Select</option>
+            <option value="Criminal proceeding">Criminal proceeding</option>
+            <option value="Civil proceeding">Civil proceeding</option>
+            <option value="Administrative proceeding">Administrative proceeding</option>
+            <option value="Family court proceeding">Family court proceeding</option>
+            <option value="Non-contentious proceeding">Non-contentious proceeding</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="sprache">Language(s) *</label>
+          <select id="sprache" name="sprache" required>
+            <option value="">Select</option>
+            <option value="Portuguese ↔ German">Portuguese ↔ German</option>
+            <option value="Spanish ↔ German">Spanish ↔ German</option>
+            <option value="Portuguese ↔ Spanish">Portuguese ↔ Spanish</option>
+            <option value="Other combination">Other combination</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name">Your name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="nachricht">Additional information (optional)</label>
+        <textarea id="nachricht" name="nachricht" rows="3" placeholder="Further details about your request..."></textarea>
+      </div>
+      <button type="submit" class="cta" style="width:100%">Send inquiry</button>
+      <p id="inquiry-status"></p>
+    </form>
 
     <div style="text-align:center;margin-top:2rem">
       <a href="/en/" class="back-link">← Back to home</a>
@@ -263,6 +333,42 @@
         }
       });
     });
+
+    const form = document.getElementById('inquiry-form');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const status = document.getElementById('inquiry-status');
+        const btn = form.querySelector('button[type="submit"]');
+        const original = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        status.style.display = 'block';
+        status.style.color = '#0e1528';
+        status.textContent = 'Sending...';
+        try {
+          const res = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (!res.ok) throw new Error('Error sending.');
+          status.style.color = '#28a745';
+          status.textContent = '✓ Inquiry sent successfully!';
+          form.reset();
+          if (typeof gtag === 'function') {
+            gtag('event', 'inquiry_submit', { 'event_category': 'contact', 'event_label': 'gerichtsdolmetscher' });
+          }
+        } catch (err) {
+          status.style.color = '#dc3545';
+          status.textContent = err.message || 'Error sending.';
+        } finally {
+          btn.disabled = false;
+          btn.textContent = original;
+          setTimeout(() => { status.style.display = 'none'; }, 5000);
+        }
+      });
+    }
   </script>
 </body>
 </html>
